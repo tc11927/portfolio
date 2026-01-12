@@ -4,11 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     Under Construction! Check back later! ;D
+    <img src="./portfolio.png" className="placeholder"></img>
+    <div className="hi">Hey! Thanks for checking out my page!</div>
+     <div className="construction">Under Construction! Check back later! ;D</div>
     </>
   )
 }
