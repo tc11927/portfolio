@@ -11,7 +11,7 @@
     max-width: 100vw; /* ← prevents going wider than viewport */
     min-width: 100vw;
     height: 100%; /* or 115vh / 100dvh / whatever you need */
-    
+    clip-path: inset(0 0 0 0);
 }
 
 .section1-bg img {
@@ -45,7 +45,7 @@
 
 .top-right {
     top: -10%;
-    right: -1.5%;
+    right: vw;
     width: 32vw; 
 }
 

@@ -1,5 +1,7 @@
 .section1-bg {
-    height: 115% !important;
+ height: 140% !important;           /* ← increased from 115% */
+    width: 140vw !important;           /* ← key change — give horizontal overrun space */
+    max-width: none;
     opacity: 0.7;
     margin: 0 !important;
     position: absolute !important;
@@ -45,7 +47,7 @@
 
 .top-right {
     top: -10%;
-    right: -1.5%;
+    right: 0vw;
     width: 32vw; 
 }
 
