@@ -74,7 +74,7 @@
 
 
 .logo:hover {
-    animation: spin 2s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
 }
 
 @keyframes spin {

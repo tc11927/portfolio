@@ -240,26 +240,22 @@ body {
 .Section2 {
     position: relative;
     width: 100vw;
-    min-height: 130vh;
+    min-height: 120vh;
     margin-left: calc(-50vw + 50%);
     background-color: #22303a;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #22303a;
-background-color: #22303a;
-opacity: 1;
-background-image:  linear-gradient(#2e3e49 0.8px, transparent 0.8px), linear-gradient(to right, #2e3e49 0.8px, #22303a 0.8px);
-background-size: 60px 60px;
 }
+
 
 .section2-character {
     position: absolute;
     z-index: 10;
     width: 100vw;
     height: auto;
-    top: 32%;
+    top: 40%;
     right: 32%;
     pointer-events: none;
 }
@@ -270,7 +266,7 @@ background-size: 60px 60px;
     text-align: center;
     color: white;
     font-family: "Averia Sans Libre", cursive, sans-serif;
-    margin-top: -30vw;
+    margin-top: -20vw;
 }
 
 .visualstorytelling {

@@ -248,10 +248,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #22303a;
-background-color: #22303a;
-opacity: 1;
-background-image:  linear-gradient(#2e3e49 0.8px, transparent 0.8px), linear-gradient(to right, #2e3e49 0.8px, #22303a 0.8px);
-background-size: 60px 60px;
+    opacity: 1;
+    background-image: radial-gradient(#2e3e49 2px, #22303a 2px);
+    background-size: 50px 50px;
 }
 
 .section2-character {

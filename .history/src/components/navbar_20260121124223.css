@@ -74,14 +74,15 @@
 
 
 .logo:hover {
-    animation: spin 2s ease-in-out infinite;
+    
 }
 
 @keyframes spin {
-    0% {
+ 0%,
+    50% {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: 
     }
 }

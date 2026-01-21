@@ -247,12 +247,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #22303a;
-background-color: #22303a;
-opacity: 1;
-background-image:  linear-gradient(#2e3e49 0.8px, transparent 0.8px), linear-gradient(to right, #2e3e49 0.8px, #22303a 0.8px);
-background-size: 60px 60px;
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
 }
+
 
 .section2-character {
     position: absolute;

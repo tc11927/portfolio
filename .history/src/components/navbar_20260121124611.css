@@ -74,10 +74,11 @@
 
 
 .logo:hover {
-    animation: spin 2s ease-in-out infinite;
+    animation: spin 3s ease-in-out infinite;
 }
 
 @keyframes spin {
+ 0%,
     0% {
         transform: rotate(0deg);
     }
