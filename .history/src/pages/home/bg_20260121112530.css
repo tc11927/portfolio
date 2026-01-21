@@ -45,12 +45,12 @@
 
 .top-right {
     top: -12%;
-    right: -8vw; 
-    width: 36vw; 
+    right: -8vw; /* was 0 or -something larger */
+    width: 36vw; /* slightly bigger than original 32vw */
 }
 
 .bottom-right {
     bottom: 5%;
-    right: -4vw;
-    width: 40vw; 
+    right: -10vw;
+    width: 40vw; /* was 35vw */
 }

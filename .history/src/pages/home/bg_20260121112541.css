@@ -45,8 +45,8 @@
 
 .top-right {
     top: -12%;
-    right: -8vw; 
-    width: 36vw; 
+    right: -8vw; /* was 0 or -something larger */
+    width: 36vw; /* slightly bigger than original 32vw */
 }
 
 .bottom-right {

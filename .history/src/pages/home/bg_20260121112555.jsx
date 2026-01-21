@@ -43,7 +43,7 @@ export default function Bg() {
             />
             <img
                 className="parallax bottom-right"
-                data-speed="2.3"
+                data-speed="1.3"
                 src="/home/topbg/bottomright.svg"
             />
             <img
@@ -63,7 +63,7 @@ export default function Bg() {
             />
             <img
                 className="parallax top-right"
-                data-speed="2"
+                data-speed=""
                 src="/home/topbg/topright.svg"
             />
         </div>

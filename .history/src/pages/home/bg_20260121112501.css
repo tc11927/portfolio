@@ -5,13 +5,14 @@
     position: absolute !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-
+    overflow: visible !important;
     inset: 0; /* top:0 right:0 bottom:0 left:0 */
     width: 100vw;
     max-width: 100vw; /* ← prevents going wider than viewport */
     min-width: 100vw;
     height: 100%; /* or 115vh / 100dvh / whatever you need */
-    overflow: hidden;
+    width: calc(100vw + 20vw) !important;  /* base viewport + 20vw extra */
+    
 }
 
 .section1-bg img {
@@ -45,12 +46,12 @@
 
 .top-right {
     top: -12%;
-    right: -8vw; 
-    width: 36vw; 
+    right: -8vw;          /* was 0 or -something larger */
+    width: 36vw;          /* slightly bigger than original 32vw */
 }
 
 .bottom-right {
     bottom: 5%;
-    right: -4vw;
-    width: 40vw; 
+    right: -10vw;
+    width: 40vw;          /* was 35vw */
 }
