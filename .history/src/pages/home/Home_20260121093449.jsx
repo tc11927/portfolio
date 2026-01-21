@@ -131,7 +131,7 @@ export default function Home() {
             </div>
             <div className="Section2">
                 <img
-                    src="/home/me2.gif"
+                    src="/home/2me.gif"
                     alt="Thea drawing"
                     className="section2-character"
                 />
