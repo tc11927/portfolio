@@ -3,8 +3,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Add from "./pages/add/Add";
-import Contact from "./pages/contact/Contact";
-import Work from "./pages/work/Work";
+import Contact from "./pages/contact/contact";
+import Work from "./pages/work/work";
 
 function App() {
     return (
