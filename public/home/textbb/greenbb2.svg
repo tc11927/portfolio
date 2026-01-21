@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.58 197.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #71a850;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: AveriaSansLibre-Bold, 'Averia Sans Libre';
+        font-size: 34.36px;
+        font-weight: 700;
+        stroke-width: .83px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #f0e5c3;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #f0e5c3;
+      }
+
+      .cls-3 {
+        stroke-width: 1.98px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fed040;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        stroke-width: 4.11px;
+      }
+    </style>
+  </defs>
+  <g id="gallery_hover" data-name="gallery hover">
+    <g>
+      <path class="cls-1" d="M173.08,19.96L68.22.48c-15.55-2.89-30.64,7.47-33.52,23.02l-8.14,43.81c-.52,2.8-.87,5.59-1.07,8.37l-.06.92-.07,1.43c-.12,2.86-.1,5.7.09,8.51-.43,15.22-4.24,42.73-24,64.85-2.75,3.08-1.39,7.98,2.58,9.11,13.07,3.71,48.58,1.88,57.94-13.63,7.83,4.83,16.63,8.35,26.19,10.12l57.49,10.68c15.55,2.89,30.64-7.47,33.52-23.02l16.93-91.18c2.89-15.55-7.47-30.64-23.02-33.52Z"/>
+      <text class="cls-2" transform="translate(46.01 58.95) rotate(11.39)"><tspan class="cls-7" x="0" y="0">M</tspan><tspan class="cls-9" x="27.8" y="0">o</tspan><tspan x="46.53" y="0">ti</tspan><tspan class="cls-9" x="68.96" y="0">o</tspan><tspan class="cls-5" x="87.69" y="0">n </tspan><tspan class="cls-8" x="0" y="41.24">Gr</tspan><tspan x="36.02" y="41.24">aphics</tspan></text>
+      <g>
+        <circle class="cls-4" cx="157.57" cy="167.96" r="27.97"/>
+        <path class="cls-6" d="M170.63,171.12l-10.96-14.6c-1.42-1.88-4.34-1.53-5.26.64l-7.16,16.79c-.92,2.17.84,4.52,3.18,4.24l18.12-2.2c2.34-.28,3.49-2.99,2.08-4.88Z"/>
+      </g>
+      <g>
+        <circle class="cls-3" cx="28.3" cy="126.5" r="7.61"/>
+        <path class="cls-3" d="M14.05,80.85h12.14c.85,0,1.54.69,1.54,1.54v25.69c0,4.2-3.41,7.61-7.61,7.61h0c-4.2,0-7.61-3.41-7.61-7.61v-25.69c0-.85.69-1.54,1.54-1.54Z" transform="translate(-26.56 9.48) rotate(-16.16)"/>
+      </g>
+    </g>
+  </g>
+</svg>

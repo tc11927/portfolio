@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221.72 162.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fea962;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: AveriaSansLibre-Bold, 'Averia Sans Libre';
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="contact_hover" data-name="contact hover">
+    <g>
+      <path class="cls-1" d="M194.39,21.2L140.85,3.42c-35.11-11.66-73.38,7.52-85.05,42.63l-12.35,37.17c-.55,1.65-.97,3.32-1.29,4.99-.08.04-.14.06-.14.06,0,0-10.63,53.15-40.04,57.85-2.32.37-2.73,3.5-.56,4.39,16.85,6.86,51.5,15.67,75.34-14.16l71.49,23.75c20.84,6.92,43.55-4.46,50.47-25.3l20.97-63.13c6.92-20.84-4.46-43.55-25.3-50.47Z"/>
+      <text class="cls-2" transform="translate(68.96 87.93) rotate(5.88)"><tspan class="cls-3" x="0" y="0">C</tspan><tspan class="cls-4" x="22.1" y="0">on</tspan><tspan x="61.73" y="0">t</tspan><tspan class="cls-4" x="75.27" y="0">a</tspan><tspan x="94.46" y="0">ct</tspan></text>
+    </g>
+  </g>
+</svg>
