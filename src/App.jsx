@@ -36,17 +36,17 @@ function App() {
                     path="/about"
                     element={<About />}
                 />
-                   <Route
+                <Route
                     path="/add"
                     element={<Add />}
                 />
-                   <Route
+                <Route
                     path="/contact"
-                    element={<Contact/>}
+                    element={<Contact />}
                 />
-                   <Route
+                <Route
                     path="/work"
-                    element={<Work/>}
+                    element={<Work />}
                 />
             </Routes>
         </>
