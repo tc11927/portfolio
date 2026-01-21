@@ -12,7 +12,7 @@ export default function Home() {
     const containerRef = useRef(null);
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-    /* GIF and bubbles parallax WEEWOOO!!! this is so I don't forget what code does what haha youtube ty tyy */
+    /* GIF and bubbles parallax WEEWOOO!!! this is so I don't forget what code does what haha youtube ty ty */
 
     useEffect(() => {
         const handleMouseMove = (e) => {
