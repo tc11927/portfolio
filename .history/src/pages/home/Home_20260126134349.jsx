@@ -130,25 +130,34 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="Section2">
-                <JigglyGrid className="grid"/>
-                <img
-                    src="/home/me2.gif"
-                    alt="Thea drawing"
-                    className="section2-character"
-                />
+            // Home.jsx — only showing the changed part
+<div className="Section2">
+    {/* Dark background layer */}
+    {/* (already created via ::before z-index:0) */}
 
-                <div className="section2-text">
-                    <h2 className="visualstorytelling">visual storytelling</h2>
-                    <div className="rootedin">
-                        <div>rooted in</div>
-                    </div>
-                    <h2 className="values">
-                        <span className="curiosity">curiosity</span> and{" "}
-                        <span className="care">care</span>
-                    </h2>
-                </div>
-            </div>
+    {/* Jiggly grid — behind content, in front of dark bg */}
+    <JigglyGrid className="jiggly-grid-background" />
+
+    {/* Character GIF */}
+    <img
+        src="/home/me2.gif"
+        alt="Thea drawing"
+        className="section2-character"
+    />
+
+    {/* Text on top */}
+    <div className="section2-text">
+        <h2 className="visualstorytelling">visual storytelling</h2>
+        <div className="rootedin">
+            <div>rooted in</div>
+        </div>
+        <h2 className="values">
+            <span className="curiosity">curiosity</span> and{" "}
+            <span className="care">care</span>
+        </h2>
+        {/* ← removed JigglyGrid from here */}
+    </div>
+</div>
         </div>
     );
 }

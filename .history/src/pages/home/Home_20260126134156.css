@@ -246,21 +246,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #22303a;
+        background-color: #22303a;
 }
 
-/* JigglyGrid sits above background, below everything else */
-.jiggly-grid {
+.Section2::before {
+    content: '';
     position: absolute;
     inset: 0;
-    z-index: 1;
+
+    z-index: 0;
     pointer-events: none;
 }
-
-/* me2.gif */
 .section2-character {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     width: 100vw;
     height: auto;
     top: 32%;
@@ -268,10 +267,9 @@ body {
     pointer-events: none;
 }
 
-/* Text stays on top */
 .section2-text {
     position: relative;
-    z-index: 3;
+    z-index: 20;
     text-align: center;
     color: white;
     font-family: "Averia Sans Libre", cursive, sans-serif;
@@ -299,3 +297,5 @@ body {
 .care {
     color: #eab300;
 }
+
+

@@ -131,7 +131,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="Section2">
-                <JigglyGrid className="grid"/>
+                <JigglyGrid className="grid" />
+
                 <img
                     src="/home/me2.gif"
                     alt="Thea drawing"

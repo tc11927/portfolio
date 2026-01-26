@@ -249,18 +249,9 @@ body {
     background-color: #22303a;
 }
 
-/* JigglyGrid sits above background, below everything else */
-.jiggly-grid {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-}
-
-/* me2.gif */
 .section2-character {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     width: 100vw;
     height: auto;
     top: 32%;
@@ -268,10 +259,9 @@ body {
     pointer-events: none;
 }
 
-/* Text stays on top */
 .section2-text {
     position: relative;
-    z-index: 3;
+    z-index: 20;
     text-align: center;
     color: white;
     font-family: "Averia Sans Libre", cursive, sans-serif;
@@ -298,4 +288,26 @@ body {
 
 .care {
     color: #eab300;
+}
+
+
+/* Add this new class */
+.jiggly-grid-background {
+    position: absolute;
+    inset: 0;                   /* fill the whole Section2 */
+    z-index: 5;                 /* 0 = bg, 5 = grid, 10 = character, 20 = text */
+    pointer-events: none;       /* clicks go through to links/buttons if any */
+}
+
+/* Optional: make sure the existing .Section2 rules don't fight it */
+.Section2 {
+    position: relative;         /* already there — good */
+    overflow: hidden;
+    /* ... rest unchanged */
+}
+
+/* If your JigglyGrid component has its own high z-index or position, you may also need: */
+.jiggly-grid-background :global(.your-grid-class-or-container) {
+    position: relative;
+    z-index: 1;                 /* just in case — usually not needed */
 }

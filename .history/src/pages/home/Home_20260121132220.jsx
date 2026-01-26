@@ -131,7 +131,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="Section2">
-                <JigglyGrid className="grid"/>
+                 <JigglyGrid />
                 <img
                     src="/home/me2.gif"
                     alt="Thea drawing"
@@ -140,13 +140,16 @@ export default function Home() {
 
                 <div className="section2-text">
                     <h2 className="visualstorytelling">visual storytelling</h2>
+
                     <div className="rootedin">
                         <div>rooted in</div>
                     </div>
+
                     <h2 className="values">
                         <span className="curiosity">curiosity</span> and{" "}
                         <span className="care">care</span>
                     </h2>
+                    
                 </div>
             </div>
         </div>
