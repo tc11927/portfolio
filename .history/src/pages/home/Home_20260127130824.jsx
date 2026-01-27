@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import NavBar from "../../components/navbar";
 import Bg from "./bg";
 import JigglyGrid from "../../components/grid";
-import Footer from "../../components/footer";
+import fo
 
 export default function Home() {
     const [hoveredAbout, setHoveredAbout] = useState(false);
@@ -132,31 +132,27 @@ export default function Home() {
                 </div>
             </div>
             <div className="Section2">
-                <JigglyGrid className="grid" />
+                <JigglyGrid className="grid"/>
                 <img
                     src="/home/me2.gif"
                     alt="Thea drawing"
                     className="section2-character"
+                    
                 />
 
-                <div
-                    className="section2-text"
-                    style={{
-                        transform: `translate(${
-                            mousePos.x * bubbleStrength * 20
-                        }px, ${mousePos.y * bubbleStrength * 20}px)`,
-                    }}>
-                    <h2 className="visualstorytelling">
-                        visual storytelling rooted in
-                    </h2>
-
+                <div className="section2-text"    style={{
+                            transform: `translate(${
+                                mousePos.x * bubbleStrength * 20
+                            }px, ${mousePos.y * bubbleStrength * 20}px)`,
+                        }}>
+                    <h2 className="visualstorytelling">visual storytelling rooted in</h2>
+                
                     <h2 className="values">
                         <span className="curiosity">curiosity</span> and{" "}
                         <span className="care">care</span>
                     </h2>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

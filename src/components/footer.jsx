@@ -1,0 +1,34 @@
+import "./footer.css";
+
+export default function Footer() {
+    return (
+        <div className="footer-container">
+            <a
+                href="https://www.linkedin.com/in/thea-c/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-icon">
+                <img
+                    src="/home/footer/linkedin.svg"
+                    alt="LinkedIn"
+                />
+            </a>
+
+            <div className="footer-center">
+                <p className="footer-main-text">
+                    Let's make something meaningful!
+                </p>
+                <p className="footer-credit">© Thea Calaquian 2026</p>
+            </div>
+
+            <a
+                href="mailto:theac119@gmail.com"
+                className="footer-icon">
+                <img
+                    src="/home/footer/email.svg"
+                    alt="Email"
+                />
+            </a>
+        </div>
+    );
+}

@@ -1,0 +1,51 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #22303a;
+  padding: 1rem;
+  gap: 3rem;  
+  box-sizing: border-box;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0 12rem;  
+}
+
+.footer-center {
+  flex: 1;  
+  text-align: center;
+}
+.footer-icon img {
+  max-width: 8vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.footer-main-text {
+  font-family: "Averia Sans Libre", cursive, sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.footer-credit {
+  font-family: "Averia Sans Libre", cursive, sans-serif;
+  font-size: 0.9rem;
+  color: #999;
+  margin: 0;
+}
