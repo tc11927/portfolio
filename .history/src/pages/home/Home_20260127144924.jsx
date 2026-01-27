@@ -164,8 +164,7 @@ export default function Home() {
                 <div className="section3-arrow">
                     <img
                         src="/home/arrow.svg"
-                        alt="Arrow"
-                        className="arrow"></img>
+                        alt="Arrow"></img>
                 </div>
                 <div className="section3-img">
                     <img

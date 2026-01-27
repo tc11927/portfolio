@@ -155,25 +155,7 @@ export default function Home() {
                         <span className="care">care</span>
                     </h2>
                 </div>
-            </div>
-            <div className="section3">
-                <div className="section3-text">
-                    <p className="checkout">Check Out My</p>
-                    <p className="featured">Featured Work!</p>
-                </div>
-                <div className="section3-arrow">
-                    <img
-                        src="/home/arrow.svg"
-                        alt="Arrow"
-                        className="arrow"></img>
-                </div>
-                <div className="section3-img">
-                    <img
-                        className="me3-image"
-                        src="/home/me3.svg"
-                        alt="me"
-                    />
-                </div>
+               
             </div>
             <Footer />
         </div>

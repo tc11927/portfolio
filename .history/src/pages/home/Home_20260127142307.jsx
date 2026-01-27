@@ -161,12 +161,6 @@ export default function Home() {
                     <p className="checkout">Check Out My</p>
                     <p className="featured">Featured Work!</p>
                 </div>
-                <div className="section3-arrow">
-                    <img
-                        src="/home/arrow.svg"
-                        alt="Arrow"
-                        className="arrow"></img>
-                </div>
                 <div className="section3-img">
                     <img
                         className="me3-image"

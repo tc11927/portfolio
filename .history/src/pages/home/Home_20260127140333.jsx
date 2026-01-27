@@ -158,14 +158,8 @@ export default function Home() {
             </div>
             <div className="section3">
                 <div className="section3-text">
-                    <p className="checkout">Check Out My</p>
-                    <p className="featured">Featured Work!</p>
-                </div>
-                <div className="section3-arrow">
-                    <img
-                        src="/home/arrow.svg"
-                        alt="Arrow"
-                        className="arrow"></img>
+                    <p>Check Out My</p>
+                    <p>Featured Work!</p>
                 </div>
                 <div className="section3-img">
                     <img

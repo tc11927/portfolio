@@ -316,28 +316,11 @@ body {
 
 .section3-text {
     font-family: "Averia Sans Libre", cursive, sans-serif;
-    color: #22303a;
-    font-weight: 800;
 }
 
 .me3-image {
     max-width: 25vw;
     position: absolute;
-     top: 48%;
-    right: 5%;
-}
-
-.checkout {
-    font-size: 10vw;
-    margin-top: 5vw;
-    margin-bottom: -12vw;
-}
-
-.featured {
-        font-size: 9vw;
-}
-
-.arrow {
-    max-width: 25vw;
-    margin-top: -6.5vw;
+     top: 90%;
+    right: 37%;
 }

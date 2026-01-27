@@ -1,19 +1,13 @@
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    background-color: #22303a;
-    padding: 1rem;
-    gap: 2rem;
-    box-sizing: border-box;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    margin-bottom: -5vw;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #22303a;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  box-sizing: border-box;
 }
-
 .footer-icon {
     display: flex;
     align-items: center;

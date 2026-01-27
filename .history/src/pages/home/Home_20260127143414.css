@@ -330,14 +330,9 @@ body {
 .checkout {
     font-size: 10vw;
     margin-top: 5vw;
-    margin-bottom: -12vw;
+    margin-bottom: -13vw;
 }
 
 .featured {
         font-size: 9vw;
-}
-
-.arrow {
-    max-width: 25vw;
-    margin-top: -6.5vw;
 }
