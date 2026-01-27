@@ -136,13 +136,12 @@ export default function Home() {
                     src="/home/me2.gif"
                     alt="Thea drawing"
                     className="section2-character"
-                    
                 />
 
                 <div className="section2-text"    style={{
                             transform: `translate(${
-                                mousePos.x * bubbleStrength * 20
-                            }px, ${mousePos.y * bubbleStrength * 20}px)`,
+                                mousePos.x * bubbleStrength * 100
+                            }px, ${mousePos.y * bubbleStrength * 100}px)`,
                         }}>
                     <h2 className="visualstorytelling">visual storytelling rooted in</h2>
                 

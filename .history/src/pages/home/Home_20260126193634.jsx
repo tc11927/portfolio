@@ -136,7 +136,6 @@ export default function Home() {
                     src="/home/me2.gif"
                     alt="Thea drawing"
                     className="section2-character"
-                    
                 />
 
                 <div className="section2-text"    style={{

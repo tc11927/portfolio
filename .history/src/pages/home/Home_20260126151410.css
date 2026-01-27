@@ -240,7 +240,7 @@ body {
 .Section2 {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 130vh;
     margin-left: calc(-50vw + 50%);
     overflow: hidden;
     display: flex;
@@ -261,10 +261,10 @@ body {
 .section2-character {
     position: absolute;
     z-index: 2;
-    width: 95vw;
+    width: 100vw;
     height: auto;
-    top: 17%;
-    right: 37%;
+    top: 32%;
+    right: 32%;
     pointer-events: none;
 }
 
@@ -275,12 +275,12 @@ body {
     text-align: center;
     color: white;
     font-family: "Averia Sans Libre", cursive, sans-serif;
-    margin-top: -20vw;
+    margin-top: -30vw;
 }
 
 .visualstorytelling {
-    font-size: 7.5vw;
-    margin-bottom: -12.5vw;
+    font-size: 11vw;
+    margin-bottom: -8.5vw;
     transition: transform 0.3s ease;
 }
 
@@ -289,17 +289,20 @@ body {
 }
 
 
-
-
-.values {
-    font-size: 11.7vw;
+.rootedin {
+    font-size: 23vw;
+    margin-bottom: -16vw;
    transition: transform 0.3s ease;
 }
 
-.values:hover {
+.visualstorytelling:hover {
     transform: scale(1.02);
 }
 
+
+.values {
+    font-size: 11vw;
+}
 
 .curiosity {
     color: #eab300;

@@ -136,7 +136,11 @@ export default function Home() {
                     src="/home/me2.gif"
                     alt="Thea drawing"
                     className="section2-character"
-                    
+                    style={{
+                            transform: `translate(${
+                                mousePos.x * bubbleStrength * 30
+                            }px, ${mousePos.y * bubbleStrength * 30}px)`,
+                        }}
                 />
 
                 <div className="section2-text"    style={{
