@@ -5,7 +5,6 @@ import Bg from "./bg";
 import JigglyGrid from "../../components/grid";
 import Footer from "../../components/footer";
 import Bg2 from "./bg2";
-import { Link } from "react-router-dom";
 
 export default function Home() {
     const [hoveredAbout, setHoveredAbout] = useState(false);
@@ -169,25 +168,23 @@ export default function Home() {
                     <p className="checkout">Check Out My</p>
                     <p className="featured">Featured Work!</p>
                 </div>
-
-                <div className="arrow-hover">
-                    <div
-                        className="section3-arrow"
-                        style={{
-                            transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
-                        }}>
-                        <Link
-                            to="/work"
-                            aria-label="Go to work">
+                <Link
+                    to="/work"
+                    aria-label="Work">
+                    <div className="arrow-hover">
+                        <div
+                            className="section3-arrow"
+                            style={{
+                                transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
+                            }}>
                             <img
                                 src="/home/arrow.svg"
                                 alt="Arrow"
                                 className="arrow"
                             />
-                        </Link>
+                        </div>
                     </div>
-                </div>
-
+                </Link>
                 <img
                     className="me3-image"
                     src="/home/me3.svg"

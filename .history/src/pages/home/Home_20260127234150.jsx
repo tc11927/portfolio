@@ -167,7 +167,7 @@ export default function Home() {
                         transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
                     }}>
                     <p className="checkout">Check Out My</p>
-                    <p className="featured">Featured Work!</p>
+                    <p className="featured">Featured gitWork!</p>
                 </div>
 
                 <div className="arrow-hover">

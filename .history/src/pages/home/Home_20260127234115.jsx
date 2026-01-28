@@ -169,25 +169,23 @@ export default function Home() {
                     <p className="checkout">Check Out My</p>
                     <p className="featured">Featured Work!</p>
                 </div>
-
-                <div className="arrow-hover">
-                    <div
-                        className="section3-arrow"
-                        style={{
-                            transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
-                        }}>
-                        <Link
-                            to="/work"
-                            aria-label="Go to work">
-                            <img
-                                src="/home/arrow.svg"
-                                alt="Arrow"
-                                className="arrow"
-                            />
-                        </Link>
+        
+                    <div className="arrow-hover">
+                        <div
+                            className="section3-arrow"
+                            style={{
+                                transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
+                            }}>
+                            <Link to="/work" aria-label="Go to work">
+                                <img
+                                    src="/home/arrow.svg"
+                                    alt="Arrow"
+                                    className="arrow"
+                                />
+                            </Link>
+                        </div>
                     </div>
-                </div>
-
+          
                 <img
                     className="me3-image"
                     src="/home/me3.svg"
