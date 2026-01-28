@@ -5,7 +5,7 @@ export default function NavBar() {
     return (
         <div className="whole-nav">
           
-                <Link to="/home" className="logo-link" aria-label="Home">
+                <Link to="/home">
                     <img
                         className="logo"
                         src="/personalLogo.svg"

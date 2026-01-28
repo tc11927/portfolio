@@ -1,23 +1,5 @@
 .logo {
-    display: block;
-    width: auto;
-    height: 3vw;
-    max-height: 100%;
-}
-
-
-.logo-link {
-    display: inline-flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 0.5rem;
-}
-
-
-.logo-link img {
-    display: block;
-    width: auto;
-    height: 100%;
+    max-width: 3vw;
 }
 
 .whole-nav {
@@ -58,7 +40,7 @@
 .about-nav {
     transition: transform 0.3s ease;
     text-decoration: none;
-    color: #131e29;
+      color: #131e29;
 }
 
 .about-nav:hover {
@@ -70,7 +52,7 @@
 .work-nav {
     transition: transform 0.3s ease;
     text-decoration: none;
-    color: #131e29;
+      color: #131e29;
 }
 .work-nav:hover {
     color: #7da75b;
@@ -81,7 +63,7 @@
 .gallery-nav {
     transition: transform 0.3s ease;
     text-decoration: none;
-    color: #131e29;
+      color: #131e29;
 }
 .gallery-nav:hover {
     color: #eab300;
@@ -92,13 +74,13 @@
 .contact-nav {
     transition: transform 0.3s ease;
     text-decoration: none;
-    color: #131e29;
 }
 .contact-nav:hover {
     color: #f79e4b;
     font-weight: 500;
     transform: scale(1.09);
 }
+
 
 .logo:hover {
     animation: spin 2s ease-in-out infinite;

@@ -1,7 +1,7 @@
 .logo {
     display: block;
     width: auto;
-    height: 3vw;
+    height: 3vw; /* explicit height so logo is visible in the fixed navbar */
     max-height: 100%;
 }
 
@@ -9,11 +9,11 @@
 .logo-link {
     display: inline-flex;
     align-items: center;
-    height: 100%;
+    height: 100%; /* match navbar height */
     padding: 0 0.5rem;
 }
 
-
+/* ensure linked image fills its container without collapsing */
 .logo-link img {
     display: block;
     width: auto;

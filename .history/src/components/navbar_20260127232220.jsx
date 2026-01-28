@@ -4,15 +4,13 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
     return (
         <div className="whole-nav">
-          
-                <Link to="/home" className="logo-link" aria-label="Home">
-                    <img
-                        className="logo"
-                        src="/personalLogo.svg"
-                        alt="Logo"
-                    />
-                </Link>
-         
+            <Link to="/home">
+                <img
+                    className="logo"
+                    src="/personalLogo.svg"
+                    alt="Logo"
+                />
+            </Link>
 
             <div className="nav-links">
                 <Link

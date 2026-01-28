@@ -13,7 +13,7 @@
     padding: 0 0.5rem;
 }
 
-
+/* ensure linked image fills its container without collapsing */
 .logo-link img {
     display: block;
     width: auto;
