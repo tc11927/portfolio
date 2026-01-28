@@ -312,15 +312,12 @@ body {
     margin-left: calc(-50vw + 50%);
     overflow: hidden;
     background-color: #f0e5c3;
-    
-    
 }
 
 .section3-text {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     color: #22303a;
     font-weight: 800;
-    z-index: 1;
 }
 
 .me3-image {
@@ -328,45 +325,49 @@ body {
     position: absolute;
     top: 50%;
     right: 5%;
-
+    transition: transform 0.2s ease;
 }
 
-
+.me3-image:hover {
+    animation: cartoon-bounce 0.9s ease-in-out infinite;
+}
 
 .checkout {
     font-size: 10vw;
     margin-top: 5vw;
     margin-bottom: -12vw;
-    transition: transform 0.3s ease;
-     z-index: 1;
-}
-
-.checkout:hover {
-    transform: scale(1.02);
 }
 
 .featured {
     font-size: 9vw;
-    transition: transform 0.3s ease;
-     z-index: 1;
-}
-
-.featured:hover {
-    transform: scale(1.02);
 }
 
 .arrow {
     max-width: 25vw;
     margin-top: -6.5vw;
     animation: idleBob4 2s ease-in-out infinite;
-}
-
-.arrow-hover {
     transition: transform 0.3s ease;
 }
 
-.arrow-hover:hover {
-    transform: scale(1.05);
+.section3-arrow:hover:hover {
+    transform: scale(2);
 }
 
-
+@keyframes cartoon-bounce {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+    35% {
+        transform: translateY(-10px) scale(1.01);
+    }
+    55% {
+        transform: translateY(-0.5px) scale(0.98);
+    }
+    70% {
+        transform: translateY(-6px) scale(1.02);
+    }
+    85% {
+        transform: translateY(-2px) scale(0.99);
+    }
+}

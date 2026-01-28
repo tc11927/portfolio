@@ -163,30 +163,30 @@ export default function Home() {
                 <div
                     className="section3-text"
                     style={{
-                        transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
+                        transform: `translate(${mousePos.x * 0.6 * 15}px, ${mousePos.y * 0.6 * 20}px)`,
                     }}>
                     <p className="checkout">Check Out My</p>
                     <p className="featured">Featured Work!</p>
                 </div>
-                <div className="arrow-hover">
-                    <div
-                        className="section3-arrow"
-                        style={{
-                            transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
-                        }}>
-                        <img
-                            src="/home/arrow.svg"
-                            alt="Arrow"
-                            className="arrow"
-                        />
-                    </div>
+
+                <div
+                    className="section3-arrow"
+                    style={{
+                        transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
+                    }}>
+                    <img
+                        src="/home/arrow.svg"
+                        alt="Arrow"
+                        className="arrow"
+                    />
                 </div>
+
                 <img
                     className="me3-image"
                     src="/home/me3.svg"
                     alt="me"
                     style={{
-                        transform: `translate(${mousePos.x * 0.1 * 20}px, ${mousePos.y * 0.1 * 20}px)`,
+                        transform: `translate(${mousePos.x * 0.1 * 20}px, ${mousePos.y * 0.2 * 20}px)`,
                     }}
                 />
             </div>

@@ -144,8 +144,8 @@ export default function Home() {
                     className="section2-text"
                     style={{
                         transform: `translate(${
-                            mousePos.x * bubbleStrength * 10
-                        }px, ${mousePos.y * bubbleStrength * 10}px)`,
+                            mousePos.x * bubbleStrength * 20
+                        }px, ${mousePos.y * bubbleStrength * 20}px)`,
                     }}>
                     <h2 className="visualstorytelling">
                         visual storytelling rooted in
@@ -157,39 +157,58 @@ export default function Home() {
                     </h2>
                 </div>
             </div>
-            <div className="section3">
-                <Bg2 />
+           <div className="section3">
+    <Bg2 />
 
-                <div
-                    className="section3-text"
-                    style={{
-                        transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
-                    }}>
-                    <p className="checkout">Check Out My</p>
-                    <p className="featured">Featured Work!</p>
-                </div>
-                <div className="arrow-hover">
-                    <div
-                        className="section3-arrow"
-                        style={{
-                            transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
-                        }}>
-                        <img
-                            src="/home/arrow.svg"
-                            alt="Arrow"
-                            className="arrow"
-                        />
-                    </div>
-                </div>
+    {/* New wrapper for layered parallax */}
+    <div
+        className="parallax-container section3-parallax"
+        ref={containerRef}  // ← reuse the same ref & mousePos
+    >
+        {/* Layer 1 – background character (me3.svg) – moves least */}
+        <div
+            className="parallax-layer layer-character"
+            style={{
+                transform: `translate(${mousePos.x * 0.8 * 100}px, ${mousePos.y * 0.8 * 100}px)`,
+            }}
+        >
+            <img
+                className="me3-image"
+                src="/home/me3.svg"
+                alt="me"
+            />
+        </div>
+
+        {/* Layer 2 – arrow – medium movement */}
+        <div
+            className="parallax-layer layer-arrow"
+            style={{
+                transform: `translate(${mousePos.x * 2.2 * 100}px, ${mousePos.y * 2.2 * 100}px)`,
+            }}
+        >
+            <div className="section3-arrow">
                 <img
-                    className="me3-image"
-                    src="/home/me3.svg"
-                    alt="me"
-                    style={{
-                        transform: `translate(${mousePos.x * 0.1 * 20}px, ${mousePos.y * 0.1 * 20}px)`,
-                    }}
+                    src="/home/arrow.svg"
+                    alt="Arrow"
+                    className="arrow"
                 />
             </div>
+        </div>
+
+        {/* Layer 3 – text – moves most (feels closer to the user) */}
+        <div
+            className="parallax-layer layer-text"
+            style={{
+                transform: `translate(${mousePos.x * 3.5 * 100}px, ${mousePos.y * 3.5 * 100}px)`,
+            }}
+        >
+            <div className="section3-text">
+                <p className="checkout">Check Out My</p>
+                <p className="featured">Featured Work!</p>
+            </div>
+        </div>
+    </div>
+</div>
             <Footer />
         </div>
     );

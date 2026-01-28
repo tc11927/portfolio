@@ -328,7 +328,7 @@ body {
     position: absolute;
     top: 50%;
     right: 5%;
-
+    transition: transform 0.2s ease;
 }
 
 
@@ -361,12 +361,12 @@ body {
     animation: idleBob4 2s ease-in-out infinite;
 }
 
-.arrow-hover {
+.section3-arrow {
     transition: transform 0.3s ease;
 }
 
-.arrow-hover:hover {
-    transform: scale(1.05);
+.section3-arrow:hover {
+    transform: scale(3);
 }
 
 

@@ -365,8 +365,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-.arrow-hover:hover {
-    transform: scale(1.05);
+.section3-arrow:hover {
+    transform: scale(3);
 }
 
 
