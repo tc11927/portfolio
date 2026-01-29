@@ -62,7 +62,7 @@ export default function Home() {
                         }}>
                         <img
                             className="me-image"
-                            src="/home/mecompressed.gif"
+                            src="/home/me.gif"
                             alt="Me"
                         />
                     </div>

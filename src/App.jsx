@@ -5,6 +5,8 @@ import Home from "./pages/home/Home";
 import Add from "./pages/add/Add";
 import Contact from "./pages/contact/Contact";
 import Work from "./pages/work/Work";
+import BanditBreakout from "./pages/work/bandit/bandit-breakout";
+import Popunk from "./pages/work/popunk/popunk";
 
 function App() {
     return (
@@ -47,6 +49,15 @@ function App() {
                 <Route
                     path="/work"
                     element={<Work />}
+                />
+
+                <Route
+                    path="/work/bandit-breakout"
+                    element={<BanditBreakout />}
+                />
+                <Route
+                    path="/work/popunk"
+                    element={<Popunk />}
                 />
             </Routes>
         </>
