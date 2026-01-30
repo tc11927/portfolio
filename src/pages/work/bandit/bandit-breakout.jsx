@@ -1,4 +1,4 @@
-// BanditBreakout.jsx
+import Footer from "../../../components/footer";
 import "./BanditBreakout.css";
 import NavBar from "../../../components/navbar";
 
@@ -147,11 +147,6 @@ export default function BanditBreakout() {
                 </div>
             </section>
 
-            {/* ────────────────────────────────────────────────
-          Alternating sections start here
-      ──────────────────────────────────────────────── */}
-
-            {/* RESEARCH ── media left (desktop) / on top (mobile) */}
             <section
                 className="banditsection"
                 id="research">
@@ -235,7 +230,6 @@ export default function BanditBreakout() {
                             world to life.
                         </p>
 
-                 
                         <div className="branding-gallery">
                             <div className="gallery-item">
                                 <img
@@ -320,41 +314,115 @@ export default function BanditBreakout() {
                     </div>
                 </div>
             </section>
-         
+
             <section
-                className="banditsection"
+                className="banditsection section-alt"
                 id="animating">
                 <div className="banditcontainer">
-                    <div className="grid-media-left">
-                        <div className="media-column">
-                     
-                        </div>
+                    <div className="branding-content">
+                        <h2>Animating</h2>
+                        <p>
+                            As the sole animator of the project, I was tasked
+                            with creating all the cutscenes (beginning, multiple
+                            endings, character and NPC interactions, dice
+                            rolling, and battle animations). Work was cut down
+                            through earlier work done (creating turnarounds and
+                            reusable backgrounds) and reusable assets were made.
+                            Specifically, work was cut for ending cutscenes, as
+                            many of them had a variety of similarities in scenes
+                            and character poses.
+                        </p>
+                        <p>
+                            Storyboards were also made to ensure clarity in
+                            animation, and direction for how things needed to be
+                            animated.
+                        </p>
 
-                        <div className="text-column">
-                            <h2>Animating</h2>
-                            <p>
-                                As the sole animator of the project, I was
-                                tasked with creating all the cutscenes
-                                (beginning, multiple endings, character and NPC
-                                interactions, dice rolling, and battle
-                                animations). Work was cut down through earlier
-                                work done (creating turnarounds and reusable
-                                backgrounds) and reusable assets were made.
-                            </p>
+                        <div className="branding-gallery">
+                            <div className="gallery-item2">
+                                <iframe
+                                    className="gallery-image2"
+                                    src="https://drive.google.com/file/d/1d5crYQis-p6lTQxiYStTWwC_Hlf9COGU/preview"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title="Bandit Breakout – Version 2 Full Gameplay Demo"
+                                />
+                            </div>
+
+                            <div className="gallery-item2">
+                                <iframe
+                                    className="gallery-image2"
+                                    src="https://drive.google.com/file/d/1et0O71TMl0e-_YCrheM3KowCVTFR8jPC/preview"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title="Bandit Breakout – Version 2 Full Gameplay Demo"
+                                />
+                            </div>
+
+                            <div className="gallery-item2">
+                                <iframe
+                                    className="gallery-image2"
+                                    src="https://drive.google.com/file/d/1Xgnq8EwQZBTAzW02nlNAa5SNC1o4PxmS/preview"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title="Bandit Breakout – Version 2 Full Gameplay Demo"
+                                />
+                            </div>
+
+                            <div className="gallery-item2">
+                                <iframe
+                                    className="gallery-image2"
+                                    src="https://drive.google.com/file/d/1hQLragBWHltzCuw2LgS9zp25fWd6WsAl/preview"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title="Bandit Breakout – Version 2 Full Gameplay Demo"
+                                />
+                            </div>
+
+                            <div className="gallery-item2">
+                                <iframe
+                                    className="gallery-image2"
+                                    src="https://drive.google.com/file/d/1Fy-yC9TSeoBj2ZlHReuVNpCsIzJ4NeQ-/preview"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title="Bandit Breakout – Version 2 Full Gameplay Demo"
+                                />
+                            </div>
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/buckshotsketch.jpg"
+                                    className="gallery-image2"
+                                />
+                            </div>
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/crowsketch.jpg"
+                                    className="gallery-image2"
+                                />
+                            </div>
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/gritsketch.jpg"
+                                    className="gallery-image2"
+                                />
+                            </div>
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/serpysketch.jpg"
+                                    className="gallery-image2"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-         
             <section
                 className="banditsection section-warning"
                 id="issue">
                 <div className="banditcontainer">
                     <div className="grid-media-right">
-                        <div className="media-column">
-                
-                        </div>
+                        <div className="media-column"></div>
 
                         <div className="text-column">
                             <h2>Unexpected Issue</h2>
@@ -379,15 +447,12 @@ export default function BanditBreakout() {
                 </div>
             </section>
 
-
             <section
                 className="banditsection"
                 id="what-didnt-work">
                 <div className="banditcontainer">
                     <div className="grid-media-left">
-                        <div className="media-column">
-         
-                        </div>
+                        <div className="media-column"></div>
 
                         <div className="text-column">
                             <h2>What Didn't Work & How We Solved it</h2>
@@ -409,7 +474,6 @@ export default function BanditBreakout() {
                 </div>
             </section>
 
-        
             <section
                 className="banditsection section-alt"
                 id="final-design">
@@ -443,15 +507,12 @@ export default function BanditBreakout() {
                 </div>
             </section>
 
-       
             <section
                 className="banditsection section-warning"
                 id="Journey">
                 <div className="banditcontainer">
                     <div className="grid-media-left">
-                        <div className="media-column">
-               
-                        </div>
+                        <div className="media-column"></div>
 
                         <div className="text-column">
                             <h2>The Journey and Impact</h2>
@@ -478,6 +539,7 @@ export default function BanditBreakout() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }
