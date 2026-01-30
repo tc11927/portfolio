@@ -86,7 +86,6 @@ export default function BanditBreakout() {
                 </div>
             </nav>
 
-            {/* Problem + Solution section remains as it was (stacked video + text blocks) */}
             <section className="banditsection bandit-process-section bandit-stacked-sections">
                 <div
                     className="banditcontainer"
@@ -231,83 +230,83 @@ export default function BanditBreakout() {
                         </p>
 
                         <div className="branding-gallery">
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/charactersketch.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
 
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/buckshot.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
 
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/casino.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
 
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/grit.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
 
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/desert.png"
                                     alt="Character design iterations"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/scout.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/mansion.png"
                                     alt="Character design iterations"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/serpy.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/oasis.png"
                                     alt="Character design iterations"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/solstice.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/slums.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
-                            <div className="gallery-item">
+                            <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/villain.png"
-                                    className="gallery-image"
+                                    className="gallery-imageb"
                                 />
                             </div>
                         </div>
@@ -422,8 +421,10 @@ export default function BanditBreakout() {
                 id="issue">
                 <div className="banditcontainer">
                     <div className="grid-media-right">
-                        <div className="media-column"></div>
-
+                        <div className="media-column">
+                            {" "}
+                            <img src="/work/bandit/problem.png"></img>
+                        </div>
                         <div className="text-column">
                             <h2>Unexpected Issue</h2>
                             <p>
@@ -452,7 +453,9 @@ export default function BanditBreakout() {
                 id="what-didnt-work">
                 <div className="banditcontainer">
                     <div className="grid-media-left">
-                        <div className="media-column"></div>
+                        <div className="media-column">
+                            <img src="/work/bandit/problem2.jpg"></img>
+                        </div>
 
                         <div className="text-column">
                             <h2>What Didn't Work & How We Solved it</h2>
@@ -469,24 +472,25 @@ export default function BanditBreakout() {
                                 and gave teammates a chance to try and work on
                                 other sections of our project.
                             </p>
+                            <p>
+                                Although some issues did arise from this, for
+                                example, the designers had quite a fun time
+                                figuring out how to code properly. But in the
+                                end, each team figured it out.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section
-                className="banditsection section-alt"
+                className="banditsection section-warning"
                 id="final-design">
                 <div className="banditcontainer">
-                    <div className="grid-media-right">
+                    <div className="grid-media-left">
                         <div className="media-column">
-                            <iframe
-                                className="gameplay-video"
-                                src="https://drive.google.com/file/d/12swoFYtPBM5Aux6h3PBawqkMnkNhqftX/preview"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                allowFullScreen
-                                title="Bandit Breakout – Version 2 Full Gameplay Demo"
-                            />
+                            {" "}
+                            <img src="/work/bandit/winning.jpg"></img>
                         </div>
 
                         <div className="text-column">
@@ -506,37 +510,47 @@ export default function BanditBreakout() {
                     </div>
                 </div>
             </section>
-
             <section
-                className="banditsection section-warning"
+                className="banditsection section-alt"
                 id="Journey">
                 <div className="banditcontainer">
-                    <div className="grid-media-left">
-                        <div className="media-column"></div>
-
-                        <div className="text-column">
-                            <h2>The Journey and Impact</h2>
-                            <p>
-                                Bandit Breakout is more than just a game. It’s
-                                something the team made to bring joy and
-                                creativity into the current straightforward
-                                boardgame scene. By addressing the repetitive,
-                                single storyline driven boardgames of today’s
-                                world, it provides a solution that goes beyond
-                                aesthetics, but also brings competitive and
-                                casual fun to its players.
-                            </p>
-                            <p>
-                                I’ve learned a lot through this project, and
-                                have grown as a Graphic designer and Motion
-                                Graphics. It’s taught me a lot about
-                                user-centered design, creative thinking, and has
-                                reminded me about my passion and love for the
-                                arts.
-                            </p>
-                            <p>Thank you for reading!</p>
-                        </div>
+                    <div className="journey-video-wrapper">
+                        <iframe
+                            className="journey-video"
+                            src="https://drive.google.com/file/d/12swoFYtPBM5Aux6h3PBawqkMnkNhqftX/preview"
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            allowFullScreen
+                            title="Bandit Breakout – Version 2 Full Gameplay Demo"
+                        />
                     </div>
+
+                    <div className="branding-content">
+                        <h2>The Journey & Impact</h2>
+                        <p>
+                            Bandit Breakout is more than just a game. It’s
+                            something the team made to bring joy and creativity
+                            into the current straightforward boardgame scene. By
+                            addressing the repetitive, single storyline driven
+                            boardgames of today’s world, it provides a solution
+                            that goes beyond aesthetics, but also brings
+                            competitive and casual fun to its players.
+                        </p>
+                        <p>
+                            I’ve learned a lot through this project, and have
+                            grown as a Graphic designer and Motion Graphics.
+                            It’s taught me a lot about user-centered design,
+                            creative thinking, and has reminded me about my
+                            passion and love for the arts.
+                        </p>
+                        <p>Thank you for reading!</p>
+                    </div>
+                    <a
+                        href="https://bandit-breakout.vercel.app/"
+                        className="site-button"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Site
+                    </a>
                 </div>
             </section>
             <Footer />

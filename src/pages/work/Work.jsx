@@ -15,16 +15,7 @@ const galleryItems = [
         description:
             "Designed for all gamers, Bandit Breakout blends stunning visual design with engaging gameplay, making gaming with friends more interactive and personalized.",
     },
-    {
-        id: 2,
-        slug: "popunk",
-        title: "POPUNK",
-        categories: ["Design"],
-        tools: "Illustrator + Photoshop",
-        image: "/work/canmockup copy.png",
-        description:
-            "A fun and bright energy drink designed to fuel and inspire the late night party goer in all of us",
-    },
+
     {
         id: 3,
         slug: "",
@@ -32,21 +23,14 @@ const galleryItems = [
         categories: ["Design", "UI/UX", "Motion Graphics", "Code"],
         tools: "Check back soon!",
         image: "/work/Black.png",
-        description:
-            "Come back later to see more of my work!",
+        description: "Come back later to see more of my work!",
     },
 ];
 
 export default function Work() {
     const [activeFilter, setActiveFilter] = useState("all");
 
-   const allCategories = [
-  "all",
-  "Design",
-  "UI/UX",
-  "Motion Graphics",
-  "Code"
-];
+    const allCategories = ["all", "Design", "UI/UX", "Motion Graphics", "Code"];
 
     const filteredItems =
         activeFilter === "all"
@@ -80,7 +64,7 @@ export default function Work() {
                     {filteredItems.map((item) => (
                         <Link
                             key={item.id}
-                            to={`/work/${item.slug}`} 
+                            to={`/work/${item.slug}`}
                             className="gallery-item-link">
                             <div className="gallery-item">
                                 <img
@@ -116,7 +100,7 @@ export default function Work() {
                     ))}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
