@@ -46,7 +46,7 @@ export default function Home() {
             <div className="Section1">
                 <Bg className="section1-bg"></Bg>
                 <h1 className="title">
-                    Hey there, I'm <span className="color-title">Thea!</span>
+                    Hey there, I'm <span className="color-title">Thea C!</span>
                 </h1>
 
                 <div

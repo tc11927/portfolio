@@ -1,8 +1,12 @@
+import NavBar from "../../components/navbar"; 
+import Footer from "../../components/footer";
+
 export default function Add() {
   return (
     <div>
-      <h1>Additional Work</h1>
-      <p>This is the additional work page.</p>
+      <NavBar />
+      <h1>Gallery Page!</h1>
+      <p>Under Construction!</p>
     </div>
   );
 }

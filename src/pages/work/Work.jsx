@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./work.css";
 import { useState } from "react";
 import NavBar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 const galleryItems = [
     {
@@ -24,19 +25,28 @@ const galleryItems = [
         description:
             "A fun and bright energy drink designed to fuel and inspire the late night party goer in all of us",
     },
+    {
+        id: 3,
+        slug: "",
+        title: "More to Come!",
+        categories: ["Design", "UI/UX", "Motion Graphics", "Code"],
+        tools: "Check back soon!",
+        image: "/work/Black.png",
+        description:
+            "Come back later to see more of my work!",
+    },
 ];
 
 export default function Work() {
     const [activeFilter, setActiveFilter] = useState("all");
 
-    const allCategories = [
-        "all",
-        ...new Set(galleryItems.flatMap((item) => item.categories)),
-    ].sort((a, b) => {
-        if (a === "all") return -1;
-        if (b === "all") return 1;
-        return a.localeCompare(b);
-    });
+   const allCategories = [
+  "all",
+  "Design",
+  "UI/UX",
+  "Motion Graphics",
+  "Code"
+];
 
     const filteredItems =
         activeFilter === "all"
@@ -106,6 +116,7 @@ export default function Work() {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
