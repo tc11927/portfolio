@@ -6,13 +6,13 @@
 .construction {
   font-family: 'Averia Sans Libre', cursive, sans-serif;
   font-size: 30px;
-  color: #7DA75b;
+  color: #22303a;
 }
 
 .hi {
   font-family: 'Averia Sans Libre', cursive, sans-serif;
   font-size: 50px;
-  color: #7DA75b;
+  color: #22303a;
 }
 
 .placeholder {
@@ -24,4 +24,29 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+
+.home-app {
+    background: #22303a;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    transition: transform 0.3s ease;
+}
+
+.my-portfolio {
+    margin-top: 2.5vw;
+    transition: transform 0.3s ease;
+  
+}
+
+.my-portfolio:hover {
+    transform: scale(1.05);
 }

@@ -19,11 +19,11 @@ const galleryItems = [
     {
         id: 3,
         slug: "",
-        title: "More to Come!",
+        title: "Under Construction!",
         categories: ["Design", "UI/UX", "Motion Graphics", "Code"],
         tools: "Check back soon!",
         image: "/work/Black.png",
-        description: "Come back later to see more of my work!",
+        description: "This page is currently under construction! Come back later to see more of my work!",
     },
 ];
 

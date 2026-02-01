@@ -16,15 +16,19 @@ function App() {
                     path="/"
                     element={
                         <>
-                            <img
-                                src="/home/portfolio.png"
-                                className="placeholder"
-                            />
                             <div className="hi">
-                                Hey! Thanks for checking out my page!
+                                Hey! Thanks for coming to check out my page!
                             </div>
                             <div className="construction">
-                                Under Construction! Check back later! ;D
+                                Before you continue onward, please note
+                                everything is under construction!
+                            </div>
+                            <div className="my-portfolio">
+                                <Link
+                                    to="/home"
+                                    className="home-app">
+                                    Go To Thea's Portfolio!
+                                </Link>
                             </div>
                         </>
                     }
