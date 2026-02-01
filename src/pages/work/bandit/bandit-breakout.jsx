@@ -52,35 +52,67 @@ export default function BanditBreakout() {
                     <p className="banditsection-title">View Section:</p>
                     <ul>
                         <li>
-                            <a href="#problem">Problem</a>
+                            <a
+                                href="#problem"
+                                className="banditlinks">
+                                Problem
+                            </a>
                         </li>
                         <li>
-                            <a href="#solution">Solution</a>
+                            <a
+                                href="#solution"
+                                className="banditlinks">
+                                Solution
+                            </a>
                         </li>
                         <li>
-                            <a href="#research">Research</a>
+                            <a
+                                href="#research"
+                                className="banditlinks">
+                                Research
+                            </a>
                         </li>
                         <li>
-                            <a href="#branding">
+                            <a
+                                href="#branding"
+                                className="banditlinks">
                                 Sketching, Character Design, & Backgrounds
                             </a>
                         </li>
                         <li>
-                            <a href="#animating">Animating</a>
+                            <a
+                                href="#animating"
+                                className="banditlinks">
+                                Animating
+                            </a>
                         </li>
                         <li>
-                            <a href="#issue">Unexpected Issue</a>
+                            <a
+                                href="#issue"
+                                className="banditlinks">
+                                Unexpected Issue
+                            </a>
                         </li>
                         <li>
-                            <a href="#what-didnt-work">
+                            <a
+                                href="#what-didnt-work"
+                                className="banditlinks">
                                 What Didn't Work & How We Solved it
                             </a>
                         </li>
                         <li>
-                            <a href="#final-design">Final Design & Showcase</a>
+                            <a
+                                href="#final-design"
+                                className="banditlinks">
+                                Final Design & Showcase
+                            </a>
                         </li>
                         <li>
-                            <a href="#Journey">The Journey and Impact</a>
+                            <a
+                                href="#Journey"
+                                className="banditlinks">
+                                The Journey and Impact
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -544,13 +576,15 @@ export default function BanditBreakout() {
                         </p>
                         <p>Thank you for reading!</p>
                     </div>
-                    <a
-                        href="https://bandit-breakout.vercel.app/"
-                        className="site-button"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        View Site
-                    </a>
+                    <div className="site-button-wrapper">
+                        <a
+                            href="https://bandit-breakout.vercel.app/"
+                            className="site-button"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View Site
+                        </a>
+                    </div>
                 </div>
             </section>
             <Footer />

@@ -1,8 +1,16 @@
+/* ==========================================================================
+   1. Container & Layout Basics
+   ========================================================================== */
+
 .banditcontainer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
+
+/* ==========================================================================
+   2. Hero Title & Roles
+   ========================================================================== */
 
 .banditproject-title {
     font-size: 5vw;
@@ -21,6 +29,10 @@
     font-weight: 800;
 }
 
+/* ==========================================================================
+   3. Tags
+   ========================================================================== */
+
 .bandittags {
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +50,7 @@
     border-radius: 9999px;
     font-size: 0.95rem;
     font-weight: 500;
+    transition: transform 0.3s ease;
 }
 
 .bandittag2 {
@@ -47,6 +60,7 @@
     border-radius: 9999px;
     font-size: 0.95rem;
     font-weight: 500;
+    transition: transform 0.3s ease;
 }
 
 .bandittag3 {
@@ -56,7 +70,24 @@
     border-radius: 9999px;
     font-size: 0.95rem;
     font-weight: 500;
+    transition: transform 0.3s ease;
 }
+
+.bandittag1:hover {
+    transform: scale(1.2);
+}
+
+.bandittag2:hover {
+    transform: scale(1.2);
+}
+
+.bandittag3:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   4. Hero Content
+   ========================================================================== */
 
 .bandithero-content {
     display: grid;
@@ -81,6 +112,10 @@
     margin-top: -8.6vw;
 }
 
+/* ==========================================================================
+   5. General Section Padding & Variants
+   ========================================================================== */
+
 .banditsection {
     padding: 8rem 0;
     margin-top: -5vw;
@@ -94,6 +129,10 @@
     background: var(--warning-bg);
 }
 
+/* ==========================================================================
+   6. Navigation Section
+   ========================================================================== */
+
 .banditsection-nav {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     top: 0;
@@ -105,15 +144,6 @@
     margin-top: 12vw;
     padding-top: 110px;
     padding-bottom: 110px;
-
-}
-
-.banditsection-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: white;
-    text-align: center;
 }
 
 .banditsection-nav ul {
@@ -129,18 +159,32 @@
 }
 
 .banditsection-nav a {
-    text-decoration: none;
     color: white;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.8vw;
-    transition: all 0.2s ease;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: inline-block;
+    padding: 0.1rem 0.1rem;
+    margin: 0 0.1rem;
+    border-radius: 8px;
     white-space: nowrap;
 }
 
 .banditsection-nav a:hover,
-.banditsection-nav a.active {
-    background: var(--primary);
+.banditsection-nav a:focus {
+    transform: scale(1.12);
+    color: #eab300;
 }
+
+.banditsection-title {
+    font-size: 3vw;
+    margin-bottom: -0.4vw;
+}
+
+/* ==========================================================================
+   7. Stacked / Process Sections
+   ========================================================================== */
 
 .bandit-stacked-sections {
     padding: 8rem 0;
@@ -156,7 +200,7 @@
 }
 
 .process-text-block h2 {
-     font-size: 2.8rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
     font-family: "Averia Sans Libre", cursive, sans-serif;
@@ -176,12 +220,9 @@
     height: 100%;
 }
 
-@media (min-width: 768px) {
-    .bandithero-content {
-        grid-template-columns: 1fr 1fr;
-        text-align: left;
-    }
-}
+/* ==========================================================================
+   8. Research & Text/Media Grids
+   ========================================================================== */
 
 .research-grid {
     display: grid;
@@ -210,7 +251,7 @@
 }
 
 .research-text-column h2 {
-   font-size: 2.8rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
     font-family: "Averia Sans Libre", cursive, sans-serif;
     text-align: left;
@@ -237,19 +278,16 @@
     transition: all 0.2s ease;
     margin-top: 0.5rem;
     margin-right: 26vw;
+    transition: transform 0.3s ease;
 }
 
-@media (min-width: 768px) {
-    .research-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-    }
-
-    .research-main-image {
-        height: 100%;
-        object-fit: cover;
-    }
+.research-button:hover {
+    transform: scale(1.05);
 }
+
+/* ==========================================================================
+   9. Media + Text Grid (left & right variants)
+   ========================================================================== */
 
 .grid-media-left,
 .grid-media-right {
@@ -258,28 +296,6 @@
     gap: 2.5rem;
     align-items: start;
     margin: 3rem 0;
-}
-
-@media (min-width: 768px) {
-    .grid-media-left,
-    .grid-media-right {
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-    }
-}
-
-.grid-media-left .media-column {
-    order: 1;
-}
-.grid-media-left .text-column {
-    order: 2;
-}
-
-.grid-media-right .media-column {
-    order: 2;
-}
-.grid-media-right .text-column {
-    order: 1;
 }
 
 .media-column img,
@@ -293,7 +309,7 @@
 
 .text-column h2 {
     font-family: "Averia Sans Libre", cursive, sans-serif;
-     font-size: 2.8rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
     margin-top: 0.6vw;
@@ -308,6 +324,10 @@
     margin-bottom: 1.2rem;
     text-align: left;
 }
+
+/* ==========================================================================
+   10. Branding & Gallery
+   ========================================================================== */
 
 .branding-content h2 {
     font-size: 2.8rem;
@@ -331,18 +351,6 @@
     margin-top: 4rem;
 }
 
-@media (min-width: 640px) {
-    .branding-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .branding-gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 .gallery-itemb {
     aspect-ratio: 3 / 1;
     overflow: hidden;
@@ -362,8 +370,6 @@
 .gallery-itemb:hover {
     transform: scale(1.02);
 }
-
-
 
 .gallery-item2 {
     aspect-ratio: 3 / 2;
@@ -390,7 +396,7 @@
 }
 
 .gallery-item3 {
-     width: 100%;
+    width: 100%;
     height: 100%;
     min-height: 380px;
     aspect-ratio: 16 / 9;
@@ -399,7 +405,7 @@
 }
 
 .gallery-image3 {
-  width: 100%;
+    width: 100%;
     height: 100%;
     min-height: 380px;
     aspect-ratio: 16 / 9;
@@ -407,27 +413,31 @@
     border-radius: 20px;
 }
 
-
+/* ==========================================================================
+   11. Journey / Video Wrapper
+   ========================================================================== */
 
 .journey-video-wrapper {
     margin: 0 0 3rem 0;
     position: relative;
     width: 100%;
     border-radius: 16px;
-    overflow: hidden;   
-
+    overflow: hidden;
 }
 
 .journey-video {
     width: 100%;
     height: 100%;
-    aspect-ratio: 16 / 9;   
+    aspect-ratio: 16 / 9;
     border: none;
     display: block;
 }
 
-.site-button {
+/* ==========================================================================
+   12. Buttons (site)
+   ========================================================================== */
 
+.site-button {
     background: #22303a;
     color: white;
     font-family: "Nunito Sans", sans-serif;
@@ -438,4 +448,72 @@
     text-decoration: none;
     transition: all 0.2s ease;
 
+    transition: transform 0.3s ease;
+}
+
+.site-button-wrapper {
+    margin-top: 2.5vw;
+    transition: transform 0.3s ease;
+    margin-right: 70vw;
+}
+
+.site-button-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   13. Media Queries
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    .bandithero-content {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .research-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .research-main-image {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-media-left,
+    .grid-media-right {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+}
+
+.grid-media-left .media-column {
+    order: 1;
+}
+.grid-media-left .text-column {
+    order: 2;
+}
+
+.grid-media-right .media-column {
+    order: 2;
+}
+.grid-media-right .text-column {
+    order: 1;
+}
+
+@media (min-width: 640px) {
+    .branding-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .branding-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
