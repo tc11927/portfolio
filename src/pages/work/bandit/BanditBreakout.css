@@ -517,3 +517,65 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* ==========================================================================
+   Load-in Animations 
+   ========================================================================== */
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.banditpage-wrapper {
+    animation: fadeIn 0.8s ease-out both;
+}
+
+
+.bandithero .banditcontainer {
+    animation: fadeUp 0.9s ease-out both;
+}
+
+
+.banditproject-title {
+    animation: fadeUp 0.9s ease-out both;
+    animation-delay: 0.1s;
+}
+
+
+.banditproject-roles {
+    animation: fadeUp 0.9s ease-out both;
+    animation-delay: 0.2s;
+}
+
+
+.banditsection {
+    animation: fadeUp 0.9s ease-out both;
+}
+
+
+.banditsection:nth-of-type(1) { animation-delay: 0.15s; }
+.banditsection:nth-of-type(2) { animation-delay: 0.3s; }
+.banditsection:nth-of-type(3) { animation-delay: 0.45s; }
+
+
+.banditimage,
+.banditmockup,
+.banditvisual {
+    animation: fadeUp 1s ease-out both;
+    animation-delay: 0.35s;
+}
+
