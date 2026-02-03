@@ -455,16 +455,17 @@ export default function BanditBreakout() {
                             </div>
                             <div className="gallery-item2">
                                 <img
-                                    src="/work/bandit/buckshotsketch.jpg"
+                                    src="/work/bandit/storyboard!!.png"
                                     className="gallery-image2"
                                 />
                             </div>
                             <div className="gallery-item2">
                                 <img
-                                    src="/work/bandit/crowsketch.jpg"
+                                    src="/work/bandit/buckshotsketch.jpg"
                                     className="gallery-image2"
                                 />
                             </div>
+
                             <div className="gallery-item2">
                                 <img
                                     src="/work/bandit/gritsketch.jpg"
@@ -497,7 +498,7 @@ export default function BanditBreakout() {
                     <div className="bandit-two-column">
                         <div className="bandit-media-column">
                             <img
-                                src="/work/bandit/problem.png"
+                                src="/work/bandit/issue.svg"
                                 alt=""
                                 className="bandit-large-media"
                             />
@@ -506,20 +507,23 @@ export default function BanditBreakout() {
                         <div className="bandit-text-column">
                             <h2>Unexpected Issue</h2>
                             <p>
-                                Due to the division of work, some of the main
-                                researchers or gameplay designers found
-                                themselves empty handed, while the designers and
-                                developers were packed with work. This created
-                                unbalanced work loads during certain times for
-                                each team.
+                                As we worked, we found it difficult to find ways
+                                to create our board, and were stuck on designing
+                                it and reiterating over and over again. This was
+                                due to our own personal dissatisfaction and
+                                multiple rounds of user testing. Both us and our
+                                users felt like something was missing, and that
+                                our board could have more. We just didn't know
+                                what. Users had a lot of feedback on the tiles,
+                                the colours, and events, which was both under
+                                the design and game design team.
                             </p>
                             <p>
-                                At the time, it didn’t seem like much of an
-                                issue due to how certain team members had
-                                backgrounds in certain things and were able to
-                                churn out things quickly. But certain members
-                                felt guilty about how undivided work seemed at
-                                certain times.
+                                As the Design lead, I found myself having a hard
+                                time to make sure the board was visually
+                                appealing, and aligned with the game design
+                                team's vision. Many ideas were thrown around and
+                                none truly stuck.
                             </p>
                         </div>
                     </div>
@@ -537,37 +541,58 @@ export default function BanditBreakout() {
                             What Didn't Work & How We Solved it
                         </span>
                     </div>
+                    <div className="branding-content">
+                        <h2>What Didn't Work & How We Solved it</h2>
+                        <p>
+                            Our whole team was unsure about what direction to go
+                            in, the game design team was struggling to implement
+                            gameplay mechanics, while the design team was
+                            struggling to create what was needed because of
+                            this. As the Design lead and Project lead, all of
+                            this was very confusing. I was leading both teams
+                            essentially, who both didn't know what to do.
+                        </p>
+                        <p>
+                            This issue was solved through a design idea where
+                            the thought that seperate designed areas would look
+                            cool. After art and sketches of these areas and NPCs
+                            for them were made, the game design team delved
+                            deeper into it and created working mechanics for
+                            this idea.
+                        </p>
+                        <p>
+                            In the end, the issue I faced was that we didn't
+                            have a clear design direction, and to solve it, I
+                            had to ideate and make creative solutions and
+                            designs to help inspire the whole team. I also had
+                            to draw everything to help the game design team
+                            understand the vision.
+                        </p>
 
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
-                            <img
-                                src="/work/bandit/problem2.jpg"
-                                alt=""
-                                className="bandit-large-media"
-                            />
-                        </div>
+                        <div className="branding-gallery">
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/problem3.png"
+                                    alt="Problem illustration 1"
+                                    className="gallery-image2"
+                                />
+                            </div>
 
-                        <div className="bandit-text-column">
-                            <h2>What Didn't Work & How We Solved it</h2>
-                            <p>
-                                Our whole team was unbalanced in our skills and
-                                roles, so our task delegation didn’t work. We
-                                relied too much to staying in our own lanes and
-                                comfort zones, instead of taking risks and
-                                branching out from our own areas.
-                            </p>
-                            <p>
-                                We solved this issue through communication and
-                                discussion, which led to even task distribution
-                                and gave teammates a chance to try and work on
-                                other sections of our project.
-                            </p>
-                            <p>
-                                Although some issues did arise from this, for
-                                example, the designers had quite a fun time
-                                figuring out how to code properly. But in the
-                                end, each team figured it out.
-                            </p>
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/problem2.png"
+                                    alt="Problem illustration 2"
+                                    className="gallery-image2"
+                                />
+                            </div>
+
+                            <div className="gallery-item2">
+                                <img
+                                    src="/work/bandit/problem.png"
+                                    alt="Problem illustration 3"
+                                    className="gallery-image2"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -588,7 +613,7 @@ export default function BanditBreakout() {
                     <div className="bandit-two-column">
                         <div className="bandit-media-column">
                             <img
-                                src="/work/bandit/winning.jpg"
+                                src="/work/bandit/celebrate!.jpg"
                                 alt=""
                                 className="bandit-large-media"
                             />
@@ -612,7 +637,6 @@ export default function BanditBreakout() {
                 </div>
             </section>
 
-         
             <section
                 className="banditsection section-alt"
                 id="Journey">
