@@ -386,23 +386,21 @@ body {
         line-height: 1;
     }
 
-   
-
     /* Parallax container */
     .parallax-container {
-        min-height: 55vh;
+        min-height: 367px; /* 55vh */
         margin-left: 0;
     }
 
     /* GIF */
     .me-image {
-        width: 140vw;
+        width: 600px; /* 140vw */
         max-width: 360px;
         min-width: unset;
         min-height: unset;
         max-width: unset;
         max-height: unset;
-        margin-top: 10vw;
+        margin-top: 35px; /* 10vw */
     }
 
     /* Bubbles - smaller & repositioned */
@@ -411,16 +409,11 @@ body {
     .contact,
     .gallery {
         width: 100px;
-        max-width: 26vw;
+        max-width: 98px; /* 26vw */
     }
 
-    .about-bob  { top: 35%; left:2%; }
-    .work-bob   { top: 62%; left: -1%; }
-    .contact-bob { top: 62%; right: 25%; }
-    .gallery-bob { top: 35%; right: 25%; }
-
-    /* Section 2 */
-    
-    /* Section 3 */
-   
+    .about-bob    { top: 35%; left: 2%; }
+    .work-bob     { top: 62%; left: -1%; }
+    .contact-bob  { top: 62%; right: 25%; }
+    .gallery-bob  { top: 35%; right: 25%; }
 }
