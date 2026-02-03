@@ -1,12 +1,7 @@
 html {
     background-color: #f0e5c3;
-    overflow-x: hidden;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body {
     margin: 0;
 }
@@ -374,21 +369,8 @@ body {
 ========================================== */
 
 @media (max-width: 767px) {
-      .Section2,
-  .section3 {
-    width: 100%;
-    margin-left: 0;
-  }
+    /* Title */
 
-  .parallax-container {
-    margin-left: 0;
-
-  }
-
-    html, body {
-    width: 100%;
-   
-}
     .title {
         font-size: 2.8rem;
         padding-top: 3rem;
@@ -403,13 +385,13 @@ body {
 
     /* GIF */
     .me-image {
-        width: 600px; /* 140vw */
+        width: 650px; /* 140vw */
         max-width: 360px;
         min-width: unset;
         min-height: unset;
         max-width: unset;
         max-height: unset;
-        margin-top: 40px; /* 10vw */
+        margin-top: 35px; /* 10vw */
     }
 
     /* Bubbles - smaller & repositioned */

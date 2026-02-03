@@ -1,31 +1,28 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 
 .construction {
-  font-family: 'Averia Sans Libre', cursive, sans-serif;
-  font-size: 30px;
-  color: #22303a;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-size: 30px;
+    color: #22303a;
 }
 
 .hi {
-  font-family: 'Averia Sans Libre', cursive, sans-serif;
-  font-size: 50px;
-  color: #22303a;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-size: 50px;
+    color: #22303a;
 }
 
 .placeholder {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
-
 
 .home-app {
     background: #22303a;
@@ -44,7 +41,6 @@
 .my-portfolio {
     margin-top: 2.5vw;
     transition: transform 0.3s ease;
-  
 }
 
 .my-portfolio:hover {

@@ -18,6 +18,12 @@ export default function Home() {
 
     /* GIF and bubbles parallax WEEWOOO!!! this is so I don't forget what code does what haha youtube ty tyy */
 
+    /* Remove #root side padding on mobile so home is full-bleed */
+    useEffect(() => {
+        document.body.classList.add("home-page");
+        return () => document.body.classList.remove("home-page");
+    }, []);
+
     useEffect(() => {
         const handleMouseMove = (e) => {
             if (!containerRef.current) return;
@@ -164,7 +170,9 @@ export default function Home() {
                 <div
                     className="homesection3-text"
                     style={{
-                        transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
+                        transform: `translate(${mousePos.x * 0.3 * 15}px, ${
+                            mousePos.y * 0.3 * 20
+                        }px)`,
                     }}>
                     <p className="checkout">Check Out My</p>
                     <p className="featured">Featured Work!</p>
@@ -174,7 +182,9 @@ export default function Home() {
                     <div
                         className="section3-arrow"
                         style={{
-                            transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
+                            transform: `translate(${mousePos.x * 0.9 * 20}px, ${
+                                mousePos.y * 0.9 * 20
+                            }px)`,
                         }}>
                         <Link
                             to="/work"
@@ -193,7 +203,9 @@ export default function Home() {
                     src="/home/me3.svg"
                     alt="me"
                     style={{
-                        transform: `translate(${mousePos.x * 0.1 * 20}px, ${mousePos.y * 0.1 * 20}px)`,
+                        transform: `translate(${mousePos.x * 0.1 * 20}px, ${
+                            mousePos.y * 0.1 * 20
+                        }px)`,
                     }}
                 />
             </div>
