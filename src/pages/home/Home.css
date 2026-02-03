@@ -374,3 +374,53 @@ body {
 
 
 
+/* ==========================================
+   RESPONSIVE 
+========================================== */
+
+@media (max-width: 767px) {
+    /* Title */
+    .title {
+        font-size: 2.8rem;
+        padding-top: 3rem;
+        line-height: 1;
+    }
+
+   
+
+    /* Parallax container */
+    .parallax-container {
+        min-height: 55vh;
+        margin-left: 0;
+    }
+
+    /* GIF */
+    .me-image {
+        width: 140vw;
+        max-width: 360px;
+        min-width: unset;
+        min-height: unset;
+        max-width: unset;
+        max-height: unset;
+        margin-top: 10vw;
+    }
+
+    /* Bubbles - smaller & repositioned */
+    .about,
+    .work,
+    .contact,
+    .gallery {
+        width: 100px;
+        max-width: 26vw;
+    }
+
+    .about-bob  { top: 35%; left:2%; }
+    .work-bob   { top: 62%; left: -1%; }
+    .contact-bob { top: 62%; right: 25%; }
+    .gallery-bob { top: 35%; right: 25%; }
+
+    /* Section 2 */
+    
+    /* Section 3 */
+   
+}

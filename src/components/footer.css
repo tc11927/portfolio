@@ -3,52 +3,96 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: -1.2rem;          
     background-color: #22303a;
-    padding: 1rem;
-    gap: 2rem;
+    padding: 2.5rem 1rem 2rem 1rem;  
+    gap: 2.5rem;
     box-sizing: border-box;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    margin-bottom: -5vw;
-    
+    color: white;
+    margin-bottom: -10vw;
 }
 
+/* Desktop/main layout */
 .footer-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    margin: 0;
+    flex: 0 0 auto; /* fixed size, no stretching */
 }
 
 .footer-center {
-    flex: 0;
     text-align: center;
-    max-width: 50vw;
+    flex: 1;           
+    max-width: 60ch;        
 }
 
 .footer-main-text {
     font-family: "Averia Sans Libre", cursive, sans-serif;
-    font-size: 3rem;
-    color: white;
-    margin: 0 0 0.5rem 0;
-    white-space: nowrap;
+    flex: 1;                 
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto;    
+    font-size: 2vw;      
 }
 
-.footer-icon img {
-    max-width: 8vw;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
 
-.footer-icon img:hover {
-    transform: scale(1.1);
-}
 
 .footer-credit {
     font-family: "Averia Sans Libre", cursive, sans-serif;
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     color: #999;
     margin: 0;
+}
+
+.footer-icon img {
+    width: clamp(48px, 8vw, 80px);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 120px;
+}
+
+.footer-icon img:hover {
+    transform: scale(1.12);
+}
+
+/* ────────────────────────────────────────
+   Mobile adjustments
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 1.8rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-main-text {
+        font-size: clamp(1.8rem, 6.5vw, 2.6rem);
+        white-space: normal;    
+    }
+
+    .footer-credit {
+        font-size: 0.95rem;
+    }
+
+    .footer-icon img {
+        width: 120px;       
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 1.8rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .footer-main-text {
+        font-size: 1.9rem;
+    }
+
+    .footer-icon img {
+        width: 56px;
+    }
 }
