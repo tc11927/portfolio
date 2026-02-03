@@ -713,3 +713,7 @@ p,
 .bandit-text-content {
     text-align: left;
 }
+
+.bandit-section-label {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
