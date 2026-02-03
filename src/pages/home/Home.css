@@ -6,7 +6,6 @@ body {
     margin: 0;
 }
 
-
 /* Section 1 */
 /* Top Text */
 .title {
@@ -242,13 +241,12 @@ body {
     width: 100vw;
     min-height: 100vh;
     margin-left: calc(-50vw + 50%);
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #22303a;
 }
-
 
 .jiggly-grid {
     position: absolute;
@@ -267,7 +265,6 @@ body {
     right: 37%;
     pointer-events: none;
 }
-
 
 .section2-text {
     position: relative;
@@ -313,8 +310,6 @@ body {
     margin-left: calc(-50vw + 50%);
     overflow: hidden;
     background-color: #f0e5c3;
-    
-    
 }
 
 .homesection3-text {
@@ -329,18 +324,15 @@ body {
     position: absolute;
     top: 50%;
     right: 5%;
-
 }
-
-
 
 .checkout {
     font-size: 10vw;
     margin-top: 5vw;
     margin-bottom: -12vw;
     transition: transform 0.3s ease;
-     z-index: 1;
-      font-family: "Averia Sans Libre", cursive, sans-serif;
+    z-index: 1;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
 .checkout:hover {
@@ -350,8 +342,8 @@ body {
 .featured {
     font-size: 9vw;
     transition: transform 0.3s ease;
-     z-index: 1;
-      font-family: "Averia Sans Libre", cursive, sans-serif;
+    z-index: 1;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
 .featured:hover {
@@ -372,14 +364,17 @@ body {
     transform: scale(1.05);
 }
 
-
-
 /* ==========================================
    RESPONSIVE 
 ========================================== */
 
 @media (max-width: 767px) {
     /* Title */
+
+    .html {
+        overflow: hidden;
+    }
+    
     .title {
         font-size: 2.8rem;
         padding-top: 3rem;
@@ -412,8 +407,20 @@ body {
         max-width: 98px; /* 26vw */
     }
 
-    .about-bob    { top: 35%; left: 2%; }
-    .work-bob     { top: 62%; left: -1%; }
-    .contact-bob  { top: 62%; right: 25%; }
-    .gallery-bob  { top: 35%; right: 25%; }
+    .about-bob {
+        top: 35%;
+        left: 2%;
+    }
+    .work-bob {
+        top: 62%;
+        left: -1%;
+    }
+    .contact-bob {
+        top: 62%;
+        right: 25%;
+    }
+    .gallery-bob {
+        top: 35%;
+        right: 25%;
+    }
 }
