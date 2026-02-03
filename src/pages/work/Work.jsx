@@ -20,7 +20,7 @@ const galleryItems = [
         id: 3,
         slug: "",
         title: "Under Construction!",
-        categories: ["Design", "UI/UX", "Motion Graphics", "Code"],
+        categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
         tools: "Check back soon!",
         image: "/work/Black.png",
         description: "This page is currently under construction! Come back later to see more of my work!",
@@ -30,7 +30,7 @@ const galleryItems = [
 export default function Work() {
     const [activeFilter, setActiveFilter] = useState("all");
 
-    const allCategories = ["all", "Design", "UI/UX", "Motion Graphics", "Code"];
+    const allCategories = ["all", "Design", "UI/UX", "Motion Graphics", "Front-end"];
 
     const filteredItems =
         activeFilter === "all"

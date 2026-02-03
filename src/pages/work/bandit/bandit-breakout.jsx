@@ -118,26 +118,18 @@ export default function BanditBreakout() {
                 </div>
             </nav>
 
-            <section className="banditsection bandit-process-section bandit-stacked-sections">
-                <div
-                    className="banditcontainer"
-                    id="problem">
-                    <div className="bandit-stacked-grid">
-                        <div className="bandit-video-column">
-                            <div className="bandit-process-image-wrapper">
-                                <iframe
-                                    src="https://drive.google.com/file/d/1H_q33nm2S5rGptYGcLII666p9jX3zRJp/preview"
-                                    className="bandit-process-video"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Bandit Breakout Solution & Gameplay Demo"
-                                />
-                            </div>
-                        </div>
+            <section
+                className="banditsection bandit-process-section"
+                id="problem">
+                <div className="banditcontainer">
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">01</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">Problem</span>
+                    </div>
 
-                        <div
-                            className="process-text-block"
-                            id="solution">
+                    <div className="bandit-two-column">
+                        <div className="bandit-text-column process-text-block">
                             <h2>Problem</h2>
                             <p>
                                 Many multiplayer board games fall into the trap
@@ -154,9 +146,39 @@ export default function BanditBreakout() {
                             </p>
                         </div>
 
-                        <div
-                            className="process-text-block"
-                            id="solution">
+                        <div className="bandit-media-column">
+                            <img
+                                src="/work/bandit/problemo.svg"
+                                alt=""
+                                className="bandit-large-media"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                className="banditsection section-alt"
+                id="solution">
+                <div className="banditcontainer">
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">02</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">Solution</span>
+                    </div>
+
+                    <div className="bandit-two-column reverse">
+                        <div className="bandit-media-column">
+                            <iframe
+                                src="https://drive.google.com/file/d/1H_q33nm2S5rGptYGcLII666p9jX3zRJp/preview"
+                                className="bandit-process-video"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                                title="Bandit Breakout Solution & Gameplay Demo"
+                            />
+                        </div>
+
+                        <div className="bandit-text-column process-text-block">
                             <h2>Solution</h2>
                             <p>
                                 Bandit Breakout is a race to the finish line
@@ -182,18 +204,24 @@ export default function BanditBreakout() {
                 className="banditsection"
                 id="research">
                 <div className="banditcontainer">
-                    <div className="grid-media-left">
-                        <div className="media-column">
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">03</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">Research</span>
+                    </div>
+
+                    <div className="bandit-two-column">
+                        <div className="bandit-media-column">
                             <div className="research-image-wrapper">
                                 <img
                                     src="/work/bandit/banditgraph.png"
-                                    className="research-main-image"
+                                    className="research-main-image bandit-large-media"
                                     alt="Research findings visualization"
                                 />
                             </div>
                         </div>
 
-                        <div className="text-column">
+                        <div className="bandit-text-column">
                             <h2>Research</h2>
                             <p>
                                 Interviews with 12 boardgame players showed us
@@ -235,6 +263,14 @@ export default function BanditBreakout() {
                 className="banditsection section-alt"
                 id="branding">
                 <div className="banditcontainer">
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">04</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">
+                            Sketching, Character Design, & Backgrounds
+                        </span>
+                    </div>
+
                     <div className="branding-content">
                         <h2>Sketching, Character Design, & Backgrounds</h2>
                         <p>
@@ -268,28 +304,24 @@ export default function BanditBreakout() {
                                     className="gallery-imageb"
                                 />
                             </div>
-
                             <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/buckshot.png"
                                     className="gallery-imageb"
                                 />
                             </div>
-
                             <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/casino.png"
                                     className="gallery-imageb"
                                 />
                             </div>
-
                             <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/grit.png"
                                     className="gallery-imageb"
                                 />
                             </div>
-
                             <div className="gallery-itemb">
                                 <img
                                     src="/work/bandit/desert.png"
@@ -347,9 +379,15 @@ export default function BanditBreakout() {
             </section>
 
             <section
-                className="banditsection section-alt"
+                className="banditsection"
                 id="animating">
                 <div className="banditcontainer">
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">05</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">Animating</span>
+                    </div>
+
                     <div className="branding-content">
                         <h2>Animating</h2>
                         <p>
@@ -379,7 +417,6 @@ export default function BanditBreakout() {
                                     title="Bandit Breakout – Version 2 Full Gameplay Demo"
                                 />
                             </div>
-
                             <div className="gallery-item2">
                                 <iframe
                                     className="gallery-image2"
@@ -389,7 +426,6 @@ export default function BanditBreakout() {
                                     title="Bandit Breakout – Version 2 Full Gameplay Demo"
                                 />
                             </div>
-
                             <div className="gallery-item2">
                                 <iframe
                                     className="gallery-image2"
@@ -399,7 +435,6 @@ export default function BanditBreakout() {
                                     title="Bandit Breakout – Version 2 Full Gameplay Demo"
                                 />
                             </div>
-
                             <div className="gallery-item2">
                                 <iframe
                                     className="gallery-image2"
@@ -409,7 +444,6 @@ export default function BanditBreakout() {
                                     title="Bandit Breakout – Version 2 Full Gameplay Demo"
                                 />
                             </div>
-
                             <div className="gallery-item2">
                                 <iframe
                                     className="gallery-image2"
@@ -452,12 +486,24 @@ export default function BanditBreakout() {
                 className="banditsection section-warning"
                 id="issue">
                 <div className="banditcontainer">
-                    <div className="grid-media-right">
-                        <div className="media-column">
-                            {" "}
-                            <img src="/work/bandit/problem.png"></img>
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">06</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">
+                            Unexpected Issue
+                        </span>
+                    </div>
+
+                    <div className="bandit-two-column">
+                        <div className="bandit-media-column">
+                            <img
+                                src="/work/bandit/problem.png"
+                                alt=""
+                                className="bandit-large-media"
+                            />
                         </div>
-                        <div className="text-column">
+
+                        <div className="bandit-text-column">
                             <h2>Unexpected Issue</h2>
                             <p>
                                 Due to the division of work, some of the main
@@ -484,12 +530,24 @@ export default function BanditBreakout() {
                 className="banditsection"
                 id="what-didnt-work">
                 <div className="banditcontainer">
-                    <div className="grid-media-left">
-                        <div className="media-column">
-                            <img src="/work/bandit/problem2.jpg"></img>
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">07</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">
+                            What Didn't Work & How We Solved it
+                        </span>
+                    </div>
+
+                    <div className="bandit-two-column">
+                        <div className="bandit-media-column">
+                            <img
+                                src="/work/bandit/problem2.jpg"
+                                alt=""
+                                className="bandit-large-media"
+                            />
                         </div>
 
-                        <div className="text-column">
+                        <div className="bandit-text-column">
                             <h2>What Didn't Work & How We Solved it</h2>
                             <p>
                                 Our whole team was unbalanced in our skills and
@@ -519,13 +577,24 @@ export default function BanditBreakout() {
                 className="banditsection section-warning"
                 id="final-design">
                 <div className="banditcontainer">
-                    <div className="grid-media-left">
-                        <div className="media-column">
-                            {" "}
-                            <img src="/work/bandit/winning.jpg"></img>
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">08</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">
+                            Final Design & Showcase
+                        </span>
+                    </div>
+
+                    <div className="bandit-two-column">
+                        <div className="bandit-media-column">
+                            <img
+                                src="/work/bandit/winning.jpg"
+                                alt=""
+                                className="bandit-large-media"
+                            />
                         </div>
 
-                        <div className="text-column">
+                        <div className="bandit-text-column">
                             <h2>Final Design & Showcase</h2>
                             <p>
                                 On Friday, May 16th, 2025, Team Command Z
@@ -542,10 +611,20 @@ export default function BanditBreakout() {
                     </div>
                 </div>
             </section>
+
+         
             <section
                 className="banditsection section-alt"
                 id="Journey">
                 <div className="banditcontainer">
+                    <div className="bandit-section-header">
+                        <span className="bandit-section-number">09</span>
+                        <div className="bandit-section-line"></div>
+                        <span className="bandit-section-label">
+                            The Journey and Impact
+                        </span>
+                    </div>
+
                     <div className="journey-video-wrapper">
                         <iframe
                             className="journey-video"
@@ -575,18 +654,20 @@ export default function BanditBreakout() {
                             passion and love for the arts.
                         </p>
                         <p>Thank you for reading!</p>
-                    </div>
-                    <div className="site-button-wrapper">
-                        <a
-                            href="https://bandit-breakout.vercel.app/"
-                            className="site-button"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            View Site
-                        </a>
+
+                        <div className="site-button-wrapper">
+                            <a
+                                href="https://bandit-breakout.vercel.app/"
+                                className="site-button"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                View Site
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
+
             <Footer />
         </div>
     );
