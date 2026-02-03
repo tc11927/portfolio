@@ -162,7 +162,7 @@ export default function Home() {
                 <Bg2 />
 
                 <div
-                    className="section3-text"
+                    className="homesection3-text"
                     style={{
                         transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
                     }}>

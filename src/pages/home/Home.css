@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 
+
 /* Section 1 */
 /* Top Text */
 .title {
@@ -316,7 +317,7 @@ body {
     
 }
 
-.section3-text {
+.homesection3-text {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     color: #22303a;
     font-weight: 800;
@@ -339,6 +340,7 @@ body {
     margin-bottom: -12vw;
     transition: transform 0.3s ease;
      z-index: 1;
+      font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
 .checkout:hover {
@@ -349,6 +351,7 @@ body {
     font-size: 9vw;
     transition: transform 0.3s ease;
      z-index: 1;
+      font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
 .featured:hover {
