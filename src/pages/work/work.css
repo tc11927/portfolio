@@ -53,14 +53,6 @@
     font-weight: 600;
 }
 
-
-.filter-btn.active {
-    background-color: #7da75b; 
-    color: white;
-    font-weight: 600;
-}
-
-
 .filter-btn[data-category="all"].active {
     background-color: #22303A; 
     border-color: #22303A; 
@@ -81,16 +73,15 @@
     border-color: #7da75b;
 }
 
-.filter-btn[data-category="code"].active {
+.filter-btn[data-category="front-end"].active {
     background-color: #FED040;
     border-color: #FED040; 
 }
 
-.filter-btn[data-category="code"]:hover:not(.active){
+.filter-btn[data-category="front-end"]:hover:not(.active){
     background-color: #FED040;
     border-color: #FED040; 
 }
-
 
 .filter-btn[data-category="design"]:hover:not(.active) {
    background-color: #64BCAD; 
@@ -107,8 +98,6 @@
     border-color: #7da75b;
 }
 
-
-
 .gallery-grid {
     column-count: 4;
     column-gap: 1vw;
@@ -123,7 +112,6 @@
     overflow: hidden;
     border-radius: 14px;
     cursor: pointer;
-   
     transition:
         transform 0.35s ease,
         box-shadow 0.35s ease;
@@ -132,18 +120,17 @@
 
 .gallery-item:hover {
     transform: translateY(-8px);
-   
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .gallery-item-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .gallery-item-link:hover .gallery-item {
-  transform: translateY(-8px);
-
+    transform: translateY(-8px);
 }
 
 .item-image {
@@ -156,30 +143,72 @@
     object-position: center;
 }
 
+
+
 .item-info {
     position: absolute;
     inset: 0;
     background: linear-gradient(
         to bottom,
-        transparent 30%,
-        rgba(0, 0, 0, 0.45) 55%,
-        rgba(0, 0, 0, 0.92) 78%,
+        transparent 40%,
+        rgba(0, 0, 0, 0.25) 65%,
+        rgba(0, 0, 0, 0.75) 85%,
         #000 100%
     );
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 3.5vw 2.8vw 2.8vw;
-    opacity: 0;
-    transition: opacity 0.4s ease;
     color: white;
     text-align: left;
     font-family: 'Nunito Sans', sans-serif;
+    pointer-events: none;
+    transition: background 0.5s ease;
 }
 
-.gallery-item:hover .item-info {
-    opacity: 1;
+.item-info > *:not(.item-title) {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: all 0.45s ease;
 }
+
+.item-info .category-tags       { transition-delay: 0.05s; }
+.item-info .tools               { transition-delay: 0.12s; }
+.item-info .item-description    { transition-delay: 0.20s; }
+
+.item-title {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-size: 2.1vw;
+    font-weight: 700;
+    line-height: 1.05;
+    margin: 0 0 0.6vw 0;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.75);
+}
+
+
+.gallery-item:hover .item-info {
+    background: linear-gradient(
+        to bottom,
+        transparent 30%,
+        rgba(0, 0, 0, 0.55) 55%,
+        rgba(0, 0, 0, 0.94) 78%,
+        #000 100%
+    );
+}
+
+.gallery-item:hover .item-info > *:not(.item-title) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-item:hover .item-title {
+    text-shadow: 0 3px 12px rgba(0,0,0,0.9);
+}
+
+
 
 .category-tags {
     display: flex;
@@ -212,8 +241,8 @@
     border-color: #f4a261;
 }
 .category-tag.front-end {
-    background: #60a5fa;
-    border-color: #60a5fa;
+    background: #FED040;
+    border-color: #FED040;
 }
 .category-tag.motion-graphics {
     background: #c084fc;
@@ -234,16 +263,6 @@
     line-height: 1.45;
     margin-bottom: 0.5vw;
     opacity: 0.92;
-    text-align: left;
-}
-
-.item-title {
-    font-family: "Averia Sans Libre", cursive, sans-serif;
-    font-size: 2.1vw;
-    font-weight: 700;
-    line-height: 1.05;
-    margin: 0;
-    letter-spacing: -0.5px;
     text-align: left;
 }
 
@@ -307,7 +326,6 @@
     }
 }
 
-
 /* ANIMATIONSSS */
 @keyframes fadeUp {
   from {
@@ -339,7 +357,6 @@
   animation-delay: 0.15s;
 }
 
-
 .filter-btn {
   opacity: 0;
   animation: fadeUp 0.6s ease forwards;
@@ -370,6 +387,3 @@
 .gallery-item:nth-child(6) { animation-delay: 0.7s; }
 .gallery-item:nth-child(7) { animation-delay: 0.8s; }
 .gallery-item:nth-child(8) { animation-delay: 0.9s; }
-
-
-
