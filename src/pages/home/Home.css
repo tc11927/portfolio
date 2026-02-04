@@ -364,41 +364,36 @@ body {
     transform: scale(1.05);
 }
 
-/* rESPONSIVE  */
+/* rESPONSIVE phoNE */
 
 @media (max-width: 767px) {
-
-
     .title {
         font-size: 2.8rem;
         padding-top: 3rem;
         line-height: 1;
     }
 
-
     .parallax-container {
         min-height: 367px;
         margin-left: 0;
     }
 
-
     .me-image {
-        width: 650px; 
+        width: 650px;
         max-width: 360px;
         min-width: unset;
         min-height: unset;
         max-width: unset;
         max-height: unset;
-        margin-top: 35px; 
+        margin-top: 35px;
     }
 
-  
     .about,
     .work,
     .contact,
     .gallery {
         width: 100px;
-        max-width: 98px; 
+        max-width: 98px;
     }
 
     .about-bob {
@@ -416,5 +411,100 @@ body {
     .gallery-bob {
         top: 35%;
         right: 25%;
+    }
+}
+
+/* responsive tablet (ipadkid) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .title {
+        font-size: 8.5vw;
+        margin-top: -0.2vw;
+        padding-top: 8vw;
+    }
+
+    .parallax-container {
+        min-height: 65vh;
+
+        margin-left: -0.5vw;
+    }
+
+    .me-image {
+        width: 100vw;
+        max-width: 800px;
+        min-width: unset;
+        min-height: unset;
+        
+        margin-top: 5rem;
+    }
+
+
+    .about,
+    .work,
+    .contact,
+    .gallery {
+        width: 15vw;
+        max-width: 160px;
+    }
+
+    .about-bob {
+        top: 27%;
+        left: 10%;
+    }
+
+    .work-bob {
+        top: 58%;
+        left: 10%;
+    }
+
+    .contact-bob {
+        top: 58%;
+        right: 32%;
+    }
+
+    .gallery-bob {
+        top: 22%;
+        right: 32%;
+    }
+
+    /* Section 2 */
+    .section2-character {
+        width: 75vw;
+        max-width: 580px;
+        top: 18%;
+        right: 32%;
+    }
+
+    .visualstorytelling {
+        font-size: 6.8vw;
+        margin-bottom: -10vw;
+    }
+
+    .values {
+        font-size: 9.5vw;
+    }
+
+    .section2-text {
+        margin-top: -16vw;
+    }
+
+    /* Section 3 */
+    .me3-image {
+        max-width: 28vw;
+        right: 6%;
+    }
+
+    .checkout {
+        font-size: 8.5vw;
+        margin-top: 4vw;
+        margin-bottom: -10vw;
+    }
+
+    .featured {
+        font-size: 7.8vw;
+    }
+
+    .arrow {
+        max-width: 22vw;
+        margin-top: -5vw;
     }
 }
