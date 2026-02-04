@@ -367,42 +367,38 @@ body {
 /* rESPONSIVE  */
 
 @media (max-width: 767px) {
-    /* Title */
+
+
     .title {
         font-size: 2.8rem;
         padding-top: 3rem;
         line-height: 1;
     }
 
+
     .parallax-container {
         min-height: 367px;
         margin-left: 0;
-        width: 100%;
-        overflow: hidden;
     }
+
 
     .me-image {
-        width: 100vw;
-        max-width: 100vw;
-        min-width: 0;
-        margin-left: 0;
-        margin-right: 0;
-        object-fit: contain;
+        width: 650px; 
+        max-width: 360px;
+        min-width: unset;
+        min-height: unset;
+        max-width: unset;
+        max-height: unset;
+        margin-top: 35px; 
     }
 
-    .Section2,
-    .section3 {
-        margin-left: 0 !important;
-        width: 100% !important;
-        overflow-x: hidden;
-    }
-
+  
     .about,
     .work,
     .contact,
     .gallery {
         width: 100px;
-        max-width: 98px;
+        max-width: 98px; 
     }
 
     .about-bob {
@@ -420,16 +416,5 @@ body {
     .gallery-bob {
         top: 35%;
         right: 25%;
-    }
-
-    .section2-character,
-    .me3-image,
-    .arrow {
-        max-width: 100vw;
-        width: auto;
-    }
-
-    body.home-page {
-        overflow-x: hidden;
     }
 }
