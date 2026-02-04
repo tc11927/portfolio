@@ -412,6 +412,50 @@ body {
         top: 35%;
         right: 25%;
     }
+
+
+    /* Section 2 */
+    .section2-character {
+        width: 300vw;
+        max-width: 900px;
+        top: 47%;
+        right: -15%;
+    }
+
+    .visualstorytelling {
+        font-size: 13vw;
+        margin-bottom: -10vw;
+        margin-top: -35vw;
+    }
+
+    .values {
+        font-size: 12vw;
+    }
+
+    .section2-text {
+        margin-top: -16vw;
+    }
+
+    /* Section 3 */
+    .me3-image {
+        max-width: 28vw;
+        right: 6%;
+    }
+
+    .checkout {
+        font-size: 8.5vw;
+        margin-top: 4vw;
+        margin-bottom: -10vw;
+    }
+
+    .featured {
+        font-size: 7.8vw;
+    }
+
+    .arrow {
+        max-width: 22vw;
+        margin-top: -5vw;
+    }
 }
 
 /* responsive tablet (ipadkid) */
