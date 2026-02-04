@@ -513,43 +513,44 @@ body {
 
     /* Section 2 */
     .section2-character {
-        width: 75vw;
-        max-width: 580px;
-        top: 18%;
-        right: 32%;
+        width: 200vw;
+        max-width: 1000px;
+        top: 41%;
+        right: 24%;
     }
 
     .visualstorytelling {
-        font-size: 6.8vw;
+        font-size: 7.8vw;
         margin-bottom: -10vw;
     }
 
     .values {
-        font-size: 9.5vw;
+        font-size: 12vw;
     }
 
     .section2-text {
-        margin-top: -16vw;
+        margin-top: -30vw;
     }
 
     /* Section 3 */
     .me3-image {
-        max-width: 28vw;
-        right: 6%;
+        max-width: 41vw;
+        right: 3%;
+        top: 51%;
     }
 
     .checkout {
-        font-size: 8.5vw;
+        font-size: 13.5vw;
         margin-top: 4vw;
-        margin-bottom: -10vw;
+        margin-bottom: -15vw;
     }
 
     .featured {
-        font-size: 7.8vw;
+        font-size: 12vw;
     }
 
     .arrow {
-        max-width: 22vw;
-        margin-top: -5vw;
+        max-width: 30vw;
+        margin-top: -20vw;
     }
 }
