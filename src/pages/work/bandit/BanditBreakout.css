@@ -845,13 +845,7 @@ p,
         direction: ltr !important;
     }
 
-    img,
-    iframe,
-    video {
-        max-width: 100% !important;
-        height: auto;
-    }
-    
+   
 }
 
 
