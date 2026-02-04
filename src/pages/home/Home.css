@@ -418,8 +418,8 @@ body {
     .section2-character {
         width: 300vw;
         max-width: 900px;
-        top: 47%;
-        right: -15%;
+        top: 73vw;
+        right: -15vw;
     }
 
     .visualstorytelling {
@@ -439,8 +439,8 @@ body {
     /* Section 3 */
     .me3-image {
         max-width: 60vw;
-        right: -1%;
-        top: 56%;
+        right: -1vw;
+        top: 84vw;
     }
 
     .checkout {
