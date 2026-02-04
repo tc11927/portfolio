@@ -7,12 +7,13 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6,
 .banditproject-title,
 .banditsection-title,
 .bandit-process-text h2,
@@ -85,31 +86,26 @@ p,
     margin-bottom: -5vw;
 }
 
-.bandittag1 {
+.bandittag1,
+.bandittag2,
+.bandittag3 {
     padding: 0.6rem 1.25rem;
-    background-color: #64bcad;
     border-radius: 9999px;
     font-size: 0.95rem;
     font-weight: 500;
     transition: transform 0.3s ease;
+}
+
+.bandittag1 {
+    background-color: #64bcad;
 }
 
 .bandittag2 {
-    padding: 0.6rem 1.25rem;
     background-color: #fea962;
-    border-radius: 9999px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: transform 0.3s ease;
 }
 
 .bandittag3 {
-    padding: 0.6rem 1.25rem;
     background-color: #7da75b;
-    border-radius: 9999px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: transform 0.3s ease;
 }
 
 .bandittag1:hover,
@@ -413,15 +409,7 @@ p,
     margin-top: -6vw;
 }
 
-.bandit-gallery-item3 {
-    width: 100%;
-    height: 100%;
-    min-height: 380px;
-    aspect-ratio: 16 / 9;
-    border: none;
-    border-radius: 20px;
-}
-
+.bandit-gallery-item3,
 .bandit-gallery-image3 {
     width: 100%;
     height: 100%;
@@ -478,172 +466,6 @@ p,
 }
 
 /* ==========================================================================
-   13. Media Queries
-   ========================================================================== */
-
-@media (min-width: 768px) {
-    .bandithero-content {
-        grid-template-columns: 1fr 1fr;
-        text-align: left;
-    }
-
-    .bandit-research-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-    }
-
-    .bandit-research-main-image {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .bandit-grid-media-left,
-    .bandit-grid-media-right {
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-    }
-}
-
-.bandit-grid-media-left .bandit-media-column {
-    order: 1;
-}
-.bandit-grid-media-left .bandit-text-content {
-    order: 2;
-}
-
-.bandit-grid-media-right .bandit-media-column {
-    order: 2;
-}
-.bandit-grid-media-right .bandit-text-content {
-    order: 1;
-}
-
-@media (min-width: 640px) {
-    .bandit-branding-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .bandit-branding-gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* ==========================================================================
-   Load-in Animations 
-   ========================================================================== */
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(24px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.banditpage-wrapper {
-    animation: fadeIn 0.8s ease-out both;
-}
-
-.bandithero .banditcontainer {
-    animation: fadeUp 0.9s ease-out both;
-}
-
-.banditproject-title {
-    animation: fadeUp 0.9s ease-out both;
-    animation-delay: 0.1s;
-}
-
-.banditproject-roles {
-    animation: fadeUp 0.9s ease-out both;
-    animation-delay: 0.2s;
-}
-
-.banditsection {
-    animation: fadeUp 0.9s ease-out both;
-}
-
-.banditsection:nth-of-type(1) {
-    animation-delay: 0.15s;
-}
-.banditsection:nth-of-type(2) {
-    animation-delay: 0.3s;
-}
-.banditsection:nth-of-type(3) {
-    animation-delay: 0.45s;
-}
-
-/* ... rest of animations unchanged ... */
-
-/* ==========================================================================
-   Responsiveness 
-   ========================================================================== */
-
-.banditcontainer {
-    padding: 0 1.5rem;
-}
-
-@media (min-width: 768px) {
-    .banditcontainer {
-        padding: 0 3rem;
-    }
-}
-
-.banditproject-title {
-    margin-top: clamp(8vw, 13vw, 120px);
-}
-
-.bandithero-content {
-    margin-top: 2rem;
-}
-
-@media (min-width: 768px) {
-    .bandithero-content {
-        margin-top: -2vw;
-    }
-}
-
-@media (max-width: 640px) {
-    .banditsection-nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.6rem;
-    }
-
-    .banditsection-nav li {
-        margin: 0.4rem 0;
-    }
-
-    .banditsection-nav a {
-        font-size: clamp(1.1rem, 4.5vw, 1.4rem);
-        padding: 0.4rem 0.8rem;
-    }
-}
-
-.bandit-branding-gallery {
-    gap: clamp(1.2rem, 3vw, 2.5rem);
-}
-
-@media (max-width: 639px) {
-    .bandit-branding-gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ==========================================================================
    Custom section header
    ========================================================================== */
 
@@ -675,6 +497,7 @@ p,
     letter-spacing: 0.2em;
     color: #eab300;
     white-space: nowrap;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
 .bandit-two-column {
@@ -704,37 +527,24 @@ p,
     border-radius: 20px;
 }
 
-@media (min-width: 768px) {
-    .bandit-two-column {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .bandit-text-content {
     text-align: left;
 }
 
-.bandit-section-label {
-    font-family: "Averia Sans Libre", cursive, sans-serif;
-}
-
-/* mini mois */
+/* mini mois floating overlays */
 .floating-overlay1 {
     position: absolute;
     top: 62.8%;
     right: 89%;
     width: 12vw;
-
     z-index: 10;
 }
-
 
 .floating-overlay2 {
     position: absolute;
     top: 43.3%;
     right: 1%;
     width: 10vw;
-
     z-index: 10;
 }
 
@@ -743,18 +553,307 @@ p,
     top: 70.3%;
     right: 85%;
     width: 15vw;
-
     z-index: 10;
 }
-
-
 
 .floating-overlay4 {
     position: absolute;
     top: 84.2%;
     right: 2%;
     width: 15vw;
-
     z-index: 10;
 }
+
+/* ==========================================================================
+   Media Queries – Desktop first
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    .bandithero-content {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .bandit-research-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .bandit-research-main-image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bandit-grid-media-left,
+    .bandit-grid-media-right {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    .banditcontainer {
+        padding: 0 3rem;
+    }
+
+    .bandithero-content {
+        margin-top: -2vw;
+    }
+
+    .bandit-two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.bandit-grid-media-left .bandit-media-column  { order: 1; }
+.bandit-grid-media-left .bandit-text-content   { order: 2; }
+
+.bandit-grid-media-right .bandit-media-column  { order: 2; }
+.bandit-grid-media-right .bandit-text-content  { order: 1; }
+
+@media (min-width: 640px) {
+    .bandit-branding-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .bandit-branding-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================================================
+   Load-in Animations
+   ========================================================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.banditpage-wrapper {
+    animation: fadeIn 0.8s ease-out both;
+}
+
+.bandithero .banditcontainer        { animation: fadeUp 0.9s ease-out both; }
+.banditproject-title                { animation: fadeUp 0.9s ease-out both; animation-delay: 0.1s; }
+.banditproject-roles                { animation: fadeUp 0.9s ease-out both; animation-delay: 0.2s; }
+.banditsection                      { animation: fadeUp 0.9s ease-out both; }
+.banditsection:nth-of-type(1)       { animation-delay: 0.15s; }
+.banditsection:nth-of-type(2)       { animation-delay: 0.3s;  }
+.banditsection:nth-of-type(3)       { animation-delay: 0.45s; }
+
+/* ==========================================================================
+   MOBILE RESPONSIVE FIXES
+   ========================================================================== */
+
+.banditcontainer {
+    padding: 0 1.5rem;
+}
+
+.banditproject-title {
+    margin-top: clamp(8vw, 13vw, 120px);
+}
+
+.bandithero-content {
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .banditpage-wrapper {
+      
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .banditcontainer {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        margin-top: 1rem !important;
+        box-sizing: border-box;
+    }
+
+    .bandithero .banditcontainer {
+        margin-top: 1rem !important;
+    }
+
+    .banditproject-title {
+        font-size: clamp(2rem, 8vw, 2.5rem) !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .banditproject-roles {
+        font-size: clamp(0.875rem, 3.5vw, 1rem) !important;
+        margin-bottom: 0 !important;
+    }
+
+    .bandittags {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        justify-content: center;
+    }
+
+    .bandithero-content {
+        margin-top: 1.5rem !important;
+        margin-bottom: 2rem !important;
+        gap: 2rem !important;
+    }
+
+    .bandittitle-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0 0 0 !important;
+        display: block;
+    }
+
+    .banditsection-nav {
+        margin-top: 2rem !important;
+        padding: 1.5rem !important;
+        border-radius: 12px;
+    }
+
+    .banditsection-title {
+        font-size: clamp(1rem, 4vw, 1.25rem) !important;
+        margin-bottom: 1rem !important;
+        text-align: center;
+    }
+
+    .banditsection-nav ul {
+        padding: 0 1rem !important;
+        margin-top: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .banditsection-nav li {
+        margin: 0.5rem 0 !important;
+    }
+
+    .banditsection-nav a {
+        font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+        padding: 0.5rem 0.75rem !important;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banditsection {
+        padding: 3rem 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .bandit-process-video {
+        min-height: 200px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .bandit-text-content h2,
+    .bandit-process-text h2,
+    .bandit-research-text h2,
+    .bandit-branding-text h2 {
+        font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
+        margin-bottom: 1rem !important;
+        margin-top: 0 !important;
+        line-height: 1.2;
+    }
+
+    .bandit-text-content p,
+    .bandit-process-text p,
+    .bandit-research-text p,
+    .bandit-branding-text p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+
+    .bandit-branding-gallery {
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .bandit-gallery-itemb,
+    .bandit-gallery-item2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        aspect-ratio: 4/3 !important;
+    }
+
+    .bandit-gallery-imageb,
+    .bandit-gallery-image2 {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .bandit-research-button,
+    .bandit-site-button {
+        margin: 1rem auto !important;
+        display: block;
+        width: fit-content;
+    }
+
+    .bandit-site-button-wrapper {
+        margin-right: 0 !important;
+        text-align: center;
+        margin-top: 2rem !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bandit-journey-video-wrapper {
+        margin-bottom: 2rem !important;
+        width: 100%;
+    }
+
+    .bandit-journey-video {
+        min-height: 200px !important;
+        width: 100% !important;
+    }
+
+    .bandit-section-header {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .bandit-section-number {
+        font-size: 1.5rem;
+    }
+
+    .bandit-section-label {
+        font-size: clamp(0.875rem, 3vw, 1rem);
+        white-space: normal;
+    }
+
+    .bandit-two-column {
+        gap: 2rem !important;
+    }
+
+    .bandit-two-column.reverse {
+        direction: ltr !important;
+    }
+
+    img,
+    iframe,
+    video {
+        max-width: 100% !important;
+        height: auto;
+    }
+    
+}
+
+
+
 
