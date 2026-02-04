@@ -343,6 +343,31 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+     .work-title {
+        font-size: 8vw;
+    }
+    .filter-btn {
+        font-size: 2.2vw;
+        padding: 1.2vw 2.8vw;
+    }
+        /* item caRDS!!! */
+  .item-title {
+        font-size: 3.5vw;
+    }
+    .item-description {
+        font-size: 1.5vw;
+    }
+    .tools {
+        font-size: 1.6vw;
+    }
+    .category-tag {
+        font-size: 1.5vw;
+        padding: 1vw 2vw;
+    }
+}
+
 /* ANIMATIONSSS */
 @keyframes fadeUp {
   from {
