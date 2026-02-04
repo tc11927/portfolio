@@ -284,6 +284,21 @@
         font-size: 2vw;
         padding: 0.9vw 2vw;
     }
+
+       /* item caRDSsss!!! */
+  .item-title {
+        font-size: 5.8vw;
+    }
+    .item-description {
+        font-size: 3.4vw;
+    }
+    .tools {
+        font-size: 3.2vw;
+    }
+    .category-tag {
+        font-size: 3vw;
+        padding: 1.2vw 2.8vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -305,17 +320,19 @@
     .item-image {
         aspect-ratio: 3 / 4.5;
     }
-    .item-title {
-        font-size: 5.8vw;
+
+      /* item caRDS!!! */
+  .item-title {
+        font-size: 4vw;
     }
     .item-description {
-        font-size: 3.4vw;
+        font-size: 2vw;
     }
     .tools {
-        font-size: 3.2vw;
+        font-size: 2.5vw;
     }
     .category-tag {
-        font-size: 3vw;
+        font-size: 2vw;
         padding: 1.2vw 2.8vw;
     }
 }
