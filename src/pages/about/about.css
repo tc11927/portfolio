@@ -1,4 +1,39 @@
-.about-page1{
-     font-family: "Averia Sans Libre", cursive, sans-serif;
-     text-align: center;
+/* mobile styling */
+.fullaboutsection {
+     margin: 15px;
+}
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-column {
+     display: flex;
+     flex-direction: column;
+     flex-basis: 100%;
+     flex: 1;
+}
+
+.about-me-h1 {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+.graphic-design-about,
+.UIUX-design-about,
+.motiongraphics-design-about {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+.about-info-one,
+.about-info-two,
+.about-info-three,
+.about-info-four {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.me-photo-about {
+     width: 10%;
 }
