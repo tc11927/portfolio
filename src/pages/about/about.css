@@ -1,6 +1,6 @@
 /* mobile styling */
 .fullaboutsection {
-     margin: 15px;
+    margin: 15px;
 }
 
 .about-row {
@@ -11,20 +11,48 @@
 }
 
 .about-column {
-     display: flex;
-     flex-direction: column;
-     flex-basis: 100%;
-     flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 .about-me-h1 {
     font-family: "Averia Sans Libre", cursive, sans-serif;
+    text-align: left;
+    font-size: 5.5vw;
+    margin-bottom: -0.4vw;
 }
 
 .graphic-design-about,
 .UIUX-design-about,
 .motiongraphics-design-about {
     font-family: "Averia Sans Libre", cursive, sans-serif;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+
+.graphic-design-about {
+    background-color: #64bcad;
+     transition: transform 0.3s ease;
+}
+
+.UIUX-design-about {
+    background-color: #fea962;
+     transition: transform 0.3s ease;
+}
+
+.motiongraphics-design-about {
+    background-color: #7da75b;
+     transition: transform 0.3s ease;
+}
+
+.graphic-design-about:hover,
+.UIUX-design-about:hover,
+.motiongraphics-design-about:hover {
+      transform: scale(1.09);
 }
 
 .about-info-one,
@@ -32,8 +60,15 @@
 .about-info-three,
 .about-info-four {
     font-family: "Nunito Sans", sans-serif;
+    text-align: left;
+}
+
+.about-me-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .me-photo-about {
-     width: 10%;
+    width: 10%;
 }
