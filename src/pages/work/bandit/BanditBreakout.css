@@ -537,7 +537,7 @@ p,
 /* mini mois floating overlays */
 .floating-overlay1 {
     position: absolute;
-    top: 62.8%;
+    top: 63%;
     right: 89%;
     width: 12vw;
     z-index: 10;
@@ -546,7 +546,7 @@ p,
 .floating-overlay2 {
     position: absolute;
     top: 43.3%;
-    right: 1%;
+    right: -1%;
     width: 10vw;
     z-index: 10;
 }
@@ -561,7 +561,7 @@ p,
 
 .floating-overlay4 {
     position: absolute;
-    top: 84.2%;
+    top: 84.3%;
     right: 2%;
     width: 15vw;
     z-index: 10;
@@ -694,7 +694,6 @@ p,
 
 .banditproject-title {
     margin-top: clamp(8vw, 13vw, 120px);
-    text-align: center;
 }
 
 .bandithero-content {
@@ -720,7 +719,7 @@ p,
 
     .banditproject-title {
         font-size: clamp(2rem, 8vw, 2.5rem) !important;
-
+        text-align: center;
         margin-bottom: 0.5rem !important;
     }
 
@@ -897,7 +896,7 @@ p,
         right: 320px;
     }
 
-     .floating-overlay4 {
+    .floating-overlay4 {
         width: 30vw;
         top: 769px;
         right: 5px;
