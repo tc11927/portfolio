@@ -11,6 +11,7 @@ export default function About() {
                     <img
                         src="/about/bannerrrrr.gif"
                         className="header-about"
+                        alt="Banner"
                     />
                 </div>
                 <div className="about-row">
@@ -28,12 +29,12 @@ export default function About() {
                         <div className="about-info">
                             <div className="about-info-one">
                                 <p>
-                                    I'm a UX/UI and Graphic Designer
-                                    from Vancouver, B.C., who is rooted in
-                                    creating designs rooted in curiosity and
-                                    care. I love approaching each project where
-                                    I can bring both joy and bring my user-first
-                                    mindset into play.
+                                    I'm a UX/UI and Graphic Designer from
+                                    Vancouver, B.C., who is rooted in creating
+                                    designs rooted in curiosity and care. I love
+                                    approaching each project where I can bring
+                                    both joy and bring my user-first mindset
+                                    into play.
                                 </p>
                             </div>
                         </div>
