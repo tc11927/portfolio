@@ -1,18 +1,22 @@
 import NavBar from "../../components/navbar";
 import "./about.css";
 import Footer from "../../components/footer";
+import JigglyGrid from "../../components/grid";
 
 export default function About() {
     return (
         <div>
             <NavBar />
             <div className="fullaboutsection">
+                
                 <div className="about-header">
+                      <JigglyGrid className="grid-about" />
                     <img
                         src="/about/bannerrrrr.gif"
                         className="header-about"
                         alt="Banner"
                     />
+                   
                 </div>
                 <div className="about-row">
                     <div className="about-column about-text-column">
