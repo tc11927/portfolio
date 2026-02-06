@@ -1,4 +1,3 @@
-/* mobile styling */
 .fullaboutsection {
     margin: 15px;
 }
@@ -36,23 +35,29 @@
 
 .graphic-design-about {
     background-color: #64bcad;
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .UIUX-design-about {
     background-color: #fea962;
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .motiongraphics-design-about {
     background-color: #7da75b;
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .graphic-design-about:hover,
 .UIUX-design-about:hover,
 .motiongraphics-design-about:hover {
-      transform: scale(1.09);
+    transform: scale(1.09);
+}
+
+.about-me-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .about-info-one,
@@ -63,12 +68,60 @@
     text-align: left;
 }
 
-.about-me-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+.me-photo-about {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.me-photo-about {
-    width: 10%;
+.header-about {
+    margin-top: 1.8vw;
+    margin-bottom: 5vw;
+    width: 100%;
+}
+
+.about-header {
+    background-color: #22303a;
+}
+
+@media (min-width: 768px) {
+    .about-row {
+        flex-wrap: nowrap;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .about-row.reverse-on-desktop {
+        flex-direction: row-reverse;
+    }
+
+    .about-text-column {
+        flex: 1.2;
+    }
+
+    .about-image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .me-photo-about {
+        max-width: 420px;
+        border-radius: 8px;
+    }
+
+    .about-me-h1 {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-row {
+        flex-direction: column !important;
+        gap: 30px;
+    }
+    .about-row.reverse-on-desktop {
+        flex-direction: column !important;
+    }
 }
