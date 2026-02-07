@@ -31,23 +31,54 @@ export default function About() {
         <div ref={containerRef}>
             <NavBar />
             <div className="fullaboutsection">
-                <div className="about-header">
-                    <JigglyGrid className="grid-about" />
-                    <img
-                        src="/about/bannerrrrr.gif"
-                        className="header-about"
-                        alt="Banner"
-                    />
-                </div>
                 <div className="about-quote">
+                     <div>
+                            <img
+                                src="/about/about.gif"
+                                className="about-gif"
+                                style={{
+                            transform: `translate(${mousePos.x * 0.3 * 5}px, ${mousePos.y * 0.3 * 5}px)`,
+                        }}
+                            />
+                        </div>
                     <Bg2 />
-                    <p className="no-matter"> "No matter what I do, </p>
-                    <p className="creative-and-care">creativity and care is key."</p>
+                    <p
+                        className="no-matter"
+                        style={{
+                            transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
+                        }}>
+                        {" "}
+                        Who am I?{" "}
+                    </p>
+                    <p
+                        className="creative-and-care"
+                        style={{
+                            transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
+                        }}>
+                        I'm Thea, a
+                        <span className="about-aqua">
+                            {" "}
+                            Digital Designer
+                        </span>{" "}
+                    </p>
+                    <p
+                        className="creative-and-care2"
+                        style={{
+                            transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
+                        }}>
+                        and <span className="about-orange">UI/UX Designer</span>
+                    </p>
                 </div>
                 <div className="about-row reverse-on-desktop">
                     <div className="about-column about-text-column">
+                       
+                        <div className="about-grid">
+                            <JigglyGrid />
+                        </div>
                         <div className="about-info1">
-                            <h1 className="about-me-h1">Hi, I'm Thea!</h1>
+                            <h1 className="about-me-h1">
+                                A Little More About Me!
+                            </h1>
                             <div className="about-me-buttons">
                                 <p className="graphic-design-about">
                                     Graphic Design

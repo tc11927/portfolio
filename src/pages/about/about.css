@@ -20,7 +20,7 @@
     font-family: "Averia Sans Libre", cursive, sans-serif;
     text-align: left;
     font-size: 5.5vw;
-    margin-bottom: -0.4vw;
+    margin-bottom: -0.2vw;
 }
 
 .graphic-design-about,
@@ -74,36 +74,6 @@
     display: block;
 }
 
-.about-header {
-    background-color: #22303a;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    position: relative;
-    margin-top: 2.8vw;
-    max-height: 420px;
-    overflow: hidden;
-}
-
-.grid-about {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.header-about {
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .me-photo-section {
     position: relative;
     margin: 0 auto;
@@ -139,26 +109,108 @@
     max-width: 420px;
     height: auto;
     position: relative;
-    top: 53px;
+    top: 110px;
     left: 50px;
 }
-
 .about-quote {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     padding: 90px 50px 140px;
-
     text-align: center;
     font-size: 2.1rem;
     line-height: 1.35;
-
+    font-weight: 800;
     position: relative;
-    z-index: 2;
+    z-index: 1;
+
+    width: 100dvw;
+    margin-left: calc(-50dvw + 50%);
+    margin-right: calc(-50dvw + 50%);
+
+    box-sizing: border-box;
+
+    isolation: isolate;
+    overflow: hidden;
 }
 
-.no-matter, .creative-and-care {
-         font-family: "Averia Sans Libre", cursive, sans-serif;
+.no-matter,
+.creative-and-care,
+.creative-and-care2 {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    color: #22303a;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.35s ease;
 }
+
+.no-matter {
+    font-size: 11vw;
+    margin-bottom: -6vw;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    margin-top: 4vw;
+}
+
+.creative-and-care {
+    font-size: 4vw;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.creative-and-care2 {
+    font-size: 5.5vw;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    margin-top: -4.5vw;
+}
+
+.no-matter:hover,
+.creative-and-care:hover,
+.creative-and-care2:hover {
+    transform: scale(1.06) !important;
+}
+
+.about-aqua {
+    color: #64bcad;
+}
+
+.about-orange {
+    color: #fea962;
+}
+
+.about-row.reverse-on-desktop {
+    background-color: #22303a;
+    width: 100dvw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80px;
+    padding: 60px 0;
+    box-sizing: border-box;
+    isolation: isolate;
+    overflow: hidden;
+    color: white;
+}
+
+.about-grid {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    pointer-events: none;
+}
+
+.about-gif {
+    position: absolute;
+    top:69%;
+    right: -5%;
+    width: 40vw;
+    z-index: 10;
+}
+
 @media (min-width: 768px) {
     .about-row {
         flex-wrap: nowrap;
@@ -187,7 +239,7 @@
     }
 
     .about-me-h1 {
-        font-size: 4.5vw;
+        font-size: 3vw;
     }
 }
 
@@ -197,8 +249,6 @@
         flex-direction: column;
         gap: 30px;
     }
-
-  
 }
 
 .about {
