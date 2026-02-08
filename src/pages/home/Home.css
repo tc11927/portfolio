@@ -367,7 +367,9 @@ body {
 
 /* rESPONSIVE phoNE */
 
+
 @media (max-width: 767px) {
+    /* --- Section 1 --- */
     .title {
         font-size: 2.8rem;
         padding-top: 3rem;
@@ -379,12 +381,12 @@ body {
         margin-left: 0;
     }
 
+ 
     .me-image {
-        width: 650px;
+        width: 90vw;
         max-width: 360px;
         min-width: unset;
         min-height: unset;
-        max-width: unset;
         max-height: unset;
         margin-top: 35px;
     }
@@ -414,33 +416,50 @@ body {
         right: 25%;
     }
 
-    /* Section 2 */
+    /* Disable parallax movement on mobile (merged from second block) */
+    .parallax-layer,
+    .section2-text,
+    .homesection3-text,
+    .section3-arrow,
+    .me3-image {
+        transform: none !important;
+    }
+
+    /* --- Section 2 --- */
+    /* FIX: section2-character was 900px wide (way too big for phones).
+       Now constrained to 100% of the viewport width and repositioned. */
     .section2-character {
-        width: 900px;
-        max-width: 900px;
-        top: 380px;
-        right: -80px;
-    }
-
-    .visualstorytelling {
-        font-size: 60px;
-        margin-bottom: -60px;
-        margin-top: -120px;
-    }
-
-    .values {
-        font-size: 60px;
+        width: 100%;
+        max-width: 100%;
+        top: 48%;
+        right: -20px;
     }
 
     .section2-text {
         margin-top: -90px;
     }
 
-    /* Section 3 */
+    .visualstorytelling {
+        font-size: clamp(36px, 12vw, 60px);
+        margin-bottom: -40px;
+        margin-top: -120px;
+    }
+
+    .values {
+        font-size: clamp(36px, 12vw, 60px);
+    }
+
+    /* --- Section 3 --- */
+    .homesection3-text {
+        margin-top: 120px;
+    }
+
+
+
     .me3-image {
-        max-width: 300px;
-        right: -10px;
-        top: 450px;
+        max-width: 60vw;
+        right: 0;
+        top: 60%;
     }
 
     .checkout {
@@ -453,9 +472,10 @@ body {
         font-size: 14vw;
     }
 
+  
     .arrow {
         max-width: 200px;
-        margin-top: -200px;
+        margin-top: -20px;
     }
 }
 
