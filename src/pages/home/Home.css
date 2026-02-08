@@ -387,7 +387,7 @@ body {
 
     .me-image {
         width: 130vw;
-        max-width: 900px;
+        max-width:120vw;
         min-width: unset;
         min-height: unset;
         max-height: unset;
@@ -431,10 +431,10 @@ body {
     /* --- Section 2 --- */
 
     .section2-character {
-        width: 100%;
-        max-width: 100%;
-        top: 48%;
-        right: -20px;
+        width: 200%;
+        max-width: 200%;
+        top: 42%;
+        left: -45%;
     }
 
     .section2-text {
@@ -495,7 +495,7 @@ body {
 
     .me-image {
         width: 100vw;
-        max-width: 800px;
+        max-width: 900px;
         min-width: unset;
         min-height: unset;
         margin-top: 5rem;
