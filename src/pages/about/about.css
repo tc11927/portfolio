@@ -205,11 +205,70 @@
 
 .about-gif {
     position: absolute;
-    top:69%;
+    top: 69%;
     right: -5%;
     width: 40vw;
     z-index: 10;
 }
+
+.about-section3 {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    background-color: #f0e5c3;
+    margin-top: -5.5vw;
+    margin-bottom: -2vw;
+}
+
+.about-homesection3-text {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    color: #22303a;
+    font-weight: 800;
+    z-index: 1;
+ 
+}
+
+.about-lets {
+    font-size: 12vw;
+    margin-top: 7vw;
+    margin-bottom: -8vw;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+.about-lets:hover {
+    transform: scale(1.02);
+}
+
+.about-connect {
+    font-size: 6vw;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    margin-bottom: 7vw;
+}
+
+.about-connect:hover {
+    transform: scale(1.02);
+}
+
+.about-arrow {
+    max-width: 20vw;
+    margin-top: -6.5vw;
+    animation: idleBob4 2s ease-in-out infinite;
+}
+
+.about-arrow-hover {
+    transition: transform 0.3s ease;
+}
+
+.about-arrow-hover:hover {
+    transform: scale(1.05);
+}
+
 
 @media (min-width: 768px) {
     .about-row {

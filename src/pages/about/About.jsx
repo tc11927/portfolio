@@ -4,6 +4,8 @@ import Footer from "../../components/footer";
 import JigglyGrid from "../../components/grid";
 import { useState, useRef, useEffect } from "react";
 import Bg2 from "../home/bg2";
+import Bg from "../home/bg";
+import { Link } from "react-router-dom";
 
 export default function About() {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -32,15 +34,15 @@ export default function About() {
             <NavBar />
             <div className="fullaboutsection">
                 <div className="about-quote">
-                     <div>
-                            <img
-                                src="/about/about.gif"
-                                className="about-gif"
-                                style={{
-                            transform: `translate(${mousePos.x * 0.3 * 5}px, ${mousePos.y * 0.3 * 5}px)`,
-                        }}
-                            />
-                        </div>
+                    <div>
+                        <img
+                            src="/about/about.gif"
+                            className="about-gif"
+                            style={{
+                                transform: `translate(${mousePos.x * 0.3 * 5}px, ${mousePos.y * 0.3 * 5}px)`,
+                            }}
+                        />
+                    </div>
                     <Bg2 />
                     <p
                         className="no-matter"
@@ -71,7 +73,6 @@ export default function About() {
                 </div>
                 <div className="about-row reverse-on-desktop">
                     <div className="about-column about-text-column">
-                       
                         <div className="about-grid">
                             <JigglyGrid />
                         </div>
@@ -147,25 +148,35 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="about-row">
-                    <div className="about-column about-text-column">
-                        <div className="about-info">
-                            <div className="about-info-four">
-                                <p>
-                                    I’d love to collaborate and connect to
-                                    create some amazing experiences!
-                                </p>
-                            </div>
-                        </div>
+                <div className="about-section3">
+                    <Bg />
+
+                    <div
+                        className="about-homesection3-text"
+                        style={{
+                            transform: `translate(${mousePos.x * 0.3 * 15}px, ${mousePos.y * 0.3 * 20}px)`,
+                        }}>
+                        <p className="about-lets">Let's</p>
+                        <p className="about-connect">Connect!</p>
                     </div>
-                    <div className="about-column about-image-column">
-                        <section className="me-photo-section">
-                            <img
-                                src="/about/placeholderimage.png"
-                                className="me-photo-about main-photo"
-                                alt="Thea"
-                            />
-                        </section>
+                    <div className="about-arrow-hover">
+                        <div
+                            className="about-section3-arrow"
+                            style={{
+                                transform: `translate(${mousePos.x * 0.9 * 20}px, ${mousePos.y * 0.9 * 20}px)`,
+                            }}>
+                            <a
+                                href="https://www.linkedin.com/in/thea-c/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                               >
+                                <img
+                                    src="/home/arrow.svg"
+                                    alt="LinkedIn"
+                                    className="about-arrow"
+                                />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
