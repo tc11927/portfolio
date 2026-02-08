@@ -386,12 +386,14 @@ body {
 
 
     .me-image {
+        position: relative;
         width: 130vw;
         max-width:120vw;
         min-width: unset;
         min-height: unset;
         max-height: unset;
-        margin-top: 35px;
+       margin-top: auto;          
+
     }
 
     .about,
