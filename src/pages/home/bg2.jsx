@@ -5,6 +5,9 @@ export default function Bg2() {
     const containerRef = useRef(null);
 
     useEffect(() => {
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        return; // ← exit early — no event listener
+    }
         const handleMouseMove = (e) => {
             const layers = document.querySelectorAll(".parallax");
 

@@ -402,25 +402,26 @@
   /* Photo section */
   .me-photo-section {
     width: 94%;
-    min-height: 520px;
-    margin-top: 56px;     
+    min-height: 520px;           
+    margin-top: 56px;
     border-radius: 16px;
     overflow: hidden;
   }
 
   .bg-layer {
-    width: 180%;
-    left: -40%;
-    top: -40%;
+    width: 200vw;           
+    min-width: 200vw;        
+    left: -50%;         
+    top: -50%;                   
+    transform: scale(1.1);     
   }
 
   .main-photo {
-    width: 82%;
+    width: 82vw;            
     max-width: 360px;
-    top: 80px;
-    left: 30px;
+    top: 15vw;           
+    left: 8vw;
   }
-
   .about-info-one,
   .about-info-two,
   .about-info-three {
@@ -450,4 +451,6 @@
     max-width: 152px;    
     margin-top: -40px;  
   }
+
+  
 }
