@@ -414,7 +414,6 @@ body {
         right: 25%;
     }
 
-
     /* Section 2 */
     .section2-character {
         width: 900px;
@@ -456,7 +455,7 @@ body {
 
     .arrow {
         max-width: 200px;
-        margin-top:-200px;
+        margin-top: -200px;
     }
 }
 
@@ -479,10 +478,9 @@ body {
         max-width: 800px;
         min-width: unset;
         min-height: unset;
-        
+
         margin-top: 5rem;
     }
-
 
     .about,
     .work,
@@ -554,4 +552,33 @@ body {
         max-width: 30vw;
         margin-top: -vw;
     }
+}
+
+/* prevent movement */
+@media (max-width: 767px) {
+    .parallax-layer,
+    .section2-text,
+    .homesection3-text,
+    .section3-arrow,
+    .me3-image {
+        transform: none !important;
+    }
+
+    .homesection3-text {
+        margin-top: 120px;
+       
+    }
+
+    .me3-image {
+        top: 60%;
+    }
+
+    .arrow {
+        margin-top: -20px;
+    }
+
+    .section2-character {
+        top: 48%;
+    }
+
 }
