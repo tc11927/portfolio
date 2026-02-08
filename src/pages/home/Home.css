@@ -468,7 +468,7 @@ body {
     /* --- Section 3 --- */
  .section3 {
     justify-content: flex-end; 
-    padding-bottom: -6vh;         /* text higher, image at bottom */
+    padding-bottom: -6vh;       
 
   }
 
@@ -519,13 +519,17 @@ body {
         margin-left: -0.5vw;
     }
 
-    .me-image {
-        width: 100vw;
-        max-width: 900px;
-        min-width: unset;
-        min-height: unset;
-        margin-top: 5rem;
-    }
+   .me3-image {
+    position: relative !important;     
+    width: 110vw;
+    max-width: 340px;            
+    height: auto;
+    margin-top: auto;                  
+    margin-bottom: -12vw;     
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 
     .about,
     .work,
