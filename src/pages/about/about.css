@@ -321,20 +321,14 @@
 
   }
 
-  .about-quote,
-  .about-section3 {
+  .fullaboutsection{
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: calc(-50vw + 50%) !important;  
     width: 100vw !important;
   }
 
-    .about-row.reverse-on-desktop {
-     padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: calc(-33.4vw + 50%) !important;  
-    width: 100vw !important;
-    }
+
 
   .about-quote,
   .about-row.reverse-on-desktop,
