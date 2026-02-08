@@ -38,7 +38,7 @@
 }
 
 .bottom-left {
-    bottom: -2%;
+    bottom: -15%;
     left: -4%;
     width: 35vw;
 }
@@ -50,7 +50,7 @@
 }
 
 .bottom-right {
-    bottom: 5%;
+    bottom: -10%;
     right: -4vw;
     width: 40vw;
 }
@@ -59,7 +59,7 @@
 @media (max-width: 767px) {
     .top-left {
         width: 45vw;
-        top: -5%;
+        top: -15%;
         left: -8%;
     }
 
@@ -77,7 +77,7 @@
 
     .bottom-left {
         width: 65vw;
-        bottom: -2%;
+        bottom: -15%;
         left: -8%;
     }
 
@@ -89,7 +89,7 @@
 
     .bottom-right {
         width: 70vw;
-        bottom: 2%;
+        bottom: -15%;
         right: -8vw;
     }
 }

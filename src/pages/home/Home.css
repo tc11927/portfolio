@@ -369,7 +369,7 @@ body {
     transform: scale(1.05);
 }
 
-/* ===== RESPONSIVE PHONE (single consolidated block) ===== */
+/* ===== RESPONSIVE PHONE  */
 
 @media (max-width: 767px) {
     /* --- Section 1 --- */
@@ -384,12 +384,10 @@ body {
         margin-left: 0;
     }
 
-    /* FIX: removed duplicate conflicting max-width declarations.
-       The old CSS set max-width: 360px then immediately max-width: unset,
-       which removed the constraint entirely. Now we keep 90vw capped at 360px. */
+
     .me-image {
-        width: 90vw;
-        max-width: 360px;
+        width: 130vw;
+        max-width: 900px;
         min-width: unset;
         min-height: unset;
         max-height: unset;
@@ -431,8 +429,7 @@ body {
     }
 
     /* --- Section 2 --- */
-    /* FIX: section2-character was 900px wide (way too big for phones).
-       Now constrained to 100% of the viewport width and repositioned. */
+
     .section2-character {
         width: 100%;
         max-width: 100%;
@@ -459,8 +456,7 @@ body {
         margin-top: 120px;
     }
 
-    /* FIX: me3-image was 300px wide with negative right, overflowing off-screen.
-       Now constrained to 60vw and kept within viewport. */
+
     .me3-image {
         max-width: 60vw;
         right: 0;
@@ -477,8 +473,7 @@ body {
         font-size: 14vw;
     }
 
-    /* FIX: arrow margin-top was -200px pulling it completely off-screen.
-       Now uses a reasonable negative margin. */
+
     .arrow {
         max-width: 200px;
         margin-top: -20px;
