@@ -432,15 +432,27 @@ body {
 
     /* --- Section 2 --- */
 
+.Section2 {
+    justify-content: flex-end;          /* ← text at top-ish, image at bottom */
+    padding: 4vw;
+    padding-bottom: 8vh;
+  }
+
     .section2-character {
+        position: relative;
         width: 200%;
         max-width: 200%;
-        top: 42%;
-        left: -45%;
+        right: -135%;
+        margin-top: auto;                  
+    margin-bottom: -50vw;
     }
 
     .section2-text {
-        margin-top: -90px;
+       margin-top: 20vh;                   /* give some top space */
+    margin-bottom: auto;                /* push following siblings down */
+    width: 100%;
+    text-align: center;
+    margin-right: 20vw;
     }
 
     .visualstorytelling {
