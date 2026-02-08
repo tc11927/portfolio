@@ -1,9 +1,11 @@
 html {
     background-color: #f0e5c3;
+
 }
 
 body {
     margin: 0;
+
 }
 
 /* Section 1 */
@@ -187,8 +189,10 @@ body {
 
 .section1-bg {
     position: absolute;
-    inset: 0;
-    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     height: 100%;
     overflow: hidden;
     pointer-events: none;
@@ -365,8 +369,7 @@ body {
     transform: scale(1.05);
 }
 
-/* rESPONSIVE phoNE */
-
+/* ===== RESPONSIVE PHONE (single consolidated block) ===== */
 
 @media (max-width: 767px) {
     /* --- Section 1 --- */
@@ -381,7 +384,9 @@ body {
         margin-left: 0;
     }
 
- 
+    /* FIX: removed duplicate conflicting max-width declarations.
+       The old CSS set max-width: 360px then immediately max-width: unset,
+       which removed the constraint entirely. Now we keep 90vw capped at 360px. */
     .me-image {
         width: 90vw;
         max-width: 360px;
@@ -454,8 +459,8 @@ body {
         margin-top: 120px;
     }
 
-
-
+    /* FIX: me3-image was 300px wide with negative right, overflowing off-screen.
+       Now constrained to 60vw and kept within viewport. */
     .me3-image {
         max-width: 60vw;
         right: 0;
@@ -472,7 +477,8 @@ body {
         font-size: 14vw;
     }
 
-  
+    /* FIX: arrow margin-top was -200px pulling it completely off-screen.
+       Now uses a reasonable negative margin. */
     .arrow {
         max-width: 200px;
         margin-top: -20px;
@@ -489,7 +495,6 @@ body {
 
     .parallax-container {
         min-height: 65vh;
-
         margin-left: -0.5vw;
     }
 
@@ -498,7 +503,6 @@ body {
         max-width: 800px;
         min-width: unset;
         min-height: unset;
-
         margin-top: 5rem;
     }
 
@@ -570,35 +574,6 @@ body {
 
     .arrow {
         max-width: 30vw;
-        margin-top: -vw;
+        margin-top: -3vw;
     }
-}
-
-/* prevent movement */
-@media (max-width: 767px) {
-    .parallax-layer,
-    .section2-text,
-    .homesection3-text,
-    .section3-arrow,
-    .me3-image {
-        transform: none !important;
-    }
-
-    .homesection3-text {
-        margin-top: 120px;
-       
-    }
-
-    .me3-image {
-        top: 60%;
-    }
-
-    .arrow {
-        margin-top: -20px;
-    }
-
-    .section2-character {
-        top: 48%;
-    }
-
 }
