@@ -488,15 +488,16 @@ body {
     width: 100%;
   }
 
-  .me3-image {
-    position: relative;
-    width: 90vw;
-    max-width: 240px;
+.me3-image {
+    position: relative !important;    
+    width: 110vw;
+    max-width: 340px;                   
     height: auto;
-    margin-top: auto;
+    margin-top: auto;              
+    margin-bottom: -12vw;               
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -50vw;               
+    display: block;
   }
 
   .arrow {
@@ -519,17 +520,13 @@ body {
         margin-left: -0.5vw;
     }
 
-   .me3-image {
-    position: relative !important;     
-    width: 110vw;
-    max-width: 340px;            
-    height: auto;
-    margin-top: auto;                  
-    margin-bottom: -12vw;     
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+    .me-image {
+        width: 100vw;
+        max-width: 900px;
+        min-width: unset;
+        min-height: unset;
+        margin-top: 5rem;
+    }
 
     .about,
     .work,
