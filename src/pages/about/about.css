@@ -62,10 +62,10 @@
 
 .about-info-one,
 .about-info-two,
-.about-info-three,
-.about-info-four {
+.about-info-three {
     font-family: "Nunito Sans", sans-serif;
     text-align: left;
+    margin-right: 5.5vw;
 }
 
 .me-photo-about {
@@ -80,7 +80,7 @@
     overflow: hidden;
     width: 90%;
     min-height: 700px;
-    margin-top: 10vw;
+    margin-top: 3vw;
     border-radius: 20px;
 }
 
