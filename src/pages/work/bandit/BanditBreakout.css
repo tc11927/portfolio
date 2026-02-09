@@ -86,7 +86,7 @@ p,
     justify-content: left;
     margin-top: 3vw;
     color: white;
-    margin-bottom: -5vw;
+    margin-bottom: -3vw;
 }
 
 .bandittag1,
@@ -134,6 +134,8 @@ p,
     font-size: 16px;
 }
 
+
+
 .bandithero-text2 {
     margin-top: 1.5rem;
 }
@@ -141,7 +143,7 @@ p,
 .bandittitle-image {
     width: 50vw;
     margin-right: -80vw;
-    margin-top: -8.6vw;
+    margin-top: -12vw;
 }
 
 /* ==========================================================================
