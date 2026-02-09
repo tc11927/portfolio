@@ -115,6 +115,8 @@ export default function Work() {
                     ))}
                 </div>
 
+                <div className="line-work"></div>
+
                 <div className="gallery-grid">
                     {filteredItems.map((item) => (
                         <Link

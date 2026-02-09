@@ -40,8 +40,7 @@
     position: relative;
     z-index: 2;
     margin-top: -20vw;
-   margin-bottom: -0.3vw;
-
+    margin-bottom: -0.3vw;
 }
 
 .header-wrapper :where(.jiggly-grid-container, .jiggly-grid) {
@@ -264,8 +263,8 @@
 }
 
 .category-tag.design {
-    background: #7da75b;
-    border-color: #7da75b;
+    background:  #64bcad;
+    border-color: #64bcad;
 }
 .category-tag.ui-ux {
     background: #f4a261;
@@ -276,8 +275,8 @@
     border-color: #fed040;
 }
 .category-tag.motion-graphics {
-    background: #c084fc;
-    border-color: #c084fc;
+    background: #7da75b;
+    border-color: #7da75b;
 }
 
 .tools {
@@ -295,6 +294,14 @@
     margin-bottom: 0.5vw;
     opacity: 0.92;
     text-align: left;
+}
+
+.line-work {
+    height: 3px;
+    background: #131e29;
+    border-radius: 20px;
+    margin-top: -3vw;
+    margin-bottom: 4vw;
 }
 
 /* Responsive */
