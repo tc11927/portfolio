@@ -27,10 +27,11 @@
     isolation: isolate;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    margin-top: -15%;
+    margin-top: -6%;
     background-color: #22303a;
     box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.25);
     margin-bottom: 3vw;
+    overflow: hidden;
 }
 
 .header-title {
@@ -39,6 +40,7 @@
     position: relative;
     z-index: 2;
     margin-top: -21vw;
+
 }
 
 .header-wrapper :where(.jiggly-grid-container, .jiggly-grid) {
