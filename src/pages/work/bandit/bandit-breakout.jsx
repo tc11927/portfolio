@@ -30,10 +30,10 @@ export default function BanditBreakout() {
                                 many rounds.
                             </p>
                             <p className="bandithero-text2">
-                                Designed for all gamers, Bandit Breakout blends
-                                stunning visual design with engaging gameplay,
-                                making gaming with friends more interactive and
-                                personalized.
+                                My role was to blend stunning visual design with
+                                engaging gameplay, to make gaming with friends
+                                more interactive and personalized. I focused on
+                                the design, artwork, and animation.
                             </p>
                         </div>
 
@@ -101,15 +101,15 @@ export default function BanditBreakout() {
                         <div className="bandit-text-content bandit-process-text">
                             <h2>Problem</h2>
                             <p>
-                                Many multiplayer board games fall into the trap
-                                of being repetitive, boring, and straightforward
-                                after 2+ replays. The lack of customization or
-                                surprises bore many players, and many find
-                                normal board games lack the visual appeal
-                                players desire.
+                                My group and I found taught multiplayer board
+                                games fall into the trap of being repetitive,
+                                boring, and straightforward after 2+ replays.
+                                The lack of customization or surprises bore us,
+                                and we find that normal board games lack the
+                                visual appeal players desire.
                             </p>
                             <p>
-                                This is why Bandit Breakout was made, to bring
+                                This is why we made Bandit Breakout, to bring
                                 players a chaotic, but fun, boardgame experience
                                 with friends.
                             </p>
@@ -150,19 +150,22 @@ export default function BanditBreakout() {
                         <div className="bandit-text-content bandit-process-text">
                             <h2>Solution</h2>
                             <p>
-                                Bandit Breakout is a race to the finish line
-                                type board game. The main objective of the
-                                player is to get to the end and capture the
-                                villain who’s terrorizing the desert. You
-                                accomplish this by navigating through the board,
-                                moving by rolling dice, gaining items to
-                                progress yourself or move others back, and
-                                decision spaces that determine where you go.
+                                As the designer of Bandit Breakout, my goal was
+                                to create a race-to-the-finish board game that
+                                feels dynamic and player-driven rather than
+                                strictly linear. Players race across the desert
+                                to capture the villain terrorizing the land, but
+                                how they get there is shaped by the choices they
+                                make along the way.
                             </p>
                             <p>
-                                Instead of the linear, straightforward gameplay
-                                many boardgames have, Bandit Breakout offers a
-                                fun, interactive boardgame experience.
+                                Instead of a straightforward path from start to
+                                finish, I designed Bandit Breakout to encourage
+                                interaction, tension, and replayability. Every
+                                turn offers opportunities for player choice and
+                                disruption, creating a more engaging, visually
+                                engaging, and unpredictable board game
+                                experience.
                             </p>
                         </div>
                     </div>
@@ -196,28 +199,31 @@ export default function BanditBreakout() {
                         <div className="bandit-text-content bandit-research-text">
                             <h2>Research</h2>
                             <p>
-                                Interviews with 12 boardgame players showed us
-                                how over 80% of players enjoy playing
-                                collaboratively with friends, and over 60% enjoy
-                                storybased games.
+                                Interviews with 12 board game players showed a
+                                strong preference for collaborative,
+                                story-driven play. Over 80% enjoyed cooperative
+                                experiences, and 60% valued narrative-focused
+                                games, leading me to design gameplay around
+                                shared decision-making and visual progression.
                             </p>
                             <p>
-                                Many users were dissatisfied with certain
-                                endings from games, and found multiple endings
-                                interesting, but didn’t mind one as long as it
-                                ended satisfyingly.
+                                Players expressed frustration with unsatisfying
+                                endings, so I prioritised meaningful, fully
+                                illustrated narrative conclusions. While
+                                multiple endings increased engagement, ensuring
+                                every ending felt complete became a key focus.
                             </p>
                             <p>
-                                12 boardgame players, with different playstyle
-                                and gaming methods, all searching for
-                                multiplayer games that can be replayed with
-                                friends.
+                                To support varied playstyles and replayable
+                                multiplayer experiences, I emphasised
+                                replayability through different choices,
+                                interactions, and characters.
                             </p>
                             <p>
-                                Secondary research displayed how important
-                                storytelling and lore is to many players,
-                                highlighting how important endings and choice
-                                based actions and outcomes were to players.
+                                Secondary research reinforced the importance of
+                                storytelling, lore, and consequence-driven
+                                outcomes, guiding the creation of detailed,
+                                unique characters.
                             </p>
                             <a
                                 href="https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing"
