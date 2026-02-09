@@ -501,14 +501,14 @@ body {
 
   .me3-image {
     position: relative !important;      
-    width: 110vw;
-    max-width: 260px;                  
+   bottom: -120px;                          
+    transform: translateX(-50%);     
+    width: 50vw;
+    max-width: 360px;        
     height: auto;
-    margin-top: auto;                
-    margin-bottom: -20vw;            
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    z-index: 1;                        
+    margin: 0;
+    pointer-events: none;             
   }
 
 .arrow {
