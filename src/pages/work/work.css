@@ -67,7 +67,6 @@
 .filter-btn:hover {
     background-color: #131e29;
     color: #f0e5c3;
-    /* transform was here originally — but gets overridden by more specific rules */
 }
 
 .filter-btn.active {
@@ -140,7 +139,7 @@
     border-radius: 14px;
     cursor: pointer;
     background: #111;
-    /* transform and transition MOVED to .gallery-item-link below */
+  
 }
 
 .gallery-item-link {
@@ -290,10 +289,7 @@
     margin-bottom: 4vw;
 }
 
-/* ─────────────────────────────────────────────── */
-/* LAST RESORT: FORCE FILTER BUTTON SCALE           */
-/* Put this at the VERY BOTTOM of the file          */
-/* ─────────────────────────────────────────────── */
+
 
 .filter-btn:hover {
     transform: scale(1.05) !important;
