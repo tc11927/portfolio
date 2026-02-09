@@ -19,12 +19,12 @@ export default function NavBar() {
                 <Link
                     to="/work"
                     className="work-nav">
-                    Work
+                    Projects
                 </Link>
                 <Link
                     to="/add"
                     className="gallery-nav">
-                    Gallery
+                    Freelance
                 </Link>
                 <Link
                     to="/about"

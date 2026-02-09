@@ -3,7 +3,7 @@ import "./work.css";
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
 import JigglyGrid from "../../components/grid";
-import { useState, useRef, useEffect } from "react";   // ← add useRef + useEffect
+import { useState, useRef, useEffect } from "react";
 
 const galleryItems = [
     {
@@ -16,7 +16,16 @@ const galleryItems = [
         description:
             "Designed for all gamers, Bandit Breakout blends stunning visual design with engaging gameplay, making gaming with friends more interactive and personalized.",
     },
-
+    {
+        id: 2,
+        slug: "tandem",
+        title: "Tandem Web App",
+        categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
+        tools: "Figma + Illustrator + After Effects + Visual Studio Code",
+        image: "/work/tandemmockup.png",
+        description:
+            "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
+    },
     {
         id: 3,
         slug: "",
@@ -47,7 +56,6 @@ export default function Work() {
                   item.categories.includes(activeFilter),
               );
 
-
     const headerRef = useRef(null);
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
@@ -56,9 +64,11 @@ export default function Work() {
             if (!headerRef.current) return;
 
             const rect = headerRef.current.getBoundingClientRect();
-      
-            const x = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
-            const y = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+
+            const x =
+                (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
+            const y =
+                (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
 
             setMousePos({ x, y });
         };
@@ -67,8 +77,8 @@ export default function Work() {
         return () => window.removeEventListener("mousemove", handleMouseMove);
     }, []);
 
-    const titleStrength  = 0.04;   
-    const gridStrength   = 0.018; 
+    const titleStrength = 0.04;
+    const gridStrength = 0.018;
 
     return (
         <div className="work-container">
@@ -76,16 +86,14 @@ export default function Work() {
 
             <div className="work-content">
                 <h1 className="work-title">
-                    <div 
+                    <div
                         className="header-wrapper"
-                        ref={headerRef}                     
-                    >
+                        ref={headerRef}>
                         <div
                             className="parallax-layer grid-layer"
                             style={{
                                 transform: `translate(${mousePos.x * gridStrength * 100}px, ${mousePos.y * gridStrength * 100}px)`,
-                            }}
-                        >
+                            }}>
                             <JigglyGrid />
                         </div>
 

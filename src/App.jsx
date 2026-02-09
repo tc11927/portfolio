@@ -7,6 +7,7 @@ import Contact from "./pages/contact/Contact";
 import Work from "./pages/work/Work";
 import BanditBreakout from "./pages/work/bandit/bandit-breakout";
 import Popunk from "./pages/work/popunk/popunk";
+import Tandem from "./pages/work/tandem/tandem";
 
 function App() {
     return (
@@ -62,6 +63,10 @@ function App() {
                 <Route
                     path="/work/popunk"
                     element={<Popunk />}
+                />
+                  <Route
+                    path="/work/tandem"
+                    element={<Tandem/>}
                 />
             </Routes>
         </>
