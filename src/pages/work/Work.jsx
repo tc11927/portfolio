@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import "./work.css";
-import { useState } from "react";
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
+import JigglyGrid from "../../components/grid";
+import { useState } from "react";
 
 const galleryItems = [
     {
@@ -23,14 +24,21 @@ const galleryItems = [
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
         tools: "Check back soon!",
         image: "/work/Black.png",
-        description: "This page is currently under construction! Come back later to see more of my work!",
+        description:
+            "This page is currently under construction! Come back later to see more of my work!",
     },
 ];
 
 export default function Work() {
     const [activeFilter, setActiveFilter] = useState("all");
 
-    const allCategories = ["all", "Design", "UI/UX", "Motion Graphics", "Front-end"];
+    const allCategories = [
+        "all",
+        "Design",
+        "UI/UX",
+        "Motion Graphics",
+        "Front-end",
+    ];
 
     const filteredItems =
         activeFilter === "all"
@@ -39,11 +47,24 @@ export default function Work() {
                   item.categories.includes(activeFilter),
               );
 
+
+
     return (
         <div className="work-container">
             <NavBar />
+
             <div className="work-content">
-                <h1 className="work-title">Featured Work</h1>
+                <h1 className="work-title">
+                    <div className="header-wrapper">
+                        <JigglyGrid />
+                   <img
+  src="/work/workheader.gif"
+  className="header-title"
+  alt="Work header"
+
+/>
+                    </div>
+                </h1>
 
                 <div className="filter-buttons">
                     {allCategories.map((category) => (
