@@ -54,11 +54,7 @@ export default function Bg2() {
                 data-speed="1.8"
                 src="/home/bottombg/top left 2.svg"
             />
-            <img
-                className="parallax top-middle2"
-                data-speed="1"
-                src="/home/bottomgbg/top middle 2.svg"
-            />
+          
             <img
                 className="parallax top-right2"
                 data-speed="2"
