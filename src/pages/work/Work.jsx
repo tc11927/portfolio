@@ -58,7 +58,7 @@ export default function Work() {
                     <div className="header-wrapper">
                         <JigglyGrid />
                    <img
-  src="/work/workheader.gif"
+  src="/work/header.png"
   className="header-title"
   alt="Work header"
 
