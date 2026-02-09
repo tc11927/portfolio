@@ -22,35 +22,30 @@
 }
     */
 
-
 .header-wrapper {
     position: relative;
-    isolation: isolate;          
+    isolation: isolate;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-top: -15%;
-    background-color: #22303a;   
-
+    background-color: #22303a;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3vw;
 }
-
 
 .header-title {
     width: 100%;
     display: block;
     position: relative;
     z-index: 2;
-     margin-top: -21vw;
+    margin-top: -21vw;
 }
 
-
-
-
-.header-wrapper :where(.jiggly-grid-container, .jiggly-grid) {   
+.header-wrapper :where(.jiggly-grid-container, .jiggly-grid) {
     position: absolute;
     inset: 0;
     z-index: 1;
 }
-
 
 /* Filter Buttons */
 .filter-buttons {

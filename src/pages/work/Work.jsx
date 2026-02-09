@@ -3,7 +3,7 @@ import "./work.css";
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
 import JigglyGrid from "../../components/grid";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";   // ← add useRef + useEffect
 
 const galleryItems = [
     {
@@ -48,6 +48,27 @@ export default function Work() {
               );
 
 
+    const headerRef = useRef(null);
+    const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            if (!headerRef.current) return;
+
+            const rect = headerRef.current.getBoundingClientRect();
+      
+            const x = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
+            const y = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+
+            setMousePos({ x, y });
+        };
+
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+    }, []);
+
+    const titleStrength  = 0.04;   
+    const gridStrength   = 0.018; 
 
     return (
         <div className="work-container">
@@ -55,14 +76,27 @@ export default function Work() {
 
             <div className="work-content">
                 <h1 className="work-title">
-                    <div className="header-wrapper">
-                        <JigglyGrid />
-                   <img
-  src="/work/header-work.png"
-  className="header-title"
-  alt="Work header"
+                    <div 
+                        className="header-wrapper"
+                        ref={headerRef}                     
+                    >
+                        <div
+                            className="parallax-layer grid-layer"
+                            style={{
+                                transform: `translate(${mousePos.x * gridStrength * 100}px, ${mousePos.y * gridStrength * 100}px)`,
+                            }}
+                        >
+                            <JigglyGrid />
+                        </div>
 
-/>
+                        <img
+                            src="/work/header-work.png"
+                            className="header-title parallax-layer"
+                            alt="Work header"
+                            style={{
+                                transform: `translate(${mousePos.x * titleStrength * 100}px, ${mousePos.y * titleStrength * 100}px)`,
+                            }}
+                        />
                     </div>
                 </h1>
 
