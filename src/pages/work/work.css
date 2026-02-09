@@ -11,17 +11,6 @@
     margin-top: -2vw;
 }
 
-/*
-.work-title {
-    font-family: "Averia Sans Libre", cursive, sans-serif;
-    font-size: 6.5vw;
-    font-weight: 800;
-    color: #131e29;
-    text-align: center;
-    margin: 0 0 1.5vw 0;
-}
-    */
-
 .header-wrapper {
     position: relative;
     isolation: isolate;
@@ -67,13 +56,18 @@
     border: 2px solid #131e29;
     border-radius: 30px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: transform, background-color, color, border-color;
 }
 
 .filter-btn:hover {
     background-color: #131e29;
     color: #f0e5c3;
-    transform: scale(1.05);
+    /* transform was here originally — but gets overridden by more specific rules */
 }
 
 .filter-btn.active {
@@ -103,13 +97,13 @@
 }
 
 .filter-btn[data-category="front-end"].active {
-    background-color: #fed040;
-    border-color: #fed040;
+    background-color: #fec10b;
+    border-color: #fec10b;
 }
 
 .filter-btn[data-category="front-end"]:hover:not(.active) {
-    background-color: #fed040;
-    border-color: #fed040;
+    background-color: #fec10b;
+    border-color: #fec10b;
 }
 
 .filter-btn[data-category="design"]:hover:not(.active) {
@@ -127,6 +121,10 @@
     border-color: #7da75b;
 }
 
+/* ─────────────────────────────────────────────── */
+/* GALLERY GRID & ITEMS                               */
+/* ─────────────────────────────────────────────── */
+
 .gallery-grid {
     column-count: 4;
     column-gap: 1vw;
@@ -141,25 +139,25 @@
     overflow: hidden;
     border-radius: 14px;
     cursor: pointer;
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
     background: #111;
-}
-
-.gallery-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    /* transform and transition MOVED to .gallery-item-link below */
 }
 
 .gallery-item-link {
     display: block;
     text-decoration: none;
     color: inherit;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 
+        transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+
 }
 
-.gallery-item-link:hover .gallery-item {
-    transform: translateY(-8px);
+.gallery-item-link:hover {
+    transform: scale(1.045);
+
 }
 
 .item-image {
@@ -262,22 +260,10 @@
     white-space: nowrap;
 }
 
-.category-tag.design {
-    background:  #64bcad;
-    border-color: #64bcad;
-}
-.category-tag.ui-ux {
-    background: #f4a261;
-    border-color: #f4a261;
-}
-.category-tag.front-end {
-    background: #fed040;
-    border-color: #fed040;
-}
-.category-tag.motion-graphics {
-    background: #7da75b;
-    border-color: #7da75b;
-}
+.category-tag.design       { background: #64bcad; border-color: #64bcad; }
+.category-tag.ui-ux        { background: #f4a261; border-color: #f4a261; }
+.category-tag.front-end    { background: #fec10b; border-color: #fec10b; }
+.category-tag.motion-graphics { background: #7da75b; border-color: #7da75b; }
 
 .tools {
     font-family: "Averia Sans Libre", cursive, sans-serif;
@@ -304,6 +290,19 @@
     margin-bottom: 4vw;
 }
 
+/* ─────────────────────────────────────────────── */
+/* LAST RESORT: FORCE FILTER BUTTON SCALE           */
+/* Put this at the VERY BOTTOM of the file          */
+/* ─────────────────────────────────────────────── */
+
+.filter-btn:hover {
+    transform: scale(1.05) !important;
+}
+
+.filter-btn:not(.active):hover {
+    transform: scale(1.07) !important;
+}
+
 /* Responsive */
 @media (max-width: 1100px) {
     .gallery-grid {
@@ -322,8 +321,6 @@
         font-size: 2vw;
         padding: 0.9vw 2vw;
     }
-
-    /* item caRDSsss!!! */
     .item-title {
         font-size: 5.8vw;
     }
@@ -344,9 +341,6 @@
         padding: 6vw 3vw;
         margin-top: 8vw;
     }
-    .work-title {
-        font-size: 9vw;
-    }
     .filter-btn {
         font-size: 3.2vw;
         padding: 1.2vw 2.8vw;
@@ -358,8 +352,6 @@
     .item-image {
         aspect-ratio: 3 / 4.5;
     }
-
-    /* item caRDS!!! */
     .item-title {
         font-size: 4vw;
     }
@@ -382,14 +374,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .work-title {
-        font-size: 8vw;
-    }
-    .filter-btn {
-        font-size: 2.2vw;
-        padding: 1.2vw 2.8vw;
-    }
-    /* item caRDS!!! */
     .item-title {
         font-size: 3.5vw;
     }
@@ -405,61 +389,31 @@
     }
 }
 
-/* ANIMATIONSSS */
+/* ANIMATIONS */
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(24px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0);    }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.work-content {
-    animation: fadeUp 0.8s ease forwards;
-}
-
-.work-title {
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards;
-    animation-delay: 0.15s;
-}
+.work-content   { animation: fadeUp 0.8s ease forwards; }
+.work-title     { opacity: 0; animation: fadeUp 0.9s ease forwards; animation-delay: 0.15s; }
 
 .filter-btn {
     opacity: 0;
     animation: fadeUp 0.6s ease forwards;
 }
+.filter-btn:nth-child(1) { animation-delay: 0.25s; }
+.filter-btn:nth-child(2) { animation-delay: 0.32s; }
+.filter-btn:nth-child(3) { animation-delay: 0.39s; }
+.filter-btn:nth-child(4) { animation-delay: 0.46s; }
+.filter-btn:nth-child(5) { animation-delay: 0.53s; }
 
-.filter-btn:nth-child(1) {
-    animation-delay: 0.25s;
-}
-.filter-btn:nth-child(2) {
-    animation-delay: 0.32s;
-}
-.filter-btn:nth-child(3) {
-    animation-delay: 0.39s;
-}
-.filter-btn:nth-child(4) {
-    animation-delay: 0.46s;
-}
-.filter-btn:nth-child(5) {
-    animation-delay: 0.53s;
-}
-
-.gallery-grid {
-    animation: fadeIn 0.8s ease forwards;
-}
+.gallery-grid   { animation: fadeIn 0.8s ease forwards; }
 
 .gallery-item {
     opacity: 0;
@@ -467,28 +421,12 @@
     animation: fadeUp 0.7s ease forwards;
 }
 
-/* Natural masonry stagger */
-.gallery-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-.gallery-item:nth-child(2) {
-    animation-delay: 0.3s;
-}
-.gallery-item:nth-child(3) {
-    animation-delay: 0.4s;
-}
-.gallery-item:nth-child(4) {
-    animation-delay: 0.5s;
-}
-.gallery-item:nth-child(5) {
-    animation-delay: 0.6s;
-}
-.gallery-item:nth-child(6) {
-    animation-delay: 0.7s;
-}
-.gallery-item:nth-child(7) {
-    animation-delay: 0.8s;
-}
-.gallery-item:nth-child(8) {
-    animation-delay: 0.9s;
-}
+/* Staggered entrance */
+.gallery-item:nth-child(1) { animation-delay: 0.2s; }
+.gallery-item:nth-child(2) { animation-delay: 0.3s; }
+.gallery-item:nth-child(3) { animation-delay: 0.4s; }
+.gallery-item:nth-child(4) { animation-delay: 0.5s; }
+.gallery-item:nth-child(5) { animation-delay: 0.6s; }
+.gallery-item:nth-child(6) { animation-delay: 0.7s; }
+.gallery-item:nth-child(7) { animation-delay: 0.8s; }
+.gallery-item:nth-child(8) { animation-delay: 0.9s; }
