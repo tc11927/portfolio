@@ -86,7 +86,7 @@ p,
     justify-content: left;
     margin-top: 3vw;
     color: white;
-    margin-bottom: -5vw;
+    margin-bottom: -3vw;
 }
 
 .tandemtag1,
@@ -482,9 +482,9 @@ p,
 
 .tandem-floating-overlay1 {
     position: absolute;
-    top: 63%;
-    right: 89%;
-    width: 12vw;
+    top: 47.5%;
+    right: 93%;
+    width: 11vw;
     z-index: 10;
 }
 
