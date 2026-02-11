@@ -4,24 +4,24 @@ import Footer from "../../../components/footer";
 
 export default function Tandem() {
     return (
-        <div className="banditpage-wrapper">
+        <div className="tandempage-wrapper">
             <NavBar />
 
-            <header className="bandithero">
-                <div className="banditcontainer">
-                    <h1 className="banditproject-title">Tandem Web App</h1>
-                    <p className="banditproject-roles">
+            <header className="tandemhero">
+                <div className="tandemcontainer">
+                    <h1 className="tandemproject-title">Tandem Web App</h1>
+                    <p className="tandemproject-roles">
                         Roles: Design & Project Lead, UI/UX Designer
                     </p>
-                    <div className="bandittags">
-                        <span className="bandittag1">Design</span>
-                        <span className="bandittag2">UI/UX</span>
-                        <span className="bandittag3">Motion Graphics</span>
-                        <span className="bandittag4">Front-end</span>
+                    <div className="tandemtags">
+                        <span className="tandemtag1">Design</span>
+                        <span className="tandemtag2">UI/UX</span>
+                        <span className="tandemtag3">Motion Graphics</span>
+                        <span className="tandemtag4">Front-end</span>
                     </div>
 
-                    <div className="bandithero-content">
-                        <div className="bandithero-text">
+                    <div className="tandemhero-content">
+                        <div className="tandemhero-text">
                             <p>
                                 Tandem is an app for parents in trades to help
                                 balance work with childcare. It utilizes AI to
@@ -30,11 +30,11 @@ export default function Tandem() {
                                 recommendations and supportive childcare. It
                                 allows parents in the trades to find childcare
                                 easily, reducing stress and improving work-life
-                                balance. 
+                                balance.
                             </p>
-                            <p className="bandithero-text2">
-                                Inspired by the multiple real stories
-                                of tradesworkers who struggle with childcare,
+                            <p className="tandemhero-text2">
+                                Inspired by the multiple real stories of
+                                tradesworkers who struggle with childcare,
                                 Tandem aimed to create a world where instead of
                                 childcare feeling overwhelming and consistent,
                                 childcare could be supportive, flexible, and
@@ -42,7 +42,7 @@ export default function Tandem() {
                             </p>
                         </div>
 
-                        <div className="bandithero-image">
+                        <div className="tandemhero-image">
                             <img
                                 src="/work/tandem/tandemphones.png"
                                 className="tandemtitle-image"
@@ -53,9 +53,9 @@ export default function Tandem() {
                 </div>
             </header>
 
-            <nav className="banditsection-nav">
-                <div className="banditcontainer">
-                    <p className="banditsection-title">View Section:</p>
+            <nav className="tandemsection-nav">
+                <div className="tandemcontainer">
+                    <p className="tandemsection-title">View Section:</p>
                     <ul>
                         <li>
                             <a href="#problem">Problem</a>
@@ -67,20 +67,16 @@ export default function Tandem() {
                             <a href="#research">Research</a>
                         </li>
                         <li>
-                            <a href="#branding">
-                                Sketching, Character Design, & Backgrounds
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#animating">Animating</a>
+                            <a href="#branding">Branding and Styleguide</a>
                         </li>
                         <li>
                             <a href="#issue">Unexpected Issue</a>
                         </li>
                         <li>
-                            <a href="#what-didnt-work">
-                                What Didn't Work & How We Solved it
-                            </a>
+                            <a href="#what-didnt-work">What Didn't Work</a>
+                        </li>
+                        <li>
+                            <a href="#how-we-solved">How We Solved It</a>
                         </li>
                         <li>
                             <a href="#final-design">Final Design & Showcase</a>
@@ -93,38 +89,38 @@ export default function Tandem() {
             </nav>
 
             <section
-                className="banditsection"
+                className="tandemsection"
                 id="problem">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">01</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Problem</span>
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">01</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">Problem</span>
                     </div>
 
-                    <div className="bandit-two-column">
-                        <div className="bandit-text-content bandit-process-text">
+                    <div className="tandem-two-column">
+                        <div className="tandem-text-content">
                             <h2>Problem</h2>
                             <p>
-                                Many multiplayer board games fall into the trap
-                                of being repetitive, boring, and straightforward
-                                after 2+ replays. The lack of customization or
-                                surprises bore many players, and many find
-                                normal board games lack the visual appeal
-                                players desire.
+                                Daycares can be difficult, with long waitlists
+                                and lack of flexible hours for tradeparents
+                                schedules. Many are faced with the options to
+                                either call into work if their childcare falls
+                                through, contact family for help, or become a
+                                stay-at-home parent. Many don’t have the
+                                support, and aren’t able to afford this.
                             </p>
                             <p>
-                                This is why Bandit Breakout was made, to bring
-                                players a chaotic, but fun, boardgame experience
-                                with friends.
+                                This is why Tandem was made, to bridge the gap
+                                between work and childcare.
                             </p>
                         </div>
 
-                        <div className="bandit-media-column">
+                        <div className="tandem-media-column">
                             <img
-                                src="/work/bandit/problemo.svg"
+                                src="/work/tandem/problemo.svg"
                                 alt=""
-                                className="bandit-large-media"
+                                className="tandem-large-media"
                             />
                         </div>
                     </div>
@@ -132,42 +128,46 @@ export default function Tandem() {
             </section>
 
             <section
-                className="banditsection banditsection-alt"
+                className="tandemsection tandemsection-alt"
                 id="solution">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">02</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Solution</span>
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">02</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">Solution</span>
                     </div>
 
-                    <div className="bandit-two-column reverse">
-                        <div className="bandit-media-column">
+                    <div className="tandem-two-column reverse">
+                        <div className="tandem-media-column">
                             <iframe
-                                src="https://drive.google.com/file/d/1H_q33nm2S5rGptYGcLII666p9jX3zRJp/preview"
-                                className="bandit-process-video"
+                                src="https://drive.google.com/file/d/1puqx31VWPxiC4Tx_jEuIoFp16J2abGXm/preview"
+                                className="tandem-process-video"
                                 allow="autoplay; fullscreen; picture-in-picture"
                                 allowFullScreen
                                 title="Bandit Breakout Solution & Gameplay Demo"
                             />
                         </div>
 
-                        <div className="bandit-text-content bandit-process-text">
+                        <div className="tandem-text-content">
                             <h2>Solution</h2>
                             <p>
-                                Bandit Breakout is a race to the finish line
-                                type board game. The main objective of the
-                                player is to get to the end and capture the
-                                villain who’s terrorizing the desert. You
-                                accomplish this by navigating through the board,
-                                moving by rolling dice, gaining items to
-                                progress yourself or move others back, and
-                                decision spaces that determine where you go.
+                                As the main Design lead and Project lead of
+                                Tandem, we aimed to create a web app to solve
+                                this issue. Tandem is an app dedicated to
+                                helping trade parents find flexible, affordable,
+                                and reliable childcare options. With its AI
+                                scheduling, the app works around your schedule
+                                to help you find childcare. It provides nannies
+                                who are flexible to the odd work hours many
+                                tradeworkers have, and counterbalances the usual
+                                expensive services with nannysharing, where
+                                parents can split costs.
                             </p>
                             <p>
-                                Instead of the linear, straightforward gameplay
-                                many boardgames have, Bandit Breakout offers a
-                                fun, interactive boardgame experience.
+                                Instead of the stressful, inflexible experience
+                                many tradesworkers have to experience, Tandem
+                                offers flexible, reliable childcare services and
+                                scheduling.
                             </p>
                         </div>
                     </div>
@@ -175,58 +175,56 @@ export default function Tandem() {
             </section>
 
             <section
-                className="banditsection"
+                className="tandemsection"
                 id="research">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">03</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Research</span>
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">03</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">Research</span>
                     </div>
 
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
-                            <div className="bandit-research-image-wrapper">
+                    <div className="tandem-two-column">
+                        <div className="tandem-media-column">
+                            <div className="tandem-research-image-wrapper">
                                 <img
-                                    src="/work/bandit/banditgraph.png"
-                                    className="bandit-research-main-image bandit-large-media"
+                                    src="/work/tandem/tandemgraph.png"
+                                    className="tandem-research-main-image tandem-large-media"
                                     alt="Research findings visualization"
                                 />
                             </div>
                         </div>
                         <img
                             src="/work/minime/examine.svg"
-                            className="floating-overlay1"
+                            className="tandem-floating-overlay1"
                         />
-                        <div className="bandit-text-content bandit-research-text">
+                        <div className="tandem-text-content tandem-research-text">
                             <h2>Research</h2>
                             <p>
-                                Interviews with 12 boardgame players showed us
-                                how over 80% of players enjoy playing
-                                collaboratively with friends, and over 60% enjoy
-                                storybased games.
+                                Interviews with 17 trade parents showed us how
+                                50% of tradesworkers struggle with childcare.
                             </p>
                             <p>
-                                Many users were dissatisfied with certain
-                                endings from games, and found multiple endings
-                                interesting, but didn’t mind one as long as it
-                                ended satisfyingly.
+                                Many trade parents found it difficult to find
+                                nearby, accessible, and reliable childcare. They
+                                also found that not only was it difficult,
+                                childcare was always expensive.
                             </p>
                             <p>
-                                12 boardgame players, with different playstyle
-                                and gaming methods, all searching for
-                                multiplayer games that can be replayed with
-                                friends.
+                                17 trades workers, all with different careers,
+                                families, and schedules, all facing the same
+                                problem.
                             </p>
                             <p>
-                                Secondary research displayed how important
-                                storytelling and lore is to many players,
-                                highlighting how important endings and choice
-                                based actions and outcomes were to players.
+                                Secondary research displayed how difficult
+                                childcare is in Vancouver and how many parents
+                                have to find ways to either stay-at-home, or
+                                manage finances. Many face extreme stress and
+                                imbalance in their life schedules.
                             </p>
                             <a
-                                href="https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing"
-                                className="bandit-research-button"
+                                href="https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?usp=sharing"
+                                className="tandem-research-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 View Report
@@ -237,378 +235,85 @@ export default function Tandem() {
             </section>
 
             <section
-                className="banditsection banditsection-alt"
+                className="tandemsection tandemsection-alt"
                 id="branding">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">04</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
-                            Sketching, Character Design, & Backgrounds
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">04</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">
+                            Branding and Styleguide
                         </span>
                     </div>
 
-                    <div className="bandit-branding-text">
-                        <h2>Sketching, Character Design, & Backgrounds</h2>
+                    <div className="tandem-branding-text">
+                        <h2>Branding and Styleguide</h2>
                         <p>
-                            As the main Design lead, I was in charge of the art
-                            direction for the game. We chose a rustic, yet
-                            bright colour palette to help link with our cowboy
-                            theme, all while being fun and stylistic. A crayon
-                            like pen was chosen for the art to help each piece
-                            feel hand drawn and lively.
-                        </p>
-                        <p>
-                            Many sketches were made to use shape language and
-                            simplification to make characters that stood out and
-                            had different personalities. Final designs and
-                            character turnarounds were made to make animation
-                            easier and fully flesh out the characters. Many
-                            iterations of each character were made to ensure
-                            they all fit together perfectly.
-                        </p>
-                        <p>
-                            Backgrounds were also made to help ease the time
-                            taken animating. Each background was created with
-                            the same brush as the characters to fully bring the
-                            world to life.
+                            We chose the colours that reflect our values of
+                            Balance, Trust, and Support. Blue, our main colour,
+                            represents calmness, safety, and reliability, which
+                            is perfect for childcare schedules, we also add
+                            green for balance, symbolizing growth and action,
+                            and it is used for work schedules. Blending the two
+                            creates a friendly light blue, while the
+                            blue-to-green gradient conveys both efficiency and
+                            warmth. Together, these colours make the app feel
+                            like a supportive and trustworthy companion.
                         </p>
 
-                        <div className="bandit-branding-gallery">
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/charactersketch.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/buckshot.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/casino.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/grit.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/desert.png"
-                                    className="bandit-gallery-imageb"
-                                    alt="Desert background"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/scout.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/mansion.png"
-                                    className="bandit-gallery-imageb"
-                                    alt="Mansion background"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/serpy.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/oasis.png"
-                                    className="bandit-gallery-imageb"
-                                    alt="Oasis background"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/solstice.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/slums.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
-                            <div className="bandit-gallery-itemb">
-                                <img
-                                    src="/work/bandit/villain.png"
-                                    className="bandit-gallery-imageb"
-                                />
-                            </div>
+                        <div className="tandem-branding-gallery">
+                            <img
+                                src="/work/tandem/branding.svg"
+                                className="tandem-branding-fullwidth"
+                                alt="Tandem branding and styleguide"
+                            />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
-                    <div
-                        className="bandit-section-header"
-                        id="animating">
-                        <span className="bandit-section-number">05</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Animating</span>
-                    </div>
-
-                    <div className="bandit-branding-text">
-                        <h2>Animating</h2>
-                        <p>
-                            As the sole animator of the project, I was tasked
-                            with creating all the cutscenes (beginning, multiple
-                            endings, character and NPC interactions, dice
-                            rolling, and battle animations). Work was cut down
-                            through earlier work done (creating turnarounds and
-                            reusable backgrounds) and reusable assets were made.
-                            Specifically, work was cut for ending cutscenes, as
-                            many of them had a variety of similarities in scenes
-                            and character poses.
-                        </p>
-                        <p>
-                            Storyboards were also made to ensure clarity in
-                            animation, and direction for how things needed to be
-                            animated.
-                        </p>
-
-                        <div className="bandit-branding-gallery">
-                            <div className="bandit-gallery-item2">
-                                <iframe
-                                    className="bandit-gallery-image2"
-                                    src="https://drive.google.com/file/d/1d5crYQis-p6lTQxiYStTWwC_Hlf9COGU/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 1"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <iframe
-                                    className="bandit-gallery-image2"
-                                    src="https://drive.google.com/file/d/1et0O71TMl0e-_YCrheM3KowCVTFR8jPC/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 2"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <iframe
-                                    className="bandit-gallery-image2"
-                                    src="https://drive.google.com/file/d/1Xgnq8EwQZBTAzW02nlNAa5SNC1o4PxmS/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 3"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <iframe
-                                    className="bandit-gallery-image2"
-                                    src="https://drive.google.com/file/d/1hQLragBWHltzCuw2LgS9zp25fWd6WsAl/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 4"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <iframe
-                                    className="bandit-gallery-image2"
-                                    src="https://drive.google.com/file/d/1Fy-yC9TSeoBj2ZlHReuVNpCsIzJ4NeQ-/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 5"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/storyboard!!.png"
-                                    className="bandit-gallery-image2"
-                                    alt="Storyboard"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/buckshotsketch.jpg"
-                                    className="bandit-gallery-image2"
-                                    alt="Buckshot sketch"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/gritsketch.jpg"
-                                    className="bandit-gallery-image2"
-                                    alt="Grit sketch"
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/serpysketch.jpg"
-                                    className="bandit-gallery-image2"
-                                    alt="Serpy sketch"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="banditsection banditsection-warning">
-                <div
-                    className="banditcontainer"
-                    id="issue">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">06</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+            <section
+                className="tandemsection tandemsection-warning"
+                id="issue">
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">06</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">
                             Unexpected Issue
                         </span>
                     </div>
                     <img
                         src="/work/minime/confusion.svg"
-                        className="floating-overlay2"
+                        className="tandem-floating-overlay2"
                     />
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
+                    <div className="tandem-two-column">
+                        <div className="tandem-media-column">
                             <img
-                                src="/work/bandit/issue.svg"
+                                src="/work/tandem/issue.svg"
                                 alt=""
-                                className="bandit-large-media"
+                                className="tandem-large-media"
                             />
                         </div>
 
-                        <div className="bandit-text-content">
+                        <div className="tandem-text-content">
                             <h2>Unexpected Issue</h2>
                             <p>
-                                As we worked, we found it difficult to find ways
-                                to create our board, and were stuck on designing
-                                it and reiterating over and over again. This was
-                                due to our own personal dissatisfaction and
-                                multiple rounds of user testing. Both us and our
-                                users felt like something was missing, and that
-                                our board could have more.
+                                Through our user testing on our Mid-fidelity
+                                prototype, we faced an issue that our users
+                                thought would be a main concern: safety.
                             </p>
                             <p>
-                                As the Design lead, I found myself having a hard
-                                time to make sure the board was visually
-                                appealing, and aligned with the game design
-                                team's vision. Many ideas were thrown around and
-                                none truly stuck.
+                                We had always considered safety with our app,
+                                but with valid questions and concerns brought up
+                                through our testing, our team decided to dig
+                                even further into how we could make our app more
+                                reliable.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
-                    <div
-                        className="bandit-section-header"
-                        id="what-didnt-work">
-                        <span className="bandit-section-number">07</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
-                            What Didn't Work & How We Solved it
-                        </span>
-                    </div>
-                    <img
-                        src="/work/minime/study.svg"
-                        className="floating-overlay3"
-                    />
-                    <div className="bandit-branding-text">
-                        <h2>What Didn't Work & How We Solved it</h2>
-                        <p>
-                            Our whole team was unsure about what direction to go
-                            in, the game design team was struggling to implement
-                            gameplay mechanics, while the design team was
-                            struggling to create what was needed because of
-                            this.
-                        </p>
-                        <p>
-                            This issue was solved through a design idea where
-                            the thought that seperate designed areas would look
-                            cool. After art and sketches of these areas and NPCs
-                            for them were made, the game design team delved
-                            deeper into it and created working mechanics for
-                            this idea.
-                        </p>
-                        <p>
-                            In the end, the issue I faced was that we didn't
-                            have a clear design direction, and to solve it, I
-                            had to ideate and make creative solutions and
-                            designs to help inspire the whole team.
-                        </p>
-
-                        <div className="bandit-branding-gallery">
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/problem3.png"
-                                    className="bandit-gallery-image2"
-                                    alt=""
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/problem2.png"
-                                    className="bandit-gallery-image2"
-                                    alt=""
-                                />
-                            </div>
-                            <div className="bandit-gallery-item2">
-                                <img
-                                    src="/work/bandit/problem.png"
-                                    className="bandit-gallery-image2"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="banditsection banditsection-warning">
-                <div
-                    className="banditcontainer"
-                    id="final-design">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">08</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
-                            Final Design & Showcase
-                        </span>
-                    </div>
-
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
-                            <img
-                                src="/work/bandit/celebrate!.jpg"
-                                alt=""
-                                className="bandit-large-media"
-                            />
-                        </div>
-
-                        <div className="bandit-text-content">
-                            <h2 id="final-design">Final Design & Showcase</h2>
                             <p>
-                                On Friday, May 16th, 2025, Team Command Z
-                                presented Bandit Breakout. Although competition
-                                was close, Bandit Breakout came out on top!
-                            </p>
-                            <p>
-                                Getting to work with such an amazing, creative
-                                team was a delight, and an experience I’ll
-                                forever look back at fondly. Thank you Command
-                                Z!
+                                Although with this came some issues and research
+                                that needed to be done.
                             </p>
                         </div>
                     </div>
@@ -616,60 +321,232 @@ export default function Tandem() {
             </section>
 
             <section
-                className="banditsection banditsection-alt"
+                className="tandemsection"
+                id="what-didnt-work">
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">07</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">
+                            What Didn't Work
+                        </span>
+                    </div>
+
+                    <div className="tandem-branding-text">
+                        <h2>What Didn't Work</h2>
+                        <p>
+                            Through team meetings and discussion with various
+                            people in the trades, we learned that our main issue
+                            was the lack of information and transparency in our
+                            onboarding process.
+                        </p>
+                        <p>
+                            Our past onboarding from our mid-fi was too simple
+                            for covering such an important topic, and needed to
+                            be further iterated and reworked.
+                        </p>
+
+                        <div className="tandem-branding-gallery">
+                            <div className="tandem-gallery-item2">
+                                <img
+                                    src="/work/tandem/oldwireframes.svg"
+                                    className="tandem-gallery-image2"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                className="tandemsection"
+                id="how-we-solved">
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">08</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">
+                            How We Solved It
+                        </span>
+                    </div>
+                    <img
+                        src="/work/minime/study.svg"
+                        className="tandem-floating-overlay3"
+                    />
+                    <div className="tandem-branding-text">
+                        <h2>How We Solved It</h2>
+
+                        <p>
+                            After meeting multiple times, reiterating, and
+                            constantly checking in with various trade parents,
+                            we finally came up with two fixes to this issue.
+                        </p>
+                        <p>
+                            First, we redid our onboarding process entirely. We
+                            added more information, and redid all our screens to
+                            ensure everything was clear.
+                        </p>
+                        <p>
+                            We also uprooted our nanny sharing section, making
+                            sure only those in your workplace or those you
+                            trusted were able to share with you.
+                        </p>
+
+                        <div className="tandem-branding-gallery">
+                            <div className="tandem-gallery-item2">
+                                <img
+                                    src="/work/tandem/wireframes.svg"
+                                    className="tandem-gallery-image2"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                className="tandemsection tandemsection-alt"
+                id="final-design">
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">09</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">
+                            Final Design & Showcase
+                        </span>
+                    </div>
+
+                    <div className="tandem-two-column">
+                        <div className="tandem-media-column tandem-media-stack">
+                            <img
+                                src="/work/tandem/team.jpg"
+                                alt="Team photo"
+                                className="tandem-showcase-image"
+                            />
+
+                            <img
+                                src="/work/tandem/smile.jpg"
+                                alt="Smiling group"
+                                className="tandem-showcase-image"
+                            />
+                        </div>
+
+                        <div className="tandem-text-content">
+                            <h2>Final Design & Showcase</h2>
+                            <p>
+                                The final designs for Tandem tackle all the
+                                challenges that trade parents face, such as
+                                balancing work and child life, finding childcare
+                                that fits their hours, and having a consistent
+                                and affordable way to get childcare near their
+                                homes. Tandem provides an adjustable calendar,
+                                an AI-powered upload system for easier schedule
+                                inputs, nanny booking, and nanny sharing. It
+                                equips parents with all the tools to ensure that
+                                all trade parents are given supportive and
+                                trustworthy help when their schedules are the
+                                opposite.
+                            </p>
+                            <p>
+                                On December 5th, 2025, Tandem was presented at
+                                BCIT’s BCIT - Digital Design and Development x
+                                BCIT ConnectHER Hub showcase, an event that
+                                allows students to highlight their work and
+                                solution to real-world challenges.
+                            </p>
+                            <p>
+                                This year’s showcase focused on the issue of
+                                underrepresented people in trades, and how to
+                                leverage AI to address challenges in retention,
+                                relationships, career pathways, resources,
+                                skills, training, and accessibility. This event
+                                brought students, industry leaders, and
+                                government officials together to look into how
+                                technology can change and make a meaningful
+                                impact against real-world problems.
+                            </p>
+                            <p>
+                                The event was a great opportunity to showcase
+                                the variety of different needs, issues, and
+                                solutions to different problems. It also helped
+                                shed light on various issues.
+                            </p>
+                            <p>
+                                Getting to lead and collaborate with such a
+                                driven, passionate group was an experience I’ll
+                                always be grateful for. Thank you Team Tandem!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                className="tandemsection tandemsection-alt"
                 id="Journey">
-                <div
-                    className="banditcontainer"
-                    id="Journey">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">09</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                <div className="tandemcontainer">
+                    <div className="tandem-section-header">
+                        <span className="tandem-section-number">10</span>
+                        <div className="tandem-section-line"></div>
+                        <span className="tandem-section-label">
                             The Journey and Impact
                         </span>
                     </div>
 
-                    <div className="bandit-journey-video-wrapper">
-                        <iframe
-                            className="bandit-journey-video"
-                            src="https://drive.google.com/file/d/12swoFYtPBM5Aux6h3PBawqkMnkNhqftX/preview"
-                            allow="autoplay; fullscreen; picture-in-picture"
-                            allowFullScreen
-                            title="Bandit Breakout – The Journey"
+                    <div className="tandem-journey-video-wrapper">
+                        <img
+                            className="tandem-journey"
+                            src="/work/tandem/present.jpg"
                         />
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
-                        className="floating-overlay4"
+                        className="tandem-floating-overlay4"
                     />
-                    <div className="bandit-branding-text">
+                    <div className="tandem-branding-text">
                         <h2>The Journey & Impact</h2>
                         <p>
-                            Bandit Breakout is more than just a game. It’s
-                            something the team made to bring joy and creativity
-                            into the current straightforward boardgame scene. By
-                            addressing the repetitive, single storyline driven
-                            boardgames of today’s world, it provides a solution
-                            that goes beyond aesthetics, but also brings
-                            competitive and casual fun to its players.
+                            Tandem is more than just an app. It represents a
+                            problem that is still present to this day, and the
+                            changes that can be made to make a difference in
+                            each trade parents life. By addressing the
+                            unbalanced, stressful, and overwhelming realities,
+                            it provides a solution that goes beyond just
+                            functionality, but also supports and lifts up its
+                            users.
                         </p>
                         <p>
                             I’ve learned a lot through this project, and have
-                            grown as a Graphic designer and Motion Graphics.
-                            It’s taught me a lot about user-centered design,
-                            creative thinking, and has reminded me about my
-                            passion and love for the arts.
+                            grown as a UI/UX designer and Graphic designer. It’s
+                            taught me a lot about communication, user-centred
+                            design, and has taught me my driving motivations as
+                            a designer: to be able to make changes rooted in
+                            curiosity and care.
                         </p>
                         <p>Thank you for reading!</p>
-
-                        <div className="bandit-site-button-wrapper">
+                        
+                        <div className="tandem-bottom-buttons">
+                        <div className="tandem-site-button-wrapper">
                             <a
-                                href="https://bandit-breakout.vercel.app/"
-                                className="bandit-site-button"
+                                href="https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F"
+                                className="tandem-site-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                View Site
+                               Use App
                             </a>
+                        </div>
+                        
+                        <div className="tandem-site-button-wrapper">
+                            <a
+                                href="https://tandem-blog.vercel.app/"
+                                className="tandem-site-button"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                View Blog
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>
