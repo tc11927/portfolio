@@ -526,27 +526,27 @@ export default function Tandem() {
                             curiosity and care.
                         </p>
                         <p>Thank you for reading!</p>
-                        
+
                         <div className="tandem-bottom-buttons">
-                        <div className="tandem-site-button-wrapper">
-                            <a
-                                href="https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F"
-                                className="tandem-site-button"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                               Use App
-                            </a>
-                        </div>
-                        
-                        <div className="tandem-site-button-wrapper">
-                            <a
-                                href="https://tandem-blog.vercel.app/"
-                                className="tandem-site-button"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                View Blog
-                            </a>
-                        </div>
+                            <div className="tandem-site-button-wrapper">
+                                <a
+                                    href="https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F"
+                                    className="tandem-site-button"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Use App
+                                </a>
+                            </div>
+
+                            <div className="tandem-site-button-wrapper">
+                                <a
+                                    href="https://tandem-blog.vercel.app/"
+                                    className="tandem-site-button"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View Blog
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -26,8 +26,18 @@ const galleryItems = [
         description:
             "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
     },
-    {
+     {
         id: 3,
+        slug: "paramore",
+        title: "Paramore E-magazine",
+        categories: ["Design", "UI/UX","Front-end"],
+        tools: "Figma + Illustrator + Photoshop + Visual Studio Code",
+        image: "/work/tandemmockup.png",
+        description:
+            "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
+    },
+    {
+        id: 4,
         slug: "",
         title: "Under Construction!",
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
