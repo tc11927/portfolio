@@ -17,30 +17,30 @@ h3,
 h4,
 h5,
 h6,
-.banditproject-title,
-.banditsection-title,
-.bandit-process-text h2,
-.bandit-research-text h2,
-.bandit-text-content h2,
-.bandit-branding-text h2 {
+.paramoreproject-title,
+.paramoresection-title,
+.paramore-process-text h2,
+.paramore-research-text h2,
+.paramore-text-content h2,
+.paramore-branding-text h2 {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     font-weight: 700;
 }
 
 body,
 p,
-.bandithero-text p,
-.bandithero-text2,
-.bandit-process-text p,
-.bandit-research-text p,
-.bandit-text-content p,
-.bandit-branding-text p {
+.paramorehero-text p,
+.paramorehero-text2,
+.paramore-process-text p,
+.paramore-research-text p,
+.paramore-text-content p,
+.paramore-branding-text p {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
 }
 
-.banditsection-nav a,
-.banditsection-nav p {
+.paramoresection-nav a,
+.paramoresection-nav p {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     font-weight: 400;
     margin-top: -9.5vw;
@@ -50,7 +50,7 @@ p,
    1. Container & Layout Basics
    ========================================================================== */
 
-.banditcontainer {
+.paramorecontainer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
@@ -61,14 +61,14 @@ p,
    2. Hero Title & Roles
    ========================================================================== */
 
-.banditproject-title {
+.paramoreproject-title {
     font-size: 5vw;
     text-align: left;
     margin-bottom: -1rem;
     font-weight: 800;
 }
 
-.banditproject-roles {
+.paramoreproject-roles {
     font-size: 1.2vw;
     text-align: left;
     margin-bottom: -1.7rem;
@@ -79,7 +79,7 @@ p,
    3. Tags
    ========================================================================== */
 
-.bandittags {
+.paramoretags {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -89,9 +89,9 @@ p,
     margin-bottom: -3vw;
 }
 
-.bandittag1,
-.bandittag2,
-.bandittag3 {
+.paramoretag1,
+.paramoretag2,
+.paramoretag3 {
     padding: 0.6rem 1.25rem;
     border-radius: 9999px;
     font-size: 0.95rem;
@@ -99,21 +99,21 @@ p,
     transition: transform 0.3s ease;
 }
 
-.bandittag1 {
+.paramoretag1 {
     background-color: #64bcad;
 }
 
-.bandittag2 {
+.paramoretag2 {
     background-color: #fea962;
 }
 
-.bandittag3 {
+.paramoretag3 {
     background-color: #7da75b;
 }
 
-.bandittag1:hover,
-.bandittag2:hover,
-.bandittag3:hover {
+.paramoretag1:hover,
+.paramoretag2:hover,
+.paramoretag3:hover {
     transform: scale(1.2);
 }
 
@@ -121,7 +121,7 @@ p,
    4. Hero Content
    ========================================================================== */
 
-.bandithero-content {
+.paramorehero-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -130,37 +130,34 @@ p,
     margin-bottom: 17vw;
 }
 
-.bandithero-text p {
+.paramorehero-text p {
     font-size: 16px;
 }
 
-
-
-.bandithero-text2 {
+.paramorehero-text2 {
     margin-top: 1.5rem;
 }
 
-.bandittitle-image {
+.paramoretitle-image {
     width: 50vw;
     margin-right: -80vw;
     margin-top: -12vw;
 }
 
-
 /* ==========================================================================
    5. General Section Padding & Variants
    ========================================================================== */
 
-.banditsection {
+.paramoresection {
     padding: 8rem 0;
     margin-top: -5vw;
 }
 
-.banditsection-alt {
+.paramoresection-alt {
     background: var(--bg-light);
 }
 
-.banditsection-warning {
+.paramoresection-warning {
     background: var(--warning-bg);
 }
 
@@ -168,7 +165,7 @@ p,
    6. Navigation Section
    ========================================================================== */
 
-.banditsection-nav {
+.paramoresection-nav {
     top: 0;
     z-index: 90;
     background-color: #22303a;
@@ -180,7 +177,7 @@ p,
     padding-bottom: 110px;
 }
 
-.banditsection-nav ul {
+.paramoresection-nav ul {
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -188,11 +185,11 @@ p,
     margin-top: 15px;
 }
 
-.banditsection-nav li {
+.paramoresection-nav li {
     margin: 1rem;
 }
 
-.banditsection-nav a {
+.paramoresection-nav a {
     color: white;
     font-weight: 300;
     font-size: 1.8vw;
@@ -205,13 +202,13 @@ p,
     white-space: nowrap;
 }
 
-.banditsection-nav a:hover,
-.banditsection-nav a:focus {
+.paramoresection-nav a:hover,
+.paramoresection-nav a:focus {
     transform: scale(1.12);
     color: #eab300;
 }
 
-.banditsection-title {
+.paramoresection-title {
     font-size: 3vw;
     margin-bottom: -0.4vw;
 }
@@ -220,11 +217,11 @@ p,
    7. Stacked / Process Sections
    ========================================================================== */
 
-.bandit-stacked-sections {
+.paramore-stacked-sections {
     padding: 8rem 0;
 }
 
-.bandit-process-video {
+.paramore-process-video {
     width: 100%;
     height: 100%;
     min-height: 380px;
@@ -233,14 +230,14 @@ p,
     border-radius: 20px;
 }
 
-.bandit-process-text h2 {
+.paramore-process-text h2 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
     text-align: left;
 }
 
-.bandit-process-text p {
+.paramore-process-text p {
     font-size: 14px;
     line-height: 1.65;
     margin-bottom: 1rem;
@@ -251,7 +248,7 @@ p,
    8. Research & Text/Media Grids
    ========================================================================== */
 
-.bandit-research-grid {
+.paramore-research-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -259,38 +256,38 @@ p,
     margin-top: -8vw;
 }
 
-.bandit-research-image-column {
+.paramore-research-image-column {
     position: relative;
 }
 
-.bandit-research-image-wrapper {
+.paramore-research-image-wrapper {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
     margin-top: 1vw;
 }
 
-.bandit-research-main-image {
+.paramore-research-main-image {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
-.bandit-research-text h2 {
+.paramore-research-text h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     text-align: left;
 }
 
-.bandit-research-text p {
+.paramore-research-text p {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 1rem;
     text-align: left;
 }
 
-.bandit-research-button {
+.paramore-research-button {
     display: inline-block;
     background: #22303a;
     color: white;
@@ -305,7 +302,7 @@ p,
     transition: transform 0.3s ease;
 }
 
-.bandit-research-button:hover {
+.paramore-research-button:hover {
     transform: scale(1.05);
 }
 
@@ -313,8 +310,8 @@ p,
    9. Media + Text Grid (left & right variants)
    ========================================================================== */
 
-.bandit-grid-media-left,
-.bandit-grid-media-right {
+.paramore-grid-media-left,
+.paramore-grid-media-right {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -322,8 +319,8 @@ p,
     margin: 3rem 0;
 }
 
-.bandit-media-column img,
-.bandit-media-column iframe {
+.paramore-media-column img,
+.paramore-media-column iframe {
     width: 100%;
     height: auto;
     border-radius: 16px;
@@ -331,7 +328,7 @@ p,
     object-fit: cover;
 }
 
-.bandit-text-content h2 {
+.paramore-text-content h2 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
@@ -340,7 +337,7 @@ p,
     text-align: left;
 }
 
-.bandit-text-content p {
+.paramore-text-content p {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -351,27 +348,27 @@ p,
    10. Branding & Gallery
    ========================================================================== */
 
-.bandit-branding-text h2 {
+.paramore-branding-text h2 {
     font-size: 2.8rem;
     text-align: left;
     margin-bottom: 1.5rem;
 }
 
-.bandit-branding-text p {
+.paramore-branding-text p {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
 }
 
-.bandit-branding-gallery {
+.paramore-branding-gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
     margin-top: 4rem;
 }
 
-.bandit-gallery-itemb {
+.paramore-gallery-itemb {
     aspect-ratio: 3 / 1;
     overflow: hidden;
     border-radius: 12px;
@@ -379,7 +376,7 @@ p,
     transition: transform 0.2s ease;
 }
 
-.bandit-gallery-imageb {
+.paramore-gallery-imageb {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -387,11 +384,11 @@ p,
     transition: transform 0.2s ease;
 }
 
-.bandit-gallery-itemb:hover {
+.paramore-gallery-itemb:hover {
     transform: scale(1.02);
 }
 
-.bandit-gallery-item2 {
+.paramore-gallery-item2 {
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: 12px;
@@ -399,7 +396,7 @@ p,
     transition: transform 0.2s ease;
 }
 
-.bandit-gallery-image2 {
+.paramore-gallery-image2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -407,16 +404,16 @@ p,
     transition: transform 0.2s ease;
 }
 
-.bandit-gallery-item2:hover {
+.paramore-gallery-item2:hover {
     transform: scale(1.02);
 }
 
-.bandit-section-alt {
+.paramore-section-alt {
     margin-top: -6vw;
 }
 
-.bandit-gallery-item3,
-.bandit-gallery-image3 {
+.paramore-gallery-item3,
+.paramore-gallery-image3 {
     width: 100%;
     height: 100%;
     min-height: 380px;
@@ -429,7 +426,7 @@ p,
    11. Journey / Video Wrapper
    ========================================================================== */
 
-.bandit-journey-video-wrapper {
+.paramore-journey-video-wrapper {
     margin: 0 0 3rem 0;
     position: relative;
     width: 100%;
@@ -437,7 +434,7 @@ p,
     overflow: hidden;
 }
 
-.bandit-journey-video {
+.paramore-journey-video {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
@@ -449,7 +446,7 @@ p,
    12. Buttons (site)
    ========================================================================== */
 
-.bandit-site-button {
+.paramore-site-button {
     background: #22303a;
     color: white;
     font-weight: 600;
@@ -461,13 +458,13 @@ p,
     transition: transform 0.3s ease;
 }
 
-.bandit-site-button-wrapper {
+.paramore-site-button-wrapper {
     margin-top: 2.5vw;
     transition: transform 0.3s ease;
     margin-right: 69vw;
 }
 
-.bandit-site-button-wrapper:hover {
+.paramore-site-button-wrapper:hover {
     transform: scale(1.05);
 }
 
@@ -475,28 +472,28 @@ p,
    Custom section header
    ========================================================================== */
 
-.bandit-section-header {
+.paramore-section-header {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 3.5rem;
 }
 
-.bandit-section-number {
+.paramore-section-number {
     font-size: 2.5rem;
     font-weight: 900;
     color: #7da75b;
     letter-spacing: 0.15em;
 }
 
-.bandit-section-line {
+.paramore-section-line {
     height: 3px;
     flex: 1;
     background: #64bcad;
     border-radius: 20px;
 }
 
-.bandit-section-label {
+.paramore-section-label {
     font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -506,34 +503,34 @@ p,
     font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
-.bandit-two-column {
+.paramore-two-column {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3.5rem;
     align-items: center;
 }
 
-.bandit-two-column.reverse {
+.paramore-two-column.reverse {
     direction: rtl;
 }
 
-.bandit-two-column.reverse > * {
+.paramore-two-column.reverse > * {
     direction: ltr;
 }
 
-.bandit-text-content h2 {
+.paramore-text-content h2 {
     font-size: clamp(3rem, 6.5vw, 5.2rem);
     line-height: 1.1;
     margin-bottom: 1.5rem;
     text-align: left;
 }
 
-.bandit-large-media {
+.paramore-large-media {
     width: 100%;
     border-radius: 20px;
 }
 
-.bandit-text-content {
+.paramore-text-content {
     text-align: left;
 }
 
@@ -575,62 +572,62 @@ p,
    ========================================================================== */
 
 @media (min-width: 768px) {
-    .bandithero-content {
+    .paramorehero-content {
         grid-template-columns: 1fr 1fr;
         text-align: left;
     }
 
-    .bandit-research-grid {
+    .paramore-research-grid {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     }
 
-    .bandit-research-main-image {
+    .paramore-research-main-image {
         height: 100%;
         object-fit: cover;
     }
 
-    .bandit-grid-media-left,
-    .bandit-grid-media-right {
+    .paramore-grid-media-left,
+    .paramore-grid-media-right {
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
     }
 
-    .banditcontainer {
+    .paramorecontainer {
         padding: 0 3rem;
     }
 
-    .bandithero-content {
+    .paramorehero-content {
         margin-top: -2vw;
     }
 
-    .bandit-two-column {
+    .paramore-two-column {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-.bandit-grid-media-left .bandit-media-column {
+.paramore-grid-media-left .paramore-media-column {
     order: 1;
 }
-.bandit-grid-media-left .bandit-text-content {
+.paramore-grid-media-left .paramore-text-content {
     order: 2;
 }
 
-.bandit-grid-media-right .bandit-media-column {
+.paramore-grid-media-right .paramore-media-column {
     order: 2;
 }
-.bandit-grid-media-right .bandit-text-content {
+.paramore-grid-media-right .paramore-text-content {
     order: 1;
 }
 
 @media (min-width: 640px) {
-    .bandit-branding-gallery {
+    .paramore-branding-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    .bandit-branding-gallery {
+    .paramore-branding-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -659,31 +656,31 @@ p,
     }
 }
 
-.banditpage-wrapper {
+.paramorepage-wrapper {
     animation: fadeIn 0.8s ease-out both;
 }
 
-.bandithero .banditcontainer {
+.paramorehero .paramorecontainer {
     animation: fadeUp 0.9s ease-out both;
 }
-.banditproject-title {
+.paramoreproject-title {
     animation: fadeUp 0.9s ease-out both;
     animation-delay: 0.1s;
 }
-.banditproject-roles {
+.paramoreproject-roles {
     animation: fadeUp 0.9s ease-out both;
     animation-delay: 0.2s;
 }
-.banditsection {
+.paramoresection {
     animation: fadeUp 0.9s ease-out both;
 }
-.banditsection:nth-of-type(1) {
+.paramoresection:nth-of-type(1) {
     animation-delay: 0.15s;
 }
-.banditsection:nth-of-type(2) {
+.paramoresection:nth-of-type(2) {
     animation-delay: 0.3s;
 }
-.banditsection:nth-of-type(3) {
+.paramoresection:nth-of-type(3) {
     animation-delay: 0.45s;
 }
 
@@ -691,82 +688,82 @@ p,
    MOBILE RESPONSIVE FIXES
    ========================================================================== */
 
-.banditcontainer {
+.paramorecontainer {
     padding: 0 1.5rem;
 }
 
-.banditproject-title {
+.paramoreproject-title {
     margin-top: clamp(8vw, 13vw, 120px);
 }
 
-.bandithero-content {
+.paramorehero-content {
     margin-top: 2rem;
 }
 
 @media (max-width: 767px) {
 
-    .banditpage-wrapper {
+    .paramorepage-wrapper {
         width: 100%;
         max-width: 100vw;
     }
 
-    .banditcontainer {
+    .paramorecontainer {
         padding-left: 1.25rem !important;
         padding-right: 1.25rem !important;
         margin-top: 1rem !important;
         box-sizing: border-box;
     }
 
-    .bandithero .banditcontainer {
+    .paramorehero .paramorecontainer {
         margin-top: 1rem !important;
     }
 
-    .banditproject-title {
+    .paramoreproject-title {
         font-size: clamp(2rem, 8vw, 2.5rem) !important;
         text-align: center;
         margin-bottom: 0.5rem !important;
     }
 
-    .banditproject-roles {
+    .paramoreproject-roles {
         font-size: clamp(0.875rem, 3.5vw, 1rem) !important;
         margin-bottom: 0 !important;
         text-align: center;
     }
 
-    .bandittags {
+    .paramoretags {
         margin-top: 1.5rem !important;
         margin-bottom: 1.5rem !important;
         justify-content: center;
     }
 
-    .bandithero-content {
+    .paramorehero-content {
         margin-top: 1.5rem !important;
         margin-bottom: 2rem !important;
         gap: 2rem !important;
     }
 
-    .bandittitle-image {
+    .paramoretitle-image {
         width: 100% !important;
         max-width: 100% !important;
         margin: 1rem 0 0 0 !important;
         display: block;
     }
 
-    .banditsection-nav {
+    .paramoresection-nav {
         margin-top: 2rem !important;
         padding: 1.5rem !important;
         border-radius: 12px;
         padding-top: 5rem !important;
     }
 
-    .banditsection-title {
+    .paramoresection-title {
         font-size: 4vw;
         margin-bottom: 1rem;
         margin-top: 1vw;
         margin-left: 12px;
     }
 
-    .banditsection-nav ul {
+    .paramoresection-nav ul {
         padding: 0 1rem !important;
         margin-top: 0 !important;
         flex-direction: column;
@@ -774,11 +771,11 @@ p,
         gap: 0.1rem;
     }
 
-    .banditsection-nav li {
+    .paramoresection-nav li {
         margin: 0.5rem 0 !important;
     }
 
-    .banditsection-nav a {
+    .paramoresection-nav a {
         font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
         padding: 0.5rem 0.75rem !important;
         display: block;
@@ -786,62 +783,62 @@ p,
         text-align: center;
     }
 
-    .banditsection {
+    .paramoresection {
         padding: 3rem 0 !important;
         margin-top: 0 !important;
     }
 
-    .bandit-process-video {
+    .paramore-process-video {
         min-height: 200px !important;
         width: 100% !important;
         max-width: 100% !important;
     }
 
-    .bandit-text-content h2,
-    .bandit-process-text h2,
-    .bandit-research-text h2,
-    .bandit-branding-text h2 {
+    .paramore-text-content h2,
+    .paramore-process-text h2,
+    .paramore-research-text h2,
+    .paramore-branding-text h2 {
         font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
         margin-bottom: 1rem !important;
         margin-top: 0 !important;
         line-height: 1.2;
     }
 
-    .bandit-text-content p,
-    .bandit-process-text p,
-    .bandit-research-text p,
-    .bandit-branding-text p {
+    .paramore-text-content p,
+    .paramore-process-text p,
+    .paramore-research-text p,
+    .paramore-branding-text p {
         font-size: 1rem !important;
         line-height: 1.6;
     }
 
-    .bandit-branding-gallery {
+    .paramore-branding-gallery {
         gap: 1.5rem !important;
         margin-top: 2rem !important;
     }
 
-    .bandit-gallery-itemb,
-    .bandit-gallery-item2 {
+    .paramore-gallery-itemb,
+    .paramore-gallery-item2 {
         width: 100% !important;
         max-width: 100% !important;
         aspect-ratio: 4/3 !important;
     }
 
-    .bandit-gallery-imageb,
-    .bandit-gallery-image2 {
+    .paramore-gallery-imageb,
+    .paramore-gallery-image2 {
         width: 100% !important;
         height: 100% !important;
         max-width: 100% !important;
     }
 
-    .bandit-research-button,
-    .bandit-site-button {
+    .paramore-research-button,
+    .paramore-site-button {
         margin: 1rem auto !important;
         display: block;
         width: fit-content;
     }
 
-    .bandit-site-button-wrapper {
+    .paramore-site-button-wrapper {
         margin-right: 0 !important;
         text-align: center;
         margin-top: 2rem !important;
@@ -849,36 +846,36 @@ p,
         justify-content: center;
     }
 
-    .bandit-journey-video-wrapper {
+    .paramore-journey-video-wrapper {
         margin-bottom: 2rem !important;
         width: 100%;
     }
 
-    .bandit-journey-video {
+    .paramore-journey-video {
         min-height: 200px !important;
         width: 100% !important;
     }
 
-    .bandit-section-header {
+    .paramore-section-header {
         gap: 0.75rem;
         margin-bottom: 1.5rem;
         flex-wrap: wrap;
     }
 
-    .bandit-section-number {
+    .paramore-section-number {
         font-size: 1.5rem;
     }
 
-    .bandit-section-label {
+    .paramore-section-label {
         font-size: clamp(0.875rem, 3vw, 1rem);
         white-space: normal;
     }
 
-    .bandit-two-column {
+    .paramore-two-column {
         gap: 2rem !important;
     }
 
-    .bandit-two-column.reverse {
+    .paramore-two-column.reverse {
         direction: ltr !important;
     }
 

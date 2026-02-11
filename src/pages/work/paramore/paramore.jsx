@@ -4,23 +4,23 @@ import NavBar from "../../../components/navbar";
 
 export default function Paramore() {
     return (
-        <div className="banditpage-wrapper">
+        <div className="paramorepage-wrapper">
             <NavBar />
 
-            <header className="bandithero">
-                <div className="banditcontainer">
-                    <h1 className="banditproject-title">Paramore E-magazine</h1>
-                    <p className="banditproject-roles">
-                        Roles: Design & Project Lead, UI/UX Designer
+            <header className="paramorehero">
+                <div className="paramorecontainer">
+                    <h1 className="paramoreproject-title">Paramore E-magazine</h1>
+                    <p className="paramoreproject-roles">
+                        Roles: Design & Frontend Developer
                     </p>
-                    <div className="bandittags">
-                        <span className="bandittag1">Design</span>
-                        <span className="bandittag2">UI/UX</span>
-                        <span className="bandittag3">Motion Graphics</span>
+                    <div className="paramoretags">
+                        <span className="paramoretag1">Design</span>
+                        <span className="paramoretag2">UI/UX</span>
+                        <span className="paramoretag3">Motion Graphics</span>
                     </div>
 
-                    <div className="bandithero-content">
-                        <div className="bandithero-text">
+                    <div className="paramorehero-content">
+                        <div className="paramorehero-text">
                             <p>
                                 Bandit Breakout is a multiplayer game created to
                                 solve the problem of linear multiplayer
@@ -29,7 +29,7 @@ export default function Paramore() {
                                 with becoming too predictable after a few too
                                 many rounds.
                             </p>
-                            <p className="bandithero-text2">
+                            <p className="paramorehero-text2">
                                 My role was to blend stunning visual design with
                                 engaging gameplay, to make gaming with friends
                                 more interactive and personalized. I focused on
@@ -37,10 +37,10 @@ export default function Paramore() {
                             </p>
                         </div>
 
-                        <div className="bandithero-image">
+                        <div className="paramorehero-image">
                             <img
                                 src="/work/bandit/banditmock.png"
-                                className="bandittitle-image"
+                                className="paramoretitle-image"
                                 alt="Bandit Breakout game mockup"
                             />
                         </div>
@@ -48,9 +48,9 @@ export default function Paramore() {
                 </div>
             </header>
 
-            <nav className="banditsection-nav">
-                <div className="banditcontainer">
-                    <p className="banditsection-title">View Section:</p>
+            <nav className="paramoresection-nav">
+                <div className="paramorecontainer">
+                    <p className="paramoresection-title">View Section:</p>
                     <ul>
                         <li>
                             <a href="#problem">Problem</a>
@@ -88,17 +88,17 @@ export default function Paramore() {
             </nav>
 
             <section
-                className="banditsection"
+                className="paramoresection"
                 id="problem">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">01</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Problem</span>
+                <div className="paramorecontainer">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">01</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">Problem</span>
                     </div>
 
-                    <div className="bandit-two-column">
-                        <div className="bandit-text-content bandit-process-text">
+                    <div className="paramore-two-column">
+                        <div className="paramore-text-content paramore-process-text">
                             <h2>Problem</h2>
                             <p>
                                 My group and I found taught multiplayer board
@@ -115,11 +115,11 @@ export default function Paramore() {
                             </p>
                         </div>
 
-                        <div className="bandit-media-column">
+                        <div className="paramore-media-column">
                             <img
                                 src="/work/bandit/problemo.svg"
                                 alt=""
-                                className="bandit-large-media"
+                                className="paramore-large-media"
                             />
                         </div>
                     </div>
@@ -127,27 +127,27 @@ export default function Paramore() {
             </section>
 
             <section
-                className="banditsection banditsection-alt"
+                className="paramoresection paramoresection-alt"
                 id="solution">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">02</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Solution</span>
+                <div className="paramorecontainer">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">02</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">Solution</span>
                     </div>
 
-                    <div className="bandit-two-column reverse">
-                        <div className="bandit-media-column">
+                    <div className="paramore-two-column reverse">
+                        <div className="paramore-media-column">
                             <iframe
                                 src="https://drive.google.com/file/d/1H_q33nm2S5rGptYGcLII666p9jX3zRJp/preview"
-                                className="bandit-process-video"
+                                className="paramore-process-video"
                                 allow="autoplay; fullscreen; picture-in-picture"
                                 allowFullScreen
                                 title="Bandit Breakout Solution & Gameplay Demo"
                             />
                         </div>
 
-                        <div className="bandit-text-content bandit-process-text">
+                        <div className="paramore-text-content paramore-process-text">
                             <h2>Solution</h2>
                             <p>
                                 As the designer of Bandit Breakout, my goal was
@@ -173,21 +173,21 @@ export default function Paramore() {
             </section>
 
             <section
-                className="banditsection"
+                className="paramoresection"
                 id="research">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">03</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Research</span>
+                <div className="paramorecontainer">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">03</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">Research</span>
                     </div>
 
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
-                            <div className="bandit-research-image-wrapper">
+                    <div className="paramore-two-column">
+                        <div className="paramore-media-column">
+                            <div className="paramore-research-image-wrapper">
                                 <img
                                     src="/work/bandit/banditgraph.png"
-                                    className="bandit-research-main-image bandit-large-media"
+                                    className="paramore-research-main-image paramore-large-media"
                                     alt="Research findings visualization"
                                 />
                             </div>
@@ -196,7 +196,7 @@ export default function Paramore() {
                             src="/work/minime/examine.svg"
                             className="floating-overlay1"
                         />
-                        <div className="bandit-text-content bandit-research-text">
+                        <div className="paramore-text-content paramore-research-text">
                             <h2>Research</h2>
                             <p>
                                 Interviews with 12 board game players showed a
@@ -227,7 +227,7 @@ export default function Paramore() {
                             </p>
                             <a
                                 href="https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing"
-                                className="bandit-research-button"
+                                className="paramore-research-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 View Report
@@ -238,18 +238,18 @@ export default function Paramore() {
             </section>
 
             <section
-                className="banditsection banditsection-alt"
+                className="paramoresection paramoresection-alt"
                 id="branding">
-                <div className="banditcontainer">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">04</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                <div className="paramorecontainer">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">04</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">
                             Sketching, Character Design, & Backgrounds
                         </span>
                     </div>
 
-                    <div className="bandit-branding-text">
+                    <div className="paramore-branding-text">
                         <h2>Sketching, Character Design, & Backgrounds</h2>
                         <p>
                             As the main Design lead, I was in charge of the art
@@ -275,80 +275,80 @@ export default function Paramore() {
                             world to life.
                         </p>
 
-                        <div className="bandit-branding-gallery">
-                            <div className="bandit-gallery-itemb">
+                        <div className="paramore-branding-gallery">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/charactersketch.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/buckshot.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/casino.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/grit.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/desert.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                     alt="Desert background"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/scout.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/mansion.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                     alt="Mansion background"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/serpy.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/oasis.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                     alt="Oasis background"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/solstice.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/slums.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
-                            <div className="bandit-gallery-itemb">
+                            <div className="paramore-gallery-itemb">
                                 <img
                                     src="/work/bandit/villain.png"
-                                    className="bandit-gallery-imageb"
+                                    className="paramore-gallery-imageb"
                                 />
                             </div>
                         </div>
@@ -356,17 +356,17 @@ export default function Paramore() {
                 </div>
             </section>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
+            <section className="paramoresection">
+                <div className="paramorecontainer">
                     <div
-                        className="bandit-section-header"
+                        className="paramore-section-header"
                         id="animating">
-                        <span className="bandit-section-number">05</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">Animating</span>
+                        <span className="paramore-section-number">05</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">Animating</span>
                     </div>
 
-                    <div className="bandit-branding-text">
+                    <div className="paramore-branding-text">
                         <h2>Animating</h2>
                         <p>
                             As the sole animator of the project, I was tasked
@@ -385,77 +385,77 @@ export default function Paramore() {
                             animated.
                         </p>
 
-                        <div className="bandit-branding-gallery">
-                            <div className="bandit-gallery-item2">
+                        <div className="paramore-branding-gallery">
+                            <div className="paramore-gallery-item2">
                                 <iframe
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     src="https://drive.google.com/file/d/1d5crYQis-p6lTQxiYStTWwC_Hlf9COGU/preview"
                                     allow="autoplay; fullscreen; picture-in-picture"
                                     allowFullScreen
                                     title="Animation example 1"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <iframe
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     src="https://drive.google.com/file/d/1et0O71TMl0e-_YCrheM3KowCVTFR8jPC/preview"
                                     allow="autoplay; fullscreen; picture-in-picture"
                                     allowFullScreen
                                     title="Animation example 2"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <iframe
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     src="https://drive.google.com/file/d/1Xgnq8EwQZBTAzW02nlNAa5SNC1o4PxmS/preview"
                                     allow="autoplay; fullscreen; picture-in-picture"
                                     allowFullScreen
                                     title="Animation example 3"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <iframe
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     src="https://drive.google.com/file/d/1hQLragBWHltzCuw2LgS9zp25fWd6WsAl/preview"
                                     allow="autoplay; fullscreen; picture-in-picture"
                                     allowFullScreen
                                     title="Animation example 4"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <iframe
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     src="https://drive.google.com/file/d/1Fy-yC9TSeoBj2ZlHReuVNpCsIzJ4NeQ-/preview"
                                     allow="autoplay; fullscreen; picture-in-picture"
                                     allowFullScreen
                                     title="Animation example 5"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/storyboard!!.png"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt="Storyboard"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/buckshotsketch.jpg"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt="Buckshot sketch"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/gritsketch.jpg"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt="Grit sketch"
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/serpysketch.jpg"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt="Serpy sketch"
                                 />
                             </div>
@@ -464,14 +464,14 @@ export default function Paramore() {
                 </div>
             </section>
 
-            <section className="banditsection banditsection-warning">
+            <section className="paramoresection paramoresection-warning">
                 <div
-                    className="banditcontainer"
+                    className="paramorecontainer"
                     id="issue">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">06</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">06</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">
                             Unexpected Issue
                         </span>
                     </div>
@@ -479,16 +479,16 @@ export default function Paramore() {
                         src="/work/minime/confusion.svg"
                         className="floating-overlay2"
                     />
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
+                    <div className="paramore-two-column">
+                        <div className="paramore-media-column">
                             <img
                                 src="/work/bandit/issue.svg"
                                 alt=""
-                                className="bandit-large-media"
+                                className="paramore-large-media"
                             />
                         </div>
 
-                        <div className="bandit-text-content">
+                        <div className="paramore-text-content">
                             <h2>Unexpected Issue</h2>
                             <p>
                                 As we worked, we found it difficult to find ways
@@ -511,14 +511,14 @@ export default function Paramore() {
                 </div>
             </section>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
+            <section className="paramoresection">
+                <div className="paramorecontainer">
                     <div
-                        className="bandit-section-header"
+                        className="paramore-section-header"
                         id="what-didnt-work">
-                        <span className="bandit-section-number">07</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                        <span className="paramore-section-number">07</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">
                             What Didn't Work & How We Solved it
                         </span>
                     </div>
@@ -526,7 +526,7 @@ export default function Paramore() {
                         src="/work/minime/study.svg"
                         className="floating-overlay3"
                     />
-                    <div className="bandit-branding-text">
+                    <div className="paramore-branding-text">
                         <h2>What Didn't Work & How We Solved it</h2>
                         <p>
                             Our whole team was unsure about what direction to go
@@ -550,25 +550,25 @@ export default function Paramore() {
                             designs to help inspire the whole team.
                         </p>
 
-                        <div className="bandit-branding-gallery">
-                            <div className="bandit-gallery-item2">
+                        <div className="paramore-branding-gallery">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/problem3.png"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt=""
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/problem2.png"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt=""
                                 />
                             </div>
-                            <div className="bandit-gallery-item2">
+                            <div className="paramore-gallery-item2">
                                 <img
                                     src="/work/bandit/problem.png"
-                                    className="bandit-gallery-image2"
+                                    className="paramore-gallery-image2"
                                     alt=""
                                 />
                             </div>
@@ -577,28 +577,28 @@ export default function Paramore() {
                 </div>
             </section>
 
-            <section className="banditsection banditsection-warning">
+            <section className="paramoresection paramoresection-warning">
                 <div
-                    className="banditcontainer"
+                    className="paramorecontainer"
                     id="final-design">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">08</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">08</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">
                             Final Design & Showcase
                         </span>
                     </div>
 
-                    <div className="bandit-two-column">
-                        <div className="bandit-media-column">
+                    <div className="paramore-two-column">
+                        <div className="paramore-media-column">
                             <img
                                 src="/work/bandit/celebrate!.jpg"
                                 alt=""
-                                className="bandit-large-media"
+                                className="paramore-large-media"
                             />
                         </div>
 
-                        <div className="bandit-text-content">
+                        <div className="paramore-text-content">
                             <h2 id="final-design">Final Design & Showcase</h2>
                             <p>
                                 On Friday, May 16th, 2025, Team Command Z
@@ -617,22 +617,22 @@ export default function Paramore() {
             </section>
 
             <section
-                className="banditsection banditsection-alt"
+                className="paramoresection paramoresection-alt"
                 id="Journey">
                 <div
-                    className="banditcontainer"
+                    className="paramorecontainer"
                     id="Journey">
-                    <div className="bandit-section-header">
-                        <span className="bandit-section-number">09</span>
-                        <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                    <div className="paramore-section-header">
+                        <span className="paramore-section-number">09</span>
+                        <div className="paramore-section-line"></div>
+                        <span className="paramore-section-label">
                             The Journey and Impact
                         </span>
                     </div>
 
-                    <div className="bandit-journey-video-wrapper">
+                    <div className="paramore-journey-video-wrapper">
                         <iframe
-                            className="bandit-journey-video"
+                            className="paramore-journey-video"
                             src="https://drive.google.com/file/d/12swoFYtPBM5Aux6h3PBawqkMnkNhqftX/preview"
                             allow="autoplay; fullscreen; picture-in-picture"
                             allowFullScreen
@@ -643,7 +643,7 @@ export default function Paramore() {
                         src="/work/minime/celebrate.svg"
                         className="floating-overlay4"
                     />
-                    <div className="bandit-branding-text">
+                    <div className="paramore-branding-text">
                         <h2>The Journey & Impact</h2>
                         <p>
                             Bandit Breakout is more than just a game. It’s
@@ -663,10 +663,10 @@ export default function Paramore() {
                         </p>
                         <p>Thank you for reading!</p>
 
-                        <div className="bandit-site-button-wrapper">
+                        <div className="paramore-site-button-wrapper">
                             <a
                                 href="https://bandit-breakout.vercel.app/"
-                                className="bandit-site-button"
+                                className="paramore-site-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 View Site
