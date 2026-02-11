@@ -134,8 +134,6 @@ p,
     font-size: 16px;
 }
 
-
-
 .bandithero-text2 {
     margin-top: 1.5rem;
 }
@@ -145,7 +143,6 @@ p,
     margin-right: -80vw;
     margin-top: -12vw;
 }
-
 
 /* ==========================================================================
    5. General Section Padding & Variants
@@ -704,7 +701,6 @@ p,
 }
 
 @media (max-width: 767px) {
-
     .banditpage-wrapper {
         width: 100%;
         max-width: 100vw;
@@ -905,4 +901,22 @@ p,
         top: 769px;
         right: 5px;
     }
+
+    .bandittags {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bandithero-text {
+        margin-top: -1rem !important;
+    }
+}
+
+.bandittags {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.bandithero-text {
+    margin-top: -4rem;
 }
