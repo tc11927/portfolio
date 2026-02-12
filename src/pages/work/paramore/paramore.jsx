@@ -9,9 +9,12 @@ export default function Paramore() {
 
             <header className="paramorehero">
                 <div className="paramorecontainer">
-                    <h1 className="paramoreproject-title">Paramore E-magazine</h1>
+                    <h1 className="paramoreproject-title">
+                        Paramore E-magazine
+                    </h1>
                     <p className="paramoreproject-roles">
-                        Roles: Design & Frontend Developer
+                        Roles: UI/UX Designer, Visual Design & Frontend
+                        Developer
                     </p>
                     <div className="paramoretags">
                         <span className="paramoretag1">Design</span>
@@ -22,24 +25,20 @@ export default function Paramore() {
                     <div className="paramorehero-content">
                         <div className="paramorehero-text">
                             <p>
-                                Bandit Breakout is a multiplayer game created to
-                                solve the problem of linear multiplayer
-                                boardgames. Many multiplayer boardgames face the
-                                struggle of being replayed until boredom, or
-                                with becoming too predictable after a few too
-                                many rounds.
-                            </p>
-                            <p className="paramorehero-text2">
-                                My role was to blend stunning visual design with
-                                engaging gameplay, to make gaming with friends
-                                more interactive and personalized. I focused on
-                                the design, artwork, and animation.
+                                This is Paramore was a project where we were
+                                given freedom to build an interactive and
+                                informational digital media piece of whatever we
+                                desired. The goal of this project was to create
+                                an e-magazine that was both fun, stylish, and
+                                creative, but also detailed and informative. The
+                                result of this was This is Paramore, a homage to
+                                Paramore and their history.
                             </p>
                         </div>
 
                         <div className="paramorehero-image">
                             <img
-                                src="/work/bandit/banditmock.png"
+                                src="/work/paramore/paramore1.png"
                                 className="paramoretitle-image"
                                 alt="Bandit Breakout game mockup"
                             />
@@ -94,30 +93,28 @@ export default function Paramore() {
                     <div className="paramore-section-header">
                         <span className="paramore-section-number">01</span>
                         <div className="paramore-section-line"></div>
-                        <span className="paramore-section-label">Problem</span>
+                        <span className="paramore-section-label">
+                            What is it?
+                        </span>
                     </div>
 
                     <div className="paramore-two-column">
                         <div className="paramore-text-content paramore-process-text">
-                            <h2>Problem</h2>
+                            <h2>What is it?</h2>
                             <p>
-                                My group and I found taught multiplayer board
-                                games fall into the trap of being repetitive,
-                                boring, and straightforward after 2+ replays.
-                                The lack of customization or surprises bore us,
-                                and we find that normal board games lack the
-                                visual appeal players desire.
-                            </p>
-                            <p>
-                                This is why we made Bandit Breakout, to bring
-                                players a chaotic, but fun, boardgame experience
-                                with friends.
+                                This is Paramore is an interactive digital
+                                e-book/magazine displaying the history and
+                                tracks of Paramore. Each page describes an era
+                                and time they’ve had as a band, covering the
+                                music, themes, and artistic direction they chose
+                                to go through. This project is a homage to our
+                                love for the band, and how far they’ve come.
                             </p>
                         </div>
 
                         <div className="paramore-media-column">
                             <img
-                                src="/work/bandit/problemo.svg"
+                                src="/work/paramore/paramore2.svg"
                                 alt=""
                                 className="paramore-large-media"
                             />
@@ -133,39 +130,31 @@ export default function Paramore() {
                     <div className="paramore-section-header">
                         <span className="paramore-section-number">02</span>
                         <div className="paramore-section-line"></div>
-                        <span className="paramore-section-label">Solution</span>
+                        <span className="paramore-section-label">
+                            Why Paramore?
+                        </span>
                     </div>
 
                     <div className="paramore-two-column reverse">
                         <div className="paramore-media-column">
-                            <iframe
-                                src="https://drive.google.com/file/d/1H_q33nm2S5rGptYGcLII666p9jX3zRJp/preview"
+                            <img
                                 className="paramore-process-video"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                allowFullScreen
-                                title="Bandit Breakout Solution & Gameplay Demo"
+                                src="/work/paramore/Storyboard.png"
                             />
                         </div>
 
                         <div className="paramore-text-content paramore-process-text">
-                            <h2>Solution</h2>
+                            <h2>Why Paramore?</h2>
                             <p>
-                                As the designer of Bandit Breakout, my goal was
-                                to create a race-to-the-finish board game that
-                                feels dynamic and player-driven rather than
-                                strictly linear. Players race across the desert
-                                to capture the villain terrorizing the land, but
-                                how they get there is shaped by the choices they
-                                make along the way.
-                            </p>
-                            <p>
-                                Instead of a straightforward path from start to
-                                finish, I designed Bandit Breakout to encourage
-                                interaction, tension, and replayability. Every
-                                turn offers opportunities for player choice and
-                                disruption, creating a more engaging, visually
-                                engaging, and unpredictable board game
-                                experience.
+                                Paramore is a band that formed in 2004. My
+                                groupmate and I are quite passionate about their
+                                music and love the visuals they use in their
+                                albums. Each album is unique and different from
+                                the last, with the songs reflecting that period
+                                of time in the band’s life. We love the visuals
+                                in these albums, and had many ideas for how we
+                                could tie them into each other and weave a story
+                                through their years.
                             </p>
                         </div>
                     </div>
@@ -186,7 +175,7 @@ export default function Paramore() {
                         <div className="paramore-media-column">
                             <div className="paramore-research-image-wrapper">
                                 <img
-                                    src="/work/bandit/banditgraph.png"
+                                    src="/work/paramore/research.png"
                                     className="paramore-research-main-image paramore-large-media"
                                     alt="Research findings visualization"
                                 />
@@ -199,32 +188,21 @@ export default function Paramore() {
                         <div className="paramore-text-content paramore-research-text">
                             <h2>Research</h2>
                             <p>
-                                Interviews with 12 board game players showed a
-                                strong preference for collaborative,
-                                story-driven play. Over 80% enjoyed cooperative
-                                experiences, and 60% valued narrative-focused
-                                games, leading me to design gameplay around
-                                shared decision-making and visual progression.
+                                A competitive analysis was done to see how other
+                                sites created and laid out their e-magazines.
+                                Through this research, a few things were found,
+                                drawn from, and used as inspiration to build the
+                                site.
                             </p>
                             <p>
-                                Players expressed frustration with unsatisfying
-                                endings, so I prioritised meaningful, fully
-                                illustrated narrative conclusions. While
-                                multiple endings increased engagement, ensuring
-                                every ending felt complete became a key focus.
+                                I also researched what format we wanted for this
+                                project, as there was full creative freedom to
+                                do whatever we wanted. With the goal to both
+                                cover Paramore’s history and to represent their
+                                style, a digital e-magazine seemed like the best
+                                option to fully relay the idea.
                             </p>
-                            <p>
-                                To support varied playstyles and replayable
-                                multiplayer experiences, I emphasised
-                                replayability through different choices,
-                                interactions, and characters.
-                            </p>
-                            <p>
-                                Secondary research reinforced the importance of
-                                storytelling, lore, and consequence-driven
-                                outcomes, guiding the creation of detailed,
-                                unique characters.
-                            </p>
+
                             <a
                                 href="https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing"
                                 className="paramore-research-button"
@@ -245,110 +223,77 @@ export default function Paramore() {
                         <span className="paramore-section-number">04</span>
                         <div className="paramore-section-line"></div>
                         <span className="paramore-section-label">
-                            Sketching, Character Design, & Backgrounds
+                            Moodboards, Storyboards, and Mockups
                         </span>
                     </div>
 
                     <div className="paramore-branding-text">
-                        <h2>Sketching, Character Design, & Backgrounds</h2>
+                        <h2> Moodboards, Storyboards, and Mockups</h2>
                         <p>
-                            As the main Design lead, I was in charge of the art
-                            direction for the game. We chose a rustic, yet
-                            bright colour palette to help link with our cowboy
-                            theme, all while being fun and stylistic. A crayon
-                            like pen was chosen for the art to help each piece
-                            feel hand drawn and lively.
+                            As the main designer of this project, it was my role
+                            to help find ideas, and style all the pages to match
+                            and feel cohesive. Many different ideas and
+                            inspiration was taken from their albums to make each
+                            of our pages. We aimed to showcase the grunge rock
+                            aesthetic the band displayed through layout, fonts,
+                            and colours. This culminated into a Trello board
+                            filled with images and ideas for each section.
                         </p>
                         <p>
-                            Many sketches were made to use shape language and
-                            simplification to make characters that stood out and
-                            had different personalities. Final designs and
-                            character turnarounds were made to make animation
-                            easier and fully flesh out the characters. Many
-                            iterations of each character were made to ensure
-                            they all fit together perfectly.
+                            Once the moodboard was created, we moved onto
+                            storyboarding each section, and how each interaction
+                            would connect within a page. Sketches, inspiration
+                            images, and text was used to support each idea we
+                            had. We especially made sure that each album page
+                            was similar, but showcased the different styles each
+                            album had at the same time.
                         </p>
                         <p>
-                            Backgrounds were also made to help ease the time
-                            taken animating. Each background was created with
-                            the same brush as the characters to fully bring the
-                            world to life.
+                            After that, mockups and a style guide were created
+                            off this image to help us further understand the
+                            vision we wanted. Colours, font, and layout was
+                            decided based on the common aesthetics found in
+                            storyboard, moodboard, and the official Paramore
+                            site. We truly wanted to encapsulate the messy yet
+                            refined style Paramore had.
                         </p>
 
                         <div className="paramore-branding-gallery">
                             <div className="paramore-gallery-itemb">
                                 <img
-                                    src="/work/bandit/charactersketch.png"
+                                    src="/work/paramore/moodboard1.png"
                                     className="paramore-gallery-imageb"
                                 />
                             </div>
                             <div className="paramore-gallery-itemb">
                                 <img
-                                    src="/work/bandit/buckshot.png"
+                                    src="/work/paramore/moodboard2.png"
                                     className="paramore-gallery-imageb"
                                 />
                             </div>
                             <div className="paramore-gallery-itemb">
                                 <img
-                                    src="/work/bandit/casino.png"
+                                    src="/work/paramore/storyboard1.png"
                                     className="paramore-gallery-imageb"
                                 />
                             </div>
                             <div className="paramore-gallery-itemb">
                                 <img
-                                    src="/work/bandit/grit.png"
+                                    src="/work/paramore/storyboard2.png"
                                     className="paramore-gallery-imageb"
                                 />
                             </div>
                             <div className="paramore-gallery-itemb">
                                 <img
-                                    src="/work/bandit/desert.png"
+                                    src="/work/paramore/mockup1.png"
+                                    className="paramore-gallery-imageb"
+                                />
+                            </div>
+                            <div className="paramore-gallery-itemb">
+                                <img
+                                    src="/work/paramore/mockup2.png"
                                     className="paramore-gallery-imageb"
                                     alt="Desert background"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/scout.png"
-                                    className="paramore-gallery-imageb"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/mansion.png"
-                                    className="paramore-gallery-imageb"
-                                    alt="Mansion background"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/serpy.png"
-                                    className="paramore-gallery-imageb"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/oasis.png"
-                                    className="paramore-gallery-imageb"
-                                    alt="Oasis background"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/solstice.png"
-                                    className="paramore-gallery-imageb"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/slums.png"
-                                    className="paramore-gallery-imageb"
-                                />
-                            </div>
-                            <div className="paramore-gallery-itemb">
-                                <img
-                                    src="/work/bandit/villain.png"
-                                    className="paramore-gallery-imageb"
                                 />
                             </div>
                         </div>
@@ -363,102 +308,30 @@ export default function Paramore() {
                         id="animating">
                         <span className="paramore-section-number">05</span>
                         <div className="paramore-section-line"></div>
-                        <span className="paramore-section-label">Animating</span>
+                        <span className="paramore-section-label">
+                            Development
+                        </span>
                     </div>
 
                     <div className="paramore-branding-text">
-                        <h2>Animating</h2>
+                        <h2>Development</h2>
                         <p>
-                            As the sole animator of the project, I was tasked
-                            with creating all the cutscenes (beginning, multiple
-                            endings, character and NPC interactions, dice
-                            rolling, and battle animations). Work was cut down
-                            through earlier work done (creating turnarounds and
-                            reusable backgrounds) and reusable assets were made.
-                            Specifically, work was cut for ending cutscenes, as
-                            many of them had a variety of similarities in scenes
-                            and character poses.
-                        </p>
-                        <p>
-                            Storyboards were also made to ensure clarity in
-                            animation, and direction for how things needed to be
-                            animated.
+                            Due to the limited amount of time to finish the
+                            project, there were a lot of time constraints. We
+                            had around 1.5 months to get it done, from start to
+                            finish. This meant quickly finishing and creating
+                            ideas for our project to make sure we could
+                            implement them without stress or rush. There was a
+                            lot of pressure put on me due to this, as not only
+                            did I have to ideate, but also code, and design at
+                            the same time.
                         </p>
 
-                        <div className="paramore-branding-gallery">
-                            <div className="paramore-gallery-item2">
-                                <iframe
-                                    className="paramore-gallery-image2"
-                                    src="https://drive.google.com/file/d/1d5crYQis-p6lTQxiYStTWwC_Hlf9COGU/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 1"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <iframe
-                                    className="paramore-gallery-image2"
-                                    src="https://drive.google.com/file/d/1et0O71TMl0e-_YCrheM3KowCVTFR8jPC/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 2"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <iframe
-                                    className="paramore-gallery-image2"
-                                    src="https://drive.google.com/file/d/1Xgnq8EwQZBTAzW02nlNAa5SNC1o4PxmS/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 3"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <iframe
-                                    className="paramore-gallery-image2"
-                                    src="https://drive.google.com/file/d/1hQLragBWHltzCuw2LgS9zp25fWd6WsAl/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 4"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <iframe
-                                    className="paramore-gallery-image2"
-                                    src="https://drive.google.com/file/d/1Fy-yC9TSeoBj2ZlHReuVNpCsIzJ4NeQ-/preview"
-                                    allow="autoplay; fullscreen; picture-in-picture"
-                                    allowFullScreen
-                                    title="Animation example 5"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/bandit/storyboard!!.png"
-                                    className="paramore-gallery-image2"
-                                    alt="Storyboard"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/bandit/buckshotsketch.jpg"
-                                    className="paramore-gallery-image2"
-                                    alt="Buckshot sketch"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/bandit/gritsketch.jpg"
-                                    className="paramore-gallery-image2"
-                                    alt="Grit sketch"
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/bandit/serpysketch.jpg"
-                                    className="paramore-gallery-image2"
-                                    alt="Serpy sketch"
-                                />
-                            </div>
+                        <div className="paramore-journey-video-wrapper">
+                            <img
+                                className="paramore-journey"
+                                src="/work/paramore/code.png"
+                            />
                         </div>
                     </div>
                 </div>
@@ -472,7 +345,7 @@ export default function Paramore() {
                         <span className="paramore-section-number">06</span>
                         <div className="paramore-section-line"></div>
                         <span className="paramore-section-label">
-                            Unexpected Issue
+                            How Was it Overcome?
                         </span>
                     </div>
                     <img
@@ -481,30 +354,28 @@ export default function Paramore() {
                     />
                     <div className="paramore-two-column">
                         <div className="paramore-media-column">
-                            <img
-                                src="/work/bandit/issue.svg"
-                                alt=""
-                                className="paramore-large-media"
+                            <iframe
+                                src="https://drive.google.com/file/d/1eywQV6aPGIRZ8o2-4LbLxS-P5_b4v8Ul/preview"
+                                className="bandit-process-video"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                                title="Bandit Breakout Solution & Gameplay Demo"
                             />
                         </div>
 
                         <div className="paramore-text-content">
-                            <h2>Unexpected Issue</h2>
+                            <h2> How Was it Overcome?</h2>
                             <p>
-                                As we worked, we found it difficult to find ways
-                                to create our board, and were stuck on designing
-                                it and reiterating over and over again. This was
-                                due to our own personal dissatisfaction and
-                                multiple rounds of user testing. Both us and our
-                                users felt like something was missing, and that
-                                our board could have more.
-                            </p>
-                            <p>
-                                As the Design lead, I found myself having a hard
-                                time to make sure the board was visually
-                                appealing, and aligned with the game design
-                                team's vision. Many ideas were thrown around and
-                                none truly stuck.
+                                Despite the time rush, there were ways I found I
+                                could keep my work high quality and keep my work
+                                ethic. Setting clear schedules, communication
+                                with my teammate through sending videos of our
+                                progress, and constantly asking for feedback and
+                                help when needed really helped reduce the
+                                workload and made the process easier. The main
+                                thing that really stood out to me was the trust
+                                and dependance my teammate and I had for each
+                                other to both support but also help each other.
                             </p>
                         </div>
                     </div>
@@ -519,7 +390,7 @@ export default function Paramore() {
                         <span className="paramore-section-number">07</span>
                         <div className="paramore-section-line"></div>
                         <span className="paramore-section-label">
-                            What Didn't Work & How We Solved it
+                            Reflection
                         </span>
                     </div>
                     <img
@@ -527,27 +398,24 @@ export default function Paramore() {
                         className="floating-overlay3"
                     />
                     <div className="paramore-branding-text">
-                        <h2>What Didn't Work & How We Solved it</h2>
+                        <h2>Reflection</h2>
                         <p>
-                            Our whole team was unsure about what direction to go
-                            in, the game design team was struggling to implement
-                            gameplay mechanics, while the design team was
-                            struggling to create what was needed because of
-                            this.
+                            Throughout this project, I learned a lot about
+                            mixing code and design to create interactive and
+                            informative projects. Having worked with fullstack
+                            developers beforehand who would do the code and I
+                            would stick to the design, or in teams where tasks
+                            were code and designer were often separated, it was
+                            a very useful experience to do both at the same
+                            time.
                         </p>
                         <p>
-                            This issue was solved through a design idea where
-                            the thought that seperate designed areas would look
-                            cool. After art and sketches of these areas and NPCs
-                            for them were made, the game design team delved
-                            deeper into it and created working mechanics for
-                            this idea.
-                        </p>
-                        <p>
-                            In the end, the issue I faced was that we didn't
-                            have a clear design direction, and to solve it, I
-                            had to ideate and make creative solutions and
-                            designs to help inspire the whole team.
+                            It also taught me a lot about coding and designing
+                            under pressure, and helped me realize that as a
+                            designer and developer, I’m capable of making
+                            projects that are filled with quality and care
+                            despite the stress that came alongside the time
+                            limit.
                         </p>
 
                         <div className="paramore-branding-gallery">
@@ -577,45 +445,6 @@ export default function Paramore() {
                 </div>
             </section>
 
-            <section className="paramoresection paramoresection-warning">
-                <div
-                    className="paramorecontainer"
-                    id="final-design">
-                    <div className="paramore-section-header">
-                        <span className="paramore-section-number">08</span>
-                        <div className="paramore-section-line"></div>
-                        <span className="paramore-section-label">
-                            Final Design & Showcase
-                        </span>
-                    </div>
-
-                    <div className="paramore-two-column">
-                        <div className="paramore-media-column">
-                            <img
-                                src="/work/bandit/celebrate!.jpg"
-                                alt=""
-                                className="paramore-large-media"
-                            />
-                        </div>
-
-                        <div className="paramore-text-content">
-                            <h2 id="final-design">Final Design & Showcase</h2>
-                            <p>
-                                On Friday, May 16th, 2025, Team Command Z
-                                presented Bandit Breakout. Although competition
-                                was close, Bandit Breakout came out on top!
-                            </p>
-                            <p>
-                                Getting to work with such an amazing, creative
-                                team was a delight, and an experience I’ll
-                                forever look back at fondly. Thank you Command
-                                Z!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section
                 className="paramoresection paramoresection-alt"
                 id="Journey">
@@ -623,7 +452,7 @@ export default function Paramore() {
                     className="paramorecontainer"
                     id="Journey">
                     <div className="paramore-section-header">
-                        <span className="paramore-section-number">09</span>
+                        <span className="paramore-section-number">08</span>
                         <div className="paramore-section-line"></div>
                         <span className="paramore-section-label">
                             The Journey and Impact
@@ -646,20 +475,20 @@ export default function Paramore() {
                     <div className="paramore-branding-text">
                         <h2>The Journey & Impact</h2>
                         <p>
-                            Bandit Breakout is more than just a game. It’s
-                            something the team made to bring joy and creativity
-                            into the current straightforward boardgame scene. By
-                            addressing the repetitive, single storyline driven
-                            boardgames of today’s world, it provides a solution
-                            that goes beyond aesthetics, but also brings
-                            competitive and casual fun to its players.
+                            This is Paramore is a love letter to a band that we
+                            all love and have heard, even if we weren’t aware.
+                            It’s something my teammate and I created to share
+                            our passion and joy about music to those who are
+                            willing to learn. By mixing information with
+                            aesthetics and interactivity, this e-magazine brings
+                            both an informative and fun experience to users.
                         </p>
                         <p>
                             I’ve learned a lot through this project, and have
-                            grown as a Graphic designer and Motion Graphics.
-                            It’s taught me a lot about user-centered design,
-                            creative thinking, and has reminded me about my
-                            passion and love for the arts.
+                            grown as a Graphic designer, UI/UX designer and
+                            Frontend Developer. It’s taught me a lot about
+                            interactive design, coding with Next.js, and mixing
+                            usability with enjoyment.
                         </p>
                         <p>Thank you for reading!</p>
 

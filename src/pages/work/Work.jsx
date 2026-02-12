@@ -8,16 +8,6 @@ import { useState, useRef, useEffect } from "react";
 const galleryItems = [
     {
         id: 1,
-        slug: "bandit-breakout",
-        title: "Bandit Breakout",
-        categories: ["Design", "UI/UX", "Motion Graphics"],
-        tools: "Figma + Illustrator + After Effects",
-        image: "/work/banditmockup.png",
-        description:
-            "Designed for all gamers, Bandit Breakout blends stunning visual design with engaging gameplay, making gaming with friends more interactive and personalized.",
-    },
-    {
-        id: 2,
         slug: "tandem",
         title: "Tandem Web App",
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
@@ -26,13 +16,24 @@ const galleryItems = [
         description:
             "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
     },
-     {
+    {
+        id: 2,
+        slug: "bandit-breakout",
+        title: "Bandit Breakout",
+        categories: ["Design", "UI/UX", "Motion Graphics"],
+        tools: "Figma + Illustrator + After Effects",
+        image: "/work/banditmockup.png",
+        description:
+            "Designed for all gamers, Bandit Breakout blends stunning visual design with engaging gameplay, making gaming with friends more interactive and personalized.",
+    },
+
+    {
         id: 3,
         slug: "paramore",
         title: "Paramore E-magazine",
-        categories: ["Design", "UI/UX","Front-end"],
+        categories: ["Design", "UI/UX", "Front-end"],
         tools: "Figma + Illustrator + Photoshop + Visual Studio Code",
-        image: "/work/tandemmockup.png",
+        image: "/work/paramoremockup.png",
         description:
             "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
     },
