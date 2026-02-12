@@ -498,7 +498,7 @@ export default function Paramore() {
                                 className="paramore-site-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                View Site
+                                View Magazine
                             </a>
                         </div>
                     </div>
