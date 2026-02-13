@@ -421,14 +421,14 @@ export default function Paramore() {
                         <div className="paramore-branding-gallery">
                             <div className="paramore-gallery-item2">
                                 <img
-                                    src="/work/bandit/problem3.png"
+                                    src="/work/paramore/paramorereflection.png"
                                     className="paramore-gallery-image2"
                                     alt=""
                                 />
                             </div>
                             <div className="paramore-gallery-item2">
                                 <img
-                                    src="/work/bandit/problem2.png"
+                                    src="/work/paramore/paramorereflection2.png"
                                     className="paramore-gallery-image2"
                                     alt=""
                                 />

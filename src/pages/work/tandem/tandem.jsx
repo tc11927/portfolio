@@ -7,12 +7,21 @@ export default function Tandem() {
         <div className="tandempage-wrapper">
             <NavBar />
 
-            <header className="tandemhero">
+            <header className="tandem-hero-fullscreen">
+                <img
+                    src="/work/tandem/header.jpg"
+                    alt="Tandem hero background"
+                    className="tandem-hero-fullscreen-image"
+                />
+            </header>
+
+            <section className="tandem-hero-content-section">
                 <div className="tandemcontainer">
-                    <h1 className="tandemproject-title">Tandem Web App</h1>
+                    <h1 className="tandemproject-title">Tandem</h1>
                     <p className="tandemproject-roles">
                         Roles: Design & Project Lead, UI/UX Designer
                     </p>
+
                     <div className="tandemtags">
                         <span className="tandemtag1">Design</span>
                         <span className="tandemtag2">UI/UX</span>
@@ -46,45 +55,64 @@ export default function Tandem() {
                             <img
                                 src="/work/tandem/tandemphones.png"
                                 className="tandemtitle-image"
-                                alt="Bandit Breakout game mockup"
+                                alt="Tandem app shown on mobile phones"
                             />
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>
 
             <nav className="tandemsection-nav">
                 <div className="tandemcontainer">
                     <p className="tandemsection-title">View Section:</p>
-                    <ul>
-                        <li>
-                            <a href="#problem">Problem</a>
-                        </li>
-                        <li>
-                            <a href="#solution">Solution</a>
-                        </li>
-                        <li>
-                            <a href="#research">Research</a>
-                        </li>
-                        <li>
-                            <a href="#branding">Branding and Styleguide</a>
-                        </li>
-                        <li>
-                            <a href="#issue">Unexpected Issue</a>
-                        </li>
-                        <li>
-                            <a href="#what-didnt-work">What Didn't Work</a>
-                        </li>
-                        <li>
-                            <a href="#how-we-solved">How We Solved It</a>
-                        </li>
-                        <li>
-                            <a href="#final-design">Final Design & Showcase</a>
-                        </li>
-                        <li>
-                            <a href="#Journey">The Journey and Impact</a>
-                        </li>
-                    </ul>
+
+                    <div className="nav-grid">
+                        <a
+                            href="#problem"
+                            className="grid-item-1">
+                            Problem
+                        </a>
+                        <a
+                            href="#solution"
+                            className="grid-item-1">
+                            Solution
+                        </a>
+                        <a
+                            href="#research"
+                            className="grid-item-1">
+                            Research
+                        </a>
+                        <a
+                            href="#branding"
+                            className="grid-item-2">
+                            Branding and Styleguide
+                        </a>
+                        <a
+                            href="#issue"
+                            className="grid-item-2">
+                            Unexpected Issue
+                        </a>
+                        <a
+                            href="#what-didnt-work"
+                            className="grid-item-2">
+                            What Didn't Work
+                        </a>
+                        <a
+                            href="#how-we-solved"
+                            className="grid-item-3">
+                            How We Solved It
+                        </a>
+                        <a
+                            href="#final-design"
+                            className="grid-item-3">
+                            Final Design & Showcase
+                        </a>
+                        <a
+                            href="#Journey"
+                            className="grid-item-3">
+                            The Journey and Impact
+                        </a>
+                    </div>
                 </div>
             </nav>
 

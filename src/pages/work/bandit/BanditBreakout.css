@@ -338,7 +338,7 @@ p,
 }
 
 .bandit-text-content p {
-    font-size: 14px;
+ font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
@@ -355,7 +355,7 @@ p,
 }
 
 .bandit-branding-text p {
-    font-size: 14px;
+font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
@@ -903,7 +903,6 @@ p,
     }
 
     .bandittags {
-
         margin-bottom: 1.5rem;
     }
 
@@ -913,7 +912,7 @@ p,
 }
 
 .bandittags {
-   margin-top: 2.5vw;
+    margin-top: 2.5vw;
     margin-bottom: 0.5rem;
 }
 

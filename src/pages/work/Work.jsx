@@ -9,7 +9,7 @@ const galleryItems = [
     {
         id: 1,
         slug: "tandem",
-        title: "Tandem Web App",
+        title: "Tandem",
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
         tools: "Figma + Illustrator + After Effects + Visual Studio Code",
         image: "/work/tandemmockup.png",
