@@ -144,6 +144,14 @@ p,
     margin-top: -12vw;
 }
 
+.bandit-hero-fullscreen {
+
+    min-height: 780px !important;
+    padding-bottom: 12vh !important;   
+    margin-bottom: 0 !important;
+  
+}
+
 /* ==========================================================================
    5. General Section Padding & Variants
    ========================================================================== */
@@ -169,7 +177,7 @@ p,
     top: 0;
     z-index: 90;
     background-color: #22303a;
-    border-radius: 20px;
+ 
     padding: 1rem 0;
     color: white;
     margin-top: 12vw;
@@ -209,8 +217,9 @@ p,
 }
 
 .banditsection-title {
-    font-size: 3vw;
+      font-size: 4vw !important;
     margin-bottom: -0.4vw;
+    margin-left: 1vw;
 }
 
 /* ==========================================================================
@@ -919,3 +928,122 @@ font-size: 18px;
 .bandithero-text {
     margin-top: -4rem;
 }
+
+
+
+.bandit-hero-fullscreen {
+    position: relative;
+    width: 100vw !important;
+    height: 87vh;
+    min-height: 680px;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 4rem;
+}
+
+.bandit-hero-fullscreen-image {
+    width: 100vw !important;
+    height: 100% !important;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+.bandit-hero-content-section {
+    margin-top: -4vw;
+    margin-bottom: 17vw;
+}
+
+
+
+.banditsection-nav {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background-color: #22303a;
+    padding: 1rem 0;
+    color: white;
+    margin-top: 12vw;
+    padding-top: 260px;
+    padding-bottom: 110px;
+    z-index: 90;
+    top: 0;
+}
+
+.banditsection-nav .banditcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bandit-nav-image {
+    margin-top: -10vw;
+}
+
+
+@media (min-width: 1024px) {
+    .banditsection-nav .bandit-two-column {
+        grid-template-columns: 1fr 1.35fr;   
+        gap: 4.5rem;
+    }
+
+    .bandit-nav-image {
+        overflow: hidden; 
+    }
+
+    .bandit-nav-image img.bandit-large-media {
+        width: 100%;
+        max-width: 900px;
+        transform: scale(1.2);
+        transform-origin: left center; 
+
+    }
+}
+
+
+@media (max-width: 767px) {
+    .banditsection-nav {
+        margin-top: 2rem !important;
+        padding-top: 5rem !important;
+    }
+
+    .banditsection-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .banditsection-nav a {
+        font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+        padding: 0.5rem 0.75rem !important;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banditsection-title {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    .bandit-nav-image {
+        margin-top: 2vw;
+    }
+}
+
+

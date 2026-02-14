@@ -7,12 +7,21 @@ export default function BanditBreakout() {
         <div className="banditpage-wrapper">
             <NavBar />
 
-            <header className="bandithero">
+            <header className="bandit-hero-fullscreen">
+                <img
+                    src="/work/bandit/header.jpg" 
+                    alt="Bandit Breakout – hero background"
+                    className="bandit-hero-fullscreen-image"
+                />
+            </header>
+
+            <section className="banditsection">
                 <div className="banditcontainer">
                     <h1 className="banditproject-title">Bandit Breakout</h1>
                     <p className="banditproject-roles">
                         Roles: Design & Project Lead, UI/UX Designer
                     </p>
+
                     <div className="bandittags">
                         <span className="bandittag1">Design</span>
                         <span className="bandittag2">UI/UX</span>
@@ -20,70 +29,83 @@ export default function BanditBreakout() {
                     </div>
 
                     <div className="bandithero-content">
-                        <div className="bandithero-text">
-                            <p>
-                                Bandit Breakout is a multiplayer game created to
-                                solve the problem of linear multiplayer
-                                boardgames. Many multiplayer boardgames face the
-                                struggle of being replayed until boredom, or
-                                with becoming too predictable after a few too
-                                many rounds.
-                            </p>
-                            <p className="bandithero-text2">
-                                My role was to blend stunning visual design with
-                                engaging gameplay, to make gaming with friends
-                                more interactive and personalized. I focused on
-                                the design, artwork, and animation.
-                            </p>
-                        </div>
+                        <div className="bandithero-text"></div>
 
                         <div className="bandithero-image">
-                            <img
-                                src="/work/bandit/banditmock.png"
-                                className="bandittitle-image"
-                                alt="Bandit Breakout game mockup"
-                            />
+                            <p className="bandithero-text1">
+                                Bandit Breakout is a multiplayer board game
+                                created to solve the common problem with linear
+                                multiplayer board games: after just a few plays
+                                they become repetitive, predictable, and lose
+                                their excitement.
+                            </p>
+                            <p className="bandithero-text2">
+                                My role was to blend striking visual design with
+                                engaging, replayable gameplay — making every
+                                session with friends feel fresh, chaotic, and
+                                personal. I led all artwork, character design,
+                                environments, and animations.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>
 
             <nav className="banditsection-nav">
                 <div className="banditcontainer">
-                    <p className="banditsection-title">View Section:</p>
-                    <ul>
-                        <li>
-                            <a href="#problem">Problem</a>
-                        </li>
-                        <li>
-                            <a href="#solution">Solution</a>
-                        </li>
-                        <li>
-                            <a href="#research">Research</a>
-                        </li>
-                        <li>
-                            <a href="#branding">
-                                Sketching, Character Design, & Backgrounds
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#animating">Animating</a>
-                        </li>
-                        <li>
-                            <a href="#issue">Unexpected Issue</a>
-                        </li>
-                        <li>
-                            <a href="#what-didnt-work">
-                                What Didn't Work & How We Solved it
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#final-design">Final Design & Showcase</a>
-                        </li>
-                        <li>
-                            <a href="#Journey">The Journey and Impact</a>
-                        </li>
-                    </ul>
+                    <div className="bandit-two-column">
+                        <div className="bandit-text-content">
+                            <p className="banditsection-title">View Section:</p>
+                            <ul>
+                                <li>
+                                    <a href="#problem">01. Problem</a>
+                                </li>
+                                <li>
+                                    <a href="#solution">02. Solution</a>
+                                </li>
+                                <li>
+                                    <a href="#research">03. Research</a>
+                                </li>
+                                <li>
+                                    <a href="#branding">
+                                        04. Sketching, Character Design, &
+                                        Backgrounds
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#animating">05. Animating</a>
+                                </li>
+                                <li>
+                                    <a href="#issue">06. Unexpected Issue</a>
+                                </li>
+                                <li>
+                                    <a href="#what-didnt-work">
+                                        07. What Didn't Work & How We Solved it
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#final-design">
+                                        08. Final Design & Showcase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Journey">
+                                        09. The Journey and Impact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="bandit-media-column">
+                            <div className="bandit-nav-image">
+                                <img
+                                    src="/work/bandit/banditmock.png" 
+                                    className="bandit-large-media"
+                                    alt="Bandit Breakout navigation visual"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
 

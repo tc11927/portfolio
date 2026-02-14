@@ -191,6 +191,16 @@ p,
     padding-bottom: -20vw;         
 }
 
+.bandithero-content {
+    margin-top: -11vw !important;    
+    margin-bottom: 12vw;              
+}
+
+.banditsection:first-of-type {
+    margin-top: 5vw !important;     
+ 
+}
+
 /* ==========================================================================
    3. Tags
    ========================================================================== */
@@ -1065,9 +1075,7 @@ font-size: 18px;
     border-radius: 16px; 
 }
 
-/* ==========================================================================
-   Fullscreen hero (exact tandem style)
-   ========================================================================== */
+
 
 .paramore-hero-fullscreen {
     position: relative;
@@ -1094,9 +1102,7 @@ font-size: 18px;
     padding: 0 !important;
 }
 
-/* ==========================================================================
-   Navigation – full-bleed dark bar (exact tandem style)
-   ========================================================================== */
+
 
 .paramoresection-nav {
     
