@@ -332,7 +332,10 @@ export default function Paramore() {
                             Development
                         </span>
                     </div>
-
+                    <img
+                        src="/work/minime/study.svg"
+                        className="paramore-floating-overlay3"
+                    />
                     <div className="paramore-branding-text">
                         <h2>Development</h2>
                         <p>
@@ -402,21 +405,18 @@ export default function Paramore() {
                 </div>
             </section>
 
-            <section className="paramoresection">
+            <section
+                className="paramoresection paramoresection-alt"
+                id="what-didnt-work">
                 <div className="paramorecontainer">
-                    <div
-                        className="paramore-section-header"
-                        id="what-didnt-work">
+                    <div className="paramore-section-header">
                         <span className="paramore-section-number">07</span>
                         <div className="paramore-section-line"></div>
                         <span className="paramore-section-label">
                             Reflection
                         </span>
                     </div>
-                    <img
-                        src="/work/minime/study.svg"
-                        className="floating-overlay3"
-                    />
+
                     <div className="paramore-branding-text">
                         <h2>Reflection</h2>
                         <p>
@@ -438,28 +438,12 @@ export default function Paramore() {
                             limit.
                         </p>
 
-                        <div className="paramore-branding-gallery">
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/paramore/paramorereflection.png"
-                                    className="paramore-gallery-image2"
-                                    alt=""
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/paramore/paramorereflection2.png"
-                                    className="paramore-gallery-image2"
-                                    alt=""
-                                />
-                            </div>
-                            <div className="paramore-gallery-item2">
-                                <img
-                                    src="/work/bandit/problem.png"
-                                    className="paramore-gallery-image2"
-                                    alt=""
-                                />
-                            </div>
+                        <div className="paramore-journey-video-wrapper">
+                            <img
+                                src="/work/paramore/reflect.svg"
+                                className="paramore-journey-video2"
+                                alt="Reflection and key learnings visualization"
+                            />
                         </div>
                     </div>
                 </div>
@@ -480,12 +464,10 @@ export default function Paramore() {
                     </div>
 
                     <div className="paramore-journey-video-wrapper">
-                        <iframe
+                        <img
+                            src="/work/paramore/reflect.svg"
                             className="paramore-journey-video"
-                            src="https://drive.google.com/file/d/12swoFYtPBM5Aux6h3PBawqkMnkNhqftX/preview"
-                            allow="autoplay; fullscreen; picture-in-picture"
-                            allowFullScreen
-                            title="Bandit Breakout – The Journey"
+                            alt="Reflection and key learnings visualization"
                         />
                     </div>
                     <img
@@ -509,6 +491,13 @@ export default function Paramore() {
                             Frontend Developer. It’s taught me a lot about
                             interactive design, coding with Next.js, and mixing
                             usability with enjoyment.
+                        </p>
+
+                        <p>
+                            I also learned about the various cafes downtown as I
+                            worked with my teammate, but that's another story!
+                            Enjoy a couple of the many drinks and meals paired
+                            with work.
                         </p>
                         <p>Thank you for reading!</p>
 
