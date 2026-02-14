@@ -1,6 +1,7 @@
 import NavBar from "../../../components/navbar";
 import "./tandem.css";
 import Footer from "../../../components/footer";
+import JigglyGrid from "../../../components/grid";
 
 export default function Tandem() {
     return (
@@ -30,8 +31,10 @@ export default function Tandem() {
                     </div>
 
                     <div className="tandemhero-content">
-                        <div className="tandemhero-text">
-                            <p>
+                        <div className="tandemhero-text"></div>
+
+                        <div className="tandemhero-image">
+                            <p className="tandemhero-text1">
                                 Tandem is an app for parents in trades to help
                                 balance work with childcare. It utilizes AI to
                                 help busy parents balance the responsibilities
@@ -50,68 +53,65 @@ export default function Tandem() {
                                 reliable.
                             </p>
                         </div>
-
-                        <div className="tandemhero-image">
-                            <img
-                                src="/work/tandem/tandemphones.png"
-                                className="tandemtitle-image"
-                                alt="Tandem app shown on mobile phones"
-                            />
-                        </div>
                     </div>
                 </div>
             </section>
 
             <nav className="tandemsection-nav">
                 <div className="tandemcontainer">
-                    <p className="tandemsection-title">View Section:</p>
+                    <div className="tandem-two-column">
+                        <div className="tandem-text-content">
+                            <p className="tandemsection-title">View Section:</p>
+                            <ul>
+                                <li>
+                                    <a href="#problem">01. Problem</a>
+                                </li>
+                                <li>
+                                    <a href="#solution">02. Solution</a>
+                                </li>
+                                <li>
+                                    <a href="#research">03. Research</a>
+                                </li>
+                                <li>
+                                    <a href="#branding">
+                                        04. Branding and Styleguide
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#issue">05. Unexpected Issue</a>
+                                </li>
+                                <li>
+                                    <a href="#what-didnt-work">
+                                        06. What Didn't Work
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#how-we-solved">
+                                        07. How We Solved It
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#final-design">
+                                        08. Final Design & Showcase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Journey">
+                                        09. The Journey and Impact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div className="nav-grid">
-                        <a
-                            href="#problem"
-                            className="grid-item-1">
-                            Problem
-                        </a>
-                        <a
-                            href="#solution"
-                            className="grid-item-1">
-                            Solution
-                        </a>
-                        <a
-                            href="#research"
-                            className="grid-item-1">
-                            Research
-                        </a>
-                        <a
-                            href="#branding"
-                            className="grid-item-2">
-                            Branding and Styleguide
-                        </a>
-                        <a
-                            href="#issue"
-                            className="grid-item-2">
-                            Unexpected Issue
-                        </a>
-                        <a
-                            href="#what-didnt-work"
-                            className="grid-item-2">
-                            What Didn't Work
-                        </a>
-                        <a
-                            href="#how-we-solved"
-                            className="grid-item-3">
-                            How We Solved It
-                        </a>
-                        <a
-                            href="#final-design"
-                            className="grid-item-3">
-                            Final Design & Showcase
-                        </a>
-                        <a
-                            href="#Journey"
-                            className="grid-item-3">
-                            The Journey and Impact
-                        </a>
+                        <div className="tandem-media-column">
+                            <div className="tandem-nav-image">
+                            <img
+                                src="/work/tandem/tandemphones.png"
+                                alt="Tandem app shown on mobile phones"
+                                className="tandem-large-media"
+                            />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
