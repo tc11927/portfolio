@@ -7,7 +7,15 @@ export default function Paramore() {
         <div className="paramorepage-wrapper">
             <NavBar />
 
-            <header className="paramorehero">
+            <header className="paramore-hero-fullscreen">
+                <img
+                    src="/work/paramore/headerimage.jpg"
+                    alt="This is Paramore – hero background"
+                    className="paramore-hero-fullscreen-image"
+                />
+            </header>
+
+            <section className="paramoresection">
                 <div className="paramorecontainer">
                     <h1 className="paramoreproject-title">
                         Paramore E-magazine
@@ -16,6 +24,7 @@ export default function Paramore() {
                         Roles: UI/UX Designer, Visual Design & Frontend
                         Developer
                     </p>
+
                     <div className="paramoretags">
                         <span className="paramoretag1">Design</span>
                         <span className="paramoretag2">UI/UX</span>
@@ -23,66 +32,78 @@ export default function Paramore() {
                     </div>
 
                     <div className="paramorehero-content">
-                        <div className="paramorehero-text">
-                            <p>
+                        <div className="paramorehero-text"></div>
+
+                        <div className="paramorehero-image">
+                            <p className="paramorehero-text1">
                                 This is Paramore was a project where we were
                                 given freedom to build an interactive and
                                 informational digital media piece of whatever we
                                 desired. The goal of this project was to create
                                 an e-magazine that was both fun, stylish, and
-                                creative, but also detailed and informative. The
-                                result of this was This is Paramore, a homage to
-                                Paramore and their history.
+                                creative, but also detailed and informative.
                             </p>
-                        </div>
-
-                        <div className="paramorehero-image">
-                            <img
-                                src="/work/paramore/paramore1.png"
-                                className="paramoretitle-image"
-                                alt="Bandit Breakout game mockup"
-                            />
+                            <p className="paramorehero-text2">
+                                The result of this was This is Paramore, a
+                                homage to Paramore and their history.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>
 
             <nav className="paramoresection-nav">
                 <div className="paramorecontainer">
-                    <p className="paramoresection-title">View Section:</p>
-                    <ul>
-                        <li>
-                            <a href="#problem">Problem</a>
-                        </li>
-                        <li>
-                            <a href="#solution">Solution</a>
-                        </li>
-                        <li>
-                            <a href="#research">Research</a>
-                        </li>
-                        <li>
-                            <a href="#branding">
-                                Sketching, Character Design, & Backgrounds
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#animating">Animating</a>
-                        </li>
-                        <li>
-                            <a href="#issue">Unexpected Issue</a>
-                        </li>
-                        <li>
-                            <a href="#what-didnt-work">
-                                What Didn't Work & How We Solved it
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#final-design">Final Design & Showcase</a>
-                        </li>
-                        <li>
-                            <a href="#Journey">The Journey and Impact</a>
-                        </li>
-                    </ul>
+                    <div className="paramore-two-column">
+                        <div className="paramore-text-content">
+                            <p className="paramoresection-title">
+                                View Section:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="#problem">01. What is it?</a>
+                                </li>
+                                <li>
+                                    <a href="#solution">02. Why Paramore?</a>
+                                </li>
+                                <li>
+                                    <a href="#research">03. Research</a>
+                                </li>
+                                <li>
+                                    <a href="#branding">
+                                        04. Moodboards, Storyboards, and Mockups
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#animating">05. Development</a>
+                                </li>
+                                <li>
+                                    <a href="#issue">
+                                        06. How Was it Overcome?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#what-didnt-work">
+                                        07. Reflection
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Journey">
+                                        08. The Journey and Impact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="paramore-media-column">
+                            <div className="paramore-nav-image">
+                                <img
+                                    src="/work/paramore/paramore1.png"
+                                    className="paramore-large-media"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
@@ -498,7 +519,7 @@ export default function Paramore() {
                                 className="paramore-site-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                View Magazine
+                                View Site
                             </a>
                         </div>
                     </div>
