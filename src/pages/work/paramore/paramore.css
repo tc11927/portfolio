@@ -59,6 +59,8 @@ p,
     overflow: hidden;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+     margin-top: 4rem;
+     
 
 }
 
@@ -140,6 +142,17 @@ p,
     margin-top: -10vw;
 
 }
+
+.paramore-hero-fullscreen {
+
+    min-height: 780px !important;
+    padding-bottom: 12vh !important;   
+    margin-bottom: 0 !important;
+  
+}
+
+
+
 /* ==========================================================================
    1. Container & Layout Basics
    ========================================================================== */
