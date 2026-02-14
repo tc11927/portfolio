@@ -145,11 +145,9 @@ p,
 }
 
 .bandit-hero-fullscreen {
-
     min-height: 780px !important;
-    padding-bottom: 12vh !important;   
+    padding-bottom: 12vh !important;
     margin-bottom: 0 !important;
-  
 }
 
 /* ==========================================================================
@@ -177,7 +175,7 @@ p,
     top: 0;
     z-index: 90;
     background-color: #22303a;
- 
+
     padding: 1rem 0;
     color: white;
     margin-top: 12vw;
@@ -217,7 +215,7 @@ p,
 }
 
 .banditsection-title {
-      font-size: 4vw !important;
+    font-size: 4vw !important;
     margin-bottom: -0.4vw;
     margin-left: 1vw;
 }
@@ -347,7 +345,7 @@ p,
 }
 
 .bandit-text-content p {
- font-size: 18px;
+    font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
@@ -364,7 +362,7 @@ p,
 }
 
 .bandit-branding-text p {
-font-size: 18px;
+    font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
@@ -544,33 +542,33 @@ font-size: 18px;
 }
 
 /* mini mois floating overlays */
-.floating-overlay1 {
+.banditfloating-overlay1 {
     position: absolute;
-    top: 63%;
+    top: 60.4%;
     right: 89%;
     width: 12vw;
     z-index: 10;
 }
 
-.floating-overlay2 {
+.banditfloating-overlay2 {
     position: absolute;
-    top: 43.3%;
+    top: 40.3%;
     right: -1%;
     width: 10vw;
     z-index: 10;
 }
 
-.floating-overlay3 {
+.banditfloating-overlay3 {
     position: absolute;
-    top: 70.3%;
+    top: 68.3%;
     right: 85%;
     width: 15vw;
     z-index: 10;
 }
 
-.floating-overlay4 {
+.banditfloating-overlay4 {
     position: absolute;
-    top: 84.3%;
+    top: 84.9%;
     right: 2%;
     width: 15vw;
     z-index: 10;
@@ -929,8 +927,6 @@ font-size: 18px;
     margin-top: -4rem;
 }
 
-
-
 .bandit-hero-fullscreen {
     position: relative;
     width: 100vw !important;
@@ -957,14 +953,10 @@ font-size: 18px;
     padding: 0 !important;
 }
 
-
-
 .bandit-hero-content-section {
     margin-top: -4vw;
     margin-bottom: 17vw;
 }
-
-
 
 .banditsection-nav {
     position: relative;
@@ -995,26 +987,23 @@ font-size: 18px;
     margin-top: -10vw;
 }
 
-
 @media (min-width: 1024px) {
     .banditsection-nav .bandit-two-column {
-        grid-template-columns: 1fr 1.35fr;   
+        grid-template-columns: 1fr 1.35fr;
         gap: 4.5rem;
     }
 
     .bandit-nav-image {
-        overflow: hidden; 
+        overflow: hidden;
     }
 
     .bandit-nav-image img.bandit-large-media {
         width: 100%;
         max-width: 900px;
         transform: scale(1.2);
-        transform-origin: left center; 
-
+        transform-origin: left center;
     }
 }
-
 
 @media (max-width: 767px) {
     .banditsection-nav {
@@ -1045,5 +1034,3 @@ font-size: 18px;
         margin-top: 2vw;
     }
 }
-
-

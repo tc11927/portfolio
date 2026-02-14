@@ -216,7 +216,7 @@ export default function BanditBreakout() {
                         </div>
                         <img
                             src="/work/minime/examine.svg"
-                            className="floating-overlay1"
+                            className="banditfloating-overlay1"
                         />
                         <div className="bandit-text-content bandit-research-text">
                             <h2>Research</h2>
@@ -499,7 +499,7 @@ export default function BanditBreakout() {
                     </div>
                     <img
                         src="/work/minime/confusion.svg"
-                        className="floating-overlay2"
+                        className="banditfloating-overlay2"
                     />
                     <div className="bandit-two-column">
                         <div className="bandit-media-column">
@@ -546,7 +546,7 @@ export default function BanditBreakout() {
                     </div>
                     <img
                         src="/work/minime/study.svg"
-                        className="floating-overlay3"
+                        className="banditfloating-overlay3"
                     />
                     <div className="bandit-branding-text">
                         <h2>What Didn't Work & How We Solved it</h2>
@@ -663,7 +663,7 @@ export default function BanditBreakout() {
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
-                        className="floating-overlay4"
+                        className="banditfloating-overlay4"
                     />
                     <div className="bandit-branding-text">
                         <h2>The Journey & Impact</h2>
