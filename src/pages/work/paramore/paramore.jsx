@@ -134,7 +134,7 @@ export default function Paramore() {
 
                         <div className="paramore-media-column">
                             <img
-                                src="/work/paramore/paramore2.svg"
+                                src="/work/paramore/paramore2.png"
                                 alt=""
                                 className="paramore-large-media"
                             />
