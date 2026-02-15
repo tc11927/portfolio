@@ -39,11 +39,11 @@ const galleryItems = [
     },
       {
         id: 4,
-        slug: "paramore",
-        title: "Paramore E-magazine",
-        categories: ["Design", "UI/UX", "Front-end"],
-        tools: "Figma + Illustrator + Photoshop + Visual Studio Code",
-        image: "/work/paramoremockup.png",
+        slug: "popunk",
+        title: "POPUNK",
+        categories: ["Design"],
+        tools: "Illustrator + Photoshop",
+        image: "/work/canmockup1.png",
         description:
             "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
     },
