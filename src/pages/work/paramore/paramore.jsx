@@ -440,7 +440,7 @@ export default function Paramore() {
 
                         <div className="paramore-journey-video-wrapper">
                             <img
-                                src="/work/paramore/reflect.svg"
+                                src="/work/paramore/reflect.png"
                                 className="paramore-journey-video2"
                                 alt="Reflection and key learnings visualization"
                             />
