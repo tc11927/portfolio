@@ -43,7 +43,7 @@ const galleryItems = [
         title: "POPUNK",
         categories: ["Design"],
         tools: "Illustrator + Photoshop",
-        image: "/work/canmockup1.png",
+        image: "/work/canmockup 1.png",
         description:
             "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
     },
