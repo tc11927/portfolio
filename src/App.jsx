@@ -19,20 +19,7 @@ function App() {
                     path="/"
                     element={
                         <>
-                            <div className="hi">
-                                Hey! Thanks for coming to check out my page!
-                            </div>
-                            <div className="construction">
-                                Before you continue onward, please note
-                                everything is under construction!
-                            </div>
-                            <div className="my-portfolio">
-                                <Link
-                                    to="/home"
-                                    className="home-app">
-                                    Go To Thea's Portfolio!
-                                </Link>
-                            </div>
+                           <Home />
                         </>
                     }
                 />
