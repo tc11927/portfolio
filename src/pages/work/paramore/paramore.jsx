@@ -15,36 +15,33 @@ export default function Paramore() {
                 />
             </header>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
-                    <h1 className="banditproject-title">Bandit Breakout</h1>
-                    <p className="banditproject-roles">
-                        Roles: Design & Project Lead, UI/UX Designer
+            <section className="paramoresection">
+                <div className="paramorecontainer">
+                    <h1 className="paramoreproject-title">This is Paramore</h1>
+                    <p className="paramoreproject-roles">
+                        Roles: Main Designer, UI/UX Designer, and Frontend
+                        Developer
                     </p>
 
-                    <div className="bandittags">
-                        <span className="bandittag1">Design</span>
-                        <span className="bandittag2">UI/UX</span>
+                    <div className="paramoretags">
+                        <span className="paramoretag1">Design</span>
+                        <span className="paramoretag2">UI/UX</span>
                         <span className="paramoretag4">Code</span>
                     </div>
 
-                    <div className="bandithero-content">
-                        <div className="bandithero-text"></div>
+                    <div className="paramorehero-content">
+                        <div className="paramorehero-text"></div>
 
-                        <div className="bandithero-image">
-                            <p className="bandithero-text1">
-                                Bandit Breakout is a multiplayer board game
-                                created to solve the common problem with linear
-                                multiplayer board games: after just a few plays
-                                they become repetitive, predictable, and lose
-                                their excitement.
-                            </p>
-                            <p className="bandithero-text2">
-                                My role was to blend striking visual design with
-                                engaging, replayable gameplay — making every
-                                session with friends feel fresh, chaotic, and
-                                personal. I led all artwork, character design,
-                                environments, and animations.
+                        <div className="paramorehero-image">
+                            <p className="paramorehero-text1">
+                                This is Paramore was a project where we were
+                                given freedom to build an interactive and
+                                informational digital media piece of whatever we
+                                desired. The goal of this project was to create
+                                an e-magazine that was both fun, stylish, and
+                                creative, but also detailed and informative. The
+                                result of this was ‘This is Paramore’, a homage
+                                to Paramore and their history.
                             </p>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ export default function BanditBreakout() {
                     <div className="bandittags">
                         <span className="bandittag1">Design</span>
                         <span className="bandittag2">UI/UX</span>
-                        <span className="bandittag4">Motion Graphics</span>
+                        <span className="bandittag3">Motion Graphics</span>
                     </div>
 
                     <div className="bandithero-content">
