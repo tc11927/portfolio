@@ -59,6 +59,16 @@ const galleryItems = [
     },
     {
         id: 6,
+        slug: "tandemvideo",
+        title: "Tandem Video Ad",
+        categories: ["Design", "Motion Graphics"],
+        tools: "Illustrator + After Effects",
+        image: "/work/tandemvideomockup.png",
+        description:
+            "A  video ad tells the story of a stressed trades parent, drawing from real experiences to highlight the daily pressures and imbalances they face.",
+    },
+    {
+        id: 7,
         slug: "",
         title: "Under Construction!",
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],

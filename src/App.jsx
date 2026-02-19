@@ -10,6 +10,7 @@ import Popunk from "./pages/work/popunk/popunk";
 import Tandem from "./pages/work/tandem/tandem";
 import Paramore from "./pages/work/paramore/paramore";
 import PorkSoda from "./pages/work/porksoda/porksoda";
+import TandemVideo from "./pages/work/tandemvideo/tandemvideo";
 
 function App() {
     return (
@@ -64,6 +65,10 @@ function App() {
                   <Route
                     path="/work/porksoda"
                     element={<PorkSoda/>}
+                />
+                 <Route
+                    path="/work/tandemvideo"
+                    element={<TandemVideo/>}
                 />
             </Routes>
         </>

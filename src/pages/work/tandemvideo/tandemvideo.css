@@ -1,0 +1,1180 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tandemvideo-project-title,
+.tandemvideo-section-title,
+.tandemvideo-process-text h2,
+.tandemvideo-research-text h2,
+.tandemvideo-text-content h2,
+.tandemvideo-branding-text h2 {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 700;
+}
+
+body,
+p,
+.tandemvideo-hero-text p,
+.tandemvideo-hero-text2,
+.tandemvideo-process-text p,
+.tandemvideo-research-text p,
+.tandemvideo-text-content p,
+.tandemvideo-branding-text p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
+
+.tandemvideo-section-nav a,
+.tandemvideo-section-nav p {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 400;
+    margin-top: -9.5vw;
+}
+
+.tandemvideo-hero-fullscreen {
+    width: 100%;
+    height: 87vh;
+    min-height: 680px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 4rem;
+}
+
+.tandemvideo-hero-fullscreen-image {
+    width: 100vw !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tandemvideo-hero-content-section {
+    margin-top: -4vw;
+    margin-bottom: 17vw;
+}
+
+.tandemvideo-hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.tandemvideo-title-image {
+    width: 25vw;
+    margin-left: 10vw;
+    margin-top: -10vw;
+}
+
+.tandemvideo-section-nav {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background-color: #22303a;
+    padding: 1rem 0;
+    color: white;
+    margin-top: 12vw;
+    padding-top: 260px;
+    padding-bottom: 110px;
+    z-index: 90;
+    top: 0;
+}
+
+.tandemvideo-section-nav .tandemvideo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.tandemvideo-section-nav ul {
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.tandemvideo-section-nav a {
+    color: white;
+    font-weight: 300;
+    font-size: 1.8vw;
+    padding: 0.1rem 0.1rem;
+    margin: 0 0.1rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    margin-left: -1vw;
+}
+
+.tandemvideo-section-nav a:hover {
+    transform: scale(1.12);
+    color: #eab300;
+}
+
+.tandemvideo-nav-image {
+    margin-top: -16vw;
+}
+
+.tandemvideo-hero-fullscreen {
+    min-height: 780px !important;
+    padding-bottom: 12vh !important;
+    margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   1. Container & Layout Basics
+   ========================================================================== */
+
+.tandemvideo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    margin-top: 12vw;
+}
+
+/* ==========================================================================
+   2. Hero Title & Roles
+   ========================================================================== */
+
+.tandemvideo-project-title {
+    font-size: 4vw;
+    text-align: left;
+    margin-bottom: -1rem;
+    font-weight: 800;
+}
+
+.tandemvideo-project-roles {
+    font-size: 1.2vw;
+    text-align: left;
+    margin-bottom: -1.7rem;
+    font-weight: 800;
+}
+
+.tandemvideo-hero-text1 {
+    margin-top: 2vw;
+}
+
+.tandemvideo-section:first-of-type .tandemvideo-container {
+    margin-top: 15vw;
+    padding-bottom: -20vw;
+}
+
+.tandemvideo-hero-content {
+    margin-top: -11vw !important;
+    margin-bottom: 12vw;
+}
+
+.tandemvideo-section:first-of-type {
+    margin-top: 5vw !important;
+}
+
+/* ==========================================================================
+   3. Tags
+   ========================================================================== */
+
+.tandemvideo-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+    margin-top: 3vw;
+    color: white;
+    margin-bottom: -3vw;
+}
+
+.tandemvideo-tag1,
+.tandemvideo-tag2,
+.tandemvideo-tag3 {
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.tandemvideo-tag1 {
+    background-color: #64bcad;
+}
+
+.tandemvideo-tag2 {
+    background-color: #fea962;
+}
+
+.tandemvideo-tag3 {
+    background-color: #7da75b;
+}
+
+.tandemvideo-tag1:hover,
+.tandemvideo-tag2:hover,
+.tandemvideo-tag3:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   4. Hero Content
+   ========================================================================== */
+
+.tandemvideo-hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: -4vw;
+    margin-bottom: 17vw;
+}
+
+.tandemvideo-hero-text p {
+    font-size: 16px;
+}
+
+.tandemvideo-hero-text2 {
+    margin-top: 1.5rem;
+}
+
+.tandemvideo-title-image {
+    width: 50vw;
+    margin-right: -80vw;
+    margin-top: -12vw;
+}
+
+/* ==========================================================================
+   5. General Section Padding & Variants
+   ========================================================================== */
+
+.tandemvideo-section {
+    padding: 8rem 0;
+    margin-top: -5vw;
+}
+
+.tandemvideo-section-alt {
+    background: var(--bg-light);
+}
+
+.tandemvideo-section-warning {
+    background: var(--warning-bg);
+}
+
+/* ==========================================================================
+   6. Navigation Section
+   ========================================================================== */
+
+.tandemvideo-section-nav {
+    top: 0;
+    z-index: 90;
+    background-color: #22303a;
+    padding: 1rem 0;
+    color: white;
+    margin-top: 2vw !important;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.tandemvideo-section-nav ul {
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.tandemvideo-section-nav li {
+    margin: 1rem;
+}
+
+.tandemvideo-section-nav a {
+    color: white;
+    font-weight: 300;
+    font-size: 1.8vw;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: inline-block;
+    padding: 0.1rem 0.1rem;
+    margin: 0 0.1rem;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.tandemvideo-section-nav a:hover,
+.tandemvideo-section-nav a:focus {
+    transform: scale(1.12);
+    color: #eab300;
+}
+
+.tandemvideo-section-title {
+    font-size: 4vw !important;
+    margin-bottom: -0.4vw;
+    margin-left: 1vw;
+}
+
+/* ==========================================================================
+   7. Stacked / Process Sections
+   ========================================================================== */
+
+.tandemvideo-stacked-sections {
+    padding: 8rem 0;
+}
+
+.tandemvideo-process-video {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: none;
+    border-radius: 20px;
+}
+
+.tandemvideo-process-text h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: -0.5rem;
+    text-align: left;
+}
+
+.tandemvideo-process-text p {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* ==========================================================================
+   8. Research & Text/Media Grids
+   ========================================================================== */
+
+.tandemvideo-research-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    margin-top: -8vw;
+}
+
+.tandemvideo-research-image-column {
+    position: relative;
+}
+
+.tandemvideo-research-image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 1vw;
+}
+
+.tandemvideo-research-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.tandemvideo-research-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tandemvideo-research-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tandemvideo-research-button {
+    display: inline-block;
+    background: #22303a;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+    margin-right: 26vw;
+    transition: transform 0.3s ease;
+}
+
+.tandemvideo-research-button:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   9. Media + Text Grid (left & right variants)
+   ========================================================================== */
+
+.tandemvideo-grid-media-left,
+.tandemvideo-grid-media-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin: 3rem 0;
+}
+
+.tandemvideo-media-column img,
+.tandemvideo-media-column iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+}
+
+.tandemvideo-text-content h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    margin-top: 0.6vw;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.tandemvideo-text-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+/* ==========================================================================
+   10. Branding & Gallery
+   ========================================================================== */
+
+.tandemvideo-branding-text h2 {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.tandemvideo-branding-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.tandemvideo-branding-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.tandemvideo-gallery-itemb {
+    aspect-ratio: 4 / 4;
+    overflow: hidden;
+    border-radius: 16px;
+    transition: none;
+    transition: transform 0.2s ease;
+}
+
+.tandemvideo-gallery-imageb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.tandemvideo-branding-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5rem !important;
+    margin-top: 4rem !important;
+    margin-bottom: 3rem !important;
+    width: 100% !important;
+    max-width: 1400px !important;
+}
+
+.tandemvideo-branding-gallery .tandemvideo-gallery-itemb {
+    aspect-ratio: 4 / 3 !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+}
+
+.tandemvideo-branding-gallery .tandemvideo-gallery-imageb {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.tandemvideo-gallery-itemb:hover {
+    transform: scale(1.02);
+}
+
+.tandemvideo-gallery-item2 {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.tandemvideo-gallery-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.tandemvideo-section-alt {
+    margin-top: -6vw;
+}
+
+.tandemvideo-gallery-item3,
+.tandemvideo-gallery-image3 {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   11. Journey / Video Wrapper
+   ========================================================================== */
+
+.tandemvideo-journey-video-wrapper {
+    margin: 4rem 0 2rem 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tandemvideo-journey-video-wrapper1 {
+    margin: 4rem 0 2rem 0;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tandemvideo-journey-video-wrapper2 {
+    margin: 0 0 2rem 0;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tandemvideo-journey-video {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
+
+/* ==========================================================================
+   12. Buttons (site)
+   ========================================================================== */
+
+.tandemvideo-site-button {
+    background: #22303a;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    transition: transform 0.3s ease;
+}
+
+.tandemvideo-site-button-wrapper {
+    margin-top: 2.5vw;
+    transition: transform 0.3s ease;
+    margin-right: 69vw;
+}
+
+.tandemvideo-site-button-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Custom section header
+   ========================================================================== */
+
+.tandemvideo-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.tandemvideo-section-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #7da75b;
+    letter-spacing: 0.15em;
+}
+
+.tandemvideo-section-line {
+    height: 3px;
+    flex: 1;
+    background: #64bcad;
+    border-radius: 20px;
+}
+
+.tandemvideo-section-label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #eab300;
+    white-space: nowrap;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+.tandemvideo-two-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.tandemvideo-two-column.reverse {
+    direction: rtl;
+}
+
+.tandemvideo-two-column.reverse > * {
+    direction: ltr;
+}
+
+.tandemvideo-text-content h2 {
+    font-size: clamp(3rem, 6.5vw, 5.2rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.tandemvideo-large-media {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tandemvideo-text-content {
+    text-align: left;
+}
+
+/* mini mois floating overlays */
+.floating-overlay1 {
+    position: absolute;
+    top: 60.5%;
+    right: 89%;
+    width: 12vw;
+    z-index: 10;
+}
+
+.floating-overlay2 {
+    position: absolute;
+    top: 40.3%;
+    right: -1%;
+    width: 10vw;
+    z-index: 10;
+}
+
+.tandemvideo-floating-overlay3 {
+    position: absolute;
+    top: 70.5%;
+    right: 85%;
+    width: 15vw;
+    z-index: 10;
+}
+
+.tandemvideo-floating-overlay4 {
+    position: absolute;
+    top: 86.48%;
+    right: 2%;
+    width: 11vw;
+    z-index: 10;
+}
+
+/* ==========================================================================
+   Media Queries – Desktop first
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    .tandemvideo-hero-content {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .tandemvideo-research-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .tandemvideo-research-main-image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tandemvideo-grid-media-left,
+    .tandemvideo-grid-media-right {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    .tandemvideo-container {
+        padding: 0 3rem;
+    }
+
+    .tandemvideo-hero-content {
+        margin-top: -2vw;
+    }
+
+    .tandemvideo-two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tandemvideo-grid-media-left .tandemvideo-media-column {
+    order: 1;
+}
+.tandemvideo-grid-media-left .tandemvideo-text-content {
+    order: 2;
+}
+
+.tandemvideo-grid-media-right .tandemvideo-media-column {
+    order: 2;
+}
+.tandemvideo-grid-media-right .tandemvideo-text-content {
+    order: 1;
+}
+
+@media (min-width: 640px) {
+    .tandemvideo-branding-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .tandemvideo-branding-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================================================
+   Load-in Animations
+   ========================================================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tandemvideo-page-wrapper {
+    animation: fadeIn 0.8s ease-out both;
+}
+
+.tandemvideo-hero .tandemvideo-container {
+    animation: fadeUp 0.9s ease-out both;
+}
+.tandemvideo-project-title {
+    animation: fadeUp 0.9s ease-out both;
+    animation-delay: 0.1s;
+}
+.tandemvideo-project-roles {
+    animation: fadeUp 0.9s ease-out both;
+    animation-delay: 0.2s;
+}
+.tandemvideo-section {
+    animation: fadeUp 0.9s ease-out both;
+}
+.tandemvideo-section:nth-of-type(1) {
+    animation-delay: 0.15s;
+}
+.tandemvideo-section:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+.tandemvideo-section:nth-of-type(3) {
+    animation-delay: 0.45s;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE FIXES
+   ========================================================================== */
+
+.tandemvideo-container {
+    padding: 0 1.5rem;
+}
+
+.tandemvideo-project-title {
+    margin-top: clamp(8vw, 13vw, 120px);
+}
+
+.tandemvideo-hero-content {
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .tandemvideo-page-wrapper {
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .tandemvideo-container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        margin-top: 1rem !important;
+        box-sizing: border-box;
+    }
+
+    .tandemvideo-hero .tandemvideo-container {
+        margin-top: 1rem !important;
+    }
+
+    .tandemvideo-project-title {
+        font-size: clamp(2rem, 8vw, 2.5rem) !important;
+        text-align: center;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .tandemvideo-project-roles {
+        font-size: clamp(0.875rem, 3.5vw, 1rem) !important;
+        margin-bottom: 0 !important;
+        text-align: center;
+    }
+
+    .tandemvideo-tags {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        justify-content: center;
+    }
+
+    .tandemvideo-hero-content {
+        margin-top: 1.5rem !important;
+        margin-bottom: 2rem !important;
+        gap: 2rem !important;
+    }
+
+    .tandemvideo-title-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0 0 0 !important;
+        display: block;
+    }
+
+    .tandemvideo-section-nav {
+        margin-top: 2rem !important;
+        padding-top: 5rem !important;
+    }
+
+    .tandemvideo-section-title {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+        margin-top: 1vw;
+    }
+
+    .tandemvideo-section-nav ul {
+        padding: 0 1rem !important;
+        margin-top: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .tandemvideo-section-nav li {
+        margin: 0.5rem 0 !important;
+    }
+
+    .tandemvideo-section-nav a {
+        font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+        padding: 0.5rem 0.75rem !important;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tandemvideo-section {
+        padding: 3rem 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .tandemvideo-process-video {
+        min-height: 200px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tandemvideo-text-content h2,
+    .tandemvideo-process-text h2,
+    .tandemvideo-research-text h2,
+    .tandemvideo-branding-text h2 {
+        font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
+        margin-bottom: 1rem !important;
+        margin-top: 0 !important;
+        line-height: 1.2;
+    }
+
+    .tandemvideo-text-content p,
+    .tandemvideo-process-text p,
+    .tandemvideo-research-text p,
+    .tandemvideo-branding-text p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+
+    .tandemvideo-branding-gallery {
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .tandemvideo-gallery-itemb,
+    .tandemvideo-gallery-item2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        aspect-ratio: 4/3 !important;
+    }
+
+    .tandemvideo-gallery-imageb,
+    .tandemvideo-gallery-image2 {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tandemvideo-research-button,
+    .tandemvideo-site-button {
+        margin: 1rem auto !important;
+        display: block;
+        width: fit-content;
+    }
+
+    .tandemvideo-site-button-wrapper {
+        margin-right: 0 !important;
+        text-align: center;
+        margin-top: 2rem !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tandemvideo-journey-video-wrapper {
+        margin-bottom: 2rem !important;
+        width: 100%;
+    }
+
+    .tandemvideo-journey-video {
+        min-height: 200px !important;
+        width: 100% !important;
+    }
+
+    .tandemvideo-section-header {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .tandemvideo-section-number {
+        font-size: 1.5rem;
+    }
+
+    .tandemvideo-section-label {
+        font-size: clamp(0.875rem, 3vw, 1rem);
+        white-space: normal;
+    }
+
+    .tandemvideo-two-column {
+        gap: 2rem !important;
+    }
+
+    .tandemvideo-two-column.reverse {
+        direction: ltr !important;
+    }
+
+    .floating-overlay1 {
+        width: 30vw;
+        top: 253px;
+        right: 370px;
+    }
+
+    .floating-overlay2 {
+        width: 24vw;
+        top: 800px;
+        right: 20px;
+    }
+
+    .floating-overlay3 {
+        width: 30vw;
+        top: 1510px;
+        right: 320px;
+    }
+
+    .tandemvideo-floating-overlay4 {
+        width: 25vw;
+        top: 687px;
+        right: 5px;
+    }
+
+    .tandemvideo-section-title {
+        text-align: center !important;
+        margin-left: 5vw;
+    }
+}
+
+.tandemvideo-journey {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.tandemvideo-hero-fullscreen {
+    position: relative;
+    width: 100vw !important;
+    height: 87vh;
+    min-height: 680px;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.tandemvideo-hero-fullscreen-image {
+    width: 100vw !important;
+    height: 100% !important;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tandemvideo-section-nav {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    text-align: left;
+    background-color: #22303a;
+    padding: 1rem 0;
+    color: white;
+    margin-top: 12vw;
+    padding-top: 260px;
+    padding-bottom: 110px;
+    z-index: 90;
+    top: 0;
+}
+
+.tandemvideo-section-nav .tandemvideo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tandemvideo-nav-image {
+    margin-top: -10vw;
+}
+
+@media (min-width: 1024px) {
+    .tandemvideo-section-nav .tandemvideo-two-column {
+        grid-template-columns: 1fr 1.35fr;
+        gap: 4.5rem;
+    }
+
+    .tandemvideo-nav-image {
+        overflow: hidden;
+    }
+
+    .tandemvideo-nav-image img.tandemvideo-large-media {
+        width: 70%;
+        max-width: 900px;
+        transform: scale(1.3);
+        transform-origin: left center;
+        padding-bottom: 1.5vw;
+        padding-top: 3vw;
+    }
+}
+
+.tandemvideo-branding-text h2 {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.tandemvideo-branding-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.tandemvideo-branding-gallery {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.tandemvideo-branding-fullwidth {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .tandemvideo-branding-text h2 {
+        font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
+    }
+    .tandemvideo-branding-text p {
+        font-size: 1rem !important;
+    }
+    .tandemvideo-branding-fullwidth {
+        border-radius: 12px;
+    }
+}
+
+.tandemvideo-journey-video2 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+    margin-top: 2vw;
+}
