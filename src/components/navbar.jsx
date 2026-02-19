@@ -31,11 +31,13 @@ export default function NavBar() {
                     className="about-nav">
                     About
                 </Link>
-                <Link
-                    to="/contact"
+                <a
+                    href="https://www.linkedin.com/in/thea-c/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="contact-nav">
                     Contact
-                </Link>
+                </a>
             </div>
         </div>
     );
