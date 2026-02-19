@@ -32,13 +32,13 @@ export default function PorkSoda() {
 
                         <div className="porksoda-hero-image">
                             <p className="porksoda-hero-text1">
-                                POPUNK! Is a high voltage energy drink created
-                                for the late nights, fun times, and chaotic
-                                energy everyone needs during their late night
-                                fun with friends. The goal was to make a product
-                                that was both fun and bright, but also marketed
-                                towards an older demographic with bold and
-                                vibrant imagery.
+                                Pork Soda is a creative, colourful, fun, and
+                                stylized lyric music video to the song Pork Soda
+                                by Glass Animals. The vision with this project
+                                was to make something that showcased the
+                                slightly psychedelic lyrics and meaning behind
+                                the song, all while keeping it bright and
+                                colourful like the beat suggests.
                             </p>
                         </div>
                     </div>
@@ -49,7 +49,9 @@ export default function PorkSoda() {
                 <div className="porksoda-container">
                     <div className="porksoda-two-column">
                         <div className="porksoda-text-content">
-                            <p className="porksoda-section-title">View Section:</p>
+                            <p className="porksoda-section-title">
+                                View Section:
+                            </p>
                             <ul>
                                 <li>
                                     <a href="#inspo">01. Inspiration</a>
@@ -74,7 +76,7 @@ export default function PorkSoda() {
                         <div className="porksoda-media-column">
                             <div className="porksoda-nav-image">
                                 <img
-                                    src="/work/popunk/nav.png"
+                                    src="/work/porksoda/nav.png"
                                     className="porksoda-large-media"
                                 />
                             </div>
@@ -83,7 +85,9 @@ export default function PorkSoda() {
                 </div>
             </nav>
 
-            <section className="porksoda-section" id="inspo">
+            <section
+                className="porksoda-section"
+                id="inspo">
                 <div className="porksoda-container">
                     <div className="porksoda-section-header">
                         <span className="porksoda-section-number">01</span>
@@ -96,83 +100,90 @@ export default function PorkSoda() {
                     <div className="porksoda-branding-text">
                         <h2>Inspiration</h2>
                         <p>
-                            POPUNK! was made from many sources of inspiration,
-                            with my primary inspiration coming from my lovely
-                            ragdoll cat. She’s always beside me as I work, and I
-                            thought she deserved to be featured in some sort of
-                            way in my projects! This started my journey into
-                            finding different styles and imagery I wanted to go
-                            with.
+                            Pork Soda was made from my love for animation, and
+                            my love for the fun and interesting imagery Glass
+                            Animals adds to their songs. I wanted to use bright
+                            vibrant colours, with cartoony imagery, to both
+                            display the fun upbeat tune of the song, and the
+                            slightly more impactful lyrics.
                         </p>
 
-                        <div className="porksoda-journey-video-wrapper">
+                        <div className="porksoda-journey-video-wrapper2">
                             <img
                                 className="porksoda-journey"
-                                src="/work/popunk/inspo.png"
+                                src="/work/porksoda/inspo.png"
                             />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="porksoda-section porksoda-section-alt" id="styleguide">
+            <section
+                className="porksoda-section porksoda-section-alt"
+                id="styleguide">
                 <div className="porksoda-container">
                     <div className="porksoda-section-header">
                         <span className="porksoda-section-number">02</span>
                         <div className="porksoda-section-line"></div>
-                        <span className="porksoda-section-label">Styleguide</span>
+                        <span className="porksoda-section-label">
+                            Storyboarding
+                        </span>
                     </div>
 
                     <div className="porksoda-branding-text">
-                        <h2> Styleguide </h2>
+                        <h2> Storyboarding </h2>
                         <p>
-                            The style guide for this drink line was made
-                            focusing on bright neon colours, fun text, and
-                            stylized imagery. Because of the amount of products
-                            in the line, I tried to also correlate colours to
-                            the energy and vibes of the roles that the cats took
-                            (singer, drummer, and guitarist). Keeping this in
-                            mind, I composed images and colours I wanted.
+                            The storyboard for this project was mainly focused
+                            on interconnecting each panel in a smooth way that
+                            also used imagery to help support the lyrics.
                         </p>
 
-                        <div className="porksoda-journey-video-wrapper">
+                        <div className="porksoda-journey-video-wrapper1">
                             <img
                                 className="porksoda-journey"
-                                src="/work/popunk/styleguide.png"
+                                src="/work/porksoda/storyboard.png"
                             />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="porksoda-section" id="iteration">
+            <section
+                className="porksoda-section"
+                id="iteration">
                 <div className="porksoda-container">
                     <div className="porksoda-section-header">
                         <span className="porksoda-section-number">03</span>
                         <div className="porksoda-section-line"></div>
-                        <span className="porksoda-section-label">Iteration</span>
+                        <span className="porksoda-section-label">
+                            Animating
+                        </span>
                     </div>
 
                     <div className="porksoda-branding-text">
-                        <h2>Iteration</h2>
+                        <h2>Animating</h2>
                         <p>
-                            With a clear goal and image in mind, iteration went
-                            fairly smoothly. Only small adjustments to colour
-                            and cat design were made to ensure each product had
-                            a distinct identity and was easy to differentiate.
+                            With a clear goal and image in mind, making the
+                            visuals in Illustrator and animating them in After
+                            Effects was next. Getting each part to sync up to
+                            the music, as well as blend smoothly together when
+                            putting them side by side was a challenge, but with
+                            time and detail, it was done.
                         </p>
 
                         <div className="porksoda-journey-video-wrapper">
                             <img
                                 className="porksoda-journey"
-                                src="/work/popunk/iteration.png"
+                                src="/work/porksoda/animating.png"
                             />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="porksoda-section" id="final">
+            <section
+                className="porksoda-section"
+                id="final">
                 <div className="porksoda-container">
                     <div className="porksoda-section-header">
                         <span className="porksoda-section-number">04</span>
@@ -186,18 +197,25 @@ export default function PorkSoda() {
                         <h2>Final Product</h2>
                         <p></p>
 
-                        <div className="porksoda-journey-video-wrapper">
-                            <img
-                                className="porksoda-journey"
-                                src="/work/popunk/all.png"
+                        <div className="porksoda-gallery-item2">
+                            <iframe
+                                className="porksoda-gallery-image2"
+                                src="https://drive.google.com/file/d/1vLhxmw3Hlnouz9QohWt1LKpMmcITCfyk/preview"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                                title="Animation example 5"
                             />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="porksoda-section porksoda-section-alt" id="Journey">
-                <div className="porksoda-container" id="Journey">
+            <section
+                className="porksoda-section porksoda-section-alt"
+                id="Journey">
+                <div
+                    className="porksoda-container"
+                    id="Journey">
                     <div className="porksoda-section-header">
                         <span className="porksoda-section-number">05</span>
                         <div className="porksoda-section-line"></div>
@@ -206,12 +224,26 @@ export default function PorkSoda() {
                         </span>
                     </div>
 
-                    <div className="porksoda-journey-video-wrapper">
-                        <img
-                            src="/work/popunk/journey.png"
-                            className="porksoda-journey"
-                            alt="Reflection and key learnings visualization"
-                        />
+                    <div className="porksoda-branding-gallery">
+                        <div className="porksoda-gallery-item2">
+                            <iframe
+                                className="porksoda-gallery-image2"
+                                src="https://drive.google.com/file/d/1JzvPmbTOgA-x-R5lH987_M_PLoDtrqZd/preview"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                                title="Animation example 1"
+                            />
+                        </div>
+                        <div className="porksoda-gallery-item2">
+                            <iframe
+                                className="porksoda-gallery-image2"
+                                src="https://drive.google.com/file/d/1uqZG9jDRh802FjRnpOXBK7PdThTk3rGQ/preview"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowFullScreen
+                                title="Animation example 1"
+                            />
+                        </div>
+                        
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
@@ -220,17 +252,22 @@ export default function PorkSoda() {
                     <div className="porksoda-branding-text">
                         <h2>The Journey & Impact</h2>
                         <p>
-                            POPUNK! was created out of my love for both design
-                            and my cat, and was a project I enjoyed deeply. It
-                            was a mix of both my passion for creation and my own
-                            interest and hobbies, which made this project so
-                            memorable.
+                            I’ve always had a love for animating and art, it was
+                            my first and current love and passion. Getting the
+                            chance to animate and create something from scratch
+                            made this project truly enjoyable.
                         </p>
                         <p>
-                            I learned a lot about product design, and have grown
-                            as a Graphic designer and creator. It’s taught me a
-                            lot about discovering my own distinct style, and
-                            rekindled my love for creation.
+                            I learned a lot about animating full sequences,
+                            storyboarding, and have grown as an animator and
+                            Graphic designer. It’s taught me a lot about the
+                            process, and attention to detail each piece needs to
+                            make one coherent and amazing product.
+                        </p>
+                        <p>
+                            It's also taught me to have fun, test new methods,
+                            and to try new things and expand my knowledge! Enjoy
+                            some of my test videos :)
                         </p>
 
                         <p>Thank you for reading!</p>
