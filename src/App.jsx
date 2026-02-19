@@ -9,6 +9,7 @@ import BanditBreakout from "./pages/work/bandit/bandit-breakout";
 import Popunk from "./pages/work/popunk/popunk";
 import Tandem from "./pages/work/tandem/tandem";
 import Paramore from "./pages/work/paramore/paramore";
+import PorkSoda from "./pages/work/porksoda/porksoda";
 
 function App() {
     return (
@@ -72,6 +73,10 @@ function App() {
                  <Route
                     path="/work/paramore"
                     element={<Paramore/>}
+                />
+                  <Route
+                    path="/work/porksoda"
+                    element={<PorkSoda/>}
                 />
             </Routes>
         </>

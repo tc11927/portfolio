@@ -37,10 +37,10 @@ const galleryItems = [
         description:
             "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
     },
-      {
+    {
         id: 4,
         slug: "popunk",
-        title: "POPUNK",
+        title: "POPUNK!",
         categories: ["Design"],
         tools: "Illustrator + Photoshop",
         image: "/work/canmockup 1.png",
@@ -49,6 +49,16 @@ const galleryItems = [
     },
     {
         id: 5,
+        slug: "porksoda",
+        title: "Pork Soda",
+        categories: ["Design", "Motion Graphics"],
+        tools: "Illustrator + After Effects",
+        image: "/work/porksodamockup.png",
+        description:
+            "A vibrant, fun, and detailed animated lyrics video for the song Pork Soda by Glass Animals.",
+    },
+    {
+        id: 6,
         slug: "",
         title: "Under Construction!",
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],

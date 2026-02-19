@@ -217,7 +217,8 @@ p,
 
 .paramoretag1,
 .paramoretag2,
-.paramoretag3 {
+.paramoretag3,
+.paramoretag4 {
     padding: 0.6rem 1.25rem;
     border-radius: 9999px;
     font-size: 0.95rem;
@@ -237,9 +238,15 @@ p,
     background-color: #7da75b;
 }
 
+.paramoretag4 {
+    background-color: #eab300
+}
+
+
 .paramoretag1:hover,
 .paramoretag2:hover,
-.paramoretag3:hover {
+.paramoretag3:hover,
+.paramoretag4:hover {
     transform: scale(1.2);
 }
 

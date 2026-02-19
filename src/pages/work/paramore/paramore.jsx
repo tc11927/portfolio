@@ -25,7 +25,7 @@ export default function Paramore() {
                     <div className="bandittags">
                         <span className="bandittag1">Design</span>
                         <span className="bandittag2">UI/UX</span>
-                        <span className="bandittag3">Motion Graphics</span>
+                        <span className="paramoretag4">Code</span>
                     </div>
 
                     <div className="bandithero-content">
