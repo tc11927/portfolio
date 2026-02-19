@@ -91,10 +91,7 @@ export default function Popunk() {
                             Inspiration
                         </span>
                     </div>
-                    <img
-                        src="/work/minime/study.svg"
-                        className="popunk-floating-overlay3"
-                    />
+
                     <div className="popunk-branding-text">
                         <h2>Inspiration</h2>
                         <p>
@@ -158,7 +155,7 @@ export default function Popunk() {
                         <div className="popunk-section-line"></div>
                         <span className="popunk-section-label">Iteration</span>
                     </div>
-                    
+
                     <div className="popunk-branding-text">
                         <h2>Iteration</h2>
                         <p>
@@ -189,13 +186,19 @@ export default function Popunk() {
                             Final Product
                         </span>
                     </div>
-                   
+
                     <div className="popunk-branding-text">
                         <h2>Final Product</h2>
                         <p></p>
 
                         <div className="popunk-journey-video-wrapper">
                             <Cans />
+                        </div>
+                        <div className="popunk-journey-video-wrapper">
+                            <img
+                                className="popunk-journey"
+                                src="/work/popunk/all.png"
+                            />
                         </div>
                     </div>
                 </div>
@@ -217,14 +220,14 @@ export default function Popunk() {
 
                     <div className="popunk-journey-video-wrapper">
                         <img
-                            src="/work/paramore/food.svg"
-                            className="popunk-journey-video"
+                            src="/work/popunk/journey.png"
+                            className="popunk-journey"
                             alt="Reflection and key learnings visualization"
                         />
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
-                        className="floating-overlay4"
+                        className="popunk-floating-overlay4"
                     />
                     <div className="popunk-branding-text">
                         <h2>The Journey & Impact</h2>
@@ -243,16 +246,6 @@ export default function Popunk() {
                         </p>
 
                         <p>Thank you for reading!</p>
-
-                        <div className="popunk-site-button-wrapper">
-                            <a
-                                href="https://bandit-breakout.vercel.app/"
-                                className="popunk-site-button"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                View Site
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>
