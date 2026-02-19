@@ -4,34 +4,34 @@ import NavBar from "../../../components/navbar";
 
 export default function PorkSoda() {
     return (
-        <div className="popunkpage-wrapper">
+        <div className="porksoda-page-wrapper">
             <NavBar />
 
-            <header className="popunk-hero-fullscreen">
+            <header className="porksoda-hero-fullscreen">
                 <img
-                    src="/work/popunk/header.jpg"
+                    src="/work/porksoda/header.gif"
                     alt="This is Paramore – hero background"
-                    className="popunk-hero-fullscreen-image"
+                    className="porksoda-hero-fullscreen-image"
                 />
             </header>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
-                    <h1 className="banditproject-title">Pork Soda</h1>
-                    <p className="banditproject-roles">
+            <section className="porksoda-section">
+                <div className="porksoda-container">
+                    <h1 className="porksoda-project-title">Pork Soda</h1>
+                    <p className="porksoda-project-roles">
                         Role: Designer & Animator
                     </p>
 
-                    <div className="bandittags">
-                        <span className="bandittag1">Design</span>
-                        <span className="bandittag3">Motion Graphics</span>
+                    <div className="porksoda-tags">
+                        <span className="porksoda-tag1">Design</span>
+                        <span className="porksoda-tag3">Motion Graphics</span>
                     </div>
 
-                    <div className="bandithero-content">
-                        <div className="bandithero-text"></div>
+                    <div className="porksoda-hero-content">
+                        <div className="porksoda-hero-text"></div>
 
-                        <div className="bandithero-image">
-                            <p className="bandithero-text1">
+                        <div className="porksoda-hero-image">
+                            <p className="porksoda-hero-text1">
                                 POPUNK! Is a high voltage energy drink created
                                 for the late nights, fun times, and chaotic
                                 energy everyone needs during their late night
@@ -45,11 +45,11 @@ export default function PorkSoda() {
                 </div>
             </section>
 
-            <nav className="popunksection-nav">
-                <div className="popunkcontainer">
-                    <div className="popunk-two-column">
-                        <div className="popunk-text-content">
-                            <p className="popunksection-title">View Section:</p>
+            <nav className="porksoda-section-nav">
+                <div className="porksoda-container">
+                    <div className="porksoda-two-column">
+                        <div className="porksoda-text-content">
+                            <p className="porksoda-section-title">View Section:</p>
                             <ul>
                                 <li>
                                     <a href="#inspo">01. Inspiration</a>
@@ -71,30 +71,29 @@ export default function PorkSoda() {
                             </ul>
                         </div>
 
-                        <div className="popunk-media-column">
-                            <div className="popunk-nav-image">
+                        <div className="porksoda-media-column">
+                            <div className="porksoda-nav-image">
                                 <img
                                     src="/work/popunk/nav.png"
-                                    className="popunk-large-media"
+                                    className="porksoda-large-media"
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <section className="popunksection">
-                <div className="popunkcontainer">
-                    <div
-                        className="popunk-section-header"
-                        id="inspo">
-                        <span className="popunk-section-number">01</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">
+
+            <section className="porksoda-section" id="inspo">
+                <div className="porksoda-container">
+                    <div className="porksoda-section-header">
+                        <span className="porksoda-section-number">01</span>
+                        <div className="porksoda-section-line"></div>
+                        <span className="porksoda-section-label">
                             Inspiration
                         </span>
                     </div>
 
-                    <div className="popunk-branding-text">
+                    <div className="porksoda-branding-text">
                         <h2>Inspiration</h2>
                         <p>
                             POPUNK! was made from many sources of inspiration,
@@ -106,9 +105,9 @@ export default function PorkSoda() {
                             with.
                         </p>
 
-                        <div className="popunk-journey-video-wrapper">
+                        <div className="porksoda-journey-video-wrapper">
                             <img
-                                className="popunk-journey"
+                                className="porksoda-journey"
                                 src="/work/popunk/inspo.png"
                             />
                         </div>
@@ -116,17 +115,15 @@ export default function PorkSoda() {
                 </div>
             </section>
 
-            <section
-                className="popunksection popunksection-alt"
-                id="styleguide">
-                <div className="popunkcontainer">
-                    <div className="popunk-section-header">
-                        <span className="popunk-section-number">02</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">Styleguide</span>
+            <section className="porksoda-section porksoda-section-alt" id="styleguide">
+                <div className="porksoda-container">
+                    <div className="porksoda-section-header">
+                        <span className="porksoda-section-number">02</span>
+                        <div className="porksoda-section-line"></div>
+                        <span className="porksoda-section-label">Styleguide</span>
                     </div>
 
-                    <div className="popunk-branding-text">
+                    <div className="porksoda-branding-text">
                         <h2> Styleguide </h2>
                         <p>
                             The style guide for this drink line was made
@@ -138,9 +135,9 @@ export default function PorkSoda() {
                             mind, I composed images and colours I wanted.
                         </p>
 
-                        <div className="popunk-journey-video-wrapper">
+                        <div className="porksoda-journey-video-wrapper">
                             <img
-                                className="popunk-journey"
+                                className="porksoda-journey"
                                 src="/work/popunk/styleguide.png"
                             />
                         </div>
@@ -148,17 +145,15 @@ export default function PorkSoda() {
                 </div>
             </section>
 
-            <section className="popunksection">
-                <div className="popunkcontainer">
-                    <div
-                        className="popunk-section-header"
-                        id="iteration">
-                        <span className="popunk-section-number">03</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">Iteration</span>
+            <section className="porksoda-section" id="iteration">
+                <div className="porksoda-container">
+                    <div className="porksoda-section-header">
+                        <span className="porksoda-section-number">03</span>
+                        <div className="porksoda-section-line"></div>
+                        <span className="porksoda-section-label">Iteration</span>
                     </div>
 
-                    <div className="popunk-branding-text">
+                    <div className="porksoda-branding-text">
                         <h2>Iteration</h2>
                         <p>
                             With a clear goal and image in mind, iteration went
@@ -167,9 +162,9 @@ export default function PorkSoda() {
                             a distinct identity and was easy to differentiate.
                         </p>
 
-                        <div className="popunk-journey-video-wrapper">
+                        <div className="porksoda-journey-video-wrapper">
                             <img
-                                className="popunk-journey"
+                                className="porksoda-journey"
                                 src="/work/popunk/iteration.png"
                             />
                         </div>
@@ -177,25 +172,23 @@ export default function PorkSoda() {
                 </div>
             </section>
 
-            <section className="popunksection">
-                <div className="popunkcontainer">
-                    <div
-                        className="popunk-section-header"
-                        id="final">
-                        <span className="popunk-section-number">04</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">
+            <section className="porksoda-section" id="final">
+                <div className="porksoda-container">
+                    <div className="porksoda-section-header">
+                        <span className="porksoda-section-number">04</span>
+                        <div className="porksoda-section-line"></div>
+                        <span className="porksoda-section-label">
                             Final Product
                         </span>
                     </div>
 
-                    <div className="popunk-branding-text">
+                    <div className="porksoda-branding-text">
                         <h2>Final Product</h2>
                         <p></p>
 
-                        <div className="popunk-journey-video-wrapper">
+                        <div className="porksoda-journey-video-wrapper">
                             <img
-                                className="popunk-journey"
+                                className="porksoda-journey"
                                 src="/work/popunk/all.png"
                             />
                         </div>
@@ -203,32 +196,28 @@ export default function PorkSoda() {
                 </div>
             </section>
 
-            <section
-                className="popunksection popunksection-alt"
-                id="Journey">
-                <div
-                    className="popunkcontainer"
-                    id="Journey">
-                    <div className="popunk-section-header">
-                        <span className="popunk-section-number">05</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">
+            <section className="porksoda-section porksoda-section-alt" id="Journey">
+                <div className="porksoda-container" id="Journey">
+                    <div className="porksoda-section-header">
+                        <span className="porksoda-section-number">05</span>
+                        <div className="porksoda-section-line"></div>
+                        <span className="porksoda-section-label">
                             The Journey and Impact
                         </span>
                     </div>
 
-                    <div className="popunk-journey-video-wrapper">
+                    <div className="porksoda-journey-video-wrapper">
                         <img
                             src="/work/popunk/journey.png"
-                            className="popunk-journey"
+                            className="porksoda-journey"
                             alt="Reflection and key learnings visualization"
                         />
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
-                        className="popunk-floating-overlay4"
+                        className="porksoda-floating-overlay4"
                     />
-                    <div className="popunk-branding-text">
+                    <div className="porksoda-branding-text">
                         <h2>The Journey & Impact</h2>
                         <p>
                             POPUNK! was created out of my love for both design

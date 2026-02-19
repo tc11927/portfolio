@@ -17,36 +17,36 @@ h3,
 h4,
 h5,
 h6,
-.popunkproject-title,
-.popunksection-title,
-.popunk-process-text h2,
-.popunk-research-text h2,
-.popunk-text-content h2,
-.popunk-branding-text h2 {
+.porksoda-project-title,
+.porksoda-section-title,
+.porksoda-process-text h2,
+.porksoda-research-text h2,
+.porksoda-text-content h2,
+.porksoda-branding-text h2 {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     font-weight: 700;
 }
 
 body,
 p,
-.popunkhero-text p,
-.popunkhero-text2,
-.popunk-process-text p,
-.popunk-research-text p,
-.popunk-text-content p,
-.popunk-branding-text p {
+.porksoda-hero-text p,
+.porksoda-hero-text2,
+.porksoda-process-text p,
+.porksoda-research-text p,
+.porksoda-text-content p,
+.porksoda-branding-text p {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
 }
 
-.popunksection-nav a,
-.popunksection-nav p {
+.porksoda-section-nav a,
+.porksoda-section-nav p {
     font-family: "Averia Sans Libre", cursive, sans-serif;
     font-weight: 400;
     margin-top: -9.5vw;
 }
 
-.popunk-hero-fullscreen {
+.porksoda-hero-fullscreen {
     width: 100%;
     height: 87vh;
     min-height: 680px;
@@ -58,32 +58,32 @@ p,
     margin-top: 4rem;
 }
 
-.popunk-hero-fullscreen-image {
+.porksoda-hero-fullscreen-image {
     width: 100vw !important;
     height: 100% !important;
     object-fit: cover;
     object-position: center;
 }
 
-.popunk-hero-content-section {
+.porksoda-hero-content-section {
     margin-top: -4vw;
     margin-bottom: 17vw;
 }
 
-.popunkhero-content {
+.porksoda-hero-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
     align-items: center;
 }
 
-.popunktitle-image {
+.porksoda-title-image {
     width: 25vw;
     margin-left: 10vw;
     margin-top: -10vw;
 }
 
-.popunksection-nav {
+.porksoda-section-nav {
     position: relative;
     left: 50%;
     right: 50%;
@@ -100,13 +100,13 @@ p,
     top: 0;
 }
 
-.popunksection-nav .popunkcontainer {
+.porksoda-section-nav .porksoda-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-.popunksection-nav ul {
+.porksoda-section-nav ul {
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -114,7 +114,7 @@ p,
     margin-top: 15px;
 }
 
-.popunksection-nav a {
+.porksoda-section-nav a {
     color: white;
     font-weight: 300;
     font-size: 1.8vw;
@@ -125,16 +125,16 @@ p,
     margin-left: -1vw;
 }
 
-.popunksection-nav a:hover {
+.porksoda-section-nav a:hover {
     transform: scale(1.12);
     color: #eab300;
 }
 
-.popunk-nav-image {
+.porksoda-nav-image {
     margin-top: -10vw;
 }
 
-.popunk-hero-fullscreen {
+.porksoda-hero-fullscreen {
     min-height: 780px !important;
     padding-bottom: 12vh !important;
     margin-bottom: 0 !important;
@@ -144,7 +144,7 @@ p,
    1. Container & Layout Basics
    ========================================================================== */
 
-.popunkcontainer {
+.porksoda-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
@@ -155,35 +155,35 @@ p,
    2. Hero Title & Roles
    ========================================================================== */
 
-.popunkproject-title {
+.porksoda-project-title {
     font-size: 4vw;
     text-align: left;
     margin-bottom: -1rem;
     font-weight: 800;
 }
 
-.popunkproject-roles {
+.porksoda-project-roles {
     font-size: 1.2vw;
     text-align: left;
     margin-bottom: -1.7rem;
     font-weight: 800;
 }
 
-.popunkhero-text1 {
+.porksoda-hero-text1 {
     margin-top: -7vw;
 }
 
-.popunksection:first-of-type .popunkcontainer {
+.porksoda-section:first-of-type .porksoda-container {
     margin-top: 15vw;
     padding-bottom: -20vw;
 }
 
-.bandithero-content {
+.porksoda-hero-content {
     margin-top: -11vw !important;
     margin-bottom: 12vw;
 }
 
-.banditsection:first-of-type {
+.porksoda-section:first-of-type {
     margin-top: 5vw !important;
 }
 
@@ -191,7 +191,7 @@ p,
    3. Tags
    ========================================================================== */
 
-.popunktags {
+.porksoda-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -201,9 +201,9 @@ p,
     margin-bottom: -3vw;
 }
 
-.popunktag1,
-.popunktag2,
-.popunktag3 {
+.porksoda-tag1,
+.porksoda-tag2,
+.porksoda-tag3 {
     padding: 0.6rem 1.25rem;
     border-radius: 9999px;
     font-size: 0.95rem;
@@ -211,21 +211,21 @@ p,
     transition: transform 0.3s ease;
 }
 
-.popunktag1 {
+.porksoda-tag1 {
     background-color: #64bcad;
 }
 
-.popunktag2 {
+.porksoda-tag2 {
     background-color: #fea962;
 }
 
-.popunktag3 {
+.porksoda-tag3 {
     background-color: #7da75b;
 }
 
-.popunktag1:hover,
-.popunktag2:hover,
-.popunktag3:hover {
+.porksoda-tag1:hover,
+.porksoda-tag2:hover,
+.porksoda-tag3:hover {
     transform: scale(1.2);
 }
 
@@ -233,7 +233,7 @@ p,
    4. Hero Content
    ========================================================================== */
 
-.popunkhero-content {
+.porksoda-hero-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -242,15 +242,15 @@ p,
     margin-bottom: 17vw;
 }
 
-.popunkhero-text p {
+.porksoda-hero-text p {
     font-size: 16px;
 }
 
-.popunkhero-text2 {
+.porksoda-hero-text2 {
     margin-top: 1.5rem;
 }
 
-.popunktitle-image {
+.porksoda-title-image {
     width: 50vw;
     margin-right: -80vw;
     margin-top: -12vw;
@@ -260,16 +260,16 @@ p,
    5. General Section Padding & Variants
    ========================================================================== */
 
-.popunksection {
+.porksoda-section {
     padding: 8rem 0;
     margin-top: -5vw;
 }
 
-.popunksection-alt {
+.porksoda-section-alt {
     background: var(--bg-light);
 }
 
-.popunksection-warning {
+.porksoda-section-warning {
     background: var(--warning-bg);
 }
 
@@ -277,7 +277,7 @@ p,
    6. Navigation Section
    ========================================================================== */
 
-.popunksection-nav {
+.porksoda-section-nav {
     top: 0;
     z-index: 90;
     background-color: #22303a;
@@ -288,7 +288,7 @@ p,
     padding-bottom: 110px;
 }
 
-.popunksection-nav ul {
+.porksoda-section-nav ul {
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -296,11 +296,11 @@ p,
     margin-top: 15px;
 }
 
-.popunksection-nav li {
+.porksoda-section-nav li {
     margin: 1rem;
 }
 
-.popunksection-nav a {
+.porksoda-section-nav a {
     color: white;
     font-weight: 300;
     font-size: 1.8vw;
@@ -313,13 +313,13 @@ p,
     white-space: nowrap;
 }
 
-.popunksection-nav a:hover,
-.popunksection-nav a:focus {
+.porksoda-section-nav a:hover,
+.porksoda-section-nav a:focus {
     transform: scale(1.12);
     color: #eab300;
 }
 
-.popunksection-title {
+.porksoda-section-title {
     font-size: 4vw !important;
     margin-bottom: -0.4vw;
     margin-left: 1vw;
@@ -329,11 +329,11 @@ p,
    7. Stacked / Process Sections
    ========================================================================== */
 
-.popunk-stacked-sections {
+.porksoda-stacked-sections {
     padding: 8rem 0;
 }
 
-.popunk-process-video {
+.porksoda-process-video {
     width: 100%;
     height: 100%;
     min-height: 380px;
@@ -341,14 +341,14 @@ p,
     border-radius: 20px;
 }
 
-.popunk-process-text h2 {
+.porksoda-process-text h2 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
     text-align: left;
 }
 
-.popunk-process-text p {
+.porksoda-process-text p {
     font-size: 14px;
     line-height: 1.65;
     margin-bottom: 1rem;
@@ -359,7 +359,7 @@ p,
    8. Research & Text/Media Grids
    ========================================================================== */
 
-.popunk-research-grid {
+.porksoda-research-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -367,38 +367,38 @@ p,
     margin-top: -8vw;
 }
 
-.popunk-research-image-column {
+.porksoda-research-image-column {
     position: relative;
 }
 
-.popunk-research-image-wrapper {
+.porksoda-research-image-wrapper {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
     margin-top: 1vw;
 }
 
-.popunk-research-main-image {
+.porksoda-research-main-image {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
-.popunk-research-text h2 {
+.porksoda-research-text h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     text-align: left;
 }
 
-.popunk-research-text p {
+.porksoda-research-text p {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 1rem;
     text-align: left;
 }
 
-.popunk-research-button {
+.porksoda-research-button {
     display: inline-block;
     background: #22303a;
     color: white;
@@ -413,7 +413,7 @@ p,
     transition: transform 0.3s ease;
 }
 
-.popunk-research-button:hover {
+.porksoda-research-button:hover {
     transform: scale(1.05);
 }
 
@@ -421,8 +421,8 @@ p,
    9. Media + Text Grid (left & right variants)
    ========================================================================== */
 
-.popunk-grid-media-left,
-.popunk-grid-media-right {
+.porksoda-grid-media-left,
+.porksoda-grid-media-right {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -430,8 +430,8 @@ p,
     margin: 3rem 0;
 }
 
-.popunk-media-column img,
-.popunk-media-column iframe {
+.porksoda-media-column img,
+.porksoda-media-column iframe {
     width: 100%;
     height: auto;
     border-radius: 16px;
@@ -439,7 +439,7 @@ p,
     object-fit: cover;
 }
 
-.popunk-text-content h2 {
+.porksoda-text-content h2 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
@@ -448,7 +448,7 @@ p,
     text-align: left;
 }
 
-.popunk-text-content p {
+.porksoda-text-content p {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -459,27 +459,27 @@ p,
    10. Branding & Gallery
    ========================================================================== */
 
-.popunk-branding-text h2 {
+.porksoda-branding-text h2 {
     font-size: 2.8rem;
     text-align: left;
     margin-bottom: 1.5rem;
 }
 
-.popunk-branding-text p {
+.porksoda-branding-text p {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
 }
 
-.popunk-branding-gallery {
+.porksoda-branding-gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
     margin-top: 4rem;
 }
 
-.popunk-gallery-itemb {
+.porksoda-gallery-itemb {
     aspect-ratio: 4 / 4;
     overflow: hidden;
     border-radius: 16px;
@@ -487,7 +487,7 @@ p,
     transition: transform 0.2s ease;
 }
 
-.popunk-gallery-imageb {
+.porksoda-gallery-imageb {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -495,7 +495,7 @@ p,
     transition: transform 0.2s ease;
 }
 
-.popunk-branding-gallery {
+.porksoda-branding-gallery {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 2.5rem !important;
@@ -505,24 +505,24 @@ p,
     max-width: 1400px !important;
 }
 
-.popunk-branding-gallery .popunk-gallery-itemb {
+.porksoda-branding-gallery .porksoda-gallery-itemb {
     aspect-ratio: 4 / 3 !important;
     overflow: hidden !important;
     border-radius: 16px !important;
 }
 
-.popunk-branding-gallery .popunk-gallery-imageb {
+.porksoda-branding-gallery .porksoda-gallery-imageb {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
 }
 
-.popunk-gallery-itemb:hover {
+.porksoda-gallery-itemb:hover {
     transform: scale(1.02);
 }
 
-.popunk-gallery-item2 {
+.porksoda-gallery-item2 {
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: 12px;
@@ -530,7 +530,7 @@ p,
     transition: transform 0.2s ease;
 }
 
-.popunk-gallery-image2 {
+.porksoda-gallery-image2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -538,16 +538,16 @@ p,
     transition: transform 0.2s ease;
 }
 
-.popunk-gallery-item2:hover {
+.porksoda-gallery-item2:hover {
     transform: scale(1.02);
 }
 
-.popunk-section-alt {
+.porksoda-section-alt {
     margin-top: -6vw;
 }
 
-.popunk-gallery-item3,
-.popunk-gallery-image3 {
+.porksoda-gallery-item3,
+.porksoda-gallery-image3 {
     width: 100%;
     height: 100%;
     min-height: 380px;
@@ -560,7 +560,7 @@ p,
    11. Journey / Video Wrapper
    ========================================================================== */
 
-.popunk-journey-video-wrapper {
+.porksoda-journey-video-wrapper {
     margin: 4rem 0 2rem 0;
     position: relative;
     width: 100%;
@@ -568,7 +568,7 @@ p,
     overflow: hidden;
 }
 
-.popunk-journey-video {
+.porksoda-journey-video {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
@@ -580,7 +580,7 @@ p,
    12. Buttons (site)
    ========================================================================== */
 
-.popunk-site-button {
+.porksoda-site-button {
     background: #22303a;
     color: white;
     font-weight: 600;
@@ -592,13 +592,13 @@ p,
     transition: transform 0.3s ease;
 }
 
-.popunk-site-button-wrapper {
+.porksoda-site-button-wrapper {
     margin-top: 2.5vw;
     transition: transform 0.3s ease;
     margin-right: 69vw;
 }
 
-.popunk-site-button-wrapper:hover {
+.porksoda-site-button-wrapper:hover {
     transform: scale(1.05);
 }
 
@@ -606,28 +606,28 @@ p,
    Custom section header
    ========================================================================== */
 
-.popunk-section-header {
+.porksoda-section-header {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 3.5rem;
 }
 
-.popunk-section-number {
+.porksoda-section-number {
     font-size: 2.5rem;
     font-weight: 900;
     color: #7da75b;
     letter-spacing: 0.15em;
 }
 
-.popunk-section-line {
+.porksoda-section-line {
     height: 3px;
     flex: 1;
     background: #64bcad;
     border-radius: 20px;
 }
 
-.popunk-section-label {
+.porksoda-section-label {
     font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -637,34 +637,34 @@ p,
     font-family: "Averia Sans Libre", cursive, sans-serif;
 }
 
-.popunk-two-column {
+.porksoda-two-column {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3.5rem;
     align-items: center;
 }
 
-.popunk-two-column.reverse {
+.porksoda-two-column.reverse {
     direction: rtl;
 }
 
-.popunk-two-column.reverse > * {
+.porksoda-two-column.reverse > * {
     direction: ltr;
 }
 
-.popunk-text-content h2 {
+.porksoda-text-content h2 {
     font-size: clamp(3rem, 6.5vw, 5.2rem);
     line-height: 1.1;
     margin-bottom: 1.5rem;
     text-align: left;
 }
 
-.popunk-large-media {
+.porksoda-large-media {
     width: 100%;
     border-radius: 20px;
 }
 
-.popunk-text-content {
+.porksoda-text-content {
     text-align: left;
 }
 
@@ -685,7 +685,7 @@ p,
     z-index: 10;
 }
 
-.popunk-floating-overlay3 {
+.porksoda-floating-overlay3 {
     position: absolute;
     top: 70.5%;
     right: 85%;
@@ -693,7 +693,7 @@ p,
     z-index: 10;
 }
 
-.popunk-floating-overlay4 {
+.porksoda-floating-overlay4 {
     position: absolute;
     top: 87%;
     right: 2%;
@@ -706,62 +706,62 @@ p,
    ========================================================================== */
 
 @media (min-width: 768px) {
-    .popunkhero-content {
+    .porksoda-hero-content {
         grid-template-columns: 1fr 1fr;
         text-align: left;
     }
 
-    .popunk-research-grid {
+    .porksoda-research-grid {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     }
 
-    .popunk-research-main-image {
+    .porksoda-research-main-image {
         height: 100%;
         object-fit: cover;
     }
 
-    .popunk-grid-media-left,
-    .popunk-grid-media-right {
+    .porksoda-grid-media-left,
+    .porksoda-grid-media-right {
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
     }
 
-    .popunkcontainer {
+    .porksoda-container {
         padding: 0 3rem;
     }
 
-    .popunkhero-content {
+    .porksoda-hero-content {
         margin-top: -2vw;
     }
 
-    .popunk-two-column {
+    .porksoda-two-column {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-.popunk-grid-media-left .popunk-media-column {
+.porksoda-grid-media-left .porksoda-media-column {
     order: 1;
 }
-.popunk-grid-media-left .popunk-text-content {
+.porksoda-grid-media-left .porksoda-text-content {
     order: 2;
 }
 
-.popunk-grid-media-right .popunk-media-column {
+.porksoda-grid-media-right .porksoda-media-column {
     order: 2;
 }
-.popunk-grid-media-right .popunk-text-content {
+.porksoda-grid-media-right .porksoda-text-content {
     order: 1;
 }
 
 @media (min-width: 640px) {
-    .popunk-branding-gallery {
+    .porksoda-branding-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    .popunk-branding-gallery {
+    .porksoda-branding-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -790,31 +790,31 @@ p,
     }
 }
 
-.popunkpage-wrapper {
+.porksoda-page-wrapper {
     animation: fadeIn 0.8s ease-out both;
 }
 
-.popunkhero .popunkcontainer {
+.porksoda-hero .porksoda-container {
     animation: fadeUp 0.9s ease-out both;
 }
-.popunkproject-title {
+.porksoda-project-title {
     animation: fadeUp 0.9s ease-out both;
     animation-delay: 0.1s;
 }
-.popunkproject-roles {
+.porksoda-project-roles {
     animation: fadeUp 0.9s ease-out both;
     animation-delay: 0.2s;
 }
-.popunksection {
+.porksoda-section {
     animation: fadeUp 0.9s ease-out both;
 }
-.popunksection:nth-of-type(1) {
+.porksoda-section:nth-of-type(1) {
     animation-delay: 0.15s;
 }
-.popunksection:nth-of-type(2) {
+.porksoda-section:nth-of-type(2) {
     animation-delay: 0.3s;
 }
-.popunksection:nth-of-type(3) {
+.porksoda-section:nth-of-type(3) {
     animation-delay: 0.45s;
 }
 
@@ -822,78 +822,78 @@ p,
    MOBILE RESPONSIVE FIXES
    ========================================================================== */
 
-.popunkcontainer {
+.porksoda-container {
     padding: 0 1.5rem;
 }
 
-.popunkproject-title {
+.porksoda-project-title {
     margin-top: clamp(8vw, 13vw, 120px);
 }
 
-.popunkhero-content {
+.porksoda-hero-content {
     margin-top: 2rem;
 }
 
 @media (max-width: 767px) {
-    .popunkpage-wrapper {
+    .porksoda-page-wrapper {
         width: 100%;
         max-width: 100vw;
     }
 
-    .popunkcontainer {
+    .porksoda-container {
         padding-left: 1.25rem !important;
         padding-right: 1.25rem !important;
         margin-top: 1rem !important;
         box-sizing: border-box;
     }
 
-    .popunkhero .popunkcontainer {
+    .porksoda-hero .porksoda-container {
         margin-top: 1rem !important;
     }
 
-    .popunkproject-title {
+    .porksoda-project-title {
         font-size: clamp(2rem, 8vw, 2.5rem) !important;
         text-align: center;
         margin-bottom: 0.5rem !important;
     }
 
-    .popunkproject-roles {
+    .porksoda-project-roles {
         font-size: clamp(0.875rem, 3.5vw, 1rem) !important;
         margin-bottom: 0 !important;
         text-align: center;
     }
 
-    .popunktags {
+    .porksoda-tags {
         margin-top: 1.5rem !important;
         margin-bottom: 1.5rem !important;
         justify-content: center;
     }
 
-    .popunkhero-content {
+    .porksoda-hero-content {
         margin-top: 1.5rem !important;
         margin-bottom: 2rem !important;
         gap: 2rem !important;
     }
 
-    .popunktitle-image {
+    .porksoda-title-image {
         width: 100% !important;
         max-width: 100% !important;
         margin: 1rem 0 0 0 !important;
         display: block;
     }
 
-    .popunksection-nav {
+    .porksoda-section-nav {
         margin-top: 2rem !important;
         padding-top: 5rem !important;
     }
 
-    .popunksection-title {
+    .porksoda-section-title {
         font-size: 4vw;
         margin-bottom: 1rem;
         margin-top: 1vw;
     }
 
-    .popunksection-nav ul {
+    .porksoda-section-nav ul {
         padding: 0 1rem !important;
         margin-top: 0 !important;
         flex-direction: column;
@@ -901,11 +901,11 @@ p,
         gap: 0.1rem;
     }
 
-    .popunksection-nav li {
+    .porksoda-section-nav li {
         margin: 0.5rem 0 !important;
     }
 
-    .popunksection-nav a {
+    .porksoda-section-nav a {
         font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
         padding: 0.5rem 0.75rem !important;
         display: block;
@@ -913,62 +913,62 @@ p,
         text-align: center;
     }
 
-    .popunksection {
+    .porksoda-section {
         padding: 3rem 0 !important;
         margin-top: 0 !important;
     }
 
-    .popunk-process-video {
+    .porksoda-process-video {
         min-height: 200px !important;
         width: 100% !important;
         max-width: 100% !important;
     }
 
-    .popunk-text-content h2,
-    .popunk-process-text h2,
-    .popunk-research-text h2,
-    .popunk-branding-text h2 {
+    .porksoda-text-content h2,
+    .porksoda-process-text h2,
+    .porksoda-research-text h2,
+    .porksoda-branding-text h2 {
         font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
         margin-bottom: 1rem !important;
         margin-top: 0 !important;
         line-height: 1.2;
     }
 
-    .popunk-text-content p,
-    .popunk-process-text p,
-    .popunk-research-text p,
-    .popunk-branding-text p {
+    .porksoda-text-content p,
+    .porksoda-process-text p,
+    .porksoda-research-text p,
+    .porksoda-branding-text p {
         font-size: 1rem !important;
         line-height: 1.6;
     }
 
-    .popunk-branding-gallery {
+    .porksoda-branding-gallery {
         gap: 1.5rem !important;
         margin-top: 2rem !important;
     }
 
-    .popunk-gallery-itemb,
-    .popunk-gallery-item2 {
+    .porksoda-gallery-itemb,
+    .porksoda-gallery-item2 {
         width: 100% !important;
         max-width: 100% !important;
         aspect-ratio: 4/3 !important;
     }
 
-    .popunk-gallery-imageb,
-    .popunk-gallery-image2 {
+    .porksoda-gallery-imageb,
+    .porksoda-gallery-image2 {
         width: 100% !important;
         height: 100% !important;
         max-width: 100% !important;
     }
 
-    .popunk-research-button,
-    .popunk-site-button {
+    .porksoda-research-button,
+    .porksoda-site-button {
         margin: 1rem auto !important;
         display: block;
         width: fit-content;
     }
 
-    .popunk-site-button-wrapper {
+    .porksoda-site-button-wrapper {
         margin-right: 0 !important;
         text-align: center;
         margin-top: 2rem !important;
@@ -976,36 +976,36 @@ p,
         justify-content: center;
     }
 
-    .popunk-journey-video-wrapper {
+    .porksoda-journey-video-wrapper {
         margin-bottom: 2rem !important;
         width: 100%;
     }
 
-    .popunk-journey-video {
+    .porksoda-journey-video {
         min-height: 200px !important;
         width: 100% !important;
     }
 
-    .popunk-section-header {
+    .porksoda-section-header {
         gap: 0.75rem;
         margin-bottom: 1.5rem;
         flex-wrap: wrap;
     }
 
-    .popunk-section-number {
+    .porksoda-section-number {
         font-size: 1.5rem;
     }
 
-    .popunk-section-label {
+    .porksoda-section-label {
         font-size: clamp(0.875rem, 3vw, 1rem);
         white-space: normal;
     }
 
-    .popunk-two-column {
+    .porksoda-two-column {
         gap: 2rem !important;
     }
 
-    .popunk-two-column.reverse {
+    .porksoda-two-column.reverse {
         direction: ltr !important;
     }
 
@@ -1027,26 +1027,26 @@ p,
         right: 320px;
     }
 
-    .popunk-floating-overlay4 {
+    .porksoda-floating-overlay4 {
         width: 25vw;
         top: 658px;
         right: 5px;
     }
 
-    .popunksection-title {
+    .porksoda-section-title {
         text-align: center !important;
         margin-left: 5vw;
     }
 }
 
-.popunk-journey {
+.porksoda-journey {
     width: 100%;
     height: 100%;
     border: none;
     display: block;
 }
 
-.popunk-hero-fullscreen {
+.porksoda-hero-fullscreen {
     position: relative;
     width: 100vw !important;
     height: 87vh;
@@ -1060,7 +1060,7 @@ p,
     border-bottom-right-radius: 100px;
 }
 
-.popunk-hero-fullscreen-image {
+.porksoda-hero-fullscreen-image {
     width: 100vw !important;
     height: 100% !important;
     min-height: 100%;
@@ -1071,7 +1071,7 @@ p,
     padding: 0 !important;
 }
 
-.popunksection-nav {
+.porksoda-section-nav {
     position: relative;
     left: 50%;
     right: 50%;
@@ -1089,7 +1089,7 @@ p,
     top: 0;
 }
 
-.popunksection-nav .popunkcontainer {
+.porksoda-section-nav .porksoda-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
@@ -1097,21 +1097,21 @@ p,
     box-sizing: border-box;
 }
 
-.popunk-nav-image {
+.porksoda-nav-image {
     margin-top: -10vw;
 }
 
 @media (min-width: 1024px) {
-    .popunksection-nav .popunk-two-column {
+    .porksoda-section-nav .porksoda-two-column {
         grid-template-columns: 1fr 1.35fr;
         gap: 4.5rem;
     }
 
-    .popunk-nav-image {
+    .porksoda-nav-image {
         overflow: hidden;
     }
 
-    .popunk-nav-image img.popunk-large-media {
+    .porksoda-nav-image img.porksoda-large-media {
         width: 70%;
         max-width: 900px;
         transform: scale(1.3);
@@ -1120,25 +1120,25 @@ p,
     }
 }
 
-.popunk-branding-text h2 {
+.porksoda-branding-text h2 {
     font-size: 2.8rem;
     text-align: left;
     margin-bottom: 1.5rem;
 }
 
-.popunk-branding-text p {
+.porksoda-branding-text p {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     text-align: left;
 }
 
-.popunk-branding-gallery {
+.porksoda-branding-gallery {
     margin-top: 3rem;
     width: 100%;
 }
 
-.popunk-branding-fullwidth {
+.porksoda-branding-fullwidth {
     width: 100%;
     height: auto;
     display: block;
@@ -1147,18 +1147,18 @@ p,
 }
 
 @media (max-width: 767px) {
-    .popunk-branding-text h2 {
+    .porksoda-branding-text h2 {
         font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
     }
-    .popunk-branding-text p {
+    .porksoda-branding-text p {
         font-size: 1rem !important;
     }
-    .popunk-branding-fullwidth {
+    .porksoda-branding-fullwidth {
         border-radius: 12px;
     }
 }
 
-.popunk-journey-video2 {
+.porksoda-journey-video2 {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
