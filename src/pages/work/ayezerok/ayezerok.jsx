@@ -108,7 +108,7 @@ export default function Ayezerok() {
                             this strange creature into something else entirely.
                         </p>
 
-                        <div className="ayezerok-journey-video-wrapper4">
+                        <div className="ayezerok-journey-video-wrapper">
                             <img
                                 className="ayezerok-journey"
                                 src="/work/ayezerok/inspo.png"
