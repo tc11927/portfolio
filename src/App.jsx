@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // no need for Link here unless used
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Add from "./pages/add/Add";
@@ -13,20 +13,19 @@ import PorkSoda from "./pages/work/porksoda/porksoda";
 import TandemVideo from "./pages/work/tandemvideo/tandemvideo";
 import MoolahMate from "./pages/work/moolahmate/moolahmate";
 import Ayezerok from "./pages/work/ayezerok/ayezerok";
+import TopScroll from "./components/TopScroll";
 
 function App() {
     return (
         <>
+            <TopScroll />
+            
+
             <Routes>
                 <Route
                     path="/"
-                    element={
-                        <>
-                           <Home />
-                        </>
-                    }
+                    element={<Home />}
                 />
-
                 <Route
                     path="/home"
                     element={<Home />}
@@ -56,29 +55,29 @@ function App() {
                     path="/work/popunk"
                     element={<Popunk />}
                 />
-                  <Route
+                <Route
                     path="/work/tandem"
-                    element={<Tandem/>}
+                    element={<Tandem />}
                 />
-                 <Route
+                <Route
                     path="/work/paramore"
-                    element={<Paramore/>}
+                    element={<Paramore />}
                 />
-                  <Route
+                <Route
                     path="/work/porksoda"
-                    element={<PorkSoda/>}
+                    element={<PorkSoda />}
                 />
-                 <Route
+                <Route
                     path="/work/tandemvideo"
-                    element={<TandemVideo/>}
+                    element={<TandemVideo />}
                 />
                 <Route
                     path="/work/moolahmate"
-                    element={<MoolahMate/>}
+                    element={<MoolahMate />}
                 />
-                 <Route
+                <Route
                     path="/work/ayezerok"
-                    element={<Ayezerok/>}
+                    element={<Ayezerok />}
                 />
             </Routes>
         </>

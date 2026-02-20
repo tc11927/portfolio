@@ -1,6 +1,7 @@
 import Footer from "../../../components/footer";
 import "./ayezerok.css";
 import NavBar from "../../../components/navbar";
+import TopScroll from "../../../components/TopScroll";
 
 export default function Ayezerok() {
     return (
