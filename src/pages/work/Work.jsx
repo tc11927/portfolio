@@ -79,13 +79,13 @@ const galleryItems = [
     },
     {
         id: 8,
-        slug: "",
-        title: "Under Construction!",
-        categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
-        tools: "Check back soon!",
-        image: "/work/Black.png",
+        slug: "ayezerok",
+        title: "Ayezerok",
+        categories: ["Design"],
+        tools: "Illustrator + Photoshop",
+        image: "/work/creature.png",
         description:
-            "This page is currently under construction! Come back later to see more of my work!",
+            "A strange, mysterious creature threatening society. Made, melded, and blended together from various different animals.",
     },
 ];
 

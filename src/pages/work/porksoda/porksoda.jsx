@@ -19,7 +19,7 @@ export default function PorkSoda() {
                 <div className="porksoda-container">
                     <h1 className="porksoda-project-title">Pork Soda</h1>
                     <p className="porksoda-project-roles">
-                        Role: Designer & Animator
+                        Roles: Designer & Animator
                     </p>
 
                     <div className="porksoda-tags">

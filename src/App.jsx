@@ -12,6 +12,7 @@ import Paramore from "./pages/work/paramore/paramore";
 import PorkSoda from "./pages/work/porksoda/porksoda";
 import TandemVideo from "./pages/work/tandemvideo/tandemvideo";
 import MoolahMate from "./pages/work/moolahmate/moolahmate";
+import Ayezerok from "./pages/work/ayezerok/ayezerok";
 
 function App() {
     return (
@@ -74,6 +75,10 @@ function App() {
                 <Route
                     path="/work/moolahmate"
                     element={<MoolahMate/>}
+                />
+                 <Route
+                    path="/work/ayezerok"
+                    element={<Ayezerok/>}
                 />
             </Routes>
         </>

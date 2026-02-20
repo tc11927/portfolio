@@ -19,7 +19,7 @@ export default function MoolahMate() {
                 <div className="moolahmate-container">
                     <h1 className="moolahmate-project-title">MoolahMate</h1>
                     <p className="moolahmate-project-roles">
-                        Role: Graphic Designer, UI/UX Designer & Animator
+                        Roles: Graphic Designer, UI/UX Designer & Animator
                     </p>
 
                     <div className="moolahmate-tags">

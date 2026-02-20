@@ -21,7 +21,7 @@ export default function TandemVideo() {
                         Tandem Video Ad
                     </h1>
                     <p className="tandemvideo-project-roles">
-                        Role: Lead Designer, Lead Editor, & Lead Animator
+                        Roles: Lead Designer, Lead Editor, & Lead Animator
                     </p>
 
                     <div className="tandemvideo-tags">
