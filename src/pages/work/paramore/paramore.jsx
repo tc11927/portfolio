@@ -19,7 +19,7 @@ export default function Paramore() {
                 <div className="paramorecontainer">
                     <h1 className="paramoreproject-title">This is Paramore</h1>
                     <p className="paramoreproject-roles">
-                        Roles: Main Designer, UI/UX Designer, and Frontend
+                        Roles: Main Designer, UI/UX Designer, & Frontend
                         Developer
                     </p>
 

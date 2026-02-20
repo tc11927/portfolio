@@ -57,10 +57,10 @@ export default function PorkSoda() {
                                     <a href="#inspo">01. Inspiration</a>
                                 </li>
                                 <li>
-                                    <a href="#styleguide">02. Styleguide</a>
+                                    <a href="#styleguide">02. Storyboarding</a>
                                 </li>
                                 <li>
-                                    <a href="#iteration">03. Iteration</a>
+                                    <a href="#iteration">03. Animating</a>
                                 </li>
                                 <li>
                                     <a href="#final">04. Final Product</a>

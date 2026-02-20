@@ -11,6 +11,7 @@ import Tandem from "./pages/work/tandem/tandem";
 import Paramore from "./pages/work/paramore/paramore";
 import PorkSoda from "./pages/work/porksoda/porksoda";
 import TandemVideo from "./pages/work/tandemvideo/tandemvideo";
+import MoolahMate from "./pages/work/moolahmate/moolahmate";
 
 function App() {
     return (
@@ -69,6 +70,10 @@ function App() {
                  <Route
                     path="/work/tandemvideo"
                     element={<TandemVideo/>}
+                />
+                <Route
+                    path="/work/moolahmate"
+                    element={<MoolahMate/>}
                 />
             </Routes>
         </>

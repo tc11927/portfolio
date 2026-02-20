@@ -67,8 +67,18 @@ const galleryItems = [
         description:
             "A  video ad tells the story of a stressed trades parent, drawing from real experiences to highlight the daily pressures and imbalances they face.",
     },
-    {
+      {
         id: 7,
+        slug: "moolahmate",
+        title: "MoolahMate",
+        categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
+        tools: "Figma + Illustrator + After Effects + Visual Studio Code",
+        image: "/work/moolahmatemockup.png",
+        description:
+            "A budgeting app that not only helps people save money and track their spending, but also makes it a fun, engaging process with our fun mascot, MooMoo the money-saving cow!",
+    },
+    {
+        id: 8,
         slug: "",
         title: "Under Construction!",
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
