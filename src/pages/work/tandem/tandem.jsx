@@ -30,6 +30,23 @@ export default function Tandem() {
                         <span className="tandemtag4">Front-end</span>
                     </div>
 
+                    <div className="tandemtags">
+                        <a
+                            href="https://tandem-blog.vercel.app/"
+                            className="tandem-site-button2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View Blog
+                        </a>
+                        <a
+                            href="https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F"
+                            className="tandem-site-button2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Use App
+                        </a>
+                    </div>
+
                     <div className="tandemhero-content">
                         <div className="tandemhero-text"></div>
 
@@ -105,11 +122,11 @@ export default function Tandem() {
 
                         <div className="tandem-media-column">
                             <div className="tandem-nav-image">
-                            <img
-                                src="/work/tandem/tandemphones.png"
-                                alt="Tandem app shown on mobile phones"
-                                className="tandem-large-media"
-                            />
+                                <img
+                                    src="/work/tandem/tandemphones.png"
+                                    alt="Tandem app shown on mobile phones"
+                                    className="tandem-large-media"
+                                />
                             </div>
                         </div>
                     </div>
@@ -126,9 +143,8 @@ export default function Tandem() {
                         <span className="tandem-section-label">Problem</span>
                     </div>
 
-                    <div className="tandem-two-column">
+                    <div className="tandem-branding-text">
                         <div className="tandem-text-content">
-                            <h2>Problem</h2>
                             <p>
                                 Daycares can be difficult, with long waitlists
                                 and lack of flexible hours for tradeparents
@@ -144,11 +160,11 @@ export default function Tandem() {
                             </p>
                         </div>
 
-                        <div className="tandem-media-column">
+                        <div className="tandem-branding-gallery">
                             <img
                                 src="/work/tandem/problemo.svg"
                                 alt=""
-                                className="tandem-large-media"
+                                className="tandem-branding-fullwidth"
                             />
                         </div>
                     </div>
@@ -165,7 +181,25 @@ export default function Tandem() {
                         <span className="tandem-section-label">Solution</span>
                     </div>
 
-                    <div className="tandem-two-column reverse">
+                    <div className="tandem-branding-text">
+                        <p className="tandem-solution-text1">
+                            As the main Design lead and Project lead of Tandem,
+                            we aimed to create a web app to solve this issue.
+                            Tandem is an app dedicated to helping trade parents
+                            find flexible, affordable, and reliable childcare
+                            options. With its AI scheduling, the app works
+                            around your schedule to help you find childcare. It
+                            provides nannies who are flexible to the odd work
+                            hours many tradeworkers have, and counterbalances
+                            the usual expensive services with nannysharing,
+                            where parents can split costs.
+                        </p>
+                        <p>
+                            Instead of the stressful, inflexible experience many
+                            tradesworkers have to experience, Tandem offers
+                            flexible, reliable childcare services and
+                            scheduling.
+                        </p>
                         <div className="tandem-media-column">
                             <iframe
                                 src="https://drive.google.com/file/d/1puqx31VWPxiC4Tx_jEuIoFp16J2abGXm/preview"
@@ -174,29 +208,6 @@ export default function Tandem() {
                                 allowFullScreen
                                 title="Bandit Breakout Solution & Gameplay Demo"
                             />
-                        </div>
-
-                        <div className="tandem-text-content">
-                            <h2>Solution</h2>
-                            <p>
-                                As the main Design lead and Project lead of
-                                Tandem, we aimed to create a web app to solve
-                                this issue. Tandem is an app dedicated to
-                                helping trade parents find flexible, affordable,
-                                and reliable childcare options. With its AI
-                                scheduling, the app works around your schedule
-                                to help you find childcare. It provides nannies
-                                who are flexible to the odd work hours many
-                                tradeworkers have, and counterbalances the usual
-                                expensive services with nannysharing, where
-                                parents can split costs.
-                            </p>
-                            <p>
-                                Instead of the stressful, inflexible experience
-                                many tradesworkers have to experience, Tandem
-                                offers flexible, reliable childcare services and
-                                scheduling.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +238,6 @@ export default function Tandem() {
                             className="tandem-floating-overlay1"
                         />
                         <div className="tandem-text-content tandem-research-text">
-                            <h2>Research</h2>
                             <p>
                                 Interviews with 17 trade parents showed us how
                                 50% of tradesworkers struggle with childcare.
@@ -275,7 +285,6 @@ export default function Tandem() {
                     </div>
 
                     <div className="tandem-branding-text">
-                        <h2>Branding and Styleguide</h2>
                         <p>
                             We chose the colours that reflect our values of
                             Balance, Trust, and Support. Blue, our main colour,
@@ -301,7 +310,7 @@ export default function Tandem() {
             </section>
 
             <section
-                className="tandemsection tandemsection-warning"
+                className="tandemsection"
                 id="issue">
                 <div className="tandemcontainer">
                     <div className="tandem-section-header">
@@ -315,18 +324,17 @@ export default function Tandem() {
                         src="/work/minime/confusion.svg"
                         className="tandem-floating-overlay2"
                     />
-                    <div className="tandem-two-column">
-                        <div className="tandem-media-column">
+                    <div className="tandem-branding-gallery">
+                        <div className="tandem-gallery-item2">
                             <img
                                 src="/work/tandem/issue.svg"
                                 alt=""
-                                className="tandem-large-media"
+                                className="tandem-gallery-image2"
                             />
                         </div>
 
-                        <div className="tandem-text-content">
-                            <h2>Unexpected Issue</h2>
-                            <p>
+                        <div className="tandem-branding-text">
+                            <p className="tandem-text-content1">
                                 Through our user testing on our Mid-fidelity
                                 prototype, we faced an issue that our users
                                 thought would be a main concern: safety.
@@ -361,7 +369,6 @@ export default function Tandem() {
                     </div>
 
                     <div className="tandem-branding-text">
-                        <h2>What Didn't Work</h2>
                         <p>
                             Through team meetings and discussion with various
                             people in the trades, we learned that our main issue
@@ -403,8 +410,6 @@ export default function Tandem() {
                         className="tandem-floating-overlay3"
                     />
                     <div className="tandem-branding-text">
-                        <h2>How We Solved It</h2>
-
                         <p>
                             After meeting multiple times, reiterating, and
                             constantly checking in with various trade parents,
@@ -425,7 +430,7 @@ export default function Tandem() {
                             <div className="tandem-gallery-item2">
                                 <img
                                     src="/work/tandem/wireframes.svg"
-                                    className="tandem-gallery-image2"
+                                    className="tandem-branding-fullwidth"
                                     alt=""
                                 />
                             </div>
@@ -461,8 +466,7 @@ export default function Tandem() {
                             />
                         </div>
 
-                        <div className="tandem-text-content">
-                            <h2>Final Design & Showcase</h2>
+                        <div className="tandem-text-content tandem-research-text">
                             <p>
                                 The final designs for Tandem tackle all the
                                 challenges that trade parents face, such as
@@ -534,7 +538,6 @@ export default function Tandem() {
                         className="tandem-floating-overlay4"
                     />
                     <div className="tandem-branding-text">
-                        <h2>The Journey & Impact</h2>
                         <p>
                             Tandem is more than just an app. It represents a
                             problem that is still present to this day, and the

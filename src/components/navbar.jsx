@@ -24,7 +24,7 @@ export default function NavBar() {
                 <Link
                     to="/add"
                     className="gallery-nav">
-                    Freelance
+                    Additional Work
                 </Link>
                 <Link
                     to="/about"

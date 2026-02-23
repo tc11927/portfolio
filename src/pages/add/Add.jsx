@@ -7,27 +7,27 @@ const artworks = [
     {
         id: 1,
         title: "Artwork 1",
-        image: "https://m.media-amazon.com/images/I/8148UrepONL._AC_UF894,1000_QL80_.jpg",
+        image: "/gallery/spiderman.jpg",
     },
     {
         id: 2,
         title: "Artwork 2",
-        image: "https://m.media-amazon.com/images/I/61ihhbaXi8L._AC_UF894,1000_QL80_.jpg",
+        image: "/gallery/sunset.png",
     },
     {
         id: 3,
         title: "Artwork 3",
-        image: "https://assets.bigcartel.com/product_images/233962748/Surrender-Original-Abstract-Painting-Rosemary-Pierce-Modern-Art-3.jpg",
+        image: "/gallery/woman.png",
     },
     {
         id: 4,
         title: "Artwork 4",
-        image: "https://m.media-amazon.com/images/I/51F14mZFYoL._AC_UF894,1000_QL80_.jpg",
+        image: "/gallery/sunset2.png",
     },
     {
         id: 5,
         title: "Artwork 5",
-        image: "https://osnatfineart.com/artworks/full/painting-6236-1-contemporary-colorful-abstract-art-on-canvas-original-big-textured-modern-abstract-painting-for-office-and-living-room.webp",
+        image: "",
     },
 ];
 

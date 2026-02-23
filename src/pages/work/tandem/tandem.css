@@ -47,10 +47,9 @@ p,
 }
 
 @media (min-width: 768px) {
-  .tandemhero-image {
-    margin-top: -9vw;         
-   
-  }
+    .tandemhero-image {
+        margin-top: -12vw;
+    }
 }
 
 /* ==========================================================================
@@ -61,7 +60,7 @@ p,
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    margin-top: 12vw;
+    margin-top: 5vw;
 }
 
 /* ==========================================================================
@@ -120,10 +119,25 @@ p,
     background-color: #fec10b;
 }
 
+.tandem-site-button2 {
+    background: #22303a;
+    color: white;
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    margin-top: 1vw;
+}
+
 .tandemtag1:hover,
 .tandemtag2:hover,
 .tandemtag3:hover,
-.tandemtag4:hover {
+.tandemtag4:hover,
+.tandem-site-button2:hover {
     transform: scale(1.2);
 }
 
@@ -185,13 +199,12 @@ p,
     padding: 0 !important;
 }
 
-
 /* ==========================================================================
    5. General Section Padding & Variants
    ========================================================================== */
 
 .tandemsection {
-    padding: 8rem 0;
+    padding: 6rem 0;
     margin-top: -5vw;
 }
 
@@ -276,7 +289,7 @@ p,
     margin-bottom: -0.4vw;
 }
 
-.tandem-nav-image{
+.tandem-nav-image {
     margin-top: -10vw;
 }
 /* ==========================================================================
@@ -331,7 +344,6 @@ p,
 }
 
 .tandem-research-text p {
-    font-size: 14px;
     line-height: 1.7;
     margin-bottom: 1rem;
     text-align: left;
@@ -448,7 +460,6 @@ p,
     object-fit: cover;
     border-radius: 16px;
     flex: 1;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================================================================
@@ -548,9 +559,9 @@ p,
 
 .tandem-floating-overlay2 {
     position: absolute;
-    top: 43.3%;
-    right: -1%;
-    width: 10vw;
+    top: 56.6%;
+    right: 2%;
+    width: 9vw;
     z-index: 10;
 }
 
@@ -564,9 +575,9 @@ p,
 
 .tandem-floating-overlay4 {
     position: absolute;
-    top: 86.1%;
+    top: 85.8%;
     right: 2%;
-    width: 15vw;
+    width: 13vw;
     z-index: 10;
 }
 
@@ -924,7 +935,7 @@ p,
 
     .tandem-floating-overlay2 {
         width: 22vw;
-        top: 980px;
+        top: 835px;
         right: 20px;
     }
 
@@ -936,7 +947,7 @@ p,
 
     .tandem-floating-overlay4 {
         width: 30vw;
-        top: 930.5px;
+        top: 893.5px;
         right: 5px;
     }
 
@@ -944,7 +955,7 @@ p,
         text-align: center;
     }
 
-.tandem-nav-image {
-    margin-top: 2vw;
-}
+    .tandem-nav-image {
+        margin-top: 2vw;
+    }
 }
