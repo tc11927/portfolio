@@ -9,7 +9,7 @@ export default function BanditBreakout() {
 
             <header className="bandit-hero-fullscreen">
                 <img
-                    src="/work/bandit/header.jpg" 
+                    src="/work/bandit/header.jpg"
                     alt="Bandit Breakout – hero background"
                     className="bandit-hero-fullscreen-image"
                 />
@@ -29,14 +29,13 @@ export default function BanditBreakout() {
                     </div>
 
                     <div className="bandittags">
-                         <a
-                                href="https://bandit-breakout.vercel.app/"
-                                className="bandit-site-button2"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                View Site
-                            </a>
-
+                        <a
+                            href="https://bandit-breakout.vercel.app/"
+                            className="bandit-site-button2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View Site
+                        </a>
                     </div>
 
                     <div className="bandithero-content">
@@ -110,7 +109,7 @@ export default function BanditBreakout() {
                         <div className="bandit-media-column">
                             <div className="bandit-nav-image">
                                 <img
-                                    src="/work/bandit/banditmock.png" 
+                                    src="/work/bandit/banditmock.png"
                                     className="bandit-large-media"
                                     alt="Bandit Breakout navigation visual"
                                 />
@@ -132,7 +131,6 @@ export default function BanditBreakout() {
 
                     <div className="bandit-two-column">
                         <div className="bandit-text-content bandit-process-text">
-                            <h2>Problem</h2>
                             <p>
                                 My group and I found taught multiplayer board
                                 games fall into the trap of being repetitive,
@@ -181,7 +179,6 @@ export default function BanditBreakout() {
                         </div>
 
                         <div className="bandit-text-content bandit-process-text">
-                            <h2>Solution</h2>
                             <p>
                                 As the designer of Bandit Breakout, my goal was
                                 to create a race-to-the-finish board game that
@@ -230,7 +227,6 @@ export default function BanditBreakout() {
                             className="banditfloating-overlay1"
                         />
                         <div className="bandit-text-content bandit-research-text">
-                            <h2>Research</h2>
                             <p>
                                 Interviews with 12 board game players showed a
                                 strong preference for collaborative,
@@ -283,7 +279,6 @@ export default function BanditBreakout() {
                     </div>
 
                     <div className="bandit-branding-text">
-                        <h2>Sketching, Character Design, & Backgrounds</h2>
                         <p>
                             As the main Design lead, I was in charge of the art
                             direction for the game. We chose a rustic, yet
@@ -400,7 +395,6 @@ export default function BanditBreakout() {
                     </div>
 
                     <div className="bandit-branding-text">
-                        <h2>Animating</h2>
                         <p>
                             As the sole animator of the project, I was tasked
                             with creating all the cutscenes (beginning, multiple
@@ -508,10 +502,7 @@ export default function BanditBreakout() {
                             Unexpected Issue
                         </span>
                     </div>
-                    <img
-                        src="/work/minime/confusion.svg"
-                        className="banditfloating-overlay2"
-                    />
+
                     <div className="bandit-two-column">
                         <div className="bandit-media-column">
                             <img
@@ -522,7 +513,6 @@ export default function BanditBreakout() {
                         </div>
 
                         <div className="bandit-text-content">
-                            <h2>Unexpected Issue</h2>
                             <p>
                                 As we worked, we found it difficult to find ways
                                 to create our board, and were stuck on designing
@@ -560,7 +550,6 @@ export default function BanditBreakout() {
                         className="banditfloating-overlay3"
                     />
                     <div className="bandit-branding-text">
-                        <h2>What Didn't Work & How We Solved it</h2>
                         <p>
                             Our whole team was unsure about what direction to go
                             in, the game design team was struggling to implement
@@ -617,7 +606,9 @@ export default function BanditBreakout() {
                     <div className="bandit-section-header">
                         <span className="bandit-section-number">08</span>
                         <div className="bandit-section-line"></div>
-                        <span className="bandit-section-label">
+                        <span
+                            className="bandit-section-label"
+                            id="final-design">
                             Final Design & Showcase
                         </span>
                     </div>
@@ -632,7 +623,6 @@ export default function BanditBreakout() {
                         </div>
 
                         <div className="bandit-text-content">
-                            <h2 id="final-design">Final Design & Showcase</h2>
                             <p>
                                 On Friday, May 16th, 2025, Team Command Z
                                 presented Bandit Breakout. Although competition
@@ -677,7 +667,6 @@ export default function BanditBreakout() {
                         className="banditfloating-overlay4"
                     />
                     <div className="bandit-branding-text">
-                        <h2>The Journey & Impact</h2>
                         <p>
                             Bandit Breakout is more than just a game. It’s
                             something the team made to bring joy and creativity

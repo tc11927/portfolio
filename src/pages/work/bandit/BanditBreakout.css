@@ -125,7 +125,6 @@ p,
     transition: transform 0.3s ease;
 }
 
-
 .bandittag1:hover,
 .bandittag2:hover,
 .bandittag3:hover,
@@ -166,7 +165,7 @@ p,
     margin-bottom: 0 !important;
 }
 
-.bandithero-text1{
+.bandithero-text1 {
     margin-top: -2.5vw;
 }
 
@@ -185,6 +184,10 @@ p,
 
 .banditsection-warning {
     background: var(--warning-bg);
+}
+
+.banditsection:last-of-type .banditcontainer {
+    padding-bottom: 6rem;
 }
 
 /* ==========================================================================
@@ -564,7 +567,7 @@ p,
 /* mini mois floating overlays */
 .banditfloating-overlay1 {
     position: absolute;
-    top: 60.4%;
+    top: 64.4%;
     right: 89%;
     width: 12vw;
     z-index: 10;
@@ -572,15 +575,15 @@ p,
 
 .banditfloating-overlay2 {
     position: absolute;
-    top: 40.3%;
+    top: 90.3%;
     right: -1%;
-    width: 10vw;
+    width: 8vw;
     z-index: 10;
 }
 
 .banditfloating-overlay3 {
     position: absolute;
-    top: 68.3%;
+    top: 69.9%;
     right: 85%;
     width: 15vw;
     z-index: 10;
@@ -588,7 +591,7 @@ p,
 
 .banditfloating-overlay4 {
     position: absolute;
-    top: 84.9%;
+    top: 82.4%;
     right: 2%;
     width: 15vw;
     z-index: 10;
