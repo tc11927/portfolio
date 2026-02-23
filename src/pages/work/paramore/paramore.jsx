@@ -29,6 +29,16 @@ export default function Paramore() {
                         <span className="paramoretag4">Code</span>
                     </div>
 
+                    <div className="paramoretags">
+                        <a
+                            href="https://paramore-emagazine.vercel.app/"
+                            className="paramore-site-button2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View Site
+                        </a>
+                    </div>
+
                     <div className="paramorehero-content">
                         <div className="paramorehero-text"></div>
 
@@ -117,7 +127,7 @@ export default function Paramore() {
 
                     <div className="paramore-two-column">
                         <div className="paramore-text-content paramore-process-text">
-                            <h2>What is it?</h2>
+                      
                             <p>
                                 This is Paramore is an interactive digital
                                 e-book/magazine displaying the history and
@@ -161,7 +171,7 @@ export default function Paramore() {
                         </div>
 
                         <div className="paramore-text-content paramore-process-text">
-                            <h2>Why Paramore?</h2>
+                        
                             <p>
                                 Paramore is a band that formed in 2004. My
                                 groupmate and I are quite passionate about their
@@ -200,10 +210,10 @@ export default function Paramore() {
                         </div>
                         <img
                             src="/work/minime/examine.svg"
-                            className="floating-overlay1"
+                            className="paramorefloating-overlay1"
                         />
                         <div className="paramore-text-content paramore-research-text">
-                            <h2>Research</h2>
+                       
                             <p>
                                 A competitive analysis was done to see how other
                                 sites created and laid out their e-magazines.
@@ -245,7 +255,7 @@ export default function Paramore() {
                     </div>
 
                     <div className="paramore-branding-text">
-                        <h2> Moodboards, Storyboards, and Mockups</h2>
+                   
                         <p>
                             As the main designer of this project, it was my role
                             to help find ideas, and style all the pages to match
@@ -331,10 +341,10 @@ export default function Paramore() {
                     </div>
                     <img
                         src="/work/minime/study.svg"
-                        className="paramore-floating-overlay3"
+                        className="paramorefloating-overlay3"
                     />
                     <div className="paramore-branding-text">
-                        <h2>Development</h2>
+                   
                         <p>
                             Due to the limited amount of time to finish the
                             project, there were a lot of time constraints. We
@@ -370,7 +380,7 @@ export default function Paramore() {
                     </div>
                     <img
                         src="/work/minime/confusion.svg"
-                        className="floating-overlay2"
+                        className="paramorefloating-overlay2"
                     />
                     <div className="paramore-two-column">
                         <div className="paramore-media-column">
@@ -384,7 +394,7 @@ export default function Paramore() {
                         </div>
 
                         <div className="paramore-text-content">
-                            <h2> How Was it Overcome?</h2>
+                       
                             <p>
                                 Despite the time rush, there were ways I found I
                                 could keep my work high quality and keep my work
@@ -415,7 +425,7 @@ export default function Paramore() {
                     </div>
 
                     <div className="paramore-branding-text">
-                        <h2>Reflection</h2>
+              
                         <p>
                             Throughout this project, I learned a lot about
                             mixing code and design to create interactive and
@@ -469,10 +479,10 @@ export default function Paramore() {
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
-                        className="floating-overlay4"
+                        className="paramorefloating-overlay4"
                     />
                     <div className="paramore-branding-text">
-                        <h2>The Journey & Impact</h2>
+               
                         <p>
                             This is Paramore is a love letter to a band that we
                             all love and have heard, even if we weren’t aware.
@@ -500,7 +510,7 @@ export default function Paramore() {
 
                         <div className="paramore-site-button-wrapper">
                             <a
-                                href="https://bandit-breakout.vercel.app/"
+                                href="https://paramore-emagazine.vercel.app/"
                                 className="paramore-site-button"
                                 target="_blank"
                                 rel="noopener noreferrer">
