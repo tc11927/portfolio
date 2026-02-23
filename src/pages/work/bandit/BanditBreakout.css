@@ -111,9 +111,25 @@ p,
     background-color: #7da75b;
 }
 
+.bandit-site-button2 {
+    background: #22303a;
+    color: white;
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    margin-top: -1.5vw;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    transition: transform 0.3s ease;
+}
+
+
 .bandittag1:hover,
 .bandittag2:hover,
-.bandittag3:hover {
+.bandittag3:hover,
+.bandit-site-button2:hover {
     transform: scale(1.2);
 }
 
@@ -150,12 +166,16 @@ p,
     margin-bottom: 0 !important;
 }
 
+.bandithero-text1{
+    margin-top: -2.5vw;
+}
+
 /* ==========================================================================
    5. General Section Padding & Variants
    ========================================================================== */
 
 .banditsection {
-    padding: 8rem 0;
+    padding: 0.3rem 0;
     margin-top: -5vw;
 }
 

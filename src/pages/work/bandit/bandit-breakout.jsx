@@ -28,6 +28,17 @@ export default function BanditBreakout() {
                         <span className="bandittag3">Motion Graphics</span>
                     </div>
 
+                    <div className="bandittags">
+                         <a
+                                href="https://bandit-breakout.vercel.app/"
+                                className="bandit-site-button2"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                View Site
+                            </a>
+
+                    </div>
+
                     <div className="bandithero-content">
                         <div className="bandithero-text"></div>
 
@@ -41,7 +52,7 @@ export default function BanditBreakout() {
                             </p>
                             <p className="bandithero-text2">
                                 My role was to blend striking visual design with
-                                engaging, replayable gameplay — making every
+                                engaging, replayable gameplay, making every
                                 session with friends feel fresh, chaotic, and
                                 personal. I led all artwork, character design,
                                 environments, and animations.
