@@ -93,7 +93,7 @@ export default function Popunk() {
                     </div>
 
                     <div className="popunk-branding-text">
-                        <h2>Inspiration</h2>
+                  
                         <p>
                             POPUNK! was made from many sources of inspiration,
                             with my primary inspiration coming from my lovely
@@ -125,7 +125,7 @@ export default function Popunk() {
                     </div>
 
                     <div className="popunk-branding-text">
-                        <h2> Styleguide </h2>
+                      
                         <p>
                             The style guide for this drink line was made
                             focusing on bright neon colours, fun text, and
@@ -157,7 +157,7 @@ export default function Popunk() {
                     </div>
 
                     <div className="popunk-branding-text">
-                        <h2>Iteration</h2>
+                
                         <p>
                             With a clear goal and image in mind, iteration went
                             fairly smoothly. Only small adjustments to colour
@@ -188,7 +188,7 @@ export default function Popunk() {
                     </div>
 
                     <div className="popunk-branding-text">
-                        <h2>Final Product</h2>
+                   
                         <p></p>
 
                         <div className="popunk-journey-video-wrapper">
@@ -230,7 +230,7 @@ export default function Popunk() {
                         className="popunk-floating-overlay4"
                     />
                     <div className="popunk-branding-text">
-                        <h2>The Journey & Impact</h2>
+                  
                         <p>
                             POPUNK! was created out of my love for both design
                             and my cat, and was a project I enjoyed deeply. It
