@@ -97,7 +97,7 @@ export default function Ayezerok() {
                     </div>
 
                     <div className="ayezerok-branding-text">
-                        <h2>Inspiration</h2>
+                  
                         <p>
                             Having done many cartoony, fun, and colourful
                             projects, I was inspired to step out of my comfort
@@ -132,7 +132,7 @@ export default function Ayezerok() {
                     </div>
 
                     <div className="ayezerok-branding-text">
-                        <h2> What Animals and Why? </h2>
+                      
                         <p>
                             As I stared at the aye-aye, I thought of all the
                             weird, strange animals that exist. The first to come
@@ -166,7 +166,7 @@ export default function Ayezerok() {
                     </div>
 
                     <div className="ayezerok-branding-text">
-                        <h2>Iteration</h2>
+                      
                         <p>
                             With all my animals in mind, it was time to get to
                             work. Through multiple rounds of feedback,
@@ -202,7 +202,7 @@ export default function Ayezerok() {
                     </div>
 
                     <div className="ayezerok-branding-text">
-                        <h2>Final Product</h2>
+                     
                         <p></p>
 
                         <div className="ayezerok-journey-video-wrapper4">
