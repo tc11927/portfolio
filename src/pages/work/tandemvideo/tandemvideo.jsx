@@ -116,7 +116,7 @@ export default function TandemVideo() {
                     </div>
 
                     <div className="tandemvideo-branding-text">
-                        <h2>Inspiration</h2>
+                     
                         <p>
                             My group's main inspiration for this video ad was
                             the various emotional based video ads we found
@@ -150,7 +150,7 @@ export default function TandemVideo() {
 
                     <div className="tandemvideo-two-column">
                         <div className="tandemvideo-text-content tandemvideo-process-text">
-                            <h2>Ideation</h2>
+                        
                             <p>
                                 All group members came up with their own ideas,
                                 written or storyboarded. Each idea was based on
@@ -189,7 +189,7 @@ export default function TandemVideo() {
                     </div>
 
                     <div className="tandemvideo-branding-text">
-                        <h2>Storyboarding</h2>
+                       
                         <p>
                             Once we decided upon what parts and aspects conveyed
                             what Tandem was made to solve, a first storyboard
@@ -222,7 +222,7 @@ export default function TandemVideo() {
                     </div>
 
                     <div className="tandemvideo-branding-text">
-                        <h2> Reiteration and Challenges</h2>
+                       
                         <p>
                             After feedback and viewing, reiterations and
                             rewrites were done to further convey the emotional
@@ -276,7 +276,7 @@ export default function TandemVideo() {
                         </div>
 
                         <div className="tandemvideo-text-content tandemvideo-process-text">
-                            <h2>Filming and Editing</h2>
+                         
                             <p>
                                 Once changes were confirmed, actors were secured
                                 and filming commenced. Multiple locations and
@@ -312,7 +312,7 @@ export default function TandemVideo() {
                     </div>
 
                     <div className="tandemvideo-branding-text">
-                        <h2>Final Product</h2>
+                       
                         <p></p>
 
                         <div className="tandemvideo-gallery-item2">
@@ -367,7 +367,7 @@ export default function TandemVideo() {
                         className="tandemvideo-floating-overlay4"
                     />
                     <div className="tandemvideo-branding-text">
-                        <h2>The Journey & Impact</h2>
+                      
                         <p>
                             Getting to film and create this video was an amazing
                             experience. It was great to see the process from

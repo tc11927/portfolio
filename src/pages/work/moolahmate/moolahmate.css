@@ -267,7 +267,7 @@ p,
    ========================================================================== */
 
 .moolahmate-section {
-    padding: 8rem 0;
+    padding: 1rem 0;
     margin-top: -5vw;
 }
 
@@ -712,7 +712,7 @@ p,
 
 .moolahmate-floating-overlay4 {
     position: absolute;
-    top: 86%;
+    top: 89%;
     right: 2%;
     width: 11vw;
     z-index: 10;
@@ -1046,7 +1046,7 @@ p,
 
     .moolahmate-floating-overlay4 {
         width: 25vw;
-        top: 650px;
+        top: 656px;
         right: 5px;
     }
 

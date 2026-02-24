@@ -106,7 +106,7 @@ export default function MoolahMate() {
                     </div>
 
                     <div className="moolahmate-branding-text">
-                        <h2>Inspiration</h2>
+                       
                         <p>
                             Through our research, we found out about the
                             struggles the younger generation has when it comes
@@ -139,7 +139,7 @@ export default function MoolahMate() {
                     </div>
 
                     <div className="moolahmate-branding-text">
-                        <h2> Styleguide </h2>
+                        
                         <p>
                             The style guide for MoolahMate was made to be clear,
                             calming, and simple, as we didn’t want to confuse
@@ -180,7 +180,7 @@ export default function MoolahMate() {
                     </div>
 
                     <div className="moolahmate-branding-text">
-                        <h2>Iteration</h2>
+                       
                         <p>
                             With everything we had planned, our ideas and
                             features we wanted to implement were too
@@ -221,7 +221,7 @@ export default function MoolahMate() {
                     </div>
 
                     <div className="moolahmate-branding-text">
-                        <h2>Final Product</h2>
+                        
 
                         <div className="moolahmate-gallery-item2">
                             <iframe
@@ -272,7 +272,7 @@ export default function MoolahMate() {
                         className="moolahmate-floating-overlay4"
                     />
                     <div className="moolahmate-branding-text">
-                        <h2>The Journey & Impact</h2>
+                        
                         <p>
                             MoolahMate was a project that encouraged growth and
                             learning, having been the first time I’ve ever
