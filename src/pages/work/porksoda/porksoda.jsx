@@ -98,7 +98,6 @@ export default function PorkSoda() {
                     </div>
 
                     <div className="porksoda-branding-text">
-                        <h2>Inspiration</h2>
                         <p>
                             Pork Soda was made from my love for animation, and
                             my love for the fun and interesting imagery Glass
@@ -131,7 +130,6 @@ export default function PorkSoda() {
                     </div>
 
                     <div className="porksoda-branding-text">
-                        <h2> Storyboarding </h2>
                         <p>
                             The storyboard for this project was mainly focused
                             on interconnecting each panel in a smooth way that
@@ -161,7 +159,6 @@ export default function PorkSoda() {
                     </div>
 
                     <div className="porksoda-branding-text">
-                        <h2>Animating</h2>
                         <p>
                             With a clear goal and image in mind, making the
                             visuals in Illustrator and animating them in After
@@ -194,7 +191,6 @@ export default function PorkSoda() {
                     </div>
 
                     <div className="porksoda-branding-text">
-                        <h2>Final Product</h2>
                         <p></p>
 
                         <div className="porksoda-gallery-item2">
@@ -243,14 +239,12 @@ export default function PorkSoda() {
                                 title="Animation example 1"
                             />
                         </div>
-                        
                     </div>
                     <img
                         src="/work/minime/celebrate.svg"
                         className="porksoda-floating-overlay4"
                     />
                     <div className="porksoda-branding-text">
-                        <h2>The Journey & Impact</h2>
                         <p>
                             I’ve always had a love for animating and art, it was
                             my first and current love and passion. Getting the
