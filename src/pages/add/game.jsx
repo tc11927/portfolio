@@ -9,6 +9,13 @@ export default function CatchingGame() {
     const [gameOver, setGameOver] = useState(false);
     const gameAreaRef = useRef(null);
 
+ const restart = () => {
+    document.querySelectorAll(".falling-cats .falling-cat").forEach((cat) => cat.remove());
+    setScore(0);
+    setLives(3);
+    setGameOver(false);
+  };
+  
     return (
         <div className="catching-game">
             <div className="game-title">
@@ -49,7 +56,8 @@ export default function CatchingGame() {
                     <div className="player-area">
                         <img
                             src=""
-                            className="player"></img>
+                            className="player"
+                            style={{ left: `${basketX}%` }}></img>
                     </div>
                     {gameOver && (
                         <div className="game-over-overlay">
