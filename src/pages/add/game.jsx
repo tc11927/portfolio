@@ -1,6 +1,14 @@
 import { useRef, useEffect, useState } from "react";
+import "./game.css";
 
 export default function CatchingGame() {
+const [score, setScore] = useState(0);
+const [lives, setLives] = useState(3);
+const [basketX, setBasketX] = useState(0);
+const [gameActive, setGameActive] = useState(false);
+const [gameOver, setGameOver] = useState(false);
+const gameAreaRef = useRef(null);
+
     return (
         <div className="catching-game">
             <div className="game-title">
