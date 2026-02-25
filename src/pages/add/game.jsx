@@ -5,10 +5,11 @@ import "./game.css";
 export default function CatchingGame() {
     const [score, setScore] = useState(0);
     const [lives, setLives] = useState(3);
-    const [basketX, setBasketX] = useState(50); // ← changed from 0 to 50 (middle)
+    const [basketX, setBasketX] = useState(50); 
     const [gameActive, setGameActive] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const gameAreaRef = useRef(null);
+    const keysPressed = useRef(new Set()); // track which keys are held downnnn
 
     /* Restarting the gameeee aka removing the kitties and resetting the score */
     const restart = () => {
@@ -18,16 +19,70 @@ export default function CatchingGame() {
         setScore(0);
         setLives(3);
         setGameOver(false);
+        setBasketX(50);
         setGameActive(true); // ← important: re-activate spawning
     };
 
-    /* Mouse Movement for "basket" aka the player aka me mini avatar :P */
+    // Keyboard controls
+    useEffect(() => {
+        if (!gameActive || gameOver) return;
+
+        const handleKeyDown = (e) => {
+            if (e.repeat) return; // prevent holding key spamming
+            if (e.key === "ArrowLeft" || e.key.toLowerCase() === "a") {
+                keysPressed.current.add("left");
+            }
+            if (e.key === "ArrowRight" || e.key.toLowerCase() === "d") {
+                keysPressed.current.add("right");
+            }
+        };
+
+        const handleKeyUp = (e) => {
+            if (e.key === "ArrowLeft" || e.key.toLowerCase() === "a") {
+                keysPressed.current.delete("left");
+            }
+            if (e.key === "ArrowRight" || e.key.toLowerCase() === "d") {
+                keysPressed.current.delete("right");
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        window.addEventListener("keyup", handleKeyUp);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("keyup", handleKeyUp);
+        };
+    }, [gameActive, gameOver]);
+
+    // mssssmooth keyboard movement loop
+    useEffect(() => {
+        if (!gameActive || gameOver) return;
+
+        let animationFrame;
+        const speed = 0.45; 
+
+        const updatePosition = () => {
+            setBasketX((prev) => {
+                let newX = prev;
+                if (keysPressed.current.has("left")) newX -= speed;
+                if (keysPressed.current.has("right")) newX += speed;
+                return Math.max(8, Math.min(92, newX));
+            });
+            animationFrame = requestAnimationFrame(updatePosition);
+        };
+
+        animationFrame = requestAnimationFrame(updatePosition);
+
+        return () => cancelAnimationFrame(animationFrame);
+    }, [gameActive, gameOver]);
+
+    /* Mouse / Touch Movement for "basket" aka the player aka me mini avatar :P */
     useEffect(() => {
         const area = gameAreaRef.current;
         if (!area) return;
 
         const handleMove = (e) => {
-            // Prevent default on touch to stop scrolling while playing
             if (e.type === "touchmove") e.preventDefault();
 
             const clientX = e.touches ? e.touches[0].clientX : e.clientX;
@@ -38,7 +93,7 @@ export default function CatchingGame() {
         };
 
         area.addEventListener("mousemove", handleMove);
-        area.addEventListener("touchmove", handleMove, { passive: false }); // passive:false needed for e.preventDefault()
+        area.addEventListener("touchmove", handleMove, { passive: false });
 
         return () => {
             area.removeEventListener("mousemove", handleMove);
@@ -51,7 +106,7 @@ export default function CatchingGame() {
         if (!gameActive || gameOver || lives <= 0) return;
 
         const interval = setInterval(() => {
-            const fallingCats = document.querySelector(".falling-cats"); // ← fixed typo: querySelection → querySelector
+            const fallingCats = document.querySelector(".falling-cats");
             if (!fallingCats) return;
 
             const cat = document.createElement("div");
@@ -81,47 +136,46 @@ export default function CatchingGame() {
                         });
                     }
                 },
-                speed * 1000 + 100,
-            ); // ← small buffer helps avoid race conditions
+                speed * 1000 + 120,
+            );
 
             /* collisionn checking to see if you actually caught the cat */
             const checkInterval = setInterval(() => {
                 if (!cat.parentElement || gameOver) {
                     clearInterval(checkInterval);
+                    clearTimeout(missTimer);
                     return;
-                } /* checks if the catkitty is gone or if the game is over */
-                /* checks the position of player and kitty to see if they overlap/hit */
+                }
                 const catRect = cat.getBoundingClientRect();
                 const player = document.querySelector(".player");
                 if (!player) return;
                 const playerRect = player.getBoundingClientRect();
-                /* creates a bounding box and collision checking, which will be true if the bounding boxes touchy touch */
+
                 if (
-                    catRect.bottom > playerRect.top && // cat bottom edge is below player top
-                    catRect.top < playerRect.bottom && // cat top edge is above player bottom
-                    catRect.right > playerRect.left && // cat right edge is right of player left
-                    catRect.left < playerRect.right // cat left edge is left of player right
+                    catRect.bottom > playerRect.top &&
+                    catRect.top < playerRect.bottom &&
+                    catRect.right > playerRect.left &&
+                    catRect.left < playerRect.right
                 ) {
-                    /* if the collision did happen and the player caught the kitty */
-                    setScore((prev) => prev + 1); /*  increase score by uno */
-                    cat.remove(); /* remove the kitty */
-                    clearInterval(checkInterval); /* stops the loop */
-                    clearTimeout(
-                        missTimer,
-                    ); /* stops the miss timer since you caught the kitty, so it won't take your life away */
+                    setScore((prev) => prev + 1); /* increase score by uno */
+                    cat.remove();
+                    clearInterval(checkInterval);
+                    clearTimeout(missTimer);
                 }
-            }, 30);
-        }, 1500); // Spawn every 1.5s
+            }, 26);
+        }, 1400);
 
         return () => clearInterval(interval);
     }, [gameActive, gameOver, lives]);
 
     return (
-        <div className="catching-game">
+        <div className={`catching-game ${gameActive ? "game-active" : ""}`}>
             <div className="game-title">
                 <h2>Catch the Cat!</h2>
-                <p>Catch the cats and save the day!</p>
-                {!gameActive && !gameOver ? ( // ← hide start button after game starts
+                <p>
+                    Catch the cats and save the day! (← → or A/D)
+                </p>
+                {!gameActive && !gameOver ? (
                     <button
                         className="start-btn"
                         onClick={() => setGameActive(true)}>
