@@ -2,6 +2,7 @@ import { useState } from "react";
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
 import "./add.css";
+import CatchingGame from "./game";
 
 const artworks = [
     {
@@ -27,7 +28,7 @@ const artworks = [
     {
         id: 5,
         title: "Artwork 5",
-        image: "",
+        image: "/gallery/cat.jpg",
     },
 ];
 
@@ -65,7 +66,7 @@ export default function Add() {
                     />
                 </div>
             )}
-
+<CatchingGame />
             <Footer />
         </div>
     );
