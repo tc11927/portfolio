@@ -9,13 +9,35 @@ export default function CatchingGame() {
     const [gameOver, setGameOver] = useState(false);
     const gameAreaRef = useRef(null);
 
- const restart = () => {
-    document.querySelectorAll(".falling-cats .falling-cat").forEach((cat) => cat.remove());
-    setScore(0);
-    setLives(3);
-    setGameOver(false);
-  };
-  
+    /* Restarting the gameeee aka removing the kitties and resetting the score */
+    const restart = () => {
+        document
+            .querySelectorAll(".falling-cats .falling-cat")
+            .forEach((cat) => cat.remove());
+        setScore(0);
+        setLives(3);
+        setGameOver(false);
+    };
+
+    /* Mouse Movement for "basket" aka the player aka me mini avatar :P */
+    useEffect(() => {
+        const area = gameAreaRef.current;
+        if (!area) return;
+
+        const handleMove = (e) => {
+            const rect = area.getBoundingClientRect();
+            let x = ((e.clientX - rect.left) / rect.width) * 100;
+            x = Math.max(10, Math.min(90, x));
+            setBasketX(x);
+        };
+
+        area.addEventListener("mousemove", handleMouseMove);
+        return () => area.removeEventListener("mousemove", handleMouseMove);
+    }, []);
+
+    /* the falling kitties WAHHHH */
+    
+
     return (
         <div className="catching-game">
             <div className="game-title">
