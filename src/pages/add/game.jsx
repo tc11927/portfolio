@@ -173,7 +173,7 @@ export default function CatchingGame() {
             <div className="game-title">
                 <h2>Catch the Cat!</h2>
                 <p>
-                    Catch the cats and save the day! (← → or A/D)
+                    Catch the cats and save the day! (Move the Mouse, use the arrow keys, or use A/D to move!)
                 </p>
                 {!gameActive && !gameOver ? (
                     <button
@@ -201,7 +201,7 @@ export default function CatchingGame() {
                             className="player"
                             style={{ left: `${basketX}%` }}>
                             <img
-                                src="/personalLogo.svg"
+                                src="/gallery/carry.svg"
                                 alt="Basket"
                                 className="basket-img"
                             />
