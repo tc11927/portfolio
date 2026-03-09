@@ -5,7 +5,7 @@ import "./game.css";
 export default function CatchingGame() {
     const [score, setScore] = useState(0);
     const [lives, setLives] = useState(3);
-    const [basketX, setBasketX] = useState(50); 
+    const [basketX, setBasketX] = useState(50);
     const [gameActive, setGameActive] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const gameAreaRef = useRef(null);
@@ -60,7 +60,7 @@ export default function CatchingGame() {
         if (!gameActive || gameOver) return;
 
         let animationFrame;
-        const speed = 0.45; 
+        const speed = 0.45;
 
         const updatePosition = () => {
             setBasketX((prev) => {
@@ -173,7 +173,8 @@ export default function CatchingGame() {
             <div className="game-title">
                 <h2>Catch the Cat!</h2>
                 <p>
-                    Catch the cats and save the day! (Move the Mouse, use the arrow keys, or use A/D to move!)
+                    Catch the cats and save the day! (Move the Mouse, use the
+                    arrow keys, or use A/D to move!)
                 </p>
                 {!gameActive && !gameOver ? (
                     <button
