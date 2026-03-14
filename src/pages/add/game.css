@@ -63,6 +63,9 @@
     animation: fall linear forwards;
     animation-duration: var(--duration, 5s);
     pointer-events: none;
+
+    /*random rotationnn */
+    transform: rotate(var(--cat-rot, 0deg));
 }
 
 .cat-img {
