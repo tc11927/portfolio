@@ -168,26 +168,19 @@ export default function CatchingGame() {
         return () => clearInterval(interval);
     }, [gameActive, gameOver, lives]);
 
-    return (
+        return (
         <div className={`catching-game ${gameActive ? "game-active" : ""}`}>
-            <div className="game-title">
-                <h2>Catch the Cat!</h2>
-                <p>
-                    Catch the cats and save the day! (Move the Mouse, use the
-                    arrow keys, or use A/D to move!)
-                </p>
-                {!gameActive && !gameOver ? (
-                    <button
-                        className="start-btn"
-                        onClick={() => setGameActive(true)}>
-                        Start Game
-                    </button>
-                ) : null}
-            </div>
-            <div
-                className="game-area"
-                ref={gameAreaRef}>
-                <div className="game-upper-area">
+
+            <div className="game-area" ref={gameAreaRef}>
+                
+                {/* SCORESSS and Lives */}
+                <div 
+                    className="game-upper-area" 
+                    style={{ 
+                        opacity: (gameActive && !gameOver) ? 1 : 0,
+                        pointerEvents: (gameActive && !gameOver) ? 'auto' : 'none'
+                    }}
+                >
                     <div className="game-score">
                         <p className="score">Score: {score}</p>
                     </div>
@@ -195,12 +188,28 @@ export default function CatchingGame() {
                         <p className="lives">Lives: {lives}</p>
                     </div>
                 </div>
+
                 <div className="game-lower-area">
-                    <div className="falling-cats"></div>
-                    <div className="player-area">
+                    {/* Hide falling kibbies & player when game over */}
+                    <div 
+                        className="falling-cats"
+                        style={{ 
+                            opacity: gameOver ? 0 : 1,
+                            pointerEvents: gameOver ? 'none' : 'auto'
+                        }}
+                    ></div>
+
+                    <div 
+                        className="player-area"
+                        style={{ 
+                            opacity: gameOver ? 0 : 1,
+                            pointerEvents: gameOver ? 'none' : 'auto'
+                        }}
+                    >
                         <div
                             className="player"
-                            style={{ left: `${basketX}%` }}>
+                            style={{ left: `${basketX}%` }}
+                        >
                             <img
                                 src="/gallery/carry.svg"
                                 alt="Basket"
@@ -208,19 +217,48 @@ export default function CatchingGame() {
                             />
                         </div>
                     </div>
+
+                    {/* Start screenn */}
+                    {!gameActive && !gameOver && (
+                        <div className="start-screen">
+                            <h1>Save the Cats!</h1>
+                            <p>Catch falling cats before they hit the ground!</p>
+                            <button
+                                className="start-btnn"
+                                onClick={() => setGameActive(true)}
+                            >
+                                Start
+                            </button>
+                        </div>
+                    )}
+
+                    {/* Game over screenN */}
                     {gameOver && (
                         <div className="game-over-overlay">
-                            <h3>Game Over! Better Luck Next Time!</h3>
+                            <h3>Better Luck Next Time!</h3>
                             <p>Cats Saved: {score}</p>
                             <button
                                 className="restart-btn"
-                                onClick={restart}>
+                                onClick={restart}
+                            >
                                 Play Again
                             </button>
                         </div>
                     )}
                 </div>
             </div>
+
+            {/* Title + instructionsz */}
+            {gameActive && !gameOver && (
+                <div className="game-title">
+                    <h2>Catch the Cat!</h2>
+                    <p>
+                        Catch the cats and save the day! (Move the Mouse, use the
+                        arrow keys, or use A/D to move!)
+                    </p>
+                </div>
+            )}
+
         </div>
     );
 }

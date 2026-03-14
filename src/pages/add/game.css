@@ -74,7 +74,7 @@
 
 @keyframes fall {
     to {
-        top: 110%;
+        top: 80%; /* note to self: this controls how far the kitties fall */
     }
 }
 
@@ -107,15 +107,6 @@
     opacity: 0.95;
 }
 
-.start-btnn,
-.restart-btn {
-    /* to be styled, need to input svg start screen */
-}
-
-.start-btnn:hover,
-.restart-btn:hover {
-     /* to be styled, need to input svg start screen */
-}
 
 .game-upper-area {
     display: flex;
