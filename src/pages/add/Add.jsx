@@ -30,17 +30,17 @@ const artworks = [
         title: "Artwork 5",
         image: "/gallery/cat.jpg",
     },
-     {
+    {
         id: 6,
         title: "Artwork 5",
         image: "/gallery/b.png",
     },
-     {
+    {
         id: 7,
         title: "Artwork 5",
         image: "/gallery/cawfee 1.png",
     },
-     {
+    {
         id: 8,
         title: "Artwork 5",
         image: "/gallery/toothless.png",
@@ -81,7 +81,9 @@ export default function Add() {
                     />
                 </div>
             )}
-<CatchingGame />
+            <div className="catching-game-container">
+                <CatchingGame />
+            </div>
             <Footer />
         </div>
     );
