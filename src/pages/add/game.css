@@ -33,12 +33,12 @@
 }
 
 .player {
-    position: absolute;
-    bottom: 20px;
-    width: 100px;
-    height: 100px;
-    left: 50%;
-    transform: translateX(calc((var(--pos, 50) - 50) * 1%));
+   position: absolute;
+    bottom: 0;
+    width: 140px;
+    height: 140px;
+    left: var(--left, 50%);        
+    transform: translateX(-50%);      
     opacity: 0;
     transition: transform 0.12s ease-out;
     z-index: 10;
@@ -96,19 +96,6 @@
     border-radius: 12px;
 }
 
-.start-screen h1,
-.game-over-overlay h3 {
-    margin: 0 0 16px;
-    font-size: 2.4rem;
-}
-
-.start-screen p,
-.game-over-overlay p {
-    margin: 8px 0 24px;
-    font-size: 1.15rem;
-    max-width: 360px;
-    opacity: 0.95;
-}
 
 
 .game-upper-area {
@@ -118,4 +105,82 @@
     margin-bottom: 12px;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.start-btnn {
+    background: #64bcad;
+    border: none;
+    padding: 0.5vw 8vw;
+    font-size: 1.6vw;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.start-btnn:hover {
+    transform: scale(1.045);
+}
+
+.restart-btn {
+     background: #7da75b;
+    border: none;
+    padding: 0.5vw 8vw;
+    font-size: 1.6vw;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.restart-btn:hover {
+    transform: scale(1.045);
+}
+
+.start-instructions {
+font-size: 1vw;
+margin-top: -1vw;
+margin-bottom: 3vw;
+
+}
+
+.start-title {
+    font-size: 3vw;
+}
+
+.game-over-title {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.game-over-score {
+   font-size: 1vw;
+margin-top: 0.5vw;
+margin-bottom: 3vw;
+}
+
+.game-area {
+    background: #e0d3ad;  
+    border-radius: 20px;
+    
+}
+
+.score-value {
+    color: #7da75b;
+    font-weight: 800;
+}
+
+.lives-value {
+    color: #7da75b;
+    font-weight: 800;
+}
+
+.score {
+     font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+.lives {
+      font-family: "Averia Sans Libre", cursive, sans-serif;
 }

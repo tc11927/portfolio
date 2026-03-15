@@ -185,10 +185,10 @@ export default function CatchingGame() {
                             gameActive && !gameOver ? "auto" : "none",
                     }}>
                     <div className="game-score">
-                        <p className="score">Score: {score}</p>
+                        <p className="score">Score: <span className="score-value">{score}</span></p>
                     </div>
                     <div className="game-lives">
-                        <p className="lives">Lives: {lives}</p>
+                        <p className="lives">Lives: <span className="lives-value">{lives}</span></p>
                     </div>
                 </div>
 
@@ -221,8 +221,8 @@ export default function CatchingGame() {
                     {/* Start screen overlay */}
                     {!gameActive && !gameOver && (
                         <div className="start-screen">
-                            <h1>Save the Cats!</h1>
-                            <p>
+                            <h1 className="start-title">Save the Cats!</h1>
+                            <p className="start-instructions">
                                 Catch falling cats before they hit the ground!
                             </p>
                             <button
@@ -236,8 +236,8 @@ export default function CatchingGame() {
                     {/* Game over overlay */}
                     {gameOver && (
                         <div className="game-over-overlay">
-                            <h3>Better Luck Next Time!</h3>
-                            <p>Cats Saved: {score}</p>
+                            <h3 className="game-over-title">Better Luck Next Time!</h3>
+                            <p className="game-over-score">Cats Saved: {score}</p>
                             <button
                                 className="restart-btn"
                                 onClick={restart}>
