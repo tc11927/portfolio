@@ -251,8 +251,8 @@ export default function CatchingGame() {
             {/* Title + instructions — only during active gameplay */}
             {gameActive && !gameOver && (
                 <div className="game-title">
-                    <h2>Catch the Cat!</h2>
-                    <p>
+                    <h2 className="game-title-text">Catch the Cat!</h2>
+                    <p className="game-instructions">
                         Catch the cats and save the day! (Move the Mouse, use
                         the arrow keys, or use A/D to move!)
                     </p>
