@@ -10,6 +10,8 @@ export default function CatchingGame() {
     const [gameOver, setGameOver] = useState(false);
     const gameAreaRef = useRef(null);
     const keysPressed = useRef(new Set()); // track which keys are held downnnn
+    const gameStartTimeRef = useRef(null); // used to ramp cat speed over time
+    const prevGameActiveRef = useRef(false); // track inactive -> active transition
 
     /* Restarting the gameeee aka removing the kitties and resetting the score */
     const restart = () => {
@@ -20,8 +22,22 @@ export default function CatchingGame() {
         setLives(3);
         setGameOver(false);
         setBasketX(50);
+        gameStartTimeRef.current = Date.now(); // reset difficulty ramp
         setGameActive(true); // ← important: re-activate spawning
     };
+
+    // NOTE: This starts the "over time" ramp when the user first hits Start.
+    useEffect(() => {
+        if (!gameActive || gameOver) {
+            prevGameActiveRef.current = gameActive;
+            return;
+        }
+
+        if (!prevGameActiveRef.current) {
+            gameStartTimeRef.current = Date.now();
+        }
+        prevGameActiveRef.current = gameActive;
+    }, [gameActive, gameOver]);
 
     // Keyboard controls
     useEffect(() => {
@@ -113,9 +129,21 @@ export default function CatchingGame() {
             cat.className = "falling-cat";
             const left = 10 + Math.random() * 80;
             cat.style.left = `${left}%`;
-            const speed = 3 + Math.random() * 4;
-            cat.dataset.speed = speed.toString();
-            cat.style.setProperty("--duration", `${speed}s`);
+            // NOTE: Make cats fall faster over time as the player plays.
+            // We ramp difficulty based on elapsed time since gameplay started,
+            // and reduce each cat's fall animation duration accordingly.
+            const elapsedSeconds = gameStartTimeRef.current
+                ? (Date.now() - gameStartTimeRef.current) / 1000
+                : 0;
+            const difficulty = 1 + elapsedSeconds / 45; // bigger = faster ramp
+            const maxDifficulty = 2.8; // cap the ramp so gameplay stays playable
+            const difficultyCapped = Math.min(maxDifficulty, difficulty);
+
+            const baseDurationSeconds = 3 + Math.random() * 4; // your original random range
+            const durationSeconds = baseDurationSeconds / difficultyCapped;
+
+            cat.dataset.speed = durationSeconds.toString(); // stores this cat's fall duration
+            cat.style.setProperty("--duration", `${durationSeconds}s`);
 
             // Random slight rotation for each cat
             const angle = Math.random() * 40 - 20;
@@ -125,22 +153,19 @@ export default function CatchingGame() {
             fallingCats.appendChild(cat);
 
             /* missing the kitties and not saving them */
-            const missTimer = setTimeout(
-                () => {
-                    if (cat.parentElement) {
-                        cat.remove();
-                        setLives((prev) => {
-                            const newLives =
-                                prev - 1; /* take/decrease life by uno */
-                            if (newLives <= 0) {
-                                setGameOver(true);
-                            } /* if below 0 it's over >:P */
-                            return newLives;
-                        });
-                    }
-                },
-                speed * 1000 + 120,
-            );
+            const missTimer = setTimeout(() => {
+                if (cat.parentElement) {
+                    cat.remove();
+                    setLives((prev) => {
+                        const newLives =
+                            prev - 1; /* take/decrease life by uno */
+                        if (newLives <= 0) {
+                            setGameOver(true);
+                        } /* if below 0 it's over >:P */
+                        return newLives;
+                    });
+                }
+            }, durationSeconds * 1000 + 120);
 
             /* collisionn checking to see if you actually caught the cat */
             const checkInterval = setInterval(() => {
@@ -185,10 +210,14 @@ export default function CatchingGame() {
                             gameActive && !gameOver ? "auto" : "none",
                     }}>
                     <div className="game-score">
-                        <p className="score">Score: <span className="score-value">{score}</span></p>
+                        <p className="score">
+                            Score: <span className="score-value">{score}</span>
+                        </p>
                     </div>
                     <div className="game-lives">
-                        <p className="lives">Lives: <span className="lives-value">{lives}</span></p>
+                        <p className="lives">
+                            Lives: <span className="lives-value">{lives}</span>
+                        </p>
                     </div>
                 </div>
 
@@ -221,6 +250,11 @@ export default function CatchingGame() {
                     {/* Start screen overlay */}
                     {!gameActive && !gameOver && (
                         <div className="start-screen">
+                            <img
+                                src="/gallery/carry.svg"
+                                alt="Basket"
+                                className="start-basket-img"
+                            />
                             <h1 className="start-title">Save the Cats!</h1>
                             <p className="start-instructions">
                                 Catch falling cats before they hit the ground!
@@ -236,8 +270,17 @@ export default function CatchingGame() {
                     {/* Game over overlay */}
                     {gameOver && (
                         <div className="game-over-overlay">
-                            <h3 className="game-over-title">Better Luck Next Time!</h3>
-                            <p className="game-over-score">Cats Saved: {score}</p>
+                            <img
+                                src="gallery/fallingkitty.png"
+                                alt="Cat"
+                                className="game-over-cat-img"
+                            />
+                            <h3 className="game-over-title">
+                                Better Luck Next Time!
+                            </h3>
+                            <p className="game-over-score">
+                                Cats Saved: {score}
+                            </p>
                             <button
                                 className="restart-btn"
                                 onClick={restart}>

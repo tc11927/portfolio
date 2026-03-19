@@ -139,17 +139,37 @@
 
 .start-instructions {
     font-size: 1vw;
-    margin-top: -1vw;
-    margin-bottom: 3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
 }
 
 .start-title {
     font-size: 3vw;
+    margin: 0;
+}
+
+.start-basket-img {
+    width: clamp(80px, 12vw, 140px);
+    height: clamp(80px, 12vw, 140px);
+    object-fit: contain;
+    margin-bottom: -0.5vw;
+    z-index: 31;
+    margin-top: -6vw;
 }
 
 .game-over-title {
     font-size: 2.5vw;
-    margin-bottom: 1vw;
+    margin: 0;
+}
+
+.game-over-cat-img {
+    width: clamp(70px, 10vw, 130px);
+    height: clamp(70px, 10vw, 130px);
+    object-fit: contain;
+    display: block;
+    margin-top: -4vw;
+    margin-bottom: 2vw; /* overlap onto the heading */
+    z-index: 31;
 }
 
 .game-over-score {
@@ -167,7 +187,7 @@
 /* in game text */
 .game-title-text {
     font-family: "Averia Sans Libre", cursive, sans-serif;
-     font-size: 3vw;
+    font-size: 3vw;
 }
 
 .game-instructions {
@@ -175,7 +195,6 @@
     margin-top: -2.3vw;
     margin-bottom: 2vw;
 }
-
 
 .score-value {
     color: #7da75b;
