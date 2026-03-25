@@ -14,6 +14,7 @@
 .game-lower-area {
     position: relative;
     flex: 1;
+    min-height: 400px;
 }
 
 .falling-cats {
@@ -24,41 +25,20 @@
 
 .player-area {
     position: absolute;
-    bottom: -300px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    pointer-events: none;
-}
-
-.game-lower-area {
-    position: relative;
-    flex: 1;
-    min-height: 400px; 
-}
-
-.falling-cats {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-
-.player-area {
-    position: absolute;
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    height: 140px; 
+    height: 140px;
     pointer-events: none;
 }
 
 .player {
     position: absolute;
-    bottom: 20px; 
-    width: 100px;
-    height: 100px; 
-    left: 50%;
-    transform: translateX(calc((var(--pos, 50) - 50) * 1%));
+    bottom: 0;
+    width: 140px;
+    height: 140px;
+    left: var(--left, 50%);
+    transform: translateX(-50%);
     opacity: 0;
     transition: transform 0.12s ease-out;
     z-index: 10;
@@ -66,12 +46,6 @@
 
 .game-active .player {
     opacity: 1;
-}
-
-.basket-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .basket-img {
@@ -89,6 +63,9 @@
     animation: fall linear forwards;
     animation-duration: var(--duration, 5s);
     pointer-events: none;
+
+    /*random rotationnn */
+    transform: rotate(var(--cat-rot, 0deg));
 }
 
 .cat-img {
@@ -100,18 +77,139 @@
 
 @keyframes fall {
     to {
-        top: 110%;
+        top: 80%; /* note to self: this controls how far the kitties fall */
     }
 }
 
+/* start and end stuffffffffffffffff */
+
+.start-screen,
 .game-over-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 20;
+    z-index: 30;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.game-upper-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.start-btnn {
+    background: #64bcad;
+    border: none;
+    padding: 0.5vw 8vw;
+    font-size: 1.6vw;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.start-btnn:hover {
+    transform: scale(1.045);
+}
+
+.restart-btn {
+    background: #7da75b;
+    border: none;
+    padding: 0.5vw 8vw;
+    font-size: 1.6vw;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.restart-btn:hover {
+    transform: scale(1.045);
+}
+
+.start-instructions {
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.start-title {
+    font-size: 3vw;
+    margin: 0;
+}
+
+.start-basket-img {
+    width: clamp(80px, 12vw, 140px);
+    height: clamp(80px, 12vw, 140px);
+    object-fit: contain;
+    margin-bottom: -0.5vw;
+    z-index: 31;
+    margin-top: -6vw;
+}
+
+.game-over-title {
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+.game-over-cat-img {
+    width: clamp(70px, 10vw, 130px);
+    height: clamp(70px, 10vw, 130px);
+    object-fit: contain;
+    display: block;
+    margin-top: -4vw;
+    margin-bottom: 2vw; /* overlap onto the heading */
+    z-index: 31;
+}
+
+.game-over-score {
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 3vw;
+}
+
+/* bg */
+.game-area {
+    background: #e0d3ad;
+    border-radius: 20px;
+}
+
+/* in game text */
+.game-title-text {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-size: 3vw;
+}
+
+.game-instructions {
+    font-size: 1vw;
+    margin-top: -2.3vw;
+    margin-bottom: 2vw;
+}
+
+.score-value {
+    color: #7da75b;
+    font-weight: 800;
+}
+
+.lives-value {
+    color: #7da75b;
+    font-weight: 800;
+}
+
+.score {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+.lives {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
 }
