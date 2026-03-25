@@ -129,17 +129,14 @@ export default function CatchingGame() {
             cat.className = "falling-cat";
             const left = 10 + Math.random() * 80;
             cat.style.left = `${left}%`;
-            // NOTE: Make cats fall faster over time as the player plays.
-            // We ramp difficulty based on elapsed time since gameplay started,
-            // and reduce each cat's fall animation duration accordingly.
             const elapsedSeconds = gameStartTimeRef.current
                 ? (Date.now() - gameStartTimeRef.current) / 1000
                 : 0;
             const difficulty = 1 + elapsedSeconds / 45; // bigger = faster ramp
-            const maxDifficulty = 2.8; // cap the ramp so gameplay stays playable
+            const maxDifficulty = 2.8; // cap the speedy so gameplay stays playable
             const difficultyCapped = Math.min(maxDifficulty, difficulty);
 
-            const baseDurationSeconds = 3 + Math.random() * 4; // your original random range
+            const baseDurationSeconds = 3 + Math.random() * 4; // random range
             const durationSeconds = baseDurationSeconds / difficultyCapped;
 
             cat.dataset.speed = durationSeconds.toString(); // stores this cat's fall duration
