@@ -5,11 +5,13 @@ import "./game.css";
 export default function CatchingGame() {
     const [score, setScore] = useState(0);
     const [lives, setLives] = useState(3);
-    const [basketX, setBasketX] = useState(50); 
+    const [basketX, setBasketX] = useState(50);
     const [gameActive, setGameActive] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const gameAreaRef = useRef(null);
     const keysPressed = useRef(new Set()); // track which keys are held downnnn
+    const gameStartTimeRef = useRef(null); // used to ramp cat speed over time
+    const prevGameActiveRef = useRef(false); // track inactive -> active transition
 
     /* Restarting the gameeee aka removing the kitties and resetting the score */
     const restart = () => {
@@ -20,8 +22,22 @@ export default function CatchingGame() {
         setLives(3);
         setGameOver(false);
         setBasketX(50);
+        gameStartTimeRef.current = Date.now(); // reset difficulty ramp
         setGameActive(true); // ← important: re-activate spawning
     };
+
+    // NOTE: This starts the "over time" ramp when the user first hits Start.
+    useEffect(() => {
+        if (!gameActive || gameOver) {
+            prevGameActiveRef.current = gameActive;
+            return;
+        }
+
+        if (!prevGameActiveRef.current) {
+            gameStartTimeRef.current = Date.now();
+        }
+        prevGameActiveRef.current = gameActive;
+    }, [gameActive, gameOver]);
 
     // Keyboard controls
     useEffect(() => {
@@ -60,7 +76,7 @@ export default function CatchingGame() {
         if (!gameActive || gameOver) return;
 
         let animationFrame;
-        const speed = 0.45; 
+        const speed = 0.45;
 
         const updatePosition = () => {
             setBasketX((prev) => {
@@ -111,33 +127,55 @@ export default function CatchingGame() {
 
             const cat = document.createElement("div");
             cat.className = "falling-cat";
-            const left = 10 + Math.random() * 80;
-            cat.style.left = `${left}%`;
-            const speed =
-                3 + Math.random() * 4; /* creates a random falling speed */
-            cat.dataset.speed = speed.toString(); /* stores it uhhh yeyeyeeee*/
-            cat.style.setProperty("--duration", `${speed}s`);
-            cat.innerHTML = `<img src="/personalLogo.svg" alt="Falling cat" class="cat-img" />`;
-            /* pulls from the HTML for my kitties */
+            const minLeft = 5;
+            const maxLeft = 95 - (90 / window.innerWidth * 100);
+            const left = minLeft + Math.random() * (maxLeft - minLeft);
+            cat.style.setProperty("--cat-left", `${left}%`);
+
+            const elapsedSeconds = gameStartTimeRef.current
+                ? (Date.now() - gameStartTimeRef.current) / 1000
+                : 0;
+            const difficulty = 1 + elapsedSeconds / 45; // bigger = faster ramp
+            const maxDifficulty = 2.8; // cap the speedy so gameplay stays playable
+            const difficultyCapped = Math.min(maxDifficulty, difficulty);
+
+            const baseDurationSeconds = 3 + Math.random() * 4; // random range
+            const durationSeconds = baseDurationSeconds / difficultyCapped;
+
+            cat.dataset.speed = durationSeconds.toString(); // stores this cat's fall duration
+            cat.style.setProperty("--duration", `${durationSeconds}s`);
+
+            // Random slight rotation for each cat
+            const angle = Math.random() * 40 - 20;
+            cat.style.setProperty("--cat-rot", `${angle}deg`);
+
+            cat.innerHTML = `<img src="gallery/fallingkitty.png" alt="Falling cat" class="falling-cat__image" />`;
             fallingCats.appendChild(cat);
 
             /* missing the kitties and not saving them */
-            const missTimer = setTimeout(
-                () => {
-                    if (cat.parentElement) {
-                        cat.remove();
-                        setLives((prev) => {
-                            const newLives =
-                                prev - 1; /* take/decrease life by uno */
-                            if (newLives <= 0) {
-                                setGameOver(true);
-                            } /* if below 0 it's over >:P */
-                            return newLives;
-                        });
+            const missTimer = setTimeout(() => {
+                if (cat.parentElement) {
+                    cat.remove();
+
+                    // Flash the basket red when a cat is missed
+                    const player = document.querySelector(".player");
+                    if (player) {
+                        player.classList.add("player--damage");
+                        setTimeout(() => {
+                            player.classList.remove("player--damage");
+                        }, 280);
                     }
-                },
-                speed * 1000 + 120,
-            );
+
+                    setLives((prev) => {
+                        const newLives =
+                            prev - 1; /* take/decrease life by uno */
+                        if (newLives <= 0) {
+                            setGameOver(true);
+                        } /* if below 0 it's over >:P */
+                        return newLives;
+                    });
+                }
+            }, durationSeconds * 1000 + 120);
 
             /* collisionn checking to see if you actually caught the cat */
             const checkInterval = setInterval(() => {
@@ -170,49 +208,91 @@ export default function CatchingGame() {
 
     return (
         <div className={`catching-game ${gameActive ? "game-active" : ""}`}>
-            <div className="game-title">
-                <h2>Catch the Cat!</h2>
-                <p>
-                    Catch the cats and save the day! (Move the Mouse, use the arrow keys, or use A/D to move!)
-                </p>
-                {!gameActive && !gameOver ? (
-                    <button
-                        className="start-btn"
-                        onClick={() => setGameActive(true)}>
-                        Start Game
-                    </button>
-                ) : null}
-            </div>
             <div
                 className="game-area"
                 ref={gameAreaRef}>
-                <div className="game-upper-area">
+                {/* Score/lives bar — visible only during active gameplay */}
+                <div
+                    className="game-upper-area"
+                    style={{
+                        opacity: gameActive && !gameOver ? 1 : 0,
+                        pointerEvents:
+                            gameActive && !gameOver ? "auto" : "none",
+                    }}>
                     <div className="game-score">
-                        <p className="score">Score: {score}</p>
+                        <p className="score">
+                            Score: <span className="score-value">{score}</span>
+                        </p>
                     </div>
                     <div className="game-lives">
-                        <p className="lives">Lives: {lives}</p>
+                        <p className="lives">
+                            Lives: <span className="lives-value">{lives}</span>
+                        </p>
                     </div>
                 </div>
+
                 <div className="game-lower-area">
-                    <div className="falling-cats"></div>
-                    <div className="player-area">
+                    {/* Falling cats & player — hidden during game over */}
+                    <div
+                        className="falling-cats"
+                        style={{
+                            opacity: gameOver ? 0 : 1,
+                            pointerEvents: gameOver ? "none" : "auto",
+                        }}></div>
+
+                    <div
+                        className="player-area"
+                        style={{
+                            opacity: gameOver ? 0 : 1,
+                            pointerEvents: gameOver ? "none" : "auto",
+                        }}>
                         <div
                             className="player"
-                            style={{ left: `${basketX}%` }}>
+                            style={{ "--left": `${basketX}%` }}>
                             <img
                                 src="/gallery/carry.svg"
                                 alt="Basket"
-                                className="basket-img"
+                                className="player__basket"
                             />
                         </div>
                     </div>
+
+                    {/* Start screen overlay */}
+                    {!gameActive && !gameOver && (
+                        <div className="start-screen">
+                            <img
+                                src="/gallery/carry.svg"
+                                alt="Basket"
+                                className="start-screen__basket"
+                            />
+                            <h1 className="start-screen__title">Save the Cats!</h1>
+                            <p className="start-screen__instructions">
+                                Catch falling cats before they hit the ground!
+                            </p>
+                            <button
+                                className="start-screen__btn"
+                                onClick={() => setGameActive(true)}>
+                                Start
+                            </button>
+                        </div>
+                    )}
+
+                    {/* Game over overlay */}
                     {gameOver && (
                         <div className="game-over-overlay">
-                            <h3>Game Over! Better Luck Next Time!</h3>
-                            <p>Cats Saved: {score}</p>
+                            <img
+                                src="gallery/fallingkitty.png"
+                                alt="Cat"
+                                className="game-over-overlay__cat"
+                            />
+                            <h3 className="game-over-overlay__title">
+                                Better Luck Next Time!
+                            </h3>
+                            <p className="game-over-overlay__score">
+                                Cats Saved: {score}
+                            </p>
                             <button
-                                className="restart-btn"
+                                className="game-over-overlay__btn"
                                 onClick={restart}>
                                 Play Again
                             </button>
@@ -220,6 +300,17 @@ export default function CatchingGame() {
                     )}
                 </div>
             </div>
+
+            {/* Title + instructions — only during active gameplay */}
+            {gameActive && !gameOver && (
+                <div className="game-title">
+                    <h2 className="game-title__text">Catch the Cat!</h2>
+                    <p className="game-title__instructions">
+                        Catch the cats and save the day! (Move the Mouse, use
+                        the arrow keys, or use A/D to move!)
+                    </p>
+                </div>
+            )}
         </div>
     );
 }
