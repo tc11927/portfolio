@@ -127,8 +127,11 @@ export default function CatchingGame() {
 
             const cat = document.createElement("div");
             cat.className = "falling-cat";
-            const left = 10 + Math.random() * 80;
-            cat.style.left = `${left}%`;
+            const minLeft = 5;
+            const maxLeft = 95 - (90 / window.innerWidth * 100);
+            const left = minLeft + Math.random() * (maxLeft - minLeft);
+            cat.style.setProperty("--cat-left", `${left}%`);
+
             const elapsedSeconds = gameStartTimeRef.current
                 ? (Date.now() - gameStartTimeRef.current) / 1000
                 : 0;
@@ -146,7 +149,7 @@ export default function CatchingGame() {
             const angle = Math.random() * 40 - 20;
             cat.style.setProperty("--cat-rot", `${angle}deg`);
 
-            cat.innerHTML = `<img src="gallery/fallingkitty.png" alt="Falling cat" class="cat-img" />`;
+            cat.innerHTML = `<img src="gallery/fallingkitty.png" alt="Falling cat" class="falling-cat__image" />`;
             fallingCats.appendChild(cat);
 
             /* missing the kitties and not saving them */
@@ -235,11 +238,11 @@ export default function CatchingGame() {
                         }}>
                         <div
                             className="player"
-                            style={{ left: `${basketX}%` }}>
+                            style={{ "--left": `${basketX}%` }}>
                             <img
                                 src="/gallery/carry.svg"
                                 alt="Basket"
-                                className="basket-img"
+                                className="player__basket"
                             />
                         </div>
                     </div>
@@ -250,14 +253,14 @@ export default function CatchingGame() {
                             <img
                                 src="/gallery/carry.svg"
                                 alt="Basket"
-                                className="start-basket-img"
+                                className="start-screen__basket"
                             />
-                            <h1 className="start-title">Save the Cats!</h1>
-                            <p className="start-instructions">
+                            <h1 className="start-screen__title">Save the Cats!</h1>
+                            <p className="start-screen__instructions">
                                 Catch falling cats before they hit the ground!
                             </p>
                             <button
-                                className="start-btnn"
+                                className="start-screen__btn"
                                 onClick={() => setGameActive(true)}>
                                 Start
                             </button>
@@ -270,16 +273,16 @@ export default function CatchingGame() {
                             <img
                                 src="gallery/fallingkitty.png"
                                 alt="Cat"
-                                className="game-over-cat-img"
+                                className="game-over-overlay__cat"
                             />
-                            <h3 className="game-over-title">
+                            <h3 className="game-over-overlay__title">
                                 Better Luck Next Time!
                             </h3>
-                            <p className="game-over-score">
+                            <p className="game-over-overlay__score">
                                 Cats Saved: {score}
                             </p>
                             <button
-                                className="restart-btn"
+                                className="game-over-overlay__btn"
                                 onClick={restart}>
                                 Play Again
                             </button>
@@ -291,8 +294,8 @@ export default function CatchingGame() {
             {/* Title + instructions — only during active gameplay */}
             {gameActive && !gameOver && (
                 <div className="game-title">
-                    <h2 className="game-title-text">Catch the Cat!</h2>
-                    <p className="game-instructions">
+                    <h2 className="game-title__text">Catch the Cat!</h2>
+                    <p className="game-title__instructions">
                         Catch the cats and save the day! (Move the Mouse, use
                         the arrow keys, or use A/D to move!)
                     </p>
