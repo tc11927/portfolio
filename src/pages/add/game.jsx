@@ -156,6 +156,16 @@ export default function CatchingGame() {
             const missTimer = setTimeout(() => {
                 if (cat.parentElement) {
                     cat.remove();
+
+                    // Flash the basket red when a cat is missed
+                    const player = document.querySelector(".player");
+                    if (player) {
+                        player.classList.add("player--damage");
+                        setTimeout(() => {
+                            player.classList.remove("player--damage");
+                        }, 280);
+                    }
+
                     setLives((prev) => {
                         const newLives =
                             prev - 1; /* take/decrease life by uno */

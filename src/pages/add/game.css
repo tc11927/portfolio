@@ -65,6 +65,11 @@
     height: 100%;
     object-fit: contain;
     pointer-events: none;
+    transition: filter 0.15s ease-out;
+}
+
+.player--damage .player__basket {
+    filter: brightness(0.6) saturate(2) hue-rotate(340deg);
 }
 
 .falling-cat {
