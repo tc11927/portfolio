@@ -35,7 +35,7 @@ const galleryItems = [
         tools: "Figma + Illustrator + Photoshop + Visual Studio Code",
         image: "/work/paramoremockup.png",
         description:
-            "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
+            "An interactive e-magazine homage to Paramore and their history, both interactive and fun.",
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ const galleryItems = [
         tools: "Illustrator + Photoshop",
         image: "/work/canmockup 1.png",
         description:
-            "A childcare web app aimed to create a world where instead of childcare feeling overwhelming and consistent, childcare is supportive, flexible, and reliable.",
+            "POPUNK! Is a high voltage energy drink created for the late nights, fun times, and chaotic energy everyone needs during their late night fun with friends.",
     },
     {
         id: 5,
@@ -67,7 +67,7 @@ const galleryItems = [
         description:
             "A  video ad tells the story of a stressed trades parent, drawing from real experiences to highlight the daily pressures and imbalances they face.",
     },
-      {
+    {
         id: 7,
         slug: "moolahmate",
         title: "MoolahMate",
