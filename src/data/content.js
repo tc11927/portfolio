@@ -17,7 +17,7 @@ export const hero = {
         accent1: "curiosity",
         middle: " and",
         accent2: "care",
-        after: ". I love approaching each project where I can bring both joy and bring my user-first mindset into play :)",
+        after: ". I love approaching each project where I can bring both joy and my user-first mindset into play :)",
     },
 
     marquee: {
@@ -153,7 +153,6 @@ export const allProjects = [
 export const featuredProjects = allProjects.filter((project) =>
     featuredProjectIds.includes(project.id),
 );
-
 
 export const projects = allProjects;
 
