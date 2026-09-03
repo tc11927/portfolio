@@ -1,0 +1,15 @@
+.work-page {
+  min-height: 100vh;
+  background: var(--main-bg);
+}
+
+.work-page .projects {
+  border-top: none;
+  max-width: 9000px;
+  margin: 0 auto;
+}
+
+.projects__title {
+  font-size: 4rem;
+}
+

@@ -1,0 +1,110 @@
+.sketchbook {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0rem 5rem;
+  background: var(--main-bg);
+}
+
+.sketchbook__header {
+  margin-bottom: 3rem;
+}
+
+.sketchbook__label {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.sketchbook__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 3vw, 2rem);
+  font-weight: 700;
+}
+
+.sketchbook__subtitle {
+  margin: 0;
+  max-width: 480px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+.sketchbook__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.sketchbook__item {
+  padding: 0;
+  border: none;
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(59, 49, 36, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sketchbook__item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 28px rgba(59, 49, 36, 0.14);
+}
+
+.sketchbook__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.sketchbook__modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(19, 30, 41, 0.92);
+}
+
+.sketchbook__modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.sketchbook__modal-close:hover {
+  opacity: 1;
+}
+
+.sketchbook__modal-image {
+  max-width: min(95vw, 900px);
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sketchbook {
+    padding: 3rem 1.25rem;
+  }
+
+  .sketchbook__grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+}

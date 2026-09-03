@@ -1,0 +1,26 @@
+.can-container {
+    display: flex;              
+    flex-direction: row;       
+    justify-content: space-between; 
+    align-items: center;        
+    width: 100%;               
+    gap: 1rem;                  
+}
+
+
+.can, .can-wrapper {
+    flex: 1;                  
+    max-width: 33%;            
+    height: 50vh;            
+}
+
+
+@media (max-width: 768px) {
+    .can-container {
+        flex-direction: column;  
+        gap: 2rem;
+    }
+    .can, .can-wrapper {
+        max-width: 100%;          
+    }
+}

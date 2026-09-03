@@ -1,0 +1,961 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tandemproject-title,
+.tandemsection-title,
+.tandem-process-text h2,
+.tandem-research-text h2,
+.tandem-text-content h2,
+.tandem-branding-text h2 {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 700;
+}
+
+body,
+p,
+.tandemhero-text p,
+.tandemhero-text2,
+.tandem-process-text p,
+.tandem-research-text p,
+.tandem-text-content p,
+.tandem-branding-text p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
+
+.tandemsection-nav a,
+.tandemsection-nav p {
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+    font-weight: 400;
+    margin-top: -9.5vw;
+}
+
+@media (min-width: 768px) {
+    .tandemhero-image {
+        margin-top: -12vw;
+    }
+}
+
+/* ==========================================================================
+   1. Container & Layout Basics
+   ========================================================================== */
+
+.tandemcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    margin-top: 5vw;
+}
+
+/* ==========================================================================
+   2. Hero Title & Roles
+   ========================================================================== */
+
+.tandemproject-title {
+    font-size: 5vw;
+    text-align: left;
+    margin-bottom: -1rem;
+    font-weight: 800;
+}
+
+.tandemproject-roles {
+    font-size: 1.2vw;
+    text-align: left;
+    margin-bottom: -1.7rem;
+    font-weight: 800;
+}
+
+/* ==========================================================================
+   3. Tags
+   ========================================================================== */
+
+.tandemtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+    margin-top: 3vw;
+    color: white;
+    margin-bottom: -3vw;
+}
+
+.tandemtag1,
+.tandemtag2,
+.tandemtag3,
+.tandemtag4 {
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.tandemtag1 {
+    background-color: #64bcad;
+}
+.tandemtag2 {
+    background-color: var(--green);
+}
+.tandemtag3 {
+    background-color: var(--yellow);
+}
+.tandemtag4 {
+    background-color: var(--orange);
+}
+
+.tandem-site-button2 {
+    background: #22303a;
+    color: white;
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    margin-top: 1vw;
+}
+
+.tandemtag1:hover,
+.tandemtag2:hover,
+.tandemtag3:hover,
+.tandemtag4:hover,
+.tandem-site-button2:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   4. Hero Content
+   ========================================================================== */
+
+.tandemhero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: -4vw;
+    margin-bottom: 17vw;
+}
+
+.tandemhero-text p {
+    font-size: 16px;
+}
+
+.tandemhero-text2 {
+    margin-top: 1.5rem;
+}
+
+.tandemtitle-image {
+    width: 25vw;
+    margin-left: 10vw;
+    margin-top: -10vw;
+}
+
+.tandempage-wrapper {
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
+.tandem-hero-fullscreen {
+    position: relative;
+    width: 100vw !important;
+    height: 87vh;
+    min-height: 680px;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.tandem-hero-fullscreen-image {
+    width: 100vw !important;
+    height: 100% !important;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ==========================================================================
+   5. General Section Padding & Variants
+   ========================================================================== */
+
+.tandemsection {
+    padding: 6rem 0;
+    margin-top: -5vw;
+}
+
+.tandemsection-alt {
+    background: var(--bg-light);
+}
+
+.tandemsection-warning {
+    background: var(--warning-bg);
+}
+
+.tandem-two-column,
+.tandemsection {
+    position: relative; /* ← cheap fallback */
+}
+
+/* ==========================================================================
+   6. Navigation Section
+   ========================================================================== */
+
+.tandemsection-nav {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    text-align: left;
+    background-color: #22303a;
+
+    padding: 1rem 0;
+    color: white;
+    margin-top: 12vw;
+    padding-top: 260px;
+    padding-bottom: 110px;
+    z-index: 90;
+    top: 0;
+}
+
+.tandemsection-nav .tandemcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tandemsection-nav ul {
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.tandemsection-nav li {
+    margin: 1rem;
+}
+
+.tandemsection-nav a {
+    color: white;
+    font-weight: 300;
+    font-size: 1.8vw;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: inline-block;
+    padding: 0.1rem 0.1rem;
+    margin: 0 0.1rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    margin-left: -1vw;
+}
+
+.tandemsection-nav a:hover,
+.tandemsection-nav a:focus {
+    transform: scale(1.12);
+    color: #64bcad;
+}
+
+.tandemsection-title {
+    font-size: 3vw;
+    margin-bottom: -0.4vw;
+}
+
+.tandem-nav-image {
+    margin-top: -10vw;
+}
+/* ==========================================================================
+   7. Stacked / Process Sections
+   ========================================================================== */
+
+.tandem-process-video {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 20px;
+}
+
+.tandem-process-text h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: -0.5rem;
+    text-align: left;
+}
+
+.tandem-process-text p {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* ==========================================================================
+   8. Research & Text/Media Grids
+   ========================================================================== */
+
+.tandem-research-image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 1vw;
+}
+
+.tandem-research-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.tandem-research-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tandem-research-text p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tandem-research-button {
+    display: inline-block;
+    background: #22303a;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+    margin-right: 26vw;
+    transition: transform 0.3s ease;
+}
+
+.tandem-research-button:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   9. Media + Text Grid
+   ========================================================================== */
+
+.tandem-two-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.tandem-two-column.reverse {
+    direction: rtl;
+}
+
+.tandem-two-column.reverse > * {
+    direction: ltr;
+}
+
+.tandem-text-content h2 {
+    font-size: clamp(3rem, 6.5vw, 5.2rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.tandem-large-media {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tandem-text-content {
+    text-align: left;
+}
+
+/* ==========================================================================
+   10. Branding – LARGER IMAGE
+   ========================================================================== */
+
+.tandem-branding-text h2 {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.tandem-branding-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.tandem-branding-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.tandem-gallery-item-large {
+    width: 100%;
+    max-width: 0px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.tandem-branding-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   11. Final Design Showcase – balanced stacked images
+   ========================================================================== */
+
+.tandem-media-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+}
+
+.tandem-showcase-image {
+    width: 100%;
+    height: 33.3%;
+    min-height: 180px;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex: 1;
+}
+
+/* ==========================================================================
+   12. Journey Section
+   ========================================================================== */
+
+.tandem-journey {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    border-radius: 16px;
+}
+
+/* ==========================================================================
+   13. Buttons
+   ========================================================================== */
+
+.tandem-site-button {
+    background: #22303a;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.tandem-site-button-wrapper {
+    margin-top: 2.5vw;
+
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.tandem-site-button-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.tandem-bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
+
+.tandem-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.tandem-section-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #7da75b;
+    letter-spacing: 0.15em;
+}
+
+.tandem-section-line {
+    height: 3px;
+    flex: 1;
+    background: #64bcad;
+    border-radius: 20px;
+}
+
+.tandem-section-label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #64bcad;
+    white-space: nowrap;
+    font-family: "Averia Sans Libre", cursive, sans-serif;
+}
+
+/* ==========================================================================
+   Floating overlays (mini mois)
+   ========================================================================== */
+
+.tandem-floating-overlay1 {
+    position: absolute;
+    top: 60%;
+    right: 93%;
+    width: 11vw;
+    z-index: 10;
+}
+
+.tandem-floating-overlay2 {
+    position: absolute;
+    top: 60.6%;
+    right: 85%;
+    width: 11vw;
+    z-index: 10;
+}
+
+.tandem-floating-overlay3 {
+    position: absolute;
+    top: 80.3%;
+    right: 85%;
+    width: 11vw;
+    z-index: 10;
+}
+
+.tandem-floating-overlay4 {
+    position: absolute;
+    top: 89.8%;
+    right: 10%;
+    width: 11vw;
+    z-index: 10;
+}
+
+/* ==========================================================================
+   Media Queries – Desktop first
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    .tandemhero-content {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .tandem-two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tandemcontainer {
+        padding: 0 3rem;
+    }
+
+    .tandemhero-content {
+        margin-top: -2vw;
+    }
+}
+
+@media (min-width: 640px) {
+    .tandem-branding-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   Media Queries – Desktop first
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    .bandithero-content {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .bandit-research-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .bandit-research-main-image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bandit-grid-media-left,
+    .bandit-grid-media-right {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    .banditcontainer {
+        padding: 0 3rem;
+    }
+
+    .bandithero-content {
+        margin-top: -2vw;
+    }
+
+    .bandit-two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.bandit-grid-media-left .bandit-media-column {
+    order: 1;
+}
+.bandit-grid-media-left .bandit-text-content {
+    order: 2;
+}
+
+.bandit-grid-media-right .bandit-media-column {
+    order: 2;
+}
+.bandit-grid-media-right .bandit-text-content {
+    order: 1;
+}
+
+@media (min-width: 640px) {
+    .bandit-branding-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .bandit-branding-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================================================
+   Load-in Animations
+   ========================================================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.banditpage-wrapper {
+    animation: fadeIn 0.8s ease-out both;
+}
+
+.bandithero .banditcontainer {
+    animation: fadeUp 0.9s ease-out both;
+}
+.banditproject-title {
+    animation: fadeUp 0.9s ease-out both;
+    animation-delay: 0.1s;
+}
+.banditproject-roles {
+    animation: fadeUp 0.9s ease-out both;
+    animation-delay: 0.2s;
+}
+.banditsection {
+    animation: fadeUp 0.9s ease-out both;
+}
+.banditsection:nth-of-type(1) {
+    animation-delay: 0.15s;
+}
+.banditsection:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+.banditsection:nth-of-type(3) {
+    animation-delay: 0.45s;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE FIXES
+   ========================================================================== */
+
+.tandemcontainer {
+    padding: 0 1.5rem;
+}
+
+.tandemproject-title {
+    margin-top: clamp(8vw, 13vw, 120px);
+}
+
+.tandemthero-content {
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .tandempage-wrapper {
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .tandemcontainer {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        margin-top: 1rem !important;
+        box-sizing: border-box;
+    }
+
+    .tandemhero .tandemcontainer {
+        margin-top: 1rem !important;
+    }
+
+    .tandemproject-title {
+        font-size: clamp(2rem, 8vw, 2.5rem) !important;
+        text-align: center;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .tandemproject-roles {
+        font-size: clamp(0.875rem, 3.5vw, 1rem) !important;
+        margin-bottom: 0 !important;
+        text-align: center;
+    }
+
+    .tandemtags {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        justify-content: center;
+    }
+
+    .tandemhero-content {
+        margin-top: 1.5rem !important;
+        margin-bottom: 2rem !important;
+        gap: 2rem !important;
+    }
+
+    .tandemtitle-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0 0 0 !important;
+        display: block;
+    }
+
+    .btandemsection-nav {
+        margin-top: 2rem !important;
+        padding: 1.5rem !important;
+        border-radius: 12px;
+        padding-top: 5rem !important;
+    }
+
+    .tandemsection-title {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+        margin-top: 1vw;
+        margin-left: 12px;
+    }
+
+    .tandemsection-nav ul {
+        padding: 0 1rem !important;
+        margin-top: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .tandemsection-nav li {
+        margin: 0.5rem 0 !important;
+    }
+
+    .tandemsection-nav a {
+        font-size: clamp(0.9rem, 3.5vw, 1rem) !important;
+        padding: 0.5rem 0.75rem !important;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tandemsection {
+        padding: 3rem 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .tandem-process-video {
+        min-height: 200px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tandem-text-content h2,
+    .tandem-process-text h2,
+    .tandem-research-text h2,
+    .tandem-branding-text h2 {
+        font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
+        margin-bottom: 1rem !important;
+        margin-top: 0 !important;
+        line-height: 1.2;
+    }
+
+    .tandem-text-content p,
+    .tandem-process-text p,
+    .tandem-research-text p,
+    .tandem-branding-text p {
+        font-size: 18px !important;
+        line-height: 1.6;
+    }
+
+    .tandemt-branding-gallery {
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .tandemt-gallery-itemb,
+    .tandem-gallery-item2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        aspect-ratio: 4/3 !important;
+    }
+
+    .tandem-gallery-imageb,
+    .tandem-gallery-image2 {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tandem-research-button,
+    .tandem-site-button {
+        margin: 1rem auto !important;
+        display: block;
+        width: fit-content;
+    }
+
+    .tandem-site-button-wrapper {
+        margin-right: 0 !important;
+        text-align: center;
+        margin-top: 2rem !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tandem-journey-video-wrapper {
+        margin-bottom: 2rem !important;
+        width: 100%;
+    }
+
+    .tandem-journey-video {
+        min-height: 200px !important;
+        width: 100% !important;
+    }
+
+    .tandem-section-header {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .tandem-section-number {
+        font-size: 1.5rem;
+    }
+
+    .tandem-section-label {
+        font-size: clamp(0.875rem, 3vw, 1rem);
+        white-space: normal;
+    }
+
+    .tandem-two-column {
+        gap: 2rem !important;
+    }
+
+    .tandem-two-column.reverse {
+        direction: ltr !important;
+    }
+
+    .tandem-branding-fullwidth {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tandem-floating-overlay1 {
+        width: 25vw;
+        top: 163px;
+        right: 390px;
+    }
+
+    .tandem-floating-overlay2 {
+        width: 22vw;
+        top: 835px;
+        right: 20px;
+    }
+
+    .tandem-floating-overlay3 {
+        width: 30vw;
+        top: 690px;
+        right: 327px;
+    }
+
+    .tandem-floating-overlay4 {
+        width: 30vw;
+        top: 893.5px;
+        right: 5px;
+    }
+
+    .tandemsection-title {
+        text-align: center;
+    }
+
+    .tandem-nav-image {
+        margin-top: 2vw;
+    }
+}

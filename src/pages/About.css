@@ -1,0 +1,158 @@
+.about-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.about-intro {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(0, 1.1fr);
+    gap: clamp(8rem, 5vw, 4rem);
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 0rem 4rem;
+}
+
+.about-intro__visual {
+    display: flex;
+    justify-content: center;
+}
+
+.about-intro__gif {
+    width: min(100%, 380px);
+    height: auto;
+    object-fit: contain;
+      border-radius: 20px;
+}
+
+.about-intro__heading {
+    margin: 0 0 1.5rem;
+    font-family: var(--font-display);
+    font-size: clamp(5rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--main-text);
+}
+
+.about-intro__paragraph {
+    margin: 0 0 1.25rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--main-text);
+}
+
+.about-intro__paragraph:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.about-intro__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.about-intro__skill {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+}
+
+.about-intro__skill--0 {
+    background: var(--teal);
+}
+
+.about-intro__skill--1 {
+    background: var(--green);
+}
+
+.about-intro__skill--2 {
+    background: var(--yellow);
+}
+
+.about-intro__skill--3 {
+    background: var(--orange);
+}
+
+.about-connect {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    min-height: 70vh;
+    overflow: hidden;
+    background: var(--main-bg);
+    text-align: center;
+}
+
+
+
+.about-connect__content {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1.5rem 6rem;
+}
+
+.about-connect__lets {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 12vw, 9rem);
+    font-weight: 800;
+    line-height: 0.95;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.about-connect__connect {
+    margin: 0 0 1rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.about-connect__arrow-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+
+.about-connect__arrow {
+    width: min(20vw, 180px);
+    margin-top: -1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .about-connect {
+        min-height: 60vh;
+    }
+
+    .about-connect__content {
+        padding: 4rem 1.25rem 5rem;
+    }
+
+    .about-connect__arrow {
+        width: min(40vw, 152px);
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-intro {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.25rem 3rem;
+    }
+
+    .about-intro__visual {
+        order: -1;
+    }
+}

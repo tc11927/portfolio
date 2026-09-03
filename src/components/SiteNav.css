@@ -1,0 +1,107 @@
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.5rem 7rem;
+    background: var(--main-bg);
+}
+
+.site-nav__logo-link {
+    flex-shrink: 0;
+    line-height: 0;
+}
+
+.site-nav__logo {
+    height: clamp(48px, 6vw, 72px);
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.site-nav__logo-link:hover .site-nav__logo {
+    animation: logoSpin 2s ease-in-out infinite;
+}
+
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.site-nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: auto;
+    font-family: var(--font-display);
+    font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+}
+
+.site-nav__link {
+    background: none;
+    border: none;
+    padding: 0 0 0.25rem;
+    color: var(--main-text);
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        color 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.site-nav__link:hover {
+    transform: scale(1.09);
+    font-weight: 500;
+}
+
+.site-nav__link--active {
+    border-bottom-color: var(--teal);
+    font-weight: 600;
+}
+
+.site-nav__link--green:hover,
+.site-nav__link--green.site-nav__link--active {
+    color: var(--green);
+    border-bottom-color: var(--green);
+}
+
+.site-nav__link--teal:hover,
+.site-nav__link--teal.site-nav__link--active {
+    color: var(--teal);
+    border-bottom-color: var(--teal);
+}
+
+.site-nav__link--yellow:hover,
+.site-nav__link--yellow.site-nav__link--active {
+    color: var(--yellow);
+    border-bottom-color: var(--yellow);
+}
+
+.site-nav__link--orange:hover,
+.site-nav__link--orange.site-nav__link--active {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+}
+
+@media (max-width: 768px) {
+    .site-nav {
+        flex-wrap: wrap;
+        padding: 1rem 1.25rem;
+        gap: 1rem;
+    }
+
+    .site-nav__links {
+        width: 100%;
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+}

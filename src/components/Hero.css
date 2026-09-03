@@ -1,0 +1,232 @@
+.hero {
+    position: relative;
+    min-height: calc(100vh - 6rem);
+    padding: 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: clip;
+}
+
+
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    padding: 2rem 3rem 3rem;
+    margin-top: 1.6rem;
+}
+
+.hero__visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero__greeting {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.8vw, 1.75rem);
+    font-weight: 400;
+    color: var(--green);
+}
+
+.hero__copy {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 5vh, 3rem);
+}
+
+.hero__typography {
+    max-width: 640px;
+}
+
+.hero__me-gif {
+    position: absolute;
+    width: clamp(750px, 68vw, 840px);
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    transform: translate(
+        clamp(5rem, 10vw, 20rem),
+        clamp(1.5rem, 9vh, 2.5rem)
+    );
+}
+.hero__headline {
+    margin: 0 0 1rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    margin-top: 4rem;
+}
+
+.hero__name {
+    color: var(--main-text);
+    font-size:9vw;
+}
+
+.hero__tags {
+    margin: 0;
+    font-family: var(--font-body);
+
+    font-weight: 1000;
+
+    text-transform: uppercase;
+}
+
+.hero_tags_area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: left;
+
+    color: white;
+}
+
+.hero_tags_1 {
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    background-color: var(--teal);
+}
+
+.hero_tags_2 {
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    background-color: var(--green);
+}
+
+.hero_tags_3 {
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    background-color: var(--yellow);
+}
+
+.hero_tags_4 {
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    background-color: var(--orange);
+}
+
+.hero__statement-block {
+    max-width: 640px;
+    margin-top: -1rem;
+}
+
+.hero__role-label {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text-soft);
+}
+
+.hero__statement {
+    margin: -1rem 0 1.25rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero__accent {
+    font-style: italic;
+    color: var(--yellow);
+}
+
+.hero__employment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: var(--text-soft);
+}
+
+.hero__marquee {
+    position: relative;
+    flex-shrink: 0;
+    width: calc(100% + 6rem);
+    margin-left: -3rem;
+    overflow: hidden;
+    background: var(--navy);
+    padding: clamp(1.75rem, 4vw, 3rem) 0;
+    margin-top: 8rem;
+}
+
+.hero__marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 35s linear infinite;
+}
+
+.hero__marquee-text {
+    margin: 0;
+    padding-right: 3rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 6.5vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    white-space: nowrap;
+}
+
+.hero__marquee-accent {
+    color: var(--yellow);
+}
+
+.hero__marquee-sep {
+    opacity: 0.35;
+    padding-left: 1rem;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero__content {
+        grid-template-columns: 1fr;
+        padding: 0 1.25rem 2rem;
+    }
+
+    .hero__visual {
+        order: -1;
+        min-height: auto;
+        justify-content: center;
+    }
+
+    .hero__me-gif {
+        width: min(95vw, 420px);
+        max-width: none;
+        max-height: 50vh;
+        transform: translate(1.5rem, 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+    }
+}

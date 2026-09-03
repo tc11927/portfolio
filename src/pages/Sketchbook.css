@@ -1,0 +1,4 @@
+.sketchbook-page {
+  min-height: 100vh;
+  background: var(--main-bg);
+}
