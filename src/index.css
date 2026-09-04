@@ -1,104 +1,106 @@
 :root {
-  /* Backgroundssss */
-  --main-bg: #F0E5D8;
-  --surface: #F0E5D8;
+    /* Backgroundssss */
+    --main-bg: #f0e5d8;
+    --surface: #f0e5d8;
 
-  /* Textss */
-  --main-text: #131e29;
-  --main-muted: #22303a;
-  --text-soft: rgba(34, 48, 58, 0.65);
+    /* Textss */
+    --main-text: #131e29;
+    --main-muted: #22303a;
+    --text-soft: rgba(34, 48, 58, 0.65);
 
-  /* colours */
-  --green: #7da75b;
-  --teal: #64bcad;
-  --blue: #64bcad;
-  --navy: #22303a;
-  --yellow:#eab300;
-  --orange: #f79e4b;
+    /* colours */
+    --green: #7da75b;
+    --teal: #64bcad;
+    --blue: #64bcad;
+    --navy: #22303a;
+    --yellow: #eab300;
+    --orange: #f79e4b;
 
-  --accent: var(--teal);
-  --accent-green: var(--green);
-  --accent-soft: rgba(100, 188, 173, 0.18);
-  --grid-line: rgba(19, 30, 41, 0.08);
-  --footer-bg: #22303a;
+    --accent: var(--teal);
+    --accent-green: var(--green);
+    --accent-soft: rgba(100, 188, 173, 0.18);
+    --grid-line: rgba(19, 30, 41, 0.08);
+    --footer-bg: #22303a;
 
-  /* Type teype */
-  --font-display: "Averia Sans Libre", cursive, sans-serif;
-  --font-body: "Nunito Sans", sans-serif;
+    /* Type teype */
+    --font-display: "Averia Sans Libre", cursive, sans-serif;
+    --font-body: "Nunito Sans", sans-serif;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #root {
-  max-width: 100%;
+    max-width: 100%;
 }
 
-
 html {
-  scroll-behavior: smooth;
-  background-color: var(--main-bg);
-
+    scroll-behavior: smooth;
+    background-color: var(--main-bg);
 }
 
 body {
-  margin: 0;
-  font-family: var(--font-body);
-  font-weight: 400;
-  background: var(--main-bg);
-  color: var(--main-text);
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  max-width: 100%;
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: 400;
+    background: var(--main-bg);
+    color: var(--main-text);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    max-width: 100%;
+
+    cursor:
+        url("/mouse-icon.svg") 4 2,
+        auto;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 button {
-  font: inherit;
-  cursor: pointer;
+    font: inherit;
+    cursor: pointer;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 ::selection {
-  background: var(--accent-soft);
-  color: var(--main-text);
+    background: var(--accent-soft);
+    color: var(--main-text);
 }
 
 /* FADE IN WAHHH */
 .fade-in-section {
-  opacity: 0;
-  transform: translateY(-10px);
-  visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
 
-  transition:
-    opacity 1s ease-out,
-    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    transition:
+        opacity 1s ease-out,
+        transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 
-  will-change: opacity, transform;
+    will-change: opacity, transform;
 }
 
 .fade-in-section.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fade-in-section {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-    transition: none;
-  }
+    .fade-in-section {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        transition: none;
+    }
 }
