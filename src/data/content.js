@@ -78,7 +78,7 @@ export const allProjects = [
         categories: ["Design", "UI/UX", "Front-end"],
         tools: "Figma + Illustrator + Photoshop + Visual Studio Code",
         description:
-            "An interactive e-magazine homage to Paramore and their history — fun, stylish, creative, and informative.",
+            "An interactive e-magazine homage to Paramore and their history. A fun yet informative experience.",
         color: "#64bcad",
         link: "/work/paramore",
         image: "/work/paramoremockup.png",
@@ -130,7 +130,7 @@ export const allProjects = [
         categories: ["Design", "UI/UX", "Motion Graphics", "Front-end"],
         tools: "Figma + Illustrator + After Effects + Visual Studio Code",
         description:
-            "A budgeting app that helps people save money and track spending — with MooMoo, the money-saving cow mascot!",
+            "A budgeting app that helps people save money and track spending alongside with MooMoo, the money-saving cow mascot!",
         color: "#64bcad",
         link: "/work/moolahmate",
         image: "/work/moolahmatemockup.png",
@@ -143,7 +143,7 @@ export const allProjects = [
         categories: ["Design"],
         tools: "Illustrator + Photoshop",
         description:
-            "A strange, mysterious creature threatening society — made, melded, and blended together from various different animals.",
+            "A strange, mysterious creature threatening society, made from various animals.",
         color: "#7da75b",
         link: "/work/ayezerok",
         image: "/work/creature.png",
