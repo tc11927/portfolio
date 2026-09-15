@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import SiteNav from "../../../components/SiteNav.jsx";
 import ProjectFooter from "../../../components/ProjectFooter.jsx";
-import "./Ayezerok.css";
+import "../CaseStudy.css";
 
 export default function Ayezerok() {
     useEffect(() => {
@@ -9,248 +10,137 @@ export default function Ayezerok() {
     }, []);
 
     return (
-        <div className="ayezerok-page-wrapper">
+        <div className="case-page-wrapper">
             <SiteNav />
 
-            <header className="ayezerok-hero-fullscreen">
+            <section className="case case-head">
+                <h1 className="case-title">Ayezerok</h1>
+                <p className="case-lead">
+                    A public safety warning about a dangerous, mysterious
+                    creature roaming the woods—designed to mimic real
+                    announcements while staying fictional and unsettling.
+                </p>
+                <dl className="case-meta">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Designer</dd>
+                    </div>
+                    <div>
+                        <dt>Platform</dt>
+                        <dd>Print &amp; Illustration</dd>
+                    </div>
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Creature Design</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <div className="case case-visual">
                 <img
+                    className="case-img"
                     src="/work/ayezerok/header.png"
-                    alt="This is Paramore – hero background"
-                    className="ayezerok-hero-fullscreen-image"
+                    alt="Ayezerok project hero"
                 />
-            </header>
+            </div>
 
-            <section className="ayezerok-section">
-                <div className="ayezerok-container">
-                    <h1 className="ayezerok-project-title">Ayezerok</h1>
-                    <p className="ayezerok-project-roles">Roles: Designer</p>
-
-                    <div className="ayezerok-tags">
-                        <span className="ayezerok-tag1">Design</span>
-                    </div>
-
-                    <div className="ayezerok-hero-content">
-                        <div className="ayezerok-hero-text"></div>
-
-                        <div className="ayezerok-hero-image">
-                            <p className="ayezerok-hero-text1">
-                                The Ayezerok is a public safety/warning
-                                announcement of a dangerous and mysterious
-                                creature roaming the woods. The goal of this
-                                project was to make a creature and design that
-                                mimicked public safety announcements while still
-                                keeping it fairly fictional.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <section className="case case-section">
+                <p className="eyebrow">Inspiration</p>
+                <h2 className="case-h2">
+                    Stepping out of the <span className="accent">comfort zone</span>
+                </h2>
+                <p className="case-body">
+                    Having done many cartoony, fun, and colourful projects, I
+                    was inspired to step out of my comfort zone and do something
+                    a little less playful. Through scrolling and searching up
+                    random animals, I found my main source of inspiration, the
+                    aye-aye. With its offputting appearance during night, and
+                    normal appearance during the day, I was determined to warp
+                    this strange creature into something else entirely.
+                </p>
+                <img
+                    className="step__vid case-img--mt"
+                    src="/work/ayezerok/inspo.png"
+                    alt="Ayezerok inspiration"
+                />
             </section>
 
-            <nav className="ayezerok-section-nav">
-                <div className="ayezerok-container">
-                    <div className="ayezerok-two-column">
-                        <div className="ayezerok-text-content">
-                            <p className="ayezerok-section-title">
-                                View Section:
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="#inspo">01. Inspiration</a>
-                                </li>
-                                <li>
-                                    <a href="#styleguide">
-                                        02. What Animals and Why?
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#iteration">03. Iteration</a>
-                                </li>
-                                <li>
-                                    <a href="#final">04. Final Product</a>
-                                </li>
-                                <li>
-                                    <a href="#Journey">
-                                        05. The Journey and Impact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="ayezerok-media-column">
-                            <div className="ayezerok-nav-image">
-                                <img
-                                    src="/work/ayezerok/eye.png"
-                                    className="ayezerok-large-media"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <section
-                className="ayezerok-section"
-                id="inspo">
-                <div className="ayezerok-container">
-                    <div className="ayezerok-section-header">
-                        <span className="ayezerok-section-number">01</span>
-                        <div className="ayezerok-section-line"></div>
-                        <span className="ayezerok-section-label">
-                            Inspiration
-                        </span>
-                    </div>
-
-                    <div className="ayezerok-branding-text">
-                  
-                        <p>
-                            Having done many cartoony, fun, and colourful
-                            projects, I was inspired to step out of my comfort
-                            zone and do something a little less playful. Through
-                            scrolling and searching up random animals, I found
-                            my main source of inspiration, the aye-aye. With its
-                            offputting appearance during night, and normal
-                            appearance during the day, I was determined to warp
-                            this strange creature into something else entirely.
-                        </p>
-
-                        <div className="ayezerok-journey-video-wrapper">
-                            <img
-                                className="ayezerok-journey"
-                                src="/work/ayezerok/inspo.png"
-                            />
-                        </div>
-                    </div>
-                </div>
+            <section className="case case-section">
+                <p className="eyebrow">Research</p>
+                <h2 className="case-h2">
+                    What animals and <span className="accent">why?</span>
+                </h2>
+                <p className="case-body">
+                    As I stared at the aye-aye, I thought of all the weird,
+                    strange animals that exist. The first to come to mind was an
+                    ape, after all, they&apos;re oddly humanlike. After that, the
+                    walrus, with its strange round form and long teeth. Lastly, I
+                    thought of a lizard, as their fleshy mouths, and unblinking
+                    eyes fit the unnerving look I was going for.
+                </p>
+                <img
+                    className="step__vid case-img--mt"
+                    src="/work/ayezerok/why.png"
+                    alt="Animal reference research"
+                />
             </section>
 
-            <section
-                className="ayezerok-section ayezerok-section-alt"
-                id="styleguide">
-                <div className="ayezerok-container">
-                    <div className="ayezerok-section-header">
-                        <span className="ayezerok-section-number">02</span>
-                        <div className="ayezerok-section-line"></div>
-                        <span className="ayezerok-section-label">
-                            What Animals and Why?
-                        </span>
-                    </div>
+            <section className="case case-section">
+                <p className="eyebrow">Design process</p>
+                <h2 className="case-h2">
+                    From sketch to <span className="accent">creature</span>
+                </h2>
 
-                    <div className="ayezerok-branding-text">
-                      
-                        <p>
-                            As I stared at the aye-aye, I thought of all the
-                            weird, strange animals that exist. The first to come
-                            to mind was an ape, after all, they’re oddly
-                            humanlike. After that, the walrus, with its strange
-                            round form and long teeth. Lastly, I thought of a
-                            lizard, as their fleshy mouths, and unblinking eyes
-                            fit the unnerving look I was going for.
-                        </p>
-
-                        <div className="ayezerok-journey-video-wrapper">
-                            <img
-                                className="ayezerok-journey"
-                                src="/work/ayezerok/why.png"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                className="ayezerok-section"
-                id="iteration">
-                <div className="ayezerok-container">
-                    <div className="ayezerok-section-header">
-                        <span className="ayezerok-section-number">03</span>
-                        <div className="ayezerok-section-line"></div>
-                        <span className="ayezerok-section-label">
-                            Iteration
-                        </span>
-                    </div>
-
-                    <div className="ayezerok-branding-text">
-                      
-                        <p>
-                            With all my animals in mind, it was time to get to
-                            work. Through multiple rounds of feedback,
-                            adjustments and edits were made to make the creature
-                            and poster look more realistic.
-                        </p>
-                        <p>
-                            More information was added to the poster, and subtle
-                            details were added to the Ayezerok to make it look
-                            like a real creature.
-                        </p>
-
-                        <div className="ayezerok-journey-video-wrapper">
-                            <img
-                                className="ayezerok-journey"
-                                src="/work/ayezerok/iteration.png"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                className="ayezerok-section"
-                id="final">
-                <div className="ayezerok-container">
-                    <div className="ayezerok-section-header">
-                        <span className="ayezerok-section-number">04</span>
-                        <div className="ayezerok-section-line"></div>
-                        <span className="ayezerok-section-label">
-                            Final Product
-                        </span>
-                    </div>
-
-                    <div className="ayezerok-branding-text">
-                     
-                        <p></p>
-
-                        <div className="ayezerok-journey-video-wrapper4">
-                            <img
-                                className="ayezerok-journey"
-                                src="/work/ayezerok/final.png"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                className="ayezerok-section ayezerok-section-alt"
-                id="Journey">
-                <div
-                    className="ayezerok-container"
-                    id="Journey">
-                    <div className="ayezerok-section-header">
-                        <span className="ayezerok-section-number">05</span>
-                        <div className="ayezerok-section-line"></div>
-                        <span className="ayezerok-section-label">
-                            The Journey and Impact
-                        </span>
-                    </div>
-
+                <div className="step">
+                    <h3 className="step__t">1. Iteration</h3>
+                    <p className="step__d">
+                        With all my animals in mind, it was time to get to work.
+                        Through multiple rounds of feedback, adjustments and
+                        edits were made to make the creature and poster look
+                        more realistic. More information was added to the
+                        poster, and subtle details were added to the Ayezerok
+                        to make it look like a real creature.
+                    </p>
                     <img
-                        src="/work/minime/celebrate.svg"
-                        className="ayezerok-floating-overlay4"
+                        className="step__vid"
+                        src="/work/ayezerok/iteration.png"
+                        alt="Ayezerok iteration process"
                     />
-                    <div className="ayezerok-branding-text">
-                        <h2>The Journey & Impact</h2>
-                        <p>
-                            The Ayezerok was made from a place of exploration
-                            and desire to grow out of my comfort zone, and it
-                            definitely challenged me in many ways. Having been
-                            so used to the fun visual style I’d always stuck to,
-                            this project really helped grow me as a designer.
-                        </p>
+                </div>
 
-                        <p>Thank you for reading!</p>
-                    </div>
+                <div className="step">
+                    <h3 className="step__t">2. Final product</h3>
+                    <p className="step__d">
+                        The finished poster combines public safety aesthetics
+                        with a creature design that feels believable enough to
+                        unsettle.
+                    </p>
+                    <img
+                        className="step__vid"
+                        src="/work/ayezerok/final.png"
+                        alt="Ayezerok final poster"
+                    />
                 </div>
             </section>
+
+            <section className="case case-section">
+                <p className="eyebrow">Reflection</p>
+                <h2 className="case-h2">What this taught me</h2>
+                <p className="case-body">
+                    The Ayezerok was made from a place of exploration and
+                    desire to grow out of my comfort zone, and it definitely
+                    challenged me in many ways. Having been so used to the fun
+                    visual style I&apos;d always stuck to, this project really
+                    helped grow me as a designer.
+                </p>
+                <p className="case-body">Thank you for reading.</p>
+            </section>
+
+            <div className="case case-cta">
+                <Link className="btn" to="/#work">
+                    More projects <span aria-hidden="true">→</span>
+                </Link>
+            </div>
 
             <ProjectFooter />
         </div>

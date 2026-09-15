@@ -1,9 +1,9 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import SiteNav from "../../../components/SiteNav.jsx";
 import ProjectFooter from "../../../components/ProjectFooter.jsx";
 import Cans from "./cans.jsx";
-import "../bandit/BanditBreakout.css";
-import "./Popunk.css";
+import "../CaseStudy.css";
 
 export default function Popunk() {
     useEffect(() => {
@@ -11,250 +11,146 @@ export default function Popunk() {
     }, []);
 
     return (
-        <div className="popunkpage-wrapper">
+        <div className="case-page-wrapper">
             <SiteNav />
 
-            <header className="popunk-hero-fullscreen">
+            <section className="case case-head">
+                <h1 className="case-title">POPUNK!</h1>
+                <p className="case-lead">
+                    POPUNK! Is a high voltage energy drink created for the late
+                    nights, fun times, and chaotic energy everyone needs during
+                    their late night fun with friends. The goal was to make a
+                    product that was both fun and bright, but also marketed
+                    towards an older demographic with bold and vibrant imagery.
+                </p>
+                <dl className="case-meta">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Designer</dd>
+                    </div>
+                    <div>
+                        <dt>Platform</dt>
+                        <dd>Product Design</dd>
+                    </div>
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Packaging &amp; Branding</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <div className="case case-visual">
                 <img
+                    className="case-img"
                     src="/work/popunk/header.jpg"
-                    alt="This is Paramore – hero background"
-                    className="popunk-hero-fullscreen-image"
+                    alt="POPUNK! project hero"
                 />
-            </header>
+            </div>
 
-            <section className="banditsection">
-                <div className="banditcontainer">
-                    <h1 className="banditproject-title">POPUNK!</h1>
-                    <p className="banditproject-roles">Role: Designer</p>
-
-                    <div className="bandittags">
-                        <span className="bandittag1">Design</span>
-                    </div>
-
-                    <div className="bandithero-content">
-                        <div className="bandithero-text"></div>
-
-                        <div className="bandithero-image">
-                            <p className="bandithero-text1">
-                                POPUNK! Is a high voltage energy drink created
-                                for the late nights, fun times, and chaotic
-                                energy everyone needs during their late night
-                                fun with friends. The goal was to make a product
-                                that was both fun and bright, but also marketed
-                                towards an older demographic with bold and
-                                vibrant imagery.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <section className="case case-section">
+                <p className="eyebrow">Inspiration</p>
+                <h2 className="case-h2">
+                    From cat to <span className="accent">concept</span>
+                </h2>
+                <p className="case-body">
+                    POPUNK! was made from many sources of inspiration, with my
+                    primary inspiration coming from my lovely ragdoll cat.
+                    She&apos;s always beside me as I work, and I thought she
+                    deserved to be featured in some sort of way in my projects!
+                    This started my journey into finding different styles and
+                    imagery I wanted to go with.
+                </p>
+                <img
+                    className="step__vid case-img--mt"
+                    src="/work/popunk/inspo.png"
+                    alt="POPUNK! inspiration"
+                />
             </section>
 
-            <nav className="popunksection-nav">
-                <div className="popunkcontainer">
-                    <div className="popunk-two-column">
-                        <div className="popunk-text-content">
-                            <p className="popunksection-title">View Section:</p>
-                            <ul>
-                                <li>
-                                    <a href="#inspo">01. Inspiration</a>
-                                </li>
-                                <li>
-                                    <a href="#styleguide">02. Styleguide</a>
-                                </li>
-                                <li>
-                                    <a href="#iteration">03. Iteration</a>
-                                </li>
-                                <li>
-                                    <a href="#final">04. Final Product</a>
-                                </li>
-                                <li>
-                                    <a href="#Journey">
-                                        05. The Journey and Impact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="popunk-media-column">
-                            <div className="popunk-nav-image">
-                                <img
-                                    src="/work/popunk/nav.png"
-                                    className="popunk-large-media"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <section className="popunksection">
-                <div className="popunkcontainer">
-                    <div
-                        className="popunk-section-header"
-                        id="inspo">
-                        <span className="popunk-section-number">01</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">
-                            Inspiration
-                        </span>
-                    </div>
-
-                    <div className="popunk-branding-text">
-                  
-                        <p>
-                            POPUNK! was made from many sources of inspiration,
-                            with my primary inspiration coming from my lovely
-                            ragdoll cat. She’s always beside me as I work, and I
-                            thought she deserved to be featured in some sort of
-                            way in my projects! This started my journey into
-                            finding different styles and imagery I wanted to go
-                            with.
-                        </p>
-
-                        <div className="popunk-journey-video-wrapper">
-                            <img
-                                className="popunk-journey"
-                                src="/work/popunk/inspo.png"
-                            />
-                        </div>
-                    </div>
-                </div>
+            <section className="case case-section">
+                <p className="eyebrow">Styleguide</p>
+                <h2 className="case-h2">
+                    Neon colours and <span className="accent">personality</span>
+                </h2>
+                <p className="case-body">
+                    The style guide for this drink line was made focusing on
+                    bright neon colours, fun text, and stylized imagery. Because
+                    of the amount of products in the line, I tried to also
+                    correlate colours to the energy and vibes of the roles that
+                    the cats took (singer, drummer, and guitarist). Keeping this
+                    in mind, I composed images and colours I wanted.
+                </p>
+                <img
+                    className="step__vid case-img--mt"
+                    src="/work/popunk/styleguide.png"
+                    alt="POPUNK! styleguide"
+                />
             </section>
 
-            <section
-                className="popunksection popunksection-alt"
-                id="styleguide">
-                <div className="popunkcontainer">
-                    <div className="popunk-section-header">
-                        <span className="popunk-section-number">02</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">Styleguide</span>
-                    </div>
+            <section className="case case-section">
+                <p className="eyebrow">Design process</p>
+                <h2 className="case-h2">
+                    Iteration to <span className="accent">final product</span>
+                </h2>
 
-                    <div className="popunk-branding-text">
-                      
-                        <p>
-                            The style guide for this drink line was made
-                            focusing on bright neon colours, fun text, and
-                            stylized imagery. Because of the amount of products
-                            in the line, I tried to also correlate colours to
-                            the energy and vibes of the roles that the cats took
-                            (singer, drummer, and guitarist). Keeping this in
-                            mind, I composed images and colours I wanted.
-                        </p>
-
-                        <div className="popunk-journey-video-wrapper">
-                            <img
-                                className="popunk-journey"
-                                src="/work/popunk/styleguide.png"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="popunksection">
-                <div className="popunkcontainer">
-                    <div
-                        className="popunk-section-header"
-                        id="iteration">
-                        <span className="popunk-section-number">03</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">Iteration</span>
-                    </div>
-
-                    <div className="popunk-branding-text">
-                
-                        <p>
-                            With a clear goal and image in mind, iteration went
-                            fairly smoothly. Only small adjustments to colour
-                            and cat design were made to ensure each product had
-                            a distinct identity and was easy to differentiate.
-                        </p>
-
-                        <div className="popunk-journey-video-wrapper">
-                            <img
-                                className="popunk-journey"
-                                src="/work/popunk/iteration.png"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="popunksection">
-                <div className="popunkcontainer">
-                    <div
-                        className="popunk-section-header"
-                        id="final">
-                        <span className="popunk-section-number">04</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">
-                            Final Product
-                        </span>
-                    </div>
-
-                    <div className="popunk-branding-text">
-                   
-                        <p></p>
-
-                        <div className="popunk-journey-video-wrapper">
-                            <Cans />
-                        </div>
-                        <div className="popunk-journey-video-wrapper">
-                            <img
-                                className="popunk-journey"
-                                src="/work/popunk/all.png"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                className="popunksection popunksection-alt"
-                id="Journey">
-                <div
-                    className="popunkcontainer"
-                    id="Journey">
-                    <div className="popunk-section-header">
-                        <span className="popunk-section-number">05</span>
-                        <div className="popunk-section-line"></div>
-                        <span className="popunk-section-label">
-                            The Journey and Impact
-                        </span>
-                    </div>
-
-                    <div className="popunk-journey-video-wrapper">
-                        <img
-                            src="/work/popunk/journey.png"
-                            className="popunk-journey"
-                            alt="Reflection and key learnings visualization"
-                        />
-                    </div>
+                <div className="step">
+                    <h3 className="step__t">1. Iteration</h3>
+                    <p className="step__d">
+                        With a clear goal and image in mind, iteration went
+                        fairly smoothly. Only small adjustments to colour and
+                        cat design were made to ensure each product had a
+                        distinct identity and was easy to differentiate.
+                    </p>
                     <img
-                        src="/work/minime/celebrate.svg"
-                        className="popunk-floating-overlay4"
+                        className="step__vid"
+                        src="/work/popunk/iteration.png"
+                        alt="POPUNK! iteration"
                     />
-                    <div className="popunk-branding-text">
-                  
-                        <p>
-                            POPUNK! was created out of my love for both design
-                            and my cat, and was a project I enjoyed deeply. It
-                            was a mix of both my passion for creation and my own
-                            interest and hobbies, which made this project so
-                            memorable.
-                        </p>
-                        <p>
-                            I learned a lot about product design, and have grown
-                            as a Graphic designer and creator. It’s taught me a
-                            lot about discovering my own distinct style, and
-                            rekindled my love for creation.
-                        </p>
+                </div>
 
-                        <p>Thank you for reading!</p>
-                    </div>
+                <div className="step">
+                    <h3 className="step__t">2. Final product</h3>
+                    <Cans />
+                    <img
+                        className="step__vid case-img--mt"
+                        src="/work/popunk/all.png"
+                        alt="POPUNK! full product line"
+                    />
                 </div>
             </section>
+
+            <section className="case case-section">
+                <p className="eyebrow">Reflection</p>
+                <h2 className="case-h2">What this taught me</h2>
+                <p className="case-body">
+                    POPUNK! was created out of my love for both design and my
+                    cat, and was a project I enjoyed deeply. It was a mix of
+                    both my passion for creation and my own interest and
+                    hobbies, which made this project so memorable.
+                </p>
+                <p className="case-body">
+                    I learned a lot about product design, and have grown as a
+                    Graphic designer and creator. It&apos;s taught me a lot
+                    about discovering my own distinct style, and rekindled my
+                    love for creation.
+                </p>
+                <img
+                    className="case-img case-img--mt"
+                    src="/work/popunk/journey.png"
+                    alt="POPUNK! journey and impact"
+                />
+                <p className="case-body case-body--spaced">
+                    Thank you for reading!
+                </p>
+            </section>
+
+            <div className="case case-cta">
+                <Link
+                    className="btn"
+                    to="/#work">
+                    More projects <span aria-hidden="true">→</span>
+                </Link>
+            </div>
 
             <ProjectFooter />
         </div>
