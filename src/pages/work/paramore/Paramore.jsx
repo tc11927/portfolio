@@ -192,7 +192,7 @@ This is Paramore was a project where we were given freedom to build an interacti
 
             <section className="case case-section">
                 <p className="eyebrow">Outcome</p>
-                <h2 className="case-h2">What we shipped</h2>
+                <h2 className="case-h2">What we created</h2>
                 <p className="case-body">
                     This is Paramore is a love letter to a band that we all love
                     and have heard, even if we weren&apos;t aware. It&apos;s

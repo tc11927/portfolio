@@ -17,8 +17,7 @@ export default function Ayezerok() {
                 <h1 className="case-title">Ayezerok</h1>
                 <p className="case-lead">
                     A public safety warning about a dangerous, mysterious
-                    creature roaming the woods—designed to mimic real
-                    announcements while staying fictional and unsettling.
+                    creature roaming the woods, designed to mimic SCP announcements while staying fictional and unsettling.
                 </p>
                 <dl className="case-meta">
                     <div>
