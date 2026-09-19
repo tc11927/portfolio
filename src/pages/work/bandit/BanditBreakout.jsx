@@ -27,11 +27,11 @@ export default function BanditBreakout() {
                         <dd>Design &amp; Project Lead, UI/UX Designer</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Board Game</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>After Effects, Illustrator, Figma</dd>
                     </div>
                     <div>
-                        <dt>Skills</dt>
+                        <dt>Categories</dt>
                         <dd>Design, UI/UX, Motion Graphics</dd>
                     </div>
                 </dl>

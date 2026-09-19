@@ -27,11 +27,11 @@ export default function MoolahMate() {
                         <dd>Graphic Designer, UI/UX Designer &amp; Animator</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Mobile App</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>Figma, HTML, CSS, Javascript, Illustrator, After Effects</dd>
                     </div>
                     <div>
-                        <dt>Skills</dt>
+                        <dt>Category</dt>
                         <dd>Design, UI/UX, Motion, Front-end</dd>
                     </div>
                 </dl>

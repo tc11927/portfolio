@@ -24,17 +24,14 @@ export default function Tandem() {
                         <dd>Design &amp; Project Lead, UI/UX Designer</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Web App</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>Figma, Illustrator, HTML, CSS, Javascript, Typescript</dd>
                     </div>
                     <div>
-                        <dt>Launched</dt>
-                        <dd>December 2025</dd>
+                        <dt>Categories</dt>
+                        <dd>UI/UX Design, Design, Motion Graphics, Front-end</dd>
                     </div>
-                    <div>
-                        <dt>Contributors</dt>
-                        <dd>Team Tandem</dd>
-                    </div>
+                  
                 </dl>
             </section>
 

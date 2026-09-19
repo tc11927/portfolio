@@ -29,12 +29,12 @@ export default function Popunk() {
                         <dd>Designer</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Product Design</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>Illustrator, Photoshop</dd>
                     </div>
                     <div>
-                        <dt>Focus</dt>
-                        <dd>Packaging &amp; Branding</dd>
+                        <dt>Category</dt>
+                        <dd>Design</dd>
                     </div>
                 </dl>
             </section>

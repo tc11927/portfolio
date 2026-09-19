@@ -25,12 +25,12 @@ export default function Ayezerok() {
                         <dd>Designer</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Print &amp; Illustration</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>Photoshop, Illustrator</dd>
                     </div>
                     <div>
-                        <dt>Focus</dt>
-                        <dd>Creature Design</dd>
+                        <dt>Categories</dt>
+                        <dd>Design</dd>
                     </div>
                 </dl>
             </section>

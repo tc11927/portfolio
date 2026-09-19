@@ -32,11 +32,11 @@ export default function TandemVideo() {
                         <dd>Lead Designer, Lead Editor &amp; Lead Animator</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Video Ad</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>After Effects, Illustrator, Premiere Pro</dd>
                     </div>
                     <div>
-                        <dt>Skills</dt>
+                        <dt>Categories</dt>
                         <dd>Design &amp; Motion Graphics</dd>
                     </div>
                 </dl>

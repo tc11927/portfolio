@@ -24,11 +24,11 @@ This is Paramore was a project where we were given freedom to build an interacti
                         <dd>Main Designer, UI/UX Designer &amp; Frontend Developer</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>E-Magazine</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>HTML, CSS, Javascript, Illustrator, Photoshop, Figma</dd>
                     </div>
                     <div>
-                        <dt>Skills</dt>
+                        <dt>Category</dt>
                         <dd>Design, UI/UX, Front-end</dd>
                     </div>
                 </dl>

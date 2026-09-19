@@ -29,12 +29,12 @@ export default function PorkSoda() {
                         <dd>Designer &amp; Animator</dd>
                     </div>
                     <div>
-                        <dt>Platform</dt>
-                        <dd>Motion Graphics</dd>
+                        <dt>Tools & Skills</dt>
+                        <dd>Illustrator, After Effects</dd>
                     </div>
                     <div>
-                        <dt>Tools</dt>
-                        <dd>Illustrator &amp; After Effects</dd>
+                        <dt>Categories</dt>
+                        <dd>Design, Motion Graphics</dd>
                     </div>
                 </dl>
             </section>
