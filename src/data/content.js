@@ -203,7 +203,7 @@ export const about = {
 export const aboutPage = {
     heading: "About Me",
     paragraphs: [
-        "I'm Thea, a UX/UI and Graphic Designer from Vancouver, B.C., who is rooted in creating designs rooted in curiosity and care. I love approaching each project where I can bring both joy and bring my user-first mindset into play.",
+        "I'm Thea, a UX/UI and Graphic Designer from Vancouver, B.C., who is rooted in creating designs made with curiosity and care. I love approaching each project where I can bring both joy and my user-first mindset into play.",
         "I’ve always had a passion for art, starting with drawing and animating. Over time, I found myself enjoying graphic design and technology, as it allowed me to blend my creativity and desire to make meaningful products. Now, I strive to design in a way that sparks curiosity and connection.",
         "When I’m not designing, you’ll probably find me drawing, exploring nature, or listening to music. My desire to search and create drive my work, and I believe that in no matter what I do, creativity and care is key.",
     ],
